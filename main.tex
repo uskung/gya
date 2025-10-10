@@ -1,0 +1,60 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage{graphicx}
+\usepackage[swedish]{babel}
+\usepackage[style=iso]{datetime2}
+\usepackage{float}
+\usepackage{caption}
+	\captionsetup{width=.8\linewidth}
+% \usepackage{subcaption,xcolor,lipsum}
+\usepackage{verbatim}
+% \usepackage{changepage}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage{rotate}
+\usepackage{siunitx}
+
+\setlength{\parindent}{0pt}
+% men däremot lite mellanrum
+\setlength{\parskip}{10pt}
+
+\usepackage{hyperref}
+	\hypersetup{
+		colorlinks=true,
+		linkcolor=blue,
+		filecolor=magenta,      
+		urlcolor=cyan,
+		citecolor=blue,
+		pdftitle={Overleaf Example},
+		pdfpagemode=FullScreen,
+		}
+
+\graphicspath{{./images/}}
+
+\begin{document}
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.3\textwidth]{europaskolan.png}\par\vspace{1cm}
+	{\LARGE \textsc{Europaskolan Strängnäs}\par}
+	\vspace{1cm}
+	{\Large \textsc{Gymnasiearbete}\par}
+	\vspace{1.5cm}
+	{\huge\bfseries Dubbelpendeln och kaosteori \par}
+	\vspace{2cm}
+	{\Large\itshape Oscar Landberg \\
+		KFSCI23b\par}
+	\vfill
+	Handledare:\par
+    \vspace{-1.5mm}
+	Erik Waltersson
+
+	\vfill
+
+	%% nedre delen av framsidan
+	{\large Inlämnad: \today}
+\end{titlepage}
+
+\input{abstract.tex}
+\input{inledning.tex}
+
+
+\end{document}
