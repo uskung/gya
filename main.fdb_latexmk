@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1760099181.43758 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1760099182.26764 0
-  "/Users/Oscar/Skola/Europaskolan/gya/main.tex" 1760099181.19291 1239 ffb0ed36fb194d0f35363cba3fc8d7ba ""
+["pdflatex"] 1760099464.63187 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1760099465.41976 0
+  "/Users/Oscar/Skola/Europaskolan/gya/main.tex" 1760099464.53006 1238 e341183c9d225b1f63f09281608ef781 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm" 1136768653 1300 63a6111ee6274895728663cf4b4e7e81 ""
@@ -90,12 +90,12 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1734173633.79821 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1734173600 8221431 468ff963c93a7b261a96ad4a49e3a62c ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "abstract.tex" 1760098221.96124 56 f0cf62cf6f4eff65e37687bad98e9475 ""
+  "abstract.tex" 1760099464.41638 57 dcba281c338bd36bef14b8810a45bc64 ""
   "images/europaskolan.png" 1747391382.90967 73643 b1a2ac46de6fa0a21e4d61258d074928 ""
   "inledning.tex" 1760098176.06274 25 025e076d86944c5a8ec06464adb3b4cb ""
-  "main.aux" 1760099182.21974 262 850684a086145bb7159658a8a3959733 "pdflatex"
-  "main.out" 1760099182.02409 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1760099181.19291 1239 ffb0ed36fb194d0f35363cba3fc8d7ba ""
+  "main.aux" 1760099465.37541 262 850684a086145bb7159658a8a3959733 "pdflatex"
+  "main.out" 1760099465.18994 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1760099464.53006 1238 e341183c9d225b1f63f09281608ef781 ""
   (generated)
   "main.aux"
   "main.log"
