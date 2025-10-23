@@ -17,6 +17,11 @@
 % men däremot lite mellanrum
 \setlength{\parskip}{10pt}
 
+\addcontentsline{toc}{chapter}{Introduction} % optional, to include in ToC
+\stepcounter{chapter} % increment chapter counter manually
+
+
+
 \usepackage{hyperref}
 	\hypersetup{
 		colorlinks=true,
@@ -50,10 +55,13 @@
 	\vfill
 
 	%% nedre delen av framsidan
-	{\large Inlämnad: \today}
+	{\large Första utkast inlämnad: \today}
 \end{titlepage}
 
 \input{abstract.tex}
+\tableofcontents
 \input{inledning.tex}
+
+
 
 \end{document}
