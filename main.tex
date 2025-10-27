@@ -12,6 +12,8 @@
 \usepackage{microtype}
 \usepackage{rotate}
 \usepackage{siunitx}
+\usepackage[backend=biber]{biblatex} %Imports biblatex package
+\addbibresource{ref.bib}
 
 \setlength{\parindent}{0pt}
 % men däremot lite mellanrum
@@ -19,7 +21,6 @@
 
 \addcontentsline{toc}{chapter}{Introduction} % optional, to include in ToC
 \stepcounter{chapter} % increment chapter counter manually
-
 
 
 \usepackage{hyperref}
@@ -62,6 +63,7 @@
 \tableofcontents
 \input{inledning.tex}
 
+\printbibliography[title=Litteraturförteckning]
 
 
 \end{document}
