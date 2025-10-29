@@ -1,13 +1,13 @@
 \chapter*{Inledning}
 
 \section{Bakgrund}
-Pendeln är något som alltid har fascinerat mänskligheten genom tiderna. Redan under det första århundradet lyckades de gamla kineserna att utveckla seismograf med hjälp av pendeln, vars funktion funktion var att aktivera ett säkerhetssystem vid jordbävningar \cite{book:china_history}. Inte minst används också pendlar än idag; Mora-klockors tidhållning bygger på en svängande pendel, medan den klassiska metronomens tickande styrs av en inverterad variant. Det är därmed tydligt hur pendeln än idag är relevant.
+Pendeln är något som alltid har fascinerat mänskligheten genom tiderna. Redan under det första århundradet lyckades de gamla kineserna att utveckla en seismograf med hjälp av pendeln, vars funktion funktion var att aktivera ett säkerhetssystem vid jordbävningar \cite{book:china_history}. Inte minst används också pendlar än idag; Mora-klockors tidhållning bygger på en svängande pendel, medan den klassiska metronomens tickande styrs av en inverterad variant. Det är därmed tydligt hur pendeln än idag är relevant.
 
 På så sätt är det inte konstigt varför studiet av pendlar har länge vart en central del av fysikundervisningen, inte minst på gymnasiet. De flesta före detta (naturvetenskapliga) gymnasieelever känner säkert igen att de flesta enkla pendlarna kan beskrivas som en harmonisk svängningsrörelse, och att formeln för en pendels svängningstid är $T = 2\pi\sqrt{\frac{l}{g}}$. 
 
 Tyvärr så ingår det ingen riktig fördjupning för pendlar inom gymnasiestudierna\footnote{Det går även att argumentera för motsatsen, det kanske är bättre att lämna det åt universitetsstudenter att lära sig\dots}, och mycket av det som lärdes ut om pendlar gäller bara om startvinkeln $\theta$ är relativt liten. Det är bara när detta villkor är uppfyllt som pendlar kan beskrivas som en harmonisk svängningsrörelse, inte minst gäller detta även för svängningstidsformeln ovan.
 
-På så vis kan en vanlig ''enkel'' pendel bli rätt så komplicerad, långt utanför gymnasiefysikens gränser. Däremot finns det många fler sätt att vidareutveckla problemet, bland annat går det att skapa en så kallad \emph{dubbelpendel} genom att koppla två enkla pendlar ihop. Det visar sig att dubbelpendeln kan väldigt enkelt visa kaotiska beteenden och bli väldigt svår att förutspå rörelsen vid, givet att startvärderna inte är helt matematiskt perfekta. Därmed demonstrerar en dubbelpendel inte minst klassisk dynamik, men det är också en tydlig tillämpning på kaosteori.
+På så vis kan en vanlig ''enkel'' pendel bli rätt så komplicerad, långt utanför gymnasiefysikens gränser. Däremot finns det många fler sätt att vidareutveckla problemet, bland annat går det att skapa en så kallad \emph{dubbelpendel} genom att koppla två enkla pendlar ihop. Det visar sig att dubbelpendeln kan väldigt enkelt visa kaotiska beteenden och bli väldigt svår att förutspå rörelsen vid, givet att startvärderna inte är helt matematiskt exakta. Därmed demonstrerar en dubbelpendel inte minst klassisk dynamik, men det är också en tydlig tillämpning på kaosteori.
 
 
 %Studiet av pendlar har länge vart en central del av fysikundervisningen. De flesta gymnasieelever (som gått ett naturvetenskapligt program) känner säkert igen att de flesta vanliga pendlarna kan beskrivas som en harmonisk svängningsrörelse. Inte minst känner säkert många gymnasiefysiker igen formeln för en pendels svängningstid, $T = 2\pi\sqrt{\frac{l}{g}}$. 
@@ -25,5 +25,59 @@ På så vis kan en vanlig ''enkel'' pendel bli rätt så komplicerad, långt uta
 
 
 \section{Teoretisk genomgång}
+\subsection{Dubbelpendeln}
+Om två vanliga enkla pendlar är sammankopplade sägs de bilda en dubbelpendel, se figur \ref{fig:double_pendulum_schematic}. Den första pendeln består av en masslös pinne med längden $l_1$ som sitter i en friktionslös vridpunkt. Vid änden av pinnen sitter även en punktformig massa $m_1$. Därefter kopplas en till masslös pinne med längden $l_2$ på $m_1$ så att pinnen kan rotera friktionsfritt. Dessutom finns en till punktformig massa $m_2$ tillkopplad på änden av pinnen med längden $l_2$. Eftersom pinnarna är masslösa och all friktion kan försummas, kan denna uppställning av en dubbelpendel beskrivas som en matematisk dubbelpendel. Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna normalen taket och pinnarna till för respektive enkel pendel. Den resulterande accelerationen på massorna $m_1$, $m_2$ är tyngdaccelerationen $g$.
+
+Eftersom pinnarna är masslösa, massorna $m_1$, $m_2$ är punktformiga och all friktion försummas, sägs dubbelpendeln vara matematisk. Därmed kommer energin i hela system bevaras. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=1]{Double-pendulum-system.png}
+    \caption{Schematisk figur över en matematisk dubbelpendel.}
+    \label{fig:double_pendulum_schematic}
+\end{figure}
+
+% Den enda accelerationen som verkar på massorna $m_1$, $m_2$ antas vara tyngdaccelerationen $g$. 
+
+% vara massorna för respektive enkla pendel, och låt $l_1$, $l_2$ vara längden av respektive pendels snöre/stav. För denna rapport kommer vi bara behandla matematiska pendlar, vilket innebär att massorna $m_1$, $m_2$ antas vara punktformiga och pendels snören anses vara masslösa. 
+
+
+Även om det är rent matematiskt möjligt att härleda formlerna som beskriver en dubbelpendels rörelse med klassisk mekanik, anses det
+
 \subsection{Lagrange-mekanik}
-Även om det är rent matematiskt möjligt att härleda formlerna som beskriver en dubbelpendels rörelse med 
+
+% \begin{tikzpicture}[scale = 2.0, every node/.style={scale=1}]
+%     \definecolor{darkred}{RGB}{155,11,46}
+
+%     \tikzmath{
+%         \vR = 1;
+%         \vPA1 = 310;
+%         \vPA2 = 210;
+%         \vLA1 = 0.5 * (\vPA1 + 270);
+%         \vLA2 = 0.5 * (\vPA2 + 270);
+%         \vPx1 = \vR * cos(\vPA1);
+%         \vPy1 = \vR * sin(\vPA1);
+%         \vPx2 = \vPx1 + \vR * cos(\vPA2);
+%         \vPy2 = \vPy1 + \vR * sin(\vPA2);
+%     }
+
+%     \draw [fill=gray, line width=0.6] (-1, -0.05) rectangle (1, 0.05);
+%     \draw [-Stealth, dashed, line width=0.6] (0, -1.5) -- (0, 0.5) node [above] {$y$};
+%     \draw [-Stealth, dashed, line width=0.6] (-1.2, 0) -- (1.2, 0) node [right] {$x$};
+%     \filldraw (0,0) circle (0.05);
+%     \draw [line width=1.5] (0, 0) -- (\vPx1, \vPy1);
+
+%     \draw ++(\vPA1+12:\vR) node {$m_1$};
+%     \draw [line width=0.6] ++(270:0.2) arc (270:\vPA1:0.2);
+%     \draw ++(\vLA1:0.35) node {$\varphi_1$};
+%     \draw ++(\vPA1+12:0.5) node {$l_1$};
+%     \draw [line width=1.5] (\vPx1, \vPy1) -- (\vPx2, \vPy2);
+%     \draw [dashed, line width=0.6] (\vPx1, \vPy1) -- ++(270:1.5);
+%     \draw [line width=0.6] ++(270:0.2) arc (270:\vPA2:0.2);
+%     \draw ++(\vLA2:0.35) node {$\varphi_2$};
+
+%     \draw [fill=blue!75!green!50, line width=0.6] (\vPx1, \vPy1) circle (0.1);
+%     \draw [fill=red!75!blue!50, line width=0.6] (\vPx2, \vPy2) circle (0.1);
+%     \draw (\vPx1, \vPy1) ++(\vPA2-12:0.5) node {$l_2$};
+%     \draw (\vPx2, \vPy2) ++(\vPA2-12:0.5) node {$m_2$};
+% \end{tikzpicture}
