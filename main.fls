@@ -250,6 +250,10 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplo
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymath.code.tex
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymath.code.tex
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfpu.code.tex
@@ -373,10 +377,6 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT ./images/Double-pendulum-system.png
-INPUT ./images/Double-pendulum-system.png
-INPUT ./images/Double-pendulum-system.png
-INPUT ./images/Double-pendulum-system.png
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out

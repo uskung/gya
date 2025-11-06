@@ -32,7 +32,79 @@ Eftersom pinnarna är masslösa, massorna $m_1$, $m_2$ är punktformiga och all 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=1]{Double-pendulum-system.png}
+    %\includegraphics[scale=1]{Double-pendulum-system.png}
+    \begin{tikzpicture}
+
+    \coordinate (O) at (0,0);
+
+    \coordinate[yshift=-5pt,xshift=-5pt] (OL) at (O);
+
+    \coordinate[yshift=-50pt] (OE) at (O);
+   
+    \coordinate[yshift=-50pt,xshift=50pt] (M1) at (O);
+
+    \coordinate[yshift=-15] (MA) at (M1);
+
+    \coordinate[yshift=-50pt] (ME) at (M1);
+   
+    \coordinate[yshift=-30pt,xshift=75pt] (M2) at (M1);
+
+    \coordinate[yshift=-25,xshift=-25] (L) at (O);
+   
+    \draw[thick] (O) -- (M1) node[midway,xshift=10pt,yshift=5pt] {$l_1$} -- (M2) node[midway,xshift=10pt,yshift=5pt] {$l_2$};
+
+    \draw[dashed] (O) -- (OE);
+
+    \draw[dashed] (M1) -- (ME);
+   
+   
+    \filldraw[color=black,fill=red!50] (M1) circle [radius=7.5pt];
+    \filldraw[color=black,fill=red!50] (M2) circle [radius=7.5pt];
+
+    \node[yshift=-20pt,xshift=8.5pt] at (O) {$\theta_1$};
+
+    \node[yshift=-20pt,xshift=11pt] at (M1) {$\theta_2$};
+
+    \node[xshift=-17.5pt] at (M1) {$m_1$};
+
+    \node[xshift=17.5pt] at (M2) {$m_2$};
+
+    \draw[gray,ultra thick] (-3,0) -- (3,0);
+
+    \draw[->] (L) -- (OL);
+
+    \node[yshift=-5pt,xshift=-5pt] at (L) {$\nu$};
+
+    \draw[gray] (-3,0) -- (-2.5,0.35);
+
+    \draw[gray] (-2.5,0) -- (-2,0.35);
+
+    \draw[gray] (-2,0) -- (-1.5,0.35);
+
+    \draw[gray] (-1.5,0) -- (-1,0.35);
+
+    \draw[gray] (-1,0) -- (-0.5,0.35);
+
+    \draw[gray] (-0.5,0) -- (0,0.35);
+
+    \draw[gray] (0,0) -- (0.5,0.35);
+
+    \draw[gray] (0.5,0) -- (1,0.35);
+
+    \draw[gray] (1,0) -- (1.5,0.35);
+
+    \draw[gray] (1.5,0) -- (2,0.35);
+
+    \draw[gray] (2,0) -- (2.5,0.35);
+
+    \draw[gray] (2.5,0) -- (3,0.35);
+
+    \fill[black] (O) circle [radius=2.5pt];
+
+    \draw[->] (0,-0.5) arc (-90:-45:0.5);
+
+    \draw[->] (MA) arc (-90:-20:0.5);
+    \end{tikzpicture}
     \caption{Schematisk figur över en matematisk dubbelpendel.}
     \label{fig:double_pendulum_schematic}
 \end{figure}
@@ -42,7 +114,7 @@ Eftersom pinnarna är masslösa, massorna $m_1$, $m_2$ är punktformiga och all 
 % vara massorna för respektive enkla pendel, och låt $l_1$, $l_2$ vara längden av respektive pendels snöre/stav. För denna rapport kommer vi bara behandla matematiska pendlar, vilket innebär att massorna $m_1$, $m_2$ antas vara punktformiga och pendels snören anses vara masslösa. 
 
 
-Även om det är rent matematiskt möjligt att härleda formlerna som beskriver en dubbelpendels rörelse med klassisk mekanik, anses det
+% Även om det är rent matematiskt möjligt att härleda formlerna som beskriver en dubbelpendels rörelse med klassisk mekanik, anses det
 
 \subsection{Lagrange-mekanik}
 
