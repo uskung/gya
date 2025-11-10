@@ -26,7 +26,14 @@ På så vis kan en vanlig ''enkel'' pendel bli rätt så komplicerad, långt uta
 
 \section{Teoretisk genomgång}
 \subsection{Dubbelpendeln}
-Om två vanliga enkla pendlar är sammankopplade sägs de bilda en dubbelpendel, se figur \ref{fig:double_pendulum_schematic}. Den första pendeln består av en masslös pinne med längden $l_1$ som sitter i en friktionslös vridpunkt. Vid änden av pinnen sitter även en punktformig massa $m_1$. Därefter kopplas en till masslös pinne med längden $l_2$ på $m_1$ så att pinnen kan rotera friktionsfritt. Dessutom finns en till punktformig massa $m_2$ tillkopplad på änden av pinnen med längden $l_2$. Eftersom pinnarna är masslösa och all friktion kan försummas, kan denna uppställning av en dubbelpendel beskrivas som en matematisk dubbelpendel. Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna normalen taket och pinnarna till för respektive enkel pendel. Den resulterande accelerationen på massorna $m_1$, $m_2$ är tyngdaccelerationen $g$.
+Om två vanliga enkla pendlar är sammankopplade sägs de bilda en dubbelpendel, se figur \ref{fig:double_pendulum_schematic}. Den första pendeln består av en punktformig massa $m_1$ som är kopplad till en masslös pinne med längden $l_1$, vilket sitter i en friktionslös rotationspunkt $\nu$. Den andra pendeln består också av en punktformig massa $m_2$ som är kopplad till en masslös pinne med längden $l_2$. Denna andra pendeln har sin friktionslösa rotationspunkt tillkopplad i $m_1$. Den enda kraften som verkar på respektive massa är tyngdkraften.   
+
+Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna från när respektive pendel pekar rakt ner, till den faktiska positionen av pendeln, se figur \ref{fig:double_pendulum_schematic}. Vinklarna $\theta_1$ och $\theta_2$ är inte begränsade mellan $-\pi \leq \theta_{1,2} \leq \pi$, dvs de kan rotera fritt hur många varv som helst runt rotationspunkterna. Detta ger även att respektive pendel inte kommer påverkas av varandra, t.ex att de inte kan slå in i varandra. 
+
+
+
+
+% Den första pendeln består av en masslös pinne med längden $l_1$ som sitter i en friktionslös vridpunkt $\nu$. Vid änden av pinnen sitter även en punktformig massa $m_1$. Därefter kopplas en till masslös pinne med längden $l_2$ på $m_1$ så att pinnen kan rotera friktionsfritt. Dessutom finns en till punktformig massa $m_2$ tillkopplad på änden av pinnen med längden $l_2$. Eftersom pinnarna är masslösa och all friktion kan försummas, kan denna uppställning av en dubbelpendel beskrivas som en matematisk dubbelpendel. Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna normalen taket och pinnarna till för respektive enkel pendel. Den resulterande accelerationen på massorna $m_1$, $m_2$ är tyngdaccelerationen $g$.
 
 Eftersom pinnarna är masslösa, massorna $m_1$, $m_2$ är punktformiga och all friktion försummas, sägs dubbelpendeln vara matematisk. Därmed kommer energin i hela system bevaras. 
 
@@ -69,37 +76,37 @@ Eftersom pinnarna är masslösa, massorna $m_1$, $m_2$ är punktformiga och all 
 
     \node[xshift=17.5pt] at (M2) {$m_2$};
 
-    \draw[gray,ultra thick] (-3,0) -- (3,0);
+    %\draw[gray,ultra thick] (-3,0) -- (3,0);
 
-    \draw[->] (L) -- (OL);
+    %\draw[->] (L) -- (OL);
 
-    \node[yshift=-5pt,xshift=-5pt] at (L) {$\nu$};
+    \node[xshift=-10pt] at (O) {$\nu$};
 
-    \draw[gray] (-3,0) -- (-2.5,0.35);
+    % \draw[gray] (-3,0) -- (-2.5,0.35);
 
-    \draw[gray] (-2.5,0) -- (-2,0.35);
+    % \draw[gray] (-2.5,0) -- (-2,0.35);
 
-    \draw[gray] (-2,0) -- (-1.5,0.35);
+    % \draw[gray] (-2,0) -- (-1.5,0.35);
 
-    \draw[gray] (-1.5,0) -- (-1,0.35);
+    % \draw[gray] (-1.5,0) -- (-1,0.35);
 
-    \draw[gray] (-1,0) -- (-0.5,0.35);
+    % \draw[gray] (-1,0) -- (-0.5,0.35);
 
-    \draw[gray] (-0.5,0) -- (0,0.35);
+    % \draw[gray] (-0.5,0) -- (0,0.35);
 
-    \draw[gray] (0,0) -- (0.5,0.35);
+    % \draw[gray] (0,0) -- (0.5,0.35);
 
-    \draw[gray] (0.5,0) -- (1,0.35);
+    % \draw[gray] (0.5,0) -- (1,0.35);
 
-    \draw[gray] (1,0) -- (1.5,0.35);
+    % \draw[gray] (1,0) -- (1.5,0.35);
 
-    \draw[gray] (1.5,0) -- (2,0.35);
+    % \draw[gray] (1.5,0) -- (2,0.35);
 
-    \draw[gray] (2,0) -- (2.5,0.35);
+    % \draw[gray] (2,0) -- (2.5,0.35);
 
-    \draw[gray] (2.5,0) -- (3,0.35);
+    % \draw[gray] (2.5,0) -- (3,0.35);
 
-    \fill[black] (O) circle [radius=2.5pt];
+    \fill[black] (O) circle [radius=3.5pt];
 
     \draw[->] (0,-0.5) arc (-90:-45:0.5);
 
