@@ -28,14 +28,14 @@ På så vis kan en vanlig ''enkel'' pendel bli rätt så komplicerad, långt uta
 \subsection{Dubbelpendeln}
 Om två vanliga enkla pendlar är sammankopplade sägs de bilda en dubbelpendel, se figur \ref{fig:double_pendulum_schematic}. Den första pendeln består av en punktformig massa $m_1$ som är kopplad till en masslös pinne med längden $l_1$, vilket sitter i en friktionslös rotationspunkt $\nu$. Den andra pendeln består också av en punktformig massa $m_2$ som är kopplad till en masslös pinne med längden $l_2$. Denna andra pendeln har sin friktionslösa rotationspunkt tillkopplad i $m_1$. Den enda kraften som verkar på respektive massa är tyngdkraften.   
 
-Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna från när respektive pendel pekar rakt ner, till den faktiska positionen av pendeln, se figur \ref{fig:double_pendulum_schematic}. Vinklarna $\theta_1$ och $\theta_2$ är inte begränsade mellan $-\pi \leq \theta_{1,2} \leq \pi$, dvs de kan rotera fritt hur många varv som helst runt rotationspunkterna. Detta ger även att respektive pendel inte kommer påverkas av varandra, t.ex att de inte kan slå in i varandra. 
+Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna mellan den lodräta linjen från rotationspunkten och den faktiska positionen av pendeln, se figur \ref{fig:double_pendulum_schematic}. Vinklarna $\theta_1$ och $\theta_2$ är inte begränsade mellan $-\pi \leq \theta_{1,2} \leq \pi$, dvs de kan rotera fritt hur många varv som helst runt rotationspunkterna. Detta innebär självklart att respektive pendel inte kommer påverkas av varandra, t.ex att de inte kan slå in i varandra. 
 
 
 
 
 % Den första pendeln består av en masslös pinne med längden $l_1$ som sitter i en friktionslös vridpunkt $\nu$. Vid änden av pinnen sitter även en punktformig massa $m_1$. Därefter kopplas en till masslös pinne med längden $l_2$ på $m_1$ så att pinnen kan rotera friktionsfritt. Dessutom finns en till punktformig massa $m_2$ tillkopplad på änden av pinnen med längden $l_2$. Eftersom pinnarna är masslösa och all friktion kan försummas, kan denna uppställning av en dubbelpendel beskrivas som en matematisk dubbelpendel. Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna normalen taket och pinnarna till för respektive enkel pendel. Den resulterande accelerationen på massorna $m_1$, $m_2$ är tyngdaccelerationen $g$.
 
-Eftersom pinnarna är masslösa, massorna $m_1$, $m_2$ är punktformiga och all friktion försummas, sägs dubbelpendeln vara matematisk. Därmed kommer energin i hela system bevaras. 
+% Eftersom pinnarna är masslösa, massorna $m_1$, $m_2$ är punktformiga och all friktion försummas, sägs dubbelpendeln vara matematisk. Därmed kommer energin i hela system bevaras. 
 
 \begin{figure}[h]
     \centering
@@ -125,38 +125,16 @@ Eftersom pinnarna är masslösa, massorna $m_1$, $m_2$ är punktformiga och all 
 
 \subsection{Lagrange-mekanik}
 
-% \begin{tikzpicture}[scale = 2.0, every node/.style={scale=1}]
-%     \definecolor{darkred}{RGB}{155,11,46}
+För att lösa mer komplexa problem, som exempelvis dubbelpendeln, är det ofta lättare att använda Lagranges ekvationer för att beskriva dess rörelse. Även om det är teoretiskt möjligt att beskriva en dubbelpendels rörelse med klassisk newtonsk mekanik, blir det fort komplicerat och därmed används Lagranges ekvationer istället.
 
-%     \tikzmath{
-%         \vR = 1;
-%         \vPA1 = 310;
-%         \vPA2 = 210;
-%         \vLA1 = 0.5 * (\vPA1 + 270);
-%         \vLA2 = 0.5 * (\vPA2 + 270);
-%         \vPx1 = \vR * cos(\vPA1);
-%         \vPy1 = \vR * sin(\vPA1);
-%         \vPx2 = \vPx1 + \vR * cos(\vPA2);
-%         \vPy2 = \vPy1 + \vR * sin(\vPA2);
-%     }
-
-%     \draw [fill=gray, line width=0.6] (-1, -0.05) rectangle (1, 0.05);
-%     \draw [-Stealth, dashed, line width=0.6] (0, -1.5) -- (0, 0.5) node [above] {$y$};
-%     \draw [-Stealth, dashed, line width=0.6] (-1.2, 0) -- (1.2, 0) node [right] {$x$};
-%     \filldraw (0,0) circle (0.05);
-%     \draw [line width=1.5] (0, 0) -- (\vPx1, \vPy1);
-
-%     \draw ++(\vPA1+12:\vR) node {$m_1$};
-%     \draw [line width=0.6] ++(270:0.2) arc (270:\vPA1:0.2);
-%     \draw ++(\vLA1:0.35) node {$\varphi_1$};
-%     \draw ++(\vPA1+12:0.5) node {$l_1$};
-%     \draw [line width=1.5] (\vPx1, \vPy1) -- (\vPx2, \vPy2);
-%     \draw [dashed, line width=0.6] (\vPx1, \vPy1) -- ++(270:1.5);
-%     \draw [line width=0.6] ++(270:0.2) arc (270:\vPA2:0.2);
-%     \draw ++(\vLA2:0.35) node {$\varphi_2$};
-
-%     \draw [fill=blue!75!green!50, line width=0.6] (\vPx1, \vPy1) circle (0.1);
-%     \draw [fill=red!75!blue!50, line width=0.6] (\vPx2, \vPy2) circle (0.1);
-%     \draw (\vPx1, \vPy1) ++(\vPA2-12:0.5) node {$l_2$};
-%     \draw (\vPx2, \vPy2) ++(\vPA2-12:0.5) node {$m_2$};
-% \end{tikzpicture}
+En beskrivning av ett system med Lagranges ekvationer består oftast av "the Lagrangian" \cite{book:classical_mechanics:Morin2007}, där $T$ och $V$ är systemets kinetiska respektive lägesenergi, se ekvation (\ref{eq:Lagr}). 
+\begin{equation} %% todo: varför är det [2] på referensen?
+    \Lagr = T - V
+    \label{eq:Lagr}
+\end{equation}
+Sedan ger Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) att den ekvation som uppfyller (\ref{eq:euler_lagrange_equation}) är den ekvation som beskriver systemets rörelse \cite{book:classical_mechanics:Morin2007}. 
+\begin{equation}
+    \frac{d}{dt}\left( \frac{\partial \Lagr}{\partial \dot{q_{i}}} \right) = \frac{\partial \Lagr}{\partial q_{i}}
+    \label{eq:euler_lagrange_equation}
+\end{equation} 
+Motivering och härl

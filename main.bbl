@@ -18,7 +18,7 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
+  \datalist[entry]{none/global//global/global}
     \entry{book:china_history}{book}{}
       \name{author}{2}{}{%
         {{hash=5e0015c65db28128c7023c8d32253ed7}{%
@@ -44,14 +44,38 @@
       \strng{authorbibnamehash}{9ec208de3547da1f2a2f043d2c579334}
       \strng{authornamehash}{9ec208de3547da1f2a2f043d2c579334}
       \strng{authorfullhash}{9ec208de3547da1f2a2f043d2c579334}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{China: Its History and Culture}
       \field{year}{2005}
       \field{pages}{70}
       \range{pages}{1}
+    \endentry
+    \entry{book:classical_mechanics:Morin2007}{book}{}
+      \name{author}{1}{}{%
+        {{hash=aef5bd6e3dec245764935a24ef74aa14}{%
+           family={Morin},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{fullhash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{bibnamehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{authorbibnamehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{authornamehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{authorfullhash}{aef5bd6e3dec245764935a24ef74aa14}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to Classical Mechanics: With Problems and Solutions}
+      \field{year}{2007}
     \endentry
   \enddatalist
 \endrefsection
