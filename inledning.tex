@@ -3,7 +3,7 @@
 \section{Bakgrund}
 Pendeln är något som alltid har fascinerat mänskligheten genom tiderna. Redan under det första århundradet lyckades de gamla kineserna att utveckla en seismograf med hjälp av pendeln, vars funktion funktion var att aktivera ett säkerhetssystem vid jordbävningar \cite{book:china_history}. Inte minst används också pendlar än idag; Mora-klockors tidhållning bygger på en svängande pendel, medan den klassiska metronomens tickande styrs av en inverterad variant. Det är därmed tydligt hur pendeln än idag är relevant.
 
-På så sätt är det inte konstigt varför studiet av pendlar har länge vart en central del av fysikundervisningen, inte minst på gymnasiet. De flesta före detta (naturvetenskapliga) gymnasieelever känner säkert igen att de flesta enkla pendlarna kan beskrivas som en harmonisk svängningsrörelse, och att formeln för en pendels svängningstid är $T = 2\pi\sqrt{\frac{l}{g}}$. 
+På så sätt är det inte konstigt varför studiet av pendlar har länge vart en central del av fysikundervisningen, inte minst på gymnasiet. De flesta före detta (naturvetenskapliga) gymnasieelever känner säkert igen att de flesta enkla pendlarna kan beskrivas som en harmonisk svängningsrörelse, och att formeln för en pendels svängningstid är $T = 2\pi\sqrt{\frac{l}{g}}$.
 
 Tyvärr så ingår det ingen riktig fördjupning för pendlar inom gymnasiestudierna\footnote{Det går även att argumentera för motsatsen, det kanske är bättre att lämna det åt universitetsstudenter att lära sig\dots}, och mycket av det som lärdes ut om pendlar gäller bara om startvinkeln $\theta$ är relativt liten. Det är bara när detta villkor är uppfyllt som pendlar kan beskrivas som en harmonisk svängningsrörelse, inte minst gäller detta även för svängningstidsformeln ovan.
 
@@ -26,9 +26,9 @@ På så vis kan en vanlig ''enkel'' pendel bli rätt så komplicerad, långt uta
 
 \section{Teoretisk genomgång}
 \subsection{Dubbelpendeln}
-Om två vanliga enkla pendlar är sammankopplade sägs de bilda en dubbelpendel, se figur \ref{fig:double_pendulum_schematic}. Den första pendeln består av en punktformig massa $m_1$ som är kopplad till en masslös pinne med längden $l_1$, vilket sitter i en friktionslös rotationspunkt $\nu$. Den andra pendeln består också av en punktformig massa $m_2$ som är kopplad till en masslös pinne med längden $l_2$. Denna andra pendeln har sin friktionslösa rotationspunkt tillkopplad i $m_1$. Den enda kraften som verkar på respektive massa är tyngdkraften.   
+Om två vanliga enkla pendlar är sammankopplade sägs de bilda en dubbelpendel, se figur \ref{fig:double_pendulum_schematic}. Den första pendeln består av en punktformig massa $m_1$ som är kopplad till en masslös pinne med längden $l_1$, vilket sitter i en friktionslös rotationspunkt $\nu$. Den andra pendeln består också av en punktformig massa $m_2$ som är kopplad till en masslös pinne med längden $l_2$. Denna andra pendeln har sin friktionslösa rotationspunkt tillkopplad i $m_1$. Den enda kraften som verkar på respektive massa är tyngdkraften.
 
-Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna mellan den lodräta linjen från rotationspunkten och den faktiska positionen av pendeln, se figur \ref{fig:double_pendulum_schematic}. Vinklarna $\theta_1$ och $\theta_2$ är inte begränsade mellan $-\pi \leq \theta_{1,2} \leq \pi$, dvs de kan rotera fritt hur många varv som helst runt rotationspunkterna. Detta innebär självklart att respektive pendel inte kommer påverkas av varandra, t.ex att de inte kan slå in i varandra. 
+Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna mellan den lodräta linjen från rotationspunkten och den faktiska positionen av pendeln, se figur \ref{fig:double_pendulum_schematic}. Vinklarna $\theta_1$ och $\theta_2$ är inte begränsade mellan $-\pi \leq \theta_{1,2} \leq \pi$, dvs de kan rotera fritt hur många varv som helst runt rotationspunkterna. Detta innebär självklart att respektive pendel inte kommer påverkas av varandra, t.ex att de inte kan slå in i varandra.
 
 
 
@@ -42,75 +42,75 @@ Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna mellan den lodräta linjen 
     %\includegraphics[scale=1]{Double-pendulum-system.png}
     \begin{tikzpicture}
 
-    \coordinate (O) at (0,0);
+        \coordinate (O) at (0,0);
 
-    \coordinate[yshift=-5pt,xshift=-5pt] (OL) at (O);
+        \coordinate[yshift=-5pt,xshift=-5pt] (OL) at (O);
 
-    \coordinate[yshift=-50pt] (OE) at (O);
-   
-    \coordinate[yshift=-50pt,xshift=50pt] (M1) at (O);
+        \coordinate[yshift=-50pt] (OE) at (O);
 
-    \coordinate[yshift=-15] (MA) at (M1);
+        \coordinate[yshift=-50pt,xshift=50pt] (M1) at (O);
 
-    \coordinate[yshift=-50pt] (ME) at (M1);
-   
-    \coordinate[yshift=-30pt,xshift=75pt] (M2) at (M1);
+        \coordinate[yshift=-15] (MA) at (M1);
 
-    \coordinate[yshift=-25,xshift=-25] (L) at (O);
-   
-    \draw[thick] (O) -- (M1) node[midway,xshift=10pt,yshift=5pt] {$l_1$} -- (M2) node[midway,xshift=10pt,yshift=5pt] {$l_2$};
+        \coordinate[yshift=-50pt] (ME) at (M1);
 
-    \draw[dashed] (O) -- (OE);
+        \coordinate[yshift=-30pt,xshift=75pt] (M2) at (M1);
 
-    \draw[dashed] (M1) -- (ME);
-   
-   
-    \filldraw[color=black,fill=red!50] (M1) circle [radius=7.5pt];
-    \filldraw[color=black,fill=red!50] (M2) circle [radius=7.5pt];
+        \coordinate[yshift=-25,xshift=-25] (L) at (O);
 
-    \node[yshift=-20pt,xshift=8.5pt] at (O) {$\theta_1$};
+        \draw[thick] (O) -- (M1) node[midway,xshift=10pt,yshift=5pt] {$l_1$} -- (M2) node[midway,xshift=10pt,yshift=5pt] {$l_2$};
 
-    \node[yshift=-20pt,xshift=11pt] at (M1) {$\theta_2$};
+        \draw[dashed] (O) -- (OE);
 
-    \node[xshift=-17.5pt] at (M1) {$m_1$};
+        \draw[dashed] (M1) -- (ME);
 
-    \node[xshift=17.5pt] at (M2) {$m_2$};
 
-    %\draw[gray,ultra thick] (-3,0) -- (3,0);
+        \filldraw[color=black,fill=red!50] (M1) circle [radius=7.5pt];
+        \filldraw[color=black,fill=red!50] (M2) circle [radius=7.5pt];
 
-    %\draw[->] (L) -- (OL);
+        \node[yshift=-20pt,xshift=8.5pt] at (O) {$\theta_1$};
 
-    \node[xshift=-10pt] at (O) {$\nu$};
+        \node[yshift=-20pt,xshift=11pt] at (M1) {$\theta_2$};
 
-    % \draw[gray] (-3,0) -- (-2.5,0.35);
+        \node[xshift=-17.5pt] at (M1) {$m_1$};
 
-    % \draw[gray] (-2.5,0) -- (-2,0.35);
+        \node[xshift=17.5pt] at (M2) {$m_2$};
 
-    % \draw[gray] (-2,0) -- (-1.5,0.35);
+        %\draw[gray,ultra thick] (-3,0) -- (3,0);
 
-    % \draw[gray] (-1.5,0) -- (-1,0.35);
+        %\draw[->] (L) -- (OL);
 
-    % \draw[gray] (-1,0) -- (-0.5,0.35);
+        \node[xshift=-10pt] at (O) {$\nu$};
 
-    % \draw[gray] (-0.5,0) -- (0,0.35);
+        % \draw[gray] (-3,0) -- (-2.5,0.35);
 
-    % \draw[gray] (0,0) -- (0.5,0.35);
+        % \draw[gray] (-2.5,0) -- (-2,0.35);
 
-    % \draw[gray] (0.5,0) -- (1,0.35);
+        % \draw[gray] (-2,0) -- (-1.5,0.35);
 
-    % \draw[gray] (1,0) -- (1.5,0.35);
+        % \draw[gray] (-1.5,0) -- (-1,0.35);
 
-    % \draw[gray] (1.5,0) -- (2,0.35);
+        % \draw[gray] (-1,0) -- (-0.5,0.35);
 
-    % \draw[gray] (2,0) -- (2.5,0.35);
+        % \draw[gray] (-0.5,0) -- (0,0.35);
 
-    % \draw[gray] (2.5,0) -- (3,0.35);
+        % \draw[gray] (0,0) -- (0.5,0.35);
 
-    \fill[black] (O) circle [radius=3.5pt];
+        % \draw[gray] (0.5,0) -- (1,0.35);
 
-    \draw[->] (0,-0.5) arc (-90:-45:0.5);
+        % \draw[gray] (1,0) -- (1.5,0.35);
 
-    \draw[->] (MA) arc (-90:-20:0.5);
+        % \draw[gray] (1.5,0) -- (2,0.35);
+
+        % \draw[gray] (2,0) -- (2.5,0.35);
+
+        % \draw[gray] (2.5,0) -- (3,0.35);
+
+        \fill[black] (O) circle [radius=3.5pt];
+
+        \draw[->] (0,-0.5) arc (-90:-45:0.5);
+
+        \draw[->] (MA) arc (-90:-20:0.5);
     \end{tikzpicture}
     \caption{Schematisk figur över en matematisk dubbelpendel.}
     \label{fig:double_pendulum_schematic}
@@ -125,16 +125,72 @@ Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna mellan den lodräta linjen 
 
 \subsection{Lagrange-mekanik}
 
-För att lösa mer komplexa problem, som exempelvis dubbelpendeln, är det ofta lättare att använda Lagranges ekvationer för att beskriva dess rörelse. Även om det är teoretiskt möjligt att beskriva en dubbelpendels rörelse med klassisk newtonsk mekanik, blir det fort komplicerat och därmed används Lagranges ekvationer istället.
+För att lösa mer komplexa problem, som exempelvis dubbelpendeln, är det ofta lättare att använda Lagranges ekvationer för att beskriva dess rörelse. Även om det är teoretiskt möjligt att beskriva en dubbelpendels rörelse med klassisk newtonsk mekanik, kan det fort bli mödosamt och därmed används Lagranges ekvationer istället.
 
-En beskrivning av ett system med Lagranges ekvationer består oftast av "the Lagrangian" \cite{book:classical_mechanics:Morin2007}, där $T$ och $V$ är systemets kinetiska respektive lägesenergi, se ekvation (\ref{eq:Lagr}). 
+En beskrivning av ett system med Lagranges ekvationer består oftast av the Lagrangian $\Lagr$ \cite{book:classical_mechanics:Morin2007}, där $T$ och $V$ är systemets kinetiska respektive lägesenergi, se ekvation (\ref{eq:Lagr}).
 \begin{equation} %% todo: varför är det [2] på referensen?
     \Lagr = T - V
     \label{eq:Lagr}
 \end{equation}
-Sedan ger Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) att den ekvation som uppfyller (\ref{eq:euler_lagrange_equation}) är den ekvation som beskriver systemets rörelse \cite{book:classical_mechanics:Morin2007}. 
+Sedan ger Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) att den ekvation som uppfyller (\ref{eq:Lagr}) är den ekvation som beskriver systemets rörelse \cite{book:classical_mechanics:Morin2007}.
 \begin{equation}
-    \frac{d}{dt}\left( \frac{\partial \Lagr}{\partial \dot{q_{i}}} \right) = \frac{\partial \Lagr}{\partial q_{i}}
+    \frac{d}{dt}\left( \frac{\partial \Lagr}{\partial \dot{q_{i}}} \right) = \frac{\partial \Lagr}{\partial q_{i}},
     \label{eq:euler_lagrange_equation}
-\end{equation} 
-Motivering och härl
+\end{equation}
+för varje $i = 1,2,3,\ldots$. Motivering och härledning av både (\ref{eq:Lagr}) och (\ref{eq:euler_lagrange_equation}) ges i appendix (TODO). %todo
+
+\subsection{Härledning av dubbelpendels rörelseekvationer}
+
+Härledningen utgår från figur \ref{fig:double_pendulum_schematic}, där dubbelpendeln ritats in i ett koordinatsystem där origo utgår från vridpunkten $\nu$. De punktformiga massorna $m_1$ och $m_2$ har koordinaterna $(x_1,y_1)$ respektive $(x_2,y_2)$.
+
+Vi kan beskriva punkterna $x_1$, $x_2$, $y_1$ och $y_2$ går att beskriva genom trigonometri enligt:
+\begin{align}
+    x_1 & = l_1 \sin{\theta_1} \label{eq:x_1}                      \\
+    y_1 & = -l_1\cos{\theta_1} \label{eq:y_1}                      \\
+    x_2 & = l_1\sin{\theta_1} + l_2\sin{\theta_2} \label{eq:x_2}   \\
+    y_2 & = -l_1\cos{\theta_1} - l_2\cos{\theta_2}. \label{eq:y_2}
+\end{align}
+
+Eftersom tidsderivatan av sträcka/position är hastighet, kan vi få hastigheterna $\dot{x}_1$, $\dot{y}_1$, $\dot{x}_2$ och $\dot{y}_2$ enligt:
+\begin{align}
+    \dot{x}_1 & = \dot{\theta}_1 l_1 \cos{\theta_1} \label{eq:x_1:dot}                   \\
+    \dot{y}_1 & = \dot{\theta}_1 l_1 \sin{\theta_1} \label{eq:y_1:dot}                   \\
+    \dot{x}_2 & = \dot{\theta}_1 l_1 \cos{\theta_1} + \dot{\theta}_2 l_2 \cos{\theta_2} \label{eq:x_2:dot}  \\
+    \dot{y}_2 & = \dot{\theta}_1 l_1 \sin{\theta_1} + \dot{\theta}_2 l_2 \sin{\theta_2}. \label{eq:y_2:dot}
+\end{align}
+
+Vi kan därmed definiera dubbelpendelns potentiella energi $V$ som summan av den potentiella energin för respektive massa. Detta ger:
+\begin{align}
+    V                                              & = m_1gy_1 + m_2gy_2 \notag                                                       \\
+    (\ref{eq:y_1}),\/ (\ref{eq:y_2}) \Rightarrow V & = -(m_1 + m_2)gl_1\cos{\theta_1} - m_2gl_2\cos{\theta_2}. \label{eq:V/potential_energy}
+\end{align}
+
+Vi kan också bestämma dubbelpendelns kinetiska energi $T$ enligt:
+\begin{align}
+    T   &= \frac{1}{2} m_1 v_{1}^{2} + \frac{1}{2}m_2v_2^2 \notag \\
+        &= \frac{1}{2}m_1\left(\dot{x}_1^2 + \dot{y}_1^2\right) + \frac{1}{2}m_2\left(\dot{x}_2^2 + \dot{y}_2^2\right) \notag \\ %% TODO; motivera kanske varför v^2 = v_x^2 + v_y^2
+    (\ref{eq:x_1:dot}) - (\ref{eq:y_2:dot}) \Rightarrow &= \frac{1}{2}m_1\left(\dot{\theta}_1^2 l_1^2 \cos^2{\theta_1} + \dot{\theta}_1^2 l_1^2 \sin^2{\theta_1}\right) + \frac{1}{2}m_2
+    \left(
+        \dot{\theta}_1^2 l_1^2 \cos^2{\theta_1}\right. \notag \\
+        &\quad + 2\dot{\theta}_1\dot{\theta}_2l_1l_2\cos{\theta_1}\cos{\theta_2}
+        + \dot{\theta}_2^2l_2^2\cos^2{\theta_2} \dot{\theta}_1^2l_1^2\sin^2{\theta_1} \notag \\
+        &\quad + \left.2\dot{\theta}_1\dot{\theta}_2l_1l_2\sin{\theta_1}\sin{\theta_2} + \dot{\theta}_2^2l_2^2\sin^2{\theta_2}
+    \right) \notag \\
+    \Rightarrow &= \frac{1}{2}m_1\dot{\theta}_1^2l_1^2\left(\cos^2{\theta_1} + \sin^2{\theta_1}\right) + \frac{1}{2}m_2\left( \dot{\theta}_1^2l_1^2\left(\sin^2{\theta_1} + \cos^2{\theta_1}\right) \right. \notag \\
+    &\quad + \left.\dot{\theta}_2^2l_2^2\left(\sin^2{\theta_2} + \cos^2{\theta_2}\right) 2\dot{\theta}_1\dot{\theta}_2l_1l_2\left(\cos{\theta_1}\cos{\theta_2} + \sin{\theta_1}\sin{\theta_2}\right)\right). \notag
+\end{align}
+
+Eftersom $\sin^2{\theta} + \cos^2{\theta} = 1$ och $\cos(\theta_1 - \theta_2) = \cos{\theta_1}\cos{\theta_2} + \sin{\theta_1}\sin{\theta_2}$ (trigonometriska ettan respektive subtraktionsformeln för cosinus) kan vi förenkla uttrycket till:
+
+\begin{equation}
+    T = \frac{1}{2}m_1\dot{\theta}_1^2l_1^2 + \frac{1}{2}m_2\left(\dot{\theta}_1^2l_1^2 + \dot{\theta}_2^2l_2 + 2\dot{\theta}_1\dot{\theta}_2l_1l_2\cos(\theta_1-\theta_2)\right). \label{eq:T/kinetic_energy_simplified}
+\end{equation}
+
+Nu när vi har uttryckt $V$ och $T$ som funktioner av $\theta_1$ och $\theta_2$, kan vi beräkna $\Lagr$. Enligt (\ref{eq:Lagr}), (\ref{eq:V/potential_energy}) och (\ref{eq:T/kinetic_energy_simplified}) får vi att:
+\begin{align}
+    \Lagr               &= T - V \notag \\
+                        &= \frac{1}{2}m_1\dot{\theta}_1^2l_1^2 + \frac{1}{2}m_2\left(\dot{\theta}_1^2l_1^2 + \dot{\theta}_2^2l_2^2 + 2\dot{\theta}_1\dot{\theta}_2l_1l_2\cos(\theta_1-\theta_2)\right) \notag \\
+                        &\quad - \left(-(m_1 + m_2)gl_1\cos{\theta_1} - m_2gl_2\cos{\theta_2}\right) \notag \\
+    \Rightarrow \Lagr   &= \frac{1}{2}m_1\dot{\theta}_1^2l_1^2 + \frac{1}{2}m_2\left(\dot{\theta}_1^2l_1^2 + \dot                {\theta}_2^2l_2^2 + 2\dot{\theta}_1\dot{\theta}_2l_1l_2\cos(\theta_1-\theta_2)\right) \notag \\
+                        &\quad + (m_1 + m_2)gl_1\cos{\theta_1} + m_2gl_2\cos{\theta_2} \label{eq:Lagr_simplified}
+\end{align}
