@@ -5,3 +5,4 @@
 \contentsline {subsection}{\numberline {1.2.1}Dubbelpendeln}{3}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Lagrange-mekanik}{3}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Härledning av dubbelpendels rörelseekvationer}{4}{subsection.1.2.3}%
+\contentsline {subsubsection}{Tillämpning av Euler-Lagrange ekvationen}{5}{section*.4}%
