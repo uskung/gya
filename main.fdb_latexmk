@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1764354185.8612 "main.bcf" "main.bbl" "main" 1767444851.02546 0
-  "main.bcf" 1767444850.93234 107141 2cce3f84f1655fcf667150e6a805029c "pdflatex"
+["biber main"] 1764354185.8612 "main.bcf" "main.bbl" "main" 1767449554.93351 0
+  "main.bcf" 1767449554.84101 107141 2cce3f84f1655fcf667150e6a805029c "pdflatex"
   "ref.bib" 1764333120.25207 501 cb4828ea89761fae3261ffd7757acb89 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1767444849.56097 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1767444851.02572 0
+["pdflatex"] 1767449553.43026 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1767449554.93378 0
   "/Users/Oscar/Skola/Europaskolan/gya/main.tex" 1767437516.37004 1680 2f859538ced0716695c4bf7937f1dff6 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -203,13 +203,13 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "abstract.tex" 1760099464.41638 57 dcba281c338bd36bef14b8810a45bc64 ""
   "images/europaskolan.png" 1747391382.90967 73643 b1a2ac46de6fa0a21e4d61258d074928 ""
-  "inledning.tex" 1767444849.32193 17839 1ab7a282af8a94300e8a621b51802901 ""
-  "main.aux" 1767444850.9274 3423 9757fc9043d9a5d95a13beed8183158d "pdflatex"
+  "inledning.tex" 1767449553.18233 20201 9e57d36da970c7e2003435764f0c0320 ""
+  "main.aux" 1767449554.8368 4021 2ebc6a48e285b724072c86c45c8b871c "pdflatex"
   "main.bbl" 1764354188.12842 2877 d1b0875b3c4903c2442dff7af0ee9306 "biber main"
-  "main.out" 1767444850.92939 799 3ed988f184d156850e0755cf413605a6 "pdflatex"
-  "main.run.xml" 1767444850.933 2298 3274c65e7617279dbcbf7ae1ef88d128 "pdflatex"
+  "main.out" 1767449554.83835 799 3ed988f184d156850e0755cf413605a6 "pdflatex"
+  "main.run.xml" 1767449554.84166 2298 3274c65e7617279dbcbf7ae1ef88d128 "pdflatex"
   "main.tex" 1767437516.37004 1680 2f859538ced0716695c4bf7937f1dff6 ""
-  "main.toc" 1767444850.93307 597 95f7e0da7bf95b9e1bf3dcd58716141d "pdflatex"
+  "main.toc" 1767449554.84172 597 95f7e0da7bf95b9e1bf3dcd58716141d "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

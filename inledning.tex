@@ -205,15 +205,15 @@ Deriveringsregler för att bestämma $ \frac{\partial \Lagr}{\partial \dot{\thet
     \Rightarrow \frac{d}{dt}\left(\frac{\partial \Lagr}{\partial \dot{\theta}_1}\right) &= m_1l_1^2\ddot{\theta}_1 + m_2l_1^2\ddot{\theta}_1 + m_2l_1l_2\ddot{\theta}_2\cos(\theta_1-\theta_2) \notag\\
     &\quad - m_2l_1l_2\dot{\theta}_2\sin(\theta_1-\theta_2)(\dot{\theta}_1-\dot{\theta}_2) \notag \\
     \Rightarrow \frac{d}{dt}\left(\frac{\partial \Lagr}{\partial \dot{\theta}_1}\right) &= \left(m_1+m_2\right)l_1^2\ddot{\theta}_1 + m_2l_1l_2\ddot{\theta}_2\cos(\theta_1-\theta_2) \notag \\
-    &\quad - m_2l_1l_2\dot{\theta}_1\dot{\theta}_2\sin(\theta_1-\theta_2) + m_2l_1l_2\dot{\theta}_2^2\sin(\theta_1-\theta_2).
+    &\quad - m_2l_1l_2\dot{\theta}_1\dot{\theta}_2\sin(\theta_1-\theta_2) + m_2l_1l_2\dot{\theta}_2^2\sin(\theta_1-\theta_2). \label{eq:Lagr_time_derivative:respect_theta_1_dot}
 \end{align}
 
 Deriveringsregler för att bestämma $\frac{\partial \Lagr}{\partial \theta_1}$ ger:
 \begin{align}
-    \frac{\partial \Lagr}{\partial \theta_1} &= -m_2l_1l_2\dot{\theta}_1\dot{\theta}_2\sin(\theta_1-\theta_2) - \left(m_1 + m_2\right)gl_1\sin{\theta_1}.
+    \frac{\partial \Lagr}{\partial \theta_1} &= -m_2l_1l_2\dot{\theta}_1\dot{\theta}_2\sin(\theta_1-\theta_2) - \left(m_1 + m_2\right)gl_1\sin{\theta_1}. \label{eq:Lagr_derivative:repsect_theta_1}
 \end{align}
 
-Insättning av detta i (\ref{eq:euler_lagrange_equation}) ger:
+Insättning av (\ref{eq:Lagr_time_derivative:respect_theta_1_dot}) och (\ref{eq:Lagr_derivative:repsect_theta_1}) i (\ref{eq:euler_lagrange_equation}) ger att:
 \begin{align}
     0 &=\left(m_1+m_2\right)l_1^2\ddot{\theta}_1 + m_2l_1l_2\ddot{\theta}_2\cos(\theta_1-\theta_2)
     - m_2l_1l_2\dot{\theta}_1\dot{\theta}_2\sin(\theta_1-\theta_2) \notag \\
@@ -223,4 +223,26 @@ Insättning av detta i (\ref{eq:euler_lagrange_equation}) ger:
     &\quad + \left(m_1 + m_2\right)g\sin{\theta_1}. \label{eq:theta_1_solution}
 \end{align}
 
-Därmed är (\ref{eq:theta_1_solution}) ekvationen som beskriver vinkeln $\theta_1$ i dubbelpendeln.
+Därmed är (\ref{eq:theta_1_solution}) ekvationen som beskriver vinkeln $\theta_1$ i dubbelpendeln. Nu ska vi istället lösa Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) fast för $q_i = \theta_2$.
+
+Deriveringsregler för att bestämma $ \frac{\partial \Lagr}{\partial \dot{\theta}_2}$ och $\frac{d}{dt}\!\left(\frac{\partial \Lagr}{\partial \dot{\theta}_2}\right)$ ger:
+\begin{align}
+    \frac{\partial \Lagr}{\partial \dot{\theta}_2} &= m_2l_2^2\dot{\theta}_2 + m_2l_1l_2\dot{\theta}_1\cos(\theta_1 - \theta_2) \notag\\
+    \Rightarrow \frac{d}{dt}\left(\frac{\partial \Lagr}{\partial \dot{\theta}_2}\right) &= m_2l_2^2\ddot{\theta}_2 + m_2l_1l_2\left(\ddot{\theta}_1\cos(\theta_1-\theta_2) - \dot{\theta}_1\sin(\theta_1 - \theta_2)(\dot{\theta}_1 - \dot{\theta}_2)\right) \notag \\
+    \Rightarrow \frac{d}{dt}\left(\frac{\partial \Lagr}{\partial \dot{\theta}_2}\right) &= m_2l_2^2\ddot{\theta}_2 + m_2l_1l_2\ddot{\theta}_1\cos(\theta_1-\theta_2) - m_2l_1l_2\dot{\theta}_1^2\sin(\theta_1-\theta_2) \notag \\
+    &\quad + m_2l_1l_2\dot{\theta}_1\dot{\theta}_2\sin(\theta_1 - \theta_2). \label{eq:Lagr_time_derivative:respect_theta_2_dot}
+\end{align}
+
+Deriveringsregler för att bestämma $\frac{\partial \Lagr}{\partial \theta_2}$ ger:
+\begin{align}
+    \frac{\partial \Lagr}{\partial \theta_2} &= m_2l_1l_2\dot{\theta}_1\dot{\theta}_2\sin(\theta_1-\theta_2) - m_2gl_2\sin{\theta_2}  \label{eq:Lagr_derivative:repsect_theta_2}
+\end{align}
+
+Insättning av (\ref{eq:Lagr_time_derivative:respect_theta_2_dot}) och (\ref{eq:Lagr_derivative:repsect_theta_2}) i (\ref{eq:euler_lagrange_equation}) ger:
+\begin{align}
+    0 &= m_2l_2^2\ddot{\theta}_2 + m_2l_1l_2\ddot{\theta}_1\cos(\theta_1 - \theta_2) - m_2l_1l_2\dot{\theta}_1^2\sin(\theta_1-\theta_2) \notag \\
+    &\quad + m_2l_1l_2\dot{\theta_1}\dot{\theta}_2\sin(\theta_1 - \theta_2) - m_2l_1l_2\dot{\theta}_1\dot{\theta}_2\sin(\theta_1-\theta_2) + m_2gl_2\sin{\theta_2} \notag \\
+    \Leftrightarrow 0 &= m_2l_2\ddot{\theta}_2 + m_2l_1\ddot{\theta}_1\cos(\theta_1 - \theta_2) - m_2l_1\dot{\theta}_1^2\sin(\theta_1 - \theta_2) + m_2g\sin{\theta_2} \label{eq:theta_2_solution}
+\end{align}
+
+Detta innebär att (\ref{eq:theta_2_solution}) är den ekvation som beskriver vinkeln $\theta_2$ i dubbelpendeln. Därmed har vi nu funnit våra två ekvationer som enligt Euler-Lagrange ekvationen (\ref{eq})beskriver 
