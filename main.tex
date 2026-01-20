@@ -15,6 +15,7 @@
 \usepackage[backend=biber,sorting=none]{biblatex} %Imports biblatex package
 \usepackage{tikz}
 \usepackage[margin=1.2in]{geometry}
+\usepackage{titlesec}
 \usetikzlibrary{math, arrows.meta}
 \addbibresource{ref.bib}
 \newcommand{\Lagr}{\mathcal{L}}
@@ -23,9 +24,7 @@
 % men däremot lite mellanrum
 \setlength{\parskip}{10pt}
 
-\addcontentsline{toc}{chapter}{Introduction} % optional, to include in ToC
-\stepcounter{chapter} % increment chapter counter manually
-
+\refstepcounter{chapter} % increment chapter counter manually
 
 \usepackage{hyperref}
 	\hypersetup{
@@ -65,7 +64,11 @@
 
 \input{abstract.tex}
 \tableofcontents
+
+\addcontentsline{toc}{chapter}{Inledning} % optional, to include in ToC
 \input{inledning.tex}
+\addcontentsline{toc}{chapter}{Teoretisk bakgrund}
+\input{teoretisk_genomgång.tex}
 
 \printbibliography[title=Litteraturförteckning]
 

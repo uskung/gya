@@ -53,6 +53,38 @@
       \field{pages}{70}
       \range{pages}{1}
     \endentry
+    \entry{britannica_chaos_theory_2025}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e32d4b56f672cd6736099a214e4fd3aa}{%
+           family={{The Editors of Encyclopaedia Britannica}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Encyclopædia Britannica, Inc.}%
+      }
+      \strng{namehash}{e32d4b56f672cd6736099a214e4fd3aa}
+      \strng{fullhash}{e32d4b56f672cd6736099a214e4fd3aa}
+      \strng{bibnamehash}{e32d4b56f672cd6736099a214e4fd3aa}
+      \strng{authorbibnamehash}{e32d4b56f672cd6736099a214e4fd3aa}
+      \strng{authornamehash}{e32d4b56f672cd6736099a214e4fd3aa}
+      \strng{authorfullhash}{e32d4b56f672cd6736099a214e4fd3aa}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{12}
+      \field{note}{Hämtad 2026-01-18}
+      \field{title}{Chaos Theory}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.britannica.com/science/chaos-theory
+      \endverb
+      \verb{url}
+      \verb https://www.britannica.com/science/chaos-theory
+      \endverb
+    \endentry
     \entry{book:classical_mechanics:Morin2007}{book}{}
       \name{author}{1}{}{%
         {{hash=aef5bd6e3dec245764935a24ef74aa14}{%
