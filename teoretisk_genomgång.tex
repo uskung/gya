@@ -3,6 +3,63 @@
 
 \section{Kaosteori}
 
+\section{Lagrange-mekanik}
+
+För att lösa mer komplexa problem, som exempelvis dubbelpendeln, är det oftare lättare att använda Lagrange-mekanik för att beskriva dess rörelse. Även om det är teoretiskt sätt möjligt att beskriva en dubbelpendels rörelse med klassisk newtonsk mekanik, kan det fort bli mödosamt och onödigt krångligt. Lagrange-mekanik är egentligen bara en annan matematisk metod för att beskriva omvärlden, vilket i en viss typ av problem, blir betydligt lättare att lösa.
+
+För att lösa mer komplexa problem, som exempelvis dubbelpendeln, är det ofta lättare att använda Lagranges ekvationer för att beskriva dess rörelse. Även om det är teoretiskt möjligt att beskriva en dubbelpendels rörelse med klassisk newtonsk mekanik, kan det fort bli mödosamt och därmed används Lagranges ekvationer istället.
+
+% En beskrivning av ett system med Lagranges ekvationer består oftast av the Lagrangian $\Lagr$ \cite{book:classical_mechanics:Morin2007}, där $T$ och $V$ är systemets kinetiska respektive lägesenergi, se ekvation (\ref{eq:Lagr}).
+% \begin{equation} %% todo: varför är det [2] på referensen?
+%     \Lagr = T - V
+%     \label{eq:Lagr}
+% \end{equation}
+% Sedan ger Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) att den ekvation som uppfyller (\ref{eq:Lagr}) är den ekvation som beskriver systemets rörelse \cite{book:classical_mechanics:Morin2007}.
+% \begin{equation}
+%     \frac{d}{dt}\left( \frac{\partial \Lagr}{\partial \dot{q_{i}}} \right) - \frac{\partial \Lagr}{\partial q_{i}} = 0,
+%     \label{eq:euler_lagrange_equation}
+% \end{equation}
+% för varje $i = 1,2,3,\ldots$.
+
+\subsection{Principen om minsta verkan}
+
+Lagrange-mekanik bygger sin grund på \emph{principen om minsta verkan}, eller ibland även kallad \emph{principen om stationär verkan} \cite{Manton2013PrincipleLeastAction}. Denna princip säger att ett objekt kommer alltid att sträva efter att färdas den väg som minimerar den fysikaliska \emph{verkan} \cite[s.2]{Manton2013PrincipleLeastAction}. Detta är så fysikaliskt grundläggande, att nästan all fysik kan härledas ur detta grundläggande antagande \cite{Manton2013PrincipleLeastAction}. Givet att vi har ett objekt $Q$ som rör sig längs $x(t)$, där $Q$ har startpunkten $x(t_1)$ och slutpunkten $x(t_2)$, samt att $T(t)$ och $V(t)$ är objektets rörelse respektive kinetiska energi, definieras verkan $S$ inom tidsintervallet $t_1\leq t \leq t_2$ som \cite[s.10]{Manton2013PrincipleLeastAction}:
+\begin{equation} 
+    S = \int_{t_1}^{t_2}\left(T(t)-V(t)\right)dt. \label{eq:action_definition}
+\end{equation} 
+Denna storhet har enheten [Js] och har dimensionerna (Energi $\times$ Tid) \cite[s.221]{book:classical_mechanics:Morin2007}. Själva differensen $T(t) - V(t)$ visar sig vara så relevant inom fysiken, att den har fått namnet 'the Lagrangian' och brukar betecknas $\Lagr$ \cite[s.218]{book:classical_mechanics:Morin2007}, det vill säga:
+\begin{equation} %% todo: varför är det [2] på referensen?
+    \Lagr = T - V
+    \label{eq:Lagr}
+\end{equation}
+Principen om minsta verkan säger att fysikens lagar strävar efter att förminska (\ref{eq:action_definition})\footnote{Egentligen, rent matematiskt, strävar verkan $S$ att hitta ett stationärt värde av $S$, det vill säga en lokal extrem- eller terrasspunkt till grafen av $S$. Detta är anledningen varför principen även kallas för \emph{principen om stationär verkan} \cite[s.222]{book:classical_mechanics:Morin2007}.}.
+
+För att bestämma ett objekts väg som minimerar verkan $S$ används \emph{Euler-Lagrange ekvationen} \cite[s. 222]{book:classical_mechanics:Morin2007} se ekvation (\ref{eq:euler_lagrange_equation}). I ekvation (\ref{eq:euler_lagrange_equation}) är $i = 1,2,3,\ldots$, och normalt sätt betecknar de olika koordinataxlarna i systemet. Härledning av (\ref{eq:euler_lagrange_equation}) ges i appendix A. %% TODO, härledning av euler-lagrange ekvationen
+\begin{equation}
+    \frac{d}{dt}\left( \frac{\partial \Lagr}{\partial \dot{q_{i}}} \right) - \frac{\partial \Lagr}{\partial q_{i}} = 0,
+    \label{eq:euler_lagrange_equation}
+\end{equation}
+
+\subsubsection{Pedagogiskt exempel på tillämpning av Lagrange-mekanik}
+
+%För att ge ett exempel på hur ekvation (\ref{eq:euler_lagrange_equation}) kan användas rent fysikaliskt\footnote{Hos många studenter kan det till en början kännas 'udda' varför (\ref{eq:Lagr}) och (\ref{eq:euler_lagrange_equation}) ens är relevanta. Därför tas detta exempel med, för att ge en viss intuition till att (\ref{eq:euler_lagrange_equation}) funkar.}, tas ett exempel på en boll med massan $m$. Om vi släpper bollen från vila, och låter den falla fritt (utan något luftmotstånd), kommer den ha fallit höjden $h$ under 1 sekund. Vi vet enligt de välkända kinematiska formlerna \cite{formelsamling} att $h=\frac{gt^2}{2}$, dvs bollen kommer att ha färdats $\frac{g}{2}$ m efter 1 sekund.  
+
+% Verkan är en fysikalisk storhet som beskriver summan av , där om vi har ett objekt som rör sig mellan två punkter $x(t_1)$ och $x(t_2)$ inom tidsintervallet $(t_2 - t_1)$, så definieras verkan $S$ som \cite[s.10]{Manton2013PrincipleLeastAction}:
+% \begin{equation} 
+%     S = \int_{t_1}^{t_2}\left(T(t)-V(t)\right)dt. \label{eq:action_definition}
+% \end{equation} 
+
+
+
+% Det kan kännas spontant udda varför ekvationerna (\ref{eq:Lagr}) och (\ref{eq:euler_lagrange_equation}) ens är relevanta. Dessa ekvationer är dock en konsekvens av \emph{principen om minsta verkan}, vilket säger att ett objekt kommer alltid sträva efter att färdas den väg som minimerar den fysikaliska verkan \cite[s.2]{Manton2013PrincipleLeastAction}. Verkan är en fysikalisk storhet, där om vi har ett objekt som rör sig mellan två punkter $x(t_1)$ och $x(t_2)$ inom tidsintervallet $(t_2 - t_1)$, så definieras verkan $S$ som \cite[s.10]{Manton2013PrincipleLeastAction}:
+% \begin{equation} 
+%     S = \int_{t_1}^{t_2}\left(T(t)-V(t)\right)dt. \label{eq:action_definition}
+% \end{equation} 
+% Denna storhet har enheten [Js] och har dimensionerna (Energi $\times$ Tid). Det visar sig att \emph{principen om minsta verkan} är en princip som är minst lika fundamental som t.ex energiprincipen,
+
+
+%Motivering och härledning av både (\ref{eq:Lagr}) och (\ref{eq:euler_lagrange_equation}) ges i appendix (TODO). %todo
+
 
 
 \section{Dubbelpendeln}
@@ -10,14 +67,7 @@ Om två vanliga enkla pendlar är sammankopplade sägs de bilda en dubbelpendel,
 
 Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna mellan den lodräta linjen från rotationspunkten och den faktiska positionen av pendeln, se figur \ref{fig:double_pendulum_schematic}. Vinklarna $\theta_1$ och $\theta_2$ är inte begränsade mellan $-\pi \leq \theta_{1,2} \leq \pi$, dvs de kan rotera fritt hur många varv som helst runt rotationspunkterna. Detta innebär självklart att respektive pendel inte kommer påverkas av varandra, t.ex att de inte kan slå in i varandra.
 
-
-
-
-% Den första pendeln består av en masslös pinne med längden $l_1$ som sitter i en friktionslös vridpunkt $\nu$. Vid änden av pinnen sitter även en punktformig massa $m_1$. Därefter kopplas en till masslös pinne med längden $l_2$ på $m_1$ så att pinnen kan rotera friktionsfritt. Dessutom finns en till punktformig massa $m_2$ tillkopplad på änden av pinnen med längden $l_2$. Eftersom pinnarna är masslösa och all friktion kan försummas, kan denna uppställning av en dubbelpendel beskrivas som en matematisk dubbelpendel. Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna normalen taket och pinnarna till för respektive enkel pendel. Den resulterande accelerationen på massorna $m_1$, $m_2$ är tyngdaccelerationen $g$.
-
-% Eftersom pinnarna är masslösa, massorna $m_1$, $m_2$ är punktformiga och all friktion försummas, sägs dubbelpendeln vara matematisk. Därmed kommer energin i hela system bevaras. 
-
-\begin{figure}[h]
+\begin{figure}[h!]
     \centering
     %\includegraphics[scale=1]{Double-pendulum-system.png}
     \begin{tikzpicture}
@@ -96,6 +146,11 @@ Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna mellan den lodräta linjen 
     \label{fig:double_pendulum_schematic}
 \end{figure}
 
+
+% Den första pendeln består av en masslös pinne med längden $l_1$ som sitter i en friktionslös vridpunkt $\nu$. Vid änden av pinnen sitter även en punktformig massa $m_1$. Därefter kopplas en till masslös pinne med längden $l_2$ på $m_1$ så att pinnen kan rotera friktionsfritt. Dessutom finns en till punktformig massa $m_2$ tillkopplad på änden av pinnen med längden $l_2$. Eftersom pinnarna är masslösa och all friktion kan försummas, kan denna uppställning av en dubbelpendel beskrivas som en matematisk dubbelpendel. Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna normalen taket och pinnarna till för respektive enkel pendel. Den resulterande accelerationen på massorna $m_1$, $m_2$ är tyngdaccelerationen $g$.
+
+% Eftersom pinnarna är masslösa, massorna $m_1$, $m_2$ är punktformiga och all friktion försummas, sägs dubbelpendeln vara matematisk. Därmed kommer energin i hela system bevaras. 
+
 % Den enda accelerationen som verkar på massorna $m_1$, $m_2$ antas vara tyngdaccelerationen $g$. 
 
 % vara massorna för respektive enkla pendel, och låt $l_1$, $l_2$ vara längden av respektive pendels snöre/stav. För denna rapport kommer vi bara behandla matematiska pendlar, vilket innebär att massorna $m_1$, $m_2$ antas vara punktformiga och pendels snören anses vara masslösa. 
@@ -103,21 +158,7 @@ Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna mellan den lodräta linjen 
 
 % Även om det är rent matematiskt möjligt att härleda formlerna som beskriver en dubbelpendels rörelse med klassisk mekanik, anses det
 
-\section{Lagrange-mekanik}
 
-För att lösa mer komplexa problem, som exempelvis dubbelpendeln, är det ofta lättare att använda Lagranges ekvationer för att beskriva dess rörelse. Även om det är teoretiskt möjligt att beskriva en dubbelpendels rörelse med klassisk newtonsk mekanik, kan det fort bli mödosamt och därmed används Lagranges ekvationer istället.
-
-En beskrivning av ett system med Lagranges ekvationer består oftast av the Lagrangian $\Lagr$ \cite{book:classical_mechanics:Morin2007}, där $T$ och $V$ är systemets kinetiska respektive lägesenergi, se ekvation (\ref{eq:Lagr}).
-\begin{equation} %% todo: varför är det [2] på referensen?
-    \Lagr = T - V
-    \label{eq:Lagr}
-\end{equation}
-Sedan ger Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) att den ekvation som uppfyller (\ref{eq:Lagr}) är den ekvation som beskriver systemets rörelse \cite{book:classical_mechanics:Morin2007}.
-\begin{equation}
-    \frac{d}{dt}\left( \frac{\partial \Lagr}{\partial \dot{q_{i}}} \right) - \frac{\partial \Lagr}{\partial q_{i}} = 0,
-    \label{eq:euler_lagrange_equation}
-\end{equation}
-för varje $i = 1,2,3,\ldots$. Motivering och härledning av både (\ref{eq:Lagr}) och (\ref{eq:euler_lagrange_equation}) ges i appendix (TODO). %todo
 
 \subsection{Härledning av dubbelpendels rörelseekvationer}
 

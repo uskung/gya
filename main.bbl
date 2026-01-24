@@ -109,6 +109,39 @@
       \field{title}{Introduction to Classical Mechanics: With Problems and Solutions}
       \field{year}{2007}
     \endentry
+    \entry{Manton2013PrincipleLeastAction}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=afcb7a66b438d8546d5cb605365fae32}{%
+           family={Manton},
+           familyi={M\bibinitperiod},
+           given={N.\bibnamedelimi S.},
+           giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {Department of Applied Mathematics}%
+        {Theoretical Physics (DAMTP), University of Cambridge}%
+      }
+      \list{location}{1}{%
+        {Cambridge, UK}%
+      }
+      \strng{namehash}{afcb7a66b438d8546d5cb605365fae32}
+      \strng{fullhash}{afcb7a66b438d8546d5cb605365fae32}
+      \strng{bibnamehash}{afcb7a66b438d8546d5cb605365fae32}
+      \strng{authorbibnamehash}{afcb7a66b438d8546d5cb605365fae32}
+      \strng{authornamehash}{afcb7a66b438d8546d5cb605365fae32}
+      \strng{authorfullhash}{afcb7a66b438d8546d5cb605365fae32}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{howpublished}{\url{https://www.damtp.cam.ac.uk/user/nsm10/PrincLeaAc.pdf}}
+      \field{month}{4}
+      \field{note}{Hämtad: 2025-01-21}
+      \field{title}{The Principle of Least Action in Dynamics}
+      \field{year}{2013}
+      \field{dateera}{ce}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

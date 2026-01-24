@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1768922692.2599 "main.bcf" "main.bbl" "main" 1768944135.16991 0
-  "main.bcf" 1768944135.07759 107313 25a775effca81a1a5c11b16f4ee7b958 "pdflatex"
-  "ref.bib" 1768748743.91627 849 cbc6c7e4164ea81da8c620d121c725bb ""
+["biber main"] 1769261374.36369 "main.bcf" "main.bbl" "main" 1769261379.50866 0
+  "main.bcf" 1769261379.41524 107832 76887a195f9701a6478a4d3d48c818c7 "pdflatex"
+  "ref.bib" 1769254813.80511 1484 6d18c614418c321f55b670548fd40945 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1768944133.65255 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1768944135.17033 0
-  "/Users/Oscar/Skola/Europaskolan/gya/main.tex" 1768923657.41449 1786 58c1e792d4a9076caa4c636e47346b18 ""
+["pdflatex"] 1769261378.0583 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1769261379.50893 0
+  "/Users/Oscar/Skola/Europaskolan/gya/main.tex" 1769253623.53345 1806 ec35e27668c204fb77c2446e97ebaf2b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -24,11 +24,13 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmti12.tfm" 1136768653 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm" 1136768653 772 9a936b7f5e2ff0557fce0f62822f0bbf ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1248133631 32001 6aeea3afe875097b1eb0da29acd61e28 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -38,6 +40,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1248133631 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb" 1248133631 24252 1e4e051947e12dfb50fee0b7f4e26e3a ""
   "/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -207,13 +210,13 @@
   "abstract.tex" 1760099464.41638 57 dcba281c338bd36bef14b8810a45bc64 ""
   "images/europaskolan.png" 1747391382.90967 73643 b1a2ac46de6fa0a21e4d61258d074928 ""
   "inledning.tex" 1768927946.66392 5636 9f307c22ec475c0ccef9cf51cb45d753 ""
-  "main.aux" 1768944135.07332 4544 5d231b2454827f4ebcf2970e4f3ab26a "pdflatex"
-  "main.bbl" 1768922694.75366 4098 2ab9419f9e9561088f0ba111ce7c7014 "biber main"
-  "main.out" 1768944135.07478 1259 a0d627880f036c7b4015a6ea3f777974 "pdflatex"
-  "main.run.xml" 1768944135.07838 2298 3274c65e7617279dbcbf7ae1ef88d128 "pdflatex"
-  "main.tex" 1768923657.41449 1786 58c1e792d4a9076caa4c636e47346b18 ""
-  "main.toc" 1768944135.07847 743 10a9293d148521f2fa35f931d6aceab2 "pdflatex"
-  "teoretisk_genomgång.tex" 1768944131.83096 15352 e4bf72a74486c2763e426fc0b74d2847 ""
+  "main.aux" 1769261379.41023 5656 953fa1e96e4152136536502c830ddd3d "pdflatex"
+  "main.bbl" 1769261376.56077 5446 8d47f666e6f1ae21d1cb423024f85083 "biber main"
+  "main.out" 1769261379.41239 1467 6f7339b0d8f6229aa6b81951c3eb83ec "pdflatex"
+  "main.run.xml" 1769261379.41592 2298 3274c65e7617279dbcbf7ae1ef88d128 "pdflatex"
+  "main.tex" 1769253623.53345 1806 ec35e27668c204fb77c2446e97ebaf2b ""
+  "main.toc" 1769261379.416 951 9f4423aab31449d9581910b011090b5b "pdflatex"
+  "teoretisk_genomgång.tex" 1769261372.60653 20445 9a7626910bdf2163f5ab0f4b0a0aa619 ""
   (generated)
   "main.aux"
   "main.bcf"

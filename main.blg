@@ -1,14 +1,14 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[41] biber-darwin:340> INFO - === Tue Jan 20, 2026, 16:24:54
-[50] Biber.pm:419> INFO - Reading 'main.bcf'
-[96] Biber.pm:979> INFO - Found 3 citekeys in bib section 0
-[104] Biber.pm:4419> INFO - Processing section 0
-[110] Biber.pm:4610> INFO - Looking for bibtex file 'ref.bib' for section 0
-[111] bibtex.pm:1713> INFO - LaTeX decoding ...
-[113] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
-[138] UCollate.pm:68> INFO - Overriding locale 'sv-SE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[138] UCollate.pm:68> INFO - Overriding locale 'sv-SE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[138] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'sv-SE'
-[142] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[143] bbl.pm:763> INFO - Output to main.bbl
+[38] biber-darwin:340> INFO - === Sat Jan 24, 2026, 14:29:36
+[46] Biber.pm:419> INFO - Reading 'main.bcf'
+[92] Biber.pm:979> INFO - Found 4 citekeys in bib section 0
+[101] Biber.pm:4419> INFO - Processing section 0
+[106] Biber.pm:4610> INFO - Looking for bibtex file 'ref.bib' for section 0
+[107] bibtex.pm:1713> INFO - LaTeX decoding ...
+[110] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
+[136] UCollate.pm:68> INFO - Overriding locale 'sv-SE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[136] UCollate.pm:68> INFO - Overriding locale 'sv-SE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[136] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'sv-SE'
+[140] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[142] bbl.pm:763> INFO - Output to main.bbl
