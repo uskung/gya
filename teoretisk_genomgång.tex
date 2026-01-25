@@ -3,11 +3,13 @@
 
 \section{Kaosteori}
 
+Kaosteori är ett tvärvetenskapligt forskningsområde område som fokuserar på att studera mönster hos deterministiska system som är extremt känsliga till begynnelsevillkor \cite{britannica_chaos_theory_2025}. Med detta menas att, om inte exakt samma 
+
 \section{Lagrange-mekanik}
 
 För att lösa mer komplexa problem, som exempelvis dubbelpendeln, är det oftare lättare att använda Lagrange-mekanik för att beskriva dess rörelse. Även om det är teoretiskt sätt möjligt att beskriva en dubbelpendels rörelse med klassisk newtonsk mekanik, kan det fort bli mödosamt och onödigt krångligt. Lagrange-mekanik är egentligen bara en annan matematisk metod för att beskriva omvärlden, vilket i en viss typ av problem, blir betydligt lättare att lösa.
 
-För att lösa mer komplexa problem, som exempelvis dubbelpendeln, är det ofta lättare att använda Lagranges ekvationer för att beskriva dess rörelse. Även om det är teoretiskt möjligt att beskriva en dubbelpendels rörelse med klassisk newtonsk mekanik, kan det fort bli mödosamt och därmed används Lagranges ekvationer istället.
+%För att lösa mer komplexa problem, som exempelvis dubbelpendeln, är det ofta lättare att använda Lagranges ekvationer för att beskriva dess rörelse. Även om det är teoretiskt möjligt att beskriva en dubbelpendels rörelse med klassisk newtonsk mekanik, kan det fort bli mödosamt och därmed används Lagranges ekvationer istället.
 
 % En beskrivning av ett system med Lagranges ekvationer består oftast av the Lagrangian $\Lagr$ \cite{book:classical_mechanics:Morin2007}, där $T$ och $V$ är systemets kinetiska respektive lägesenergi, se ekvation (\ref{eq:Lagr}).
 % \begin{equation} %% todo: varför är det [2] på referensen?
@@ -23,11 +25,12 @@ För att lösa mer komplexa problem, som exempelvis dubbelpendeln, är det ofta 
 
 \subsection{Principen om minsta verkan}
 
-Lagrange-mekanik bygger sin grund på \emph{principen om minsta verkan}, eller ibland även kallad \emph{principen om stationär verkan} \cite{Manton2013PrincipleLeastAction}. Denna princip säger att ett objekt kommer alltid att sträva efter att färdas den väg som minimerar den fysikaliska \emph{verkan} \cite[s.2]{Manton2013PrincipleLeastAction}. Detta är så fysikaliskt grundläggande, att nästan all fysik kan härledas ur detta grundläggande antagande \cite{Manton2013PrincipleLeastAction}. Givet att vi har ett objekt $Q$ som rör sig längs $x(t)$, där $Q$ har startpunkten $x(t_1)$ och slutpunkten $x(t_2)$, samt att $T(t)$ och $V(t)$ är objektets rörelse respektive kinetiska energi, definieras verkan $S$ inom tidsintervallet $t_1\leq t \leq t_2$ som \cite[s.10]{Manton2013PrincipleLeastAction}:
+Lagrange-mekanik bygger sin grund på \emph{principen om minsta verkan}, eller ibland även kallad \emph{principen om stationär verkan} \cite{Manton2013PrincipleLeastAction}. Denna princip säger därmed att ett objekt kommer alltid att sträva efter att färdas den väg som minimerar den fysikaliska \emph{verkan} \cite[s.2]{Manton2013PrincipleLeastAction}. Detta är så fysikaliskt grundläggande, att nästan all fysik kan härledas ur detta grundläggande antagande \cite{Manton2013PrincipleLeastAction}. Givet att vi har ett objekt $Q$ som rör sig längs $x(t)$, där $Q$ har startpunkten $x(t_1)$ och slutpunkten $x(t_2)$, samt att $T(t)$ och $V(t)$ är objektets rörelse respektive kinetiska energi, definieras verkan $S$ inom tidsintervallet $t_1\leq t \leq t_2$ som \cite[s.10]{Manton2013PrincipleLeastAction}:
 \begin{equation} 
     S = \int_{t_1}^{t_2}\left(T(t)-V(t)\right)dt. \label{eq:action_definition}
 \end{equation} 
-Denna storhet har enheten [Js] och har dimensionerna (Energi $\times$ Tid) \cite[s.221]{book:classical_mechanics:Morin2007}. Själva differensen $T(t) - V(t)$ visar sig vara så relevant inom fysiken, att den har fått namnet 'the Lagrangian' och brukar betecknas $\Lagr$ \cite[s.218]{book:classical_mechanics:Morin2007}, det vill säga:
+Denna storhet har enheten [Js] och har dimensionerna (Energi $\times$ Tid) \cite[s.221]{book:classical_mechanics:Morin2007}. Själva differensen $T(t) - V(t)$ visar sig vara så relevant inom fysiken, att den har fått namnet 'the Lagrangian' och brukar betecknas $\Lagr$ \cite[s.218]{book:classical_mechanics:Morin2007}, det vill säga
+\footnote{Varför $\Lagr = T(t) - V(t)$ är så viktigt i (\ref{eq:action_definition}) kan tyckas konstigt. Varför ska \emph{differensen} av kinetiska och potentiella energin spela någon roll? }:
 \begin{equation} %% todo: varför är det [2] på referensen?
     \Lagr = T - V
     \label{eq:Lagr}
@@ -40,8 +43,7 @@ För att bestämma ett objekts väg som minimerar verkan $S$ används \emph{Eule
     \label{eq:euler_lagrange_equation}
 \end{equation}
 
-\subsubsection{Pedagogiskt exempel på tillämpning av Lagrange-mekanik}
-
+%\subsubsection{Pedagogiskt exempel på tillämpning av Lagrange-mekanik}
 %För att ge ett exempel på hur ekvation (\ref{eq:euler_lagrange_equation}) kan användas rent fysikaliskt\footnote{Hos många studenter kan det till en början kännas 'udda' varför (\ref{eq:Lagr}) och (\ref{eq:euler_lagrange_equation}) ens är relevanta. Därför tas detta exempel med, för att ge en viss intuition till att (\ref{eq:euler_lagrange_equation}) funkar.}, tas ett exempel på en boll med massan $m$. Om vi släpper bollen från vila, och låter den falla fritt (utan något luftmotstånd), kommer den ha fallit höjden $h$ under 1 sekund. Vi vet enligt de välkända kinematiska formlerna \cite{formelsamling} att $h=\frac{gt^2}{2}$, dvs bollen kommer att ha färdats $\frac{g}{2}$ m efter 1 sekund.  
 
 % Verkan är en fysikalisk storhet som beskriver summan av , där om vi har ett objekt som rör sig mellan två punkter $x(t_1)$ och $x(t_2)$ inom tidsintervallet $(t_2 - t_1)$, så definieras verkan $S$ som \cite[s.10]{Manton2013PrincipleLeastAction}:
@@ -266,4 +268,44 @@ Insättning av (\ref{eq:Lagr_time_derivative:respect_theta_2_dot}) och (\ref{eq:
     \Leftrightarrow 0 &= m_2l_2\ddot{\theta}_2 + m_2l_1\ddot{\theta}_1\cos(\theta_1 - \theta_2) - m_2l_1\dot{\theta}_1^2\sin(\theta_1 - \theta_2) + m_2g\sin{\theta_2}. \label{eq:theta_2_solution}
 \end{align}
 
-Detta innebär att (\ref{eq:theta_2_solution}) är den ekvation som beskriver vinkeln $\theta_2$ i dubbelpendeln. Därmed har vi nu funnit våra två ekvationer som enligt Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) beskriver 
+Detta innebär att (\ref{eq:theta_2_solution}) är den ekvation som beskriver vinkeln $\theta_2$ i dubbelpendeln. Därmed har vi nu funnit våra två ekvationer som enligt Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) beskriver dubbelpendelns rörelse, se ekvationssystemet (\ref{eq:equations_of_motion}):
+\begin{equation} \begin{cases}
+        0 &= \left(m_1+m_2\right)l_1\ddot{\theta}_1 + m_2l_2\ddot{\theta}_2\cos(\theta_1-\theta_2)
+        + m_2l_2\dot{\theta}_2^2\sin(\theta_1-\theta_2) \\
+        &\quad + \left(m_1 + m_2\right)g\sin{\theta_1}. \\
+        0 &= m_2l_2\ddot{\theta}_2 + m_2l_1\ddot{\theta}_1\cos(\theta_1 - \theta_2) - m_2l_1\dot{\theta}_1^2\sin(\theta_1 - \theta_2) + m_2g\sin{\theta_2}. \label{eq:equations_of_motion}
+\end{cases} \end{equation}
+
+Ekvationssystemet i (\ref{eq:equations_of_motion}) går inte att lösa analytiskt, utan måste skrivas om för att få (\ref{eq:equations_of_motion}) till en ordinär första ordningens differentialekvation. Detta kan göras genom att införa nya beteckningar för vinkelhastigheterna $\omega_1$ och $\omega_2$, dvs $\omega_1 = \dot{\theta_1}$ och $\omega_2 = \dot{\theta_2}$. Därmed kan (\ref{eq:equations_of_motion}) skrivas om enligt ekvationssystemet (aisjd). 
+
+\begin{equation}
+    \begin{cases}
+        
+    \end{cases}
+\end{equation}
+
+\section{Numeriska metoder för att lösa differentialekvationer}
+
+Differentialekvationerna i (\ref{eq:equations_of_motion}) är icke-linjära och av andra ordningen, vilket gör de omöjligt att lösa rent analystiskt. Därmed måste ekvationerna lösas numeriskt, vilket kan göras med \emph{Runge-Kuttametoden}. Denna metod\footnote{Egentligen är Runge-Kuttametoden är en familj av metoder, då den innefattar ett flertal metoder, bland annat Eulers stegmetod. Däremot brukas RK4-metoden menas med ''Runge-Kuttametoden'', vilket är den vi kommer att använda här. För vidare förklaring, se \cite{Runge-Kutta_method/Butcher2008}. }, utvecklat och namngivet av de tyska matematikerna Carl Runge och Martin Willhelm Kutta, är en kraftfull metod för att lösa ordinära differentialekvationer (ODE:s) \cite[s. 93]{Runge-Kutta_method/Butcher2008}. 
+
+Runge-Kuttametoden ger oss en metod att lösa ekvationer på formen $x' = f(t,x)$, där $x(t)$ är den okända funktionen. Metoden bygger på att approximera lösningen stegvis med ett litet $h$, men istället för att bara beräkna nuvarande lutningen (det som sker i Eulers metod), så beräknas flera mellanliggande lutningar där ett viktad medelvärde istället dras. 
+
+\subsection{Allmänna definitionen av RK4-metoden}
+
+Låt $\mathbf{x}$ vara en tillståndsvektor sådan att $\mathbf{x} = [x_1, x_2, \ldots, x_n]^T$, $\mathbf{x}' = \frac{d\mathbf{x}}{dt}$ och låt $\mathbf{f} = [f_1, f_2, \ldots, f_n]^T$. Dessutom har vi begynnelsevärdet  Vi vill beräkna värdet av tillståndsvektorn $\bf{x}$ över tidsintervallet $[t_0, t]$ med steglängden $h$. Givet att $\bf{x'} = f(t,x)$, så definieras nästa tillståndsvektor $\bf{x_{n+1}}$ enligt: 
+\begin{equation}
+    \mathbf{x}_{n+1} = x_n + \frac{h}{6}\left(\mathbf{K}_{1n} + 2\mathbf{K}_{2n} + 2\mathbf{K}_{3n} + \mathbf{K}_{4n}\right),
+\end{equation}
+\begin{equation}
+    t_{n+1} = t_n + h,
+\end{equation}
+där värdena av $\mathbf{K}_{1n}, \mathbf{K}_{2n}, \mathbf{K}_{3n}$ och $\mathbf{K}_{4n}$ är definierade sådan att:
+\begin{align}
+    \mathbf{K}_{1n} &= \mathbf{f}(t,\mathbf{x}_n) \\
+    \mathbf{K}_{2n} &= \mathbf{f}\left(t + \frac{h}{2}, \mathbf{x}_n + \frac{h}{2}\mathbf{K}_{1n}\right) \\
+    \mathbf{K}_{3n} &= \mathbf{f}\left(t + \frac{h}{2}, \mathbf{x}_n + \frac{h}{2}\mathbf{K}_{2n}\right) \\
+    \mathbf{K}_{4n} &= \mathbf{f}\left(t + h, \mathbf{x}_n + h\mathbf{K}_{3n}\right)
+\end{align}
+
+
+\footnote{Definitionen av RK4-metoden är hämtat från \cite{Allard2015DoublePendulum/Runge-Kutta-definition}}

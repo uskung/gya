@@ -19,6 +19,7 @@
 \usetikzlibrary{math, arrows.meta}
 \addbibresource{ref.bib}
 \newcommand{\Lagr}{\mathcal{L}}
+\usepackage[toc,page]{appendix}
 
 \setlength{\parindent}{0pt}
 % men däremot lite mellanrum
@@ -26,16 +27,16 @@
 
 \refstepcounter{chapter} % increment chapter counter manually
 
-\usepackage{hyperref}
-	\hypersetup{
-		colorlinks=true,
-		linkcolor=black,
-		filecolor=magenta,      
-		urlcolor=cyan,
-		citecolor=blue,
-		pdftitle={Overleaf Example},
-		pdfpagemode=FullScreen,
-		}
+	\usepackage{hyperref}
+		\hypersetup{
+			colorlinks=true,
+			linkcolor=black,
+			filecolor=magenta,      
+			urlcolor=cyan,
+			citecolor=blue,
+			pdftitle={Overleaf Example},
+			pdfpagemode=FullScreen,
+			}
 
 \graphicspath{{./images/}}
 
@@ -64,14 +65,16 @@
 
 \input{abstract.tex}
 \tableofcontents
-
+\newpage
 \addcontentsline{toc}{chapter}{Inledning} % optional, to include in ToC
 \input{inledning.tex}
 \newpage
 \addcontentsline{toc}{chapter}{Teoretisk genomgång}
-\newpage
 \input{teoretisk_genomgång.tex}
-
+\newpage
+\addcontentsline{toc}{chapter}{Appendix}
+\input{appendix.tex}
+\addcontentsline{toc}{section}{A - Härledning av Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation})}
 \printbibliography[title=Litteraturförteckning]
 
 

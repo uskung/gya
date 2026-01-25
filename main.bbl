@@ -130,8 +130,8 @@
       \strng{authorbibnamehash}{afcb7a66b438d8546d5cb605365fae32}
       \strng{authornamehash}{afcb7a66b438d8546d5cb605365fae32}
       \strng{authorfullhash}{afcb7a66b438d8546d5cb605365fae32}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{25}
@@ -141,6 +141,69 @@
       \field{title}{The Principle of Least Action in Dynamics}
       \field{year}{2013}
       \field{dateera}{ce}
+    \endentry
+    \entry{Runge-Kutta_method/Butcher2008}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8243f76db475c19fb4e78a700c85a343}{%
+           family={Butcher},
+           familyi={B\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chichester, UK}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons Ltd}%
+      }
+      \strng{namehash}{8243f76db475c19fb4e78a700c85a343}
+      \strng{fullhash}{8243f76db475c19fb4e78a700c85a343}
+      \strng{bibnamehash}{8243f76db475c19fb4e78a700c85a343}
+      \strng{authorbibnamehash}{8243f76db475c19fb4e78a700c85a343}
+      \strng{authornamehash}{8243f76db475c19fb4e78a700c85a343}
+      \strng{authorfullhash}{8243f76db475c19fb4e78a700c85a343}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{isbn}{978-0-470-72335-7}
+      \field{title}{Numerical Methods for Ordinary Differential Equations}
+      \field{year}{2008}
+    \endentry
+    \entry{Allard2015DoublePendulum/Runge-Kutta-definition}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b15cd608ab9f2f78b3d63d2e1d27b1f7}{%
+           family={Allard},
+           familyi={A\bibinitperiod},
+           given={John\bibnamedelima Jr.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {John Allard Jr.'s Blog}%
+      }
+      \strng{namehash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
+      \strng{fullhash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
+      \strng{bibnamehash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
+      \strng{authorbibnamehash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
+      \strng{authornamehash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
+      \strng{authorfullhash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{4}
+      \field{month}{3}
+      \field{note}{Hämtad: 2026-01-25}
+      \field{title}{Simulating a Double Pendulum – Part 1: Theory and Derivation}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.jhallard.com/blog/double_pendulum.html
+      \endverb
+      \verb{url}
+      \verb https://www.jhallard.com/blog/double_pendulum.html
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
