@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1769353482.26998 "main.bcf" "main.bbl" "main" 1769354908.69832 0
-  "main.bcf" 1769354908.59907 108191 8269adb5d332370e2aa94de8015b3d5f "pdflatex"
+["biber main"] 1769353482.26998 "main.bcf" "main.bbl" "main" 1769355387.98532 0
+  "main.bcf" 1769355387.88832 108191 8269adb5d332370e2aa94de8015b3d5f "pdflatex"
   "ref.bib" 1769353060.66121 2166 0a01fe362e89a84d56f4dbc63297acc9 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1769354907.18891 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1769354908.6986 0
+["pdflatex"] 1769355386.41541 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1769355387.98563 0
   "/Users/Oscar/Skola/Europaskolan/gya/main.tex" 1769339991.55502 2029 4ecf9867bdb4ab7c909f9f49c1cad851 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -218,13 +218,13 @@
   "appendix.tex" 1769263416.60134 167 bc4eea742ecba6cba416ee13d6e50243 ""
   "images/europaskolan.png" 1747391382.90967 73643 b1a2ac46de6fa0a21e4d61258d074928 ""
   "inledning.tex" 1769264636.81697 5636 9f307c22ec475c0ccef9cf51cb45d753 ""
-  "main.aux" 1769354908.59426 6806 8491080378175cf9c0fc05c481c3f10e "pdflatex"
+  "main.aux" 1769355387.88354 6806 39166fd3f809b23209287fc3e9ff2d74 "pdflatex"
   "main.bbl" 1769353484.45551 7956 0b6c7b4776180411c287480c1ef2768e "biber main"
-  "main.out" 1769354908.5964 2486 54b4607d3aa26915480013e250c5c0fc "pdflatex"
-  "main.run.xml" 1769354908.59975 2298 3274c65e7617279dbcbf7ae1ef88d128 "pdflatex"
+  "main.out" 1769355387.88568 2486 890cde1c3f5bf9f2250064f78c6fa580 "pdflatex"
+  "main.run.xml" 1769355387.889 2298 3274c65e7617279dbcbf7ae1ef88d128 "pdflatex"
   "main.tex" 1769339991.55502 2029 4ecf9867bdb4ab7c909f9f49c1cad851 ""
-  "main.toc" 1769354908.59981 1240 90db7dcb1acc96ae3633fb8b7905e06a "pdflatex"
-  "teoretisk_genomgång.tex" 1769354906.99033 24453 eed58d4686789a3a28288bddbae8cd55 ""
+  "main.toc" 1769355387.88906 1240 81c5cd8232489cddd5b2d3de42839dba "pdflatex"
+  "teoretisk_genomgång.tex" 1769355384.63988 24529 6eb80c52fe103f458f9256d6e9a6620e ""
   (generated)
   "main.aux"
   "main.bcf"
