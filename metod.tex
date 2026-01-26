@@ -1,0 +1,124 @@
+\chapter*{Numerisk simulering och metod}
+\refstepcounter{chapter}
+
+\section{Behandling av rörelseekvationerna inför simulering}
+Som vi visade i sektion \ref{sec:härledning_av_dubbelpendeln}, ekvation (\ref{eq:equations_of_motion}), har vi härlett rörelseekvationerna för dubbelpendeln med hjälp av Lagrange-mekanik. Dessa är:
+\begin{equation} \begin{cases}
+        0 &= \left(m_1+m_2\right)l_1\ddot{\theta}_1 + m_2l_2\ddot{\theta}_2\cos(\theta_1-\theta_2)
+        + m_2l_2\dot{\theta}_2^2\sin(\theta_1-\theta_2) \\
+        &\quad + \left(m_1 + m_2\right)g\sin{\theta_1}. \\
+        0 &= m_2l_2\ddot{\theta}_2 + m_2l_1\ddot{\theta}_1\cos(\theta_1 - \theta_2) - m_2l_1\dot{\theta}_1^2\sin(\theta_1 - \theta_2) + m_2g\sin{\theta_2}. \label{eq:equations_of_motion_numerical_section}
+\end{cases} \end{equation}
+För att däremot kunna använda (\ref{eq:equations_of_motion_numerical_section}) med Runge-Kuttametoden, måste de skrivas om till ordinära differentialekvationer på formen $x' = f(x,t)$. Vi börjar med att genomföra substitutionen $\dot{\theta}_1 = \omega_1$ och $\dot{\theta}_2$, vilket ger:
+\begin{equation}
+    \begin{cases}
+        \dot{\theta}_1 &= \omega_1  \\
+        \dot{\theta}_2 &= \omega_2 \\
+        0 &= (m_1+m_2)l_1\dot{\omega}_1 + m_2l_2\dot{\omega}_2\cos(\theta_1 - \theta_2) + m_2l_2\omega_2^2\sin(\theta_1 - \theta_2) \\
+        &\quad + (m_1+m_2)g\sin{\theta_1} \\
+        0 &= m_2l_2\dot{\omega}_2 + m_2l_1\dot{\omega}_1\cos(\theta_1 - \theta_2) - m_2l_1\omega_1^2\sin(\theta_1-\theta_2) + m_2g\sin{\theta_2}. \label{eq:equations_of_motion_with_omega_numerical_section}
+    \end{cases}
+\end{equation}
+Däremot är fortfarande tredje och fjärde ekvationerna i (\ref{eq:equations_of_motion_with_omega_numerical_section}) sammankopplade (på engelska, 'coupled'). För att kunna använda (\ref{eq:equations_of_motion_with_omega_numerical_section}) i Runge-kuttametoden gör vi följande substitution enligt (\ref{eq:greek_substitutions}). 
+\begin{equation}
+    \begin{cases}
+        \Delta\theta &= \theta_1 - \theta_2 \\
+        \alpha &= (m_1+m_2)l_1 \\
+        \beta &= m_2l_2\cos(\Delta\theta) \\
+        \gamma &= m_2l_1\cos(\Delta\theta) \\
+        \delta &= m_2l_2 \\
+        \epsilon &= -m_2l_2\omega_2^2\sin(\Delta\theta) - (m_1 + m_2)g\sin{\theta_1} \\
+        \zeta &= m_2l_2\omega_1^2\sin(\Delta\theta) - m_2g\sin{\theta_2}
+    \end{cases} \label{eq:greek_substitutions}
+\end{equation}
+Vi kan nu skriva om ekvationssystemet (\ref{eq:equations_of_motion_with_omega_numerical_section}) med hjälp av substitutionerna i (\ref{eq:greek_substitutions}) enligt:
+\begin{equation}
+    \begin{cases}
+        \dot{\theta}_1 &= \omega_1  \\
+        \dot{\theta}_2 &= \omega_2 \\
+        0 &= \alpha\dot{\omega}_1 + \beta \dot{\omega}_2 - \epsilon \\
+        0 &= \delta\dot{\omega}_2 + \gamma\dot{\omega}_1 - \zeta.
+    \end{cases} \label{eq:equations_of_motion_greek}
+\end{equation}
+Vi kan nu skriva om tredje och fjärde ekvationerna i (\ref{eq:equations_of_motion_greek}) som ett system av ekvationer i matrisform enligt:
+\begin{equation}
+    \begin{pmatrix}
+        \alpha & \beta \\
+        \gamma & \delta \\
+    \end{pmatrix}
+    \begin{pmatrix}
+        \dot{\omega}_1 \\
+        \dot{\omega}_2
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        \epsilon \\
+        \zeta
+    \end{pmatrix}\footnote{Detta eftersom matrismultiplikation ger att $\alpha\dot{\omega}_1 + \beta\dot{\omega}_2 = \epsilon$ och $\gamma\dot{\omega}_1 + \delta\dot{\omega}_2 = \zeta$, vilket är de ursprungliga ekvationerna.}
+    \label{matrix:equations_of_motions_greek}
+\end{equation}
+Genom att multiplicera inversen av $\left(\begin{smallmatrix} \alpha & \beta \\ \gamma & \delta \end{smallmatrix}\right)$ i (\ref{matrix:equations_of_motions_greek}) får vi att:
+\begin{align}
+    \begin{pmatrix}
+        \alpha & \beta \\
+        \gamma & \delta \\
+    \end{pmatrix}^{-1}
+    \begin{pmatrix}
+        \alpha & \beta \\
+        \gamma & \delta \\
+    \end{pmatrix}
+    \begin{pmatrix}
+        \dot{\omega}_1 \\
+        \dot{\omega}_2
+    \end{pmatrix}
+    &=
+    \begin{pmatrix}
+        \alpha & \beta \\
+        \gamma & \delta \\
+    \end{pmatrix}^{-1}
+    \begin{pmatrix}
+        \epsilon \\
+        \zeta
+    \end{pmatrix} \notag \\ %new line here
+    \begin{pmatrix}
+        \dot{\omega}_1 \\
+        \dot{\omega}_2
+    \end{pmatrix}
+    &=
+    \frac{1}{\alpha\delta-\beta\gamma}
+    \begin{pmatrix}
+        \delta & -\beta \\
+        -\gamma & \alpha
+    \end{pmatrix}
+    \begin{pmatrix}
+        \epsilon \\
+        \zeta
+    \end{pmatrix} \notag \\ %new line here
+    \begin{pmatrix}
+        \dot{\omega}_1 \\
+        \dot{\omega}_2
+    \end{pmatrix}
+    &= \frac{1}{\alpha\delta - \beta\gamma}
+    \begin{pmatrix}
+        \delta\epsilon - \beta\zeta \\
+        -\gamma\epsilon + \alpha\zeta
+    \end{pmatrix} \notag \\ %new line here
+    \begin{pmatrix}
+        \dot{\omega}_1 \\
+        \dot{\omega}_2
+    \end{pmatrix}
+    &= 
+    \begin{pmatrix}
+        \frac{\delta\epsilon - \beta\zeta}{\alpha\delta - \beta\gamma} \vspace{1mm}\\
+        \frac{\alpha\zeta - \gamma\epsilon}{\alpha\delta - \beta\gamma}
+    \end{pmatrix} \label{matrix:separated_for_omega_1_omega_2}
+\end{align}
+Vi kan därmed avläsa från (\ref{matrix:separated_for_omega_1_omega_2}) nya, icke-sammankopplade uttryck för $\dot{\omega}_1$ och $\dot{\omega}_2$, vilket ger oss ekvationssystemet (\ref{eq:equations_of_motions_final}) som beskriver dubbelpendelns rörelse i ordinära, icke-sammankopplade differentialekvationer.
+\begin{equation}
+    \begin{cases}
+        \dot{\theta}_1 &= \omega_1 \\
+        \dot{\theta}_2 &= \omega_2 \\
+        \dot{\omega}_1 &= \frac{\delta\epsilon - \beta\zeta}{\alpha\delta - \beta\gamma} \\
+        \dot{\omega}_2 &= \frac{\alpha\zeta - \gamma\epsilon}{\alpha\delta - \beta\gamma}
+    \end{cases} \label{eq:equations_of_motions_final}
+\end{equation}

@@ -162,7 +162,7 @@ Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna mellan den lodräta linjen 
 
 
 
-\subsection{Härledning av dubbelpendels rörelseekvationer}
+\subsection{Härledning av dubbelpendels rörelseekvationer} \label{sec:härledning_av_dubbelpendeln}
 
 Härledningen utgår från figur \ref{fig:double_pendulum_schematic}, där dubbelpendeln ritats in i ett koordinatsystem där origo utgår från vridpunkten $\nu$. De punktformiga massorna $m_1$ och $m_2$ har koordinaterna $(x_1,y_1)$ respektive $(x_2,y_2)$.
 
@@ -276,23 +276,32 @@ Detta innebär att (\ref{eq:theta_2_solution}) är den ekvation som beskriver vi
         0 &= m_2l_2\ddot{\theta}_2 + m_2l_1\ddot{\theta}_1\cos(\theta_1 - \theta_2) - m_2l_1\dot{\theta}_1^2\sin(\theta_1 - \theta_2) + m_2g\sin{\theta_2}. \label{eq:equations_of_motion}
 \end{cases} \end{equation}
 
-Ekvationssystemet i (\ref{eq:equations_of_motion}) går inte att lösa analytiskt, utan måste skrivas om för att få (\ref{eq:equations_of_motion}) till en ordinär första ordningens differentialekvation. Detta kan göras genom att införa nya beteckningar för vinkelhastigheterna $\omega_1$ och $\omega_2$, dvs $\omega_1 = \dot{\theta_1}$ och $\omega_2 = \dot{\theta_2}$. Därmed kan (\ref{eq:equations_of_motion}) skrivas om enligt ekvationssystemet (aisjd). 
+Ekvationssystemet i (\ref{eq:equations_of_motion}) går inte att lösa analytiskt, utan måste skrivas om för att få (\ref{eq:equations_of_motion}) till en ordinär första ordningens differentialekvation (ODE). Detta kan göras genom att införa nya beteckningar för vinkelhastigheterna $\omega_1$ och $\omega_2$, dvs $\omega_1 = \dot{\theta_1}$ och $\omega_2 = \dot{\theta_2}$. Därmed kan (\ref{eq:equations_of_motion}) skrivas om enligt ekvationssystemet (\ref{eq:equations_of_motion_with_omega}). 
 
 \begin{equation}
     \begin{cases}
-        
+        \dot{\theta}_1 = \omega_1  \\
+        \dot{\theta}_2 = \omega_2 \\
+        \dot{\omega}_1 = - \frac{m_2l_2\dot{\omega}_2^2\cos(\theta_1 - \theta_2) + m_1l_2\omega_2^2\sin(\theta_1-\theta_2) + (m_1+m_2)g\sin{\theta_1}}{(m_1+m_2)l_1} \\
+        \dot{\omega}_2 = - \frac{m_2l_1\dot{\omega}_1\cos(\theta_1-\theta_2) - m_2l_1\omega^2_1\sin(\theta_1 - \theta_2 + m_2g\sin{\theta_2})}{m_2l_2} \label{eq:equations_of_motion_with_omega}
     \end{cases}
 \end{equation}
 
-\section{Numeriska metoder för att lösa differentialekvationer}
+Däremot har (\ref{eq:equations_of_motion_with_omega}) problemet att de tredje och fjärde ekvationerna är sammankopplade (på engelska, 'coupled'). Dessa två måste separeras för att kunna lösas numeriskt.  
+
+\section{Numerisk metod för att lösa differentialekvationer}
 
 Differentialekvationerna i (\ref{eq:equations_of_motion}) är icke-linjära och av andra ordningen, vilket gör de omöjligt att lösa rent analystiskt. Därmed måste ekvationerna lösas numeriskt, vilket kan göras med \emph{Runge-Kuttametoden}. Denna metod\footnote{Egentligen är Runge-Kuttametoden är en familj av metoder, då den innefattar ett flertal metoder, bland annat Eulers stegmetod. Däremot brukas RK4-metoden menas med ''Runge-Kuttametoden'', vilket är den vi kommer att använda här. För vidare förklaring, se \cite{Runge-Kutta_method/Butcher2008}. }, utvecklat och namngivet av de tyska matematikerna Carl Runge och Martin Willhelm Kutta, är en kraftfull metod för att lösa ordinära differentialekvationer (ODE:s) \cite[s. 93]{Runge-Kutta_method/Butcher2008}. 
 
 Runge-Kuttametoden ger oss en metod att lösa ekvationer på formen $x' = f(t,x)$, där $x(t)$ är den okända funktionen. Metoden bygger på att approximera lösningen stegvis med ett litet $h$, men istället för att bara beräkna nuvarande lutningen (det som sker i Eulers metod), så beräknas flera mellanliggande lutningar där ett viktad medelvärde istället dras. 
 
+
+\subsection{Behandling av dubbelpendelns rörelseekvationer för att möjliggöra RK4-metoden}
+
+
 \subsection{Allmänna definitionen av RK4-metoden}
 
-Låt $\mathbf{x}$ vara en tillståndsvektor sådan att $\mathbf{x} = [x_1, x_2, \ldots, x_n]^T$, $\mathbf{x}' = \frac{d\mathbf{x}}{dt}$ och låt $\mathbf{f} = [f_1, f_2, \ldots, f_n]^T$. Dessutom har vi begynnelsevärdet  Vi vill beräkna värdet av tillståndsvektorn $\bf{x}$ över tidsintervallet $[t_0, t]$ med steglängden $h$. Givet att $\bf{x'} = f(t,x)$, så definieras nästa tillståndsvektor $\bf{x_{n+1}}$ enligt: 
+Låt $\mathbf{x}$ vara en tillståndsvektor sådan att $\mathbf{x} = [x_1, x_2, \ldots, x_n]^T$, $\mathbf{x}' = \frac{d\mathbf{x}}{dt}$ och låt $\mathbf{f} = [f_1, f_2, \ldots, f_n]^T$. Dessutom har vi begynnelsevärdet TODO Vi vill beräkna värdet av tillståndsvektorn $\bf{x}$ över tidsintervallet $[t_0, t]$ med steglängden $h$. Givet att $\bf{x'} = f(t,x)$, så definieras nästa tillståndsvektor $\bf{x_{n+1}}$ enligt: 
 \begin{equation}
     \mathbf{x}_{n+1} = x_n + \frac{h}{6}\left(\mathbf{K}_{1n} + 2\mathbf{K}_{2n} + 2\mathbf{K}_{3n} + \mathbf{K}_{4n}\right),
 \end{equation}

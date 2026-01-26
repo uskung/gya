@@ -9,7 +9,10 @@
 \contentsline {section}{\numberline {2.3}Dubbelpendeln}{5}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Härledning av dubbelpendels rörelseekvationer}{6}{subsection.2.3.1}%
 \contentsline {subsubsection}{Tillämpning av Euler-Lagrange ekvationen}{7}{subsubsection*.5}%
-\contentsline {section}{\numberline {2.4}Numeriska metoder för att lösa differentialekvationer}{9}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Allmänna definitionen av RK4-metoden}{9}{subsection.2.4.1}%
-\contentsline {chapter}{Appendix}{I}{equation.2.4.28}%
-\contentsline {section}{A - Härledning av Euler-Lagrange ekvationen (\ref {eq:euler_lagrange_equation})}{I}{chapter*.6}%
+\contentsline {section}{\numberline {2.4}Numerisk metod för att lösa differentialekvationer}{9}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Behandling av dubbelpendelns rörelseekvationer för att möjliggöra RK4-metoden}{9}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Allmänna definitionen av RK4-metoden}{9}{subsection.2.4.2}%
+\contentsline {chapter}{Metod/Numerisk simulering}{10}{equation.2.4.28}%
+\contentsline {section}{\numberline {3.1}Behandling av rörelseekvationerna inför simulering}{10}{section.3.1}%
+\contentsline {chapter}{Appendix}{I}{equation.3.1.7}%
+\contentsline {section}{A - Härledning av Euler-Lagrange ekvationen (\ref {eq:euler_lagrange_equation})}{I}{equation.Alph0.0.2}%
