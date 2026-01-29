@@ -166,7 +166,7 @@ Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna mellan den lodräta linjen 
 
 Härledningen utgår från figur \ref{fig:double_pendulum_schematic}, där dubbelpendeln ritats in i ett koordinatsystem där origo utgår från vridpunkten $\nu$. De punktformiga massorna $m_1$ och $m_2$ har koordinaterna $(x_1,y_1)$ respektive $(x_2,y_2)$.
 
-Vi kan beskriva punkterna $x_1$, $x_2$, $y_1$ och $y_2$ går att beskriva genom trigonometri enligt:
+Vi kan beskriva punkterna $x_1$, $x_2$, $y_1$ och $y_2$ genom trigonometri enligt:
 \begin{align}
     x_1 & = l_1 \sin{\theta_1} \label{eq:x_1}                      \\
     y_1 & = -l_1\cos{\theta_1} \label{eq:y_1}                      \\
@@ -203,7 +203,7 @@ Vi kan också bestämma dubbelpendelns kinetiska energi $T$ enligt:
     &\quad + \left.\dot{\theta}_2^2l_2^2\left(\sin^2{\theta_2} + \cos^2{\theta_2}\right) 2\dot{\theta}_1\dot{\theta}_2l_1l_2\left(\cos{\theta_1}\cos{\theta_2} + \sin{\theta_1}\sin{\theta_2}\right)\right). \notag
 \end{align}
 
-Eftersom $\sin^2{\theta} + \cos^2{\theta} = 1$ och $\cos(\theta_1 - \theta_2) = \cos{\theta_1}\cos{\theta_2} + \sin{\theta_1}\sin{\theta_2}$ (trigonometriska ettan respektive subtraktionsformeln för cosinus) kan vi förenkla uttrycket till:
+Eftersom $\sin^2{\theta} + \cos^2{\theta} = 1$ och $\cos{\theta_1}\cos{\theta_2} + \sin{\theta_1}\sin{\theta_2} = \cos(\theta_1 - \theta_2)$ (trigonometriska ettan respektive subtraktionsformeln för cosinus) kan vi förenkla uttrycket till:
 
 \begin{equation}
     T = \frac{1}{2}m_1\dot{\theta}_1^2l_1^2 + \frac{1}{2}m_2\left(\dot{\theta}_1^2l_1^2 + \dot{\theta}_2^2l_2 + 2\dot{\theta}_1\dot{\theta}_2l_1l_2\cos(\theta_1-\theta_2)\right). \label{eq:T/kinetic_energy_simplified}
