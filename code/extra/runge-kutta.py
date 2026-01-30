@@ -2,6 +2,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.animation import FuncAnimation
 
+## code based on euler.py
+## but reconverted to runge-kutta method as to increase accuracy
+
 the1 = float(eval(input("Ange startvinkeln för theta_1: ")))
 the2 = float(eval(input("Ange startvinkeln för theta_2: ")))
 ome1 = 0
@@ -25,41 +28,46 @@ x2pos = []
 y2pos = []
 
 while t0 < t_tot + h:
-  #calculate coordinates of pendulum
-  ## calculates coordinates of mass 1
-  x1 = l_1*np.sin(the1)
-  x1pos.append(x1)
-  y1 = -1 * l_1 * np.cos(the1)
-  y1pos.append(y1)
+    #calculate coordinates of pendulum
+    ## calculates coordinates of mass 1
+    x1 = l_1*np.sin(the1)
+    x1pos.append(x1)
+    y1 = -1 * l_1 * np.cos(the1)
+    y1pos.append(y1)
 
-  
-  ## calculates coordinates of mass 2
-  x2 = l_1*np.sin(the1) + l_2*np.sin(the2)
-  x2pos.append(x2)
-  y2 = -1 * l_1*np.cos(the1) - l_2*np.cos(the2)
-  y2pos.append(y2)
+    
+    ## calculates coordinates of mass 2
+    x2 = l_1*np.sin(the1) + l_2*np.sin(the2)
+    x2pos.append(x2)
+    y2 = -1 * l_1*np.cos(the1) - l_2*np.cos(the2)
+    y2pos.append(y2)
 
-  #calculate coefficients
-  dtheta = the1 - the2
-  alpha = (m_1 + m_2)*l_1
-  beta = m_2*l_2*np.cos(dtheta)
-  gamma = m_2*l_1*np.cos(dtheta)
-  delta = m_2*l_2
-  epsilon = -1*m_2*l_2 * ome2**2 * np.sin(dtheta) - (m_1 + m_2)*g*np.sin(the1)
-  zeta = m_2*l_2 * ome1**2 * np.sin(dtheta) - m_2*g*np.sin(the2)
+    #calculate coefficients
+    dtheta = the1 - the2
+    alpha = (m_1 + m_2)*l_1
+    beta = m_2*l_2*np.cos(dtheta)
+    gamma = m_2*l_1*np.cos(dtheta)
+    delta = m_2*l_2
+    epsilon = -1*m_2*l_2 * ome2**2 * np.sin(dtheta) - (m_1 + m_2)*g*np.sin(the1)
+    zeta = m_2*l_2 * ome1**2 * np.sin(dtheta) - m_2*g*np.sin(the2)
 
-  domega1 = (delta*epsilon - beta*zeta)/(alpha*delta - beta*gamma) # calculates new domega1
-  domega2 = (alpha*zeta - gamma*epsilon)/(alpha*delta - beta*gamma) # calculates new domega2
+    domega1 = (delta*epsilon - beta*zeta)/(alpha*delta - beta*gamma) # calculates new domega1
+    domega2 = (alpha*zeta - gamma*epsilon)/(alpha*delta - beta*gamma) # calculates new domega2
 
-  ome1 = ome1 + h*domega1 # calculates new omega1
-  ome2 = ome2 + h*domega2 # calculates new omega2
+    ome1 = ome1 + h*domega1 # calculates new omega1
+    ome2 = ome2 + h*domega2 # calculates new omega2
 
-  the1 = the1 + h*ome1 # calculates new theta1
-  the1_list.append(the1)
-  the2 = the2 + h*ome2 # calculates new theta2
-  the2_list.append(the2)
+    the1 = the1 + h*ome1 # calculates new theta1
+    the1_list.append(the1)
+    the2 = the2 + h*ome2 # calculates new theta2
+    the2_list.append(the2)
 
-  t0 += h
+    t0 += h
+
+    ## calculates everything for ome1
+
+
+
 
 fig, axis = plt.subplots()
 animated_l_1 = axis.plot([],[], color='blue')[0]
@@ -77,8 +85,6 @@ plt.grid()
 frames=round((t_tot/25)*10**3)
 animation_const = len(x2pos)/frames
 
-path_limit = 10
-
 def update_data(frame):    
     animated_l_1.set_data([0,x1pos[round(frame*animation_const)]], [0, y1pos[round(frame*animation_const)]])
     animated_l_2.set_data([x1pos[round(frame*animation_const)], x2pos[round(frame*animation_const)]], [y1pos[round(frame*animation_const)], y2pos[round(frame*animation_const)]])
@@ -86,7 +92,7 @@ def update_data(frame):
     animated_m1.set_data([x1pos[round(frame*animation_const)]],[y1pos[round(frame*animation_const)]])
     animated_m2.set_data([x2pos[round(frame*animation_const)]],[y2pos[round(frame*animation_const)]])
 
-    animated_path_m2.set_data(x2pos[:round(frame*animation_const):path_limit], y2pos[:round(frame*animation_const):path_limit]) ## :10 as to limit amount of points in path
+    animated_path_m2.set_data(x2pos[:round(frame*animation_const)], y2pos[:round(frame*animation_const)])
     return animated_l_1, animated_l_2,  animated_m1, animated_m2, animated_path_m2
 
 
