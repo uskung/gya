@@ -7,8 +7,8 @@ from matplotlib.animation import FuncAnimation
 
 the1 = float(eval(input("Ange startvinkeln för theta_1: ")))
 the2 = float(eval(input("Ange startvinkeln för theta_2: ")))
-ome1 = -20
-ome2 = -2000
+ome1 = 0
+ome2 = 0
 h = 0.00005
 t_tot= float(input("Hur många sekunder vill du simulera pendeln? "))
 t0 = 0
@@ -70,49 +70,27 @@ while t0 < t_tot + h:
 
     t0 += h
 
-    ## calculates everything for ome1
-
-
-
-
 fig, axis = plt.subplots()
-animated_l_1 = axis.plot([],[], color='blue')[0]
-animated_l_2 = axis.plot([],[], color='blue')[0]
-animated_m1 = axis.plot([],[], 'o', markersize=15, color='red')[0]
-animated_m2 = axis.plot([],[],'o', markersize=15,color='red')[0]
-animated_path_m2 = axis.plot([],[], color='red')[0]
+animated_theta = axis.plot([], [],'o', markersize=10, color='blue')[0]
 
-axis.set_xlim([-2.5,2.5])
-axis.set_ylim([-2.5,2.5])
-axis.set_title('Animering av dubbelpendel - RK4 NY')
+axis.set_xlim([-16,16])
+axis.set_ylim([-16,16])
+axis.set_title('Animering av dubbelpendel - Parametric plot')
 
 plt.grid()
 
 frames=round((t_tot/25)*10**3)
-animation_const = len(x2pos)/frames
+animation_const = len(the1_list)/frames
 
-path_splice_limit=10
-
-def update_data(frame):    
-    animated_l_1.set_data([0,x1pos[round(frame*animation_const)]], [0, y1pos[round(frame*animation_const)]])
-    animated_l_2.set_data([x1pos[round(frame*animation_const)], x2pos[round(frame*animation_const)]], [y1pos[round(frame*animation_const)], y2pos[round(frame*animation_const)]])
-
-    animated_m1.set_data([x1pos[round(frame*animation_const)]],[y1pos[round(frame*animation_const)]])
-    animated_m2.set_data([x2pos[round(frame*animation_const)]],[y2pos[round(frame*animation_const)]])
-
-    animated_path_m2.set_data(x2pos[:round(frame*animation_const):path_splice_limit], y2pos[:round(frame*animation_const):path_splice_limit])
-    return animated_l_1, animated_l_2,  animated_m1, animated_m2, animated_path_m2
+def update_data(frame):
+    animated_theta.set_data([the1_list[round(frame*animation_const)]], [the2_list[round(frame*animation_const)]])
+    return (animated_theta,)
 
 animation = FuncAnimation(
     fig=fig,
     func=update_data,
     frames=frames,
     interval=25,
-) 
+)
 
-# ax = plt.gca()
-# ax.set_xlim([-2.5, 2.5])
-# ax.set_ylim([-2.5, 2.5])
-
-# plt.plot(xpos,ypos)
 plt.show()
