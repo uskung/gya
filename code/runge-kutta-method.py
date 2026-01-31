@@ -7,8 +7,8 @@ from matplotlib.animation import FuncAnimation
 
 the1 = float(eval(input("Ange startvinkeln för theta_1: ")))
 the2 = float(eval(input("Ange startvinkeln för theta_2: ")))
-ome1 = -20
-ome2 = -2000
+ome1 = 0
+ome2 = 0
 h = 0.00005
 t_tot= float(input("Hur många sekunder vill du simulera pendeln? "))
 t0 = 0
