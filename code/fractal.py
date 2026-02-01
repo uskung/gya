@@ -5,7 +5,7 @@ from matplotlib.animation import FuncAnimation
 ## code based on euler.py
 ## but reconverted to runge-kutta method as to increase accuracy
 
-h = float(input("Ange step size för RK4: ")) ## t.ex h=0.0005
+h = float(input("Ange step size för RK4: ")) ## t.ex h=0.001
 t_tot = float(input("Ange tiden för varje simulering: "))
 ome1 = 0
 ome2 = 0
@@ -16,7 +16,7 @@ the2_list = []
 stable_list = []
 unstable_list = []
 
-the1_splice = np.linspace(-1*np.pi,np.pi,10)
+the1_splice = np.linspace(-1*np.pi, np.pi,10)
 the2_splice = np.linspace(-1*np.pi, np.pi, 10)
 
 for i in range(len(the1_splice)):
@@ -24,34 +24,14 @@ for i in range(len(the1_splice)):
         the1_list.append(the1_splice[i])
         the2_list.append(the2_splice[k])
 
+print("Done splice of theta values")
+
 unstable_the1_list = []
 unstable_the2_list = []
 stable_the1_list = []
 stable_the2_list = []
 
-for i in range(len(the1_list)):
-    the1 = the1_list[i]
-    the2 = the2_list[i]
-
-    t0 = 0
-
-    m_1 = 1
-    m_2 = 1
-    l_1 = 1
-    l_2 = 1
-    g = 9.82
-
-    x1pos = []
-    y1pos = []
-    next_x1pos = []
-    next_y1pos = []
-
-    x1_next = 0
-    y1_next = 0
-
-    state = np.array([the1, ome1, the2, ome2])
-
-    def derivative(state):
+def derivative(state):
         the1, ome1, the2, ome2 = state
         dtheta = the1 - the2
         alpha = (m_1 + m_2)*l_1
@@ -65,6 +45,20 @@ for i in range(len(the1_list)):
         domega2 = (alpha*zeta - gamma*epsilon)/(alpha*delta - beta*gamma) # calculates new domega2
 
         return np.array([ome1, domega1, ome2, domega2])
+
+m_1 = 1
+m_2 = 1
+l_1 = 1
+l_2 = 1
+g = 9.82
+
+for i in range(len(the1_list)):
+    the1 = the1_list[i]
+    the2 = the2_list[i]
+
+    t0 = 0
+
+    state = np.array([the1, ome1, the2, ome2])
 
     stable_marker = True
     while t0 < t_tot + h:
@@ -88,11 +82,9 @@ for i in range(len(the1_list)):
         y1_next = -1 * l_1 * np.cos(state_next[0])
         #next_y1pos.append(y1_next)
 
-        # ## calculates coordinates of mass 2
-        # x2 = l_1*np.sin(state[0]) + l_2*np.sin(state[2])
-        # x2pos.append(x2)
-        # y2 = -1 * l_1*np.cos(state[0]) - l_2*np.cos(state[2])
-        # y2pos.append(y2)
+        state = state_next
+
+        t0 += h
 
         if (x1 < 0 and y1 > 0) and (x1_next > 0 and y1_next > 0):
             # unstable_the1_list.append([the1])
@@ -103,10 +95,6 @@ for i in range(len(the1_list)):
             # unstable_list.append([the1,the2])
             stable_marker = False
             break
-
-        state = state_next
-
-        t0 += h
 
     if stable_marker:
         stable_the1_list.append(the1)

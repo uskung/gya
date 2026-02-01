@@ -25,19 +25,18 @@ För att lösa mer komplexa problem, som exempelvis dubbelpendeln, är det oftar
 
 \subsection{Principen om minsta verkan}
 
-Lagrange-mekanik bygger sin grund på \emph{principen om minsta verkan}, eller ibland även kallad \emph{principen om stationär verkan} \cite{Manton2013PrincipleLeastAction}. Denna princip säger därmed att ett objekt kommer alltid att sträva efter att färdas den väg som minimerar den fysikaliska \emph{verkan} \cite[s.2]{Manton2013PrincipleLeastAction}. Detta är så fysikaliskt grundläggande, att nästan all fysik kan härledas ur detta grundläggande antagande \cite{Manton2013PrincipleLeastAction}. Givet att vi har ett objekt $Q$ som rör sig längs $x(t)$, där $Q$ har startpunkten $x(t_1)$ och slutpunkten $x(t_2)$, samt att $T(t)$ och $V(t)$ är objektets rörelse respektive kinetiska energi, definieras verkan $S$ inom tidsintervallet $t_1\leq t \leq t_2$ som \cite[s.10]{Manton2013PrincipleLeastAction}:
+Lagrange-mekanik bygger sin grund på \emph{principen om minsta verkan}, eller ibland även kallad \emph{principen om stationär verkan} \cite{Manton2013PrincipleLeastAction}. Denna princip säger att ett objekt kommer alltid att sträva efter att färdas den väg som minimerar den fysikaliska \emph{verkan} \cite[s.2]{Manton2013PrincipleLeastAction}. Givet att vi har ett objekt $Q$ som rör sig längs $x(t)$, där $Q$ har startpunkten $x(t_1)$ och slutpunkten $x(t_2)$, samt att $T(t)$ och $V(t)$ är objektets rörelse respektive kinetiska energi, definieras verkan $S$ inom tidsintervallet $t_1\leq t \leq t_2$ som \cite[s.10]{Manton2013PrincipleLeastAction}:
 \begin{equation} 
     S = \int_{t_1}^{t_2}\left(T(t)-V(t)\right)dt. \label{eq:action_definition}
 \end{equation} 
-Denna storhet har enheten [Js] och har dimensionerna (Energi $\times$ Tid) \cite[s.221]{book:classical_mechanics:Morin2007}. Själva differensen $T(t) - V(t)$ visar sig vara så relevant inom fysiken, att den har fått namnet 'the Lagrangian' och brukar betecknas $\Lagr$ \cite[s.218]{book:classical_mechanics:Morin2007}, det vill säga
-\footnote{Varför $\Lagr = T(t) - V(t)$ är så viktigt i (\ref{eq:action_definition}) kan tyckas konstigt. Varför ska \emph{differensen} av kinetiska och potentiella energin spela någon roll? }:
+Denna storhet har enheten [Js] och har dimensionerna (Energi $\times$ Tid) \cite[s.221]{book:classical_mechanics:Morin2007}. Själva differensen $T(t) - V(t)$ visar sig vara så relevant inom fysiken, att den har fått namnet 'the Lagrangian' och brukar betecknas $\Lagr$ \cite[s.218]{book:classical_mechanics:Morin2007}, det vill säga:
 \begin{equation} %% todo: varför är det [2] på referensen?
     \Lagr = T - V
     \label{eq:Lagr}
 \end{equation}
-Principen om minsta verkan säger att fysikens lagar strävar efter att förminska (\ref{eq:action_definition})\footnote{Egentligen, rent matematiskt, strävar verkan $S$ att hitta ett stationärt värde av $S$, det vill säga en lokal extrem- eller terrasspunkt till grafen av $S$. Detta är anledningen varför principen även kallas för \emph{principen om stationär verkan} \cite[s.222]{book:classical_mechanics:Morin2007}.}.
+Principen om minsta verkan säger att fysikens lagar alltid kommer att sträva efter att förminska ekvation (\ref{eq:action_definition})\footnote{Egentligen, rent matematiskt, strävar verkan $S$ att hitta ett stationärt värde av $S$, det vill säga en lokal extrem- eller terrasspunkt till grafen av $S$. Detta är anledningen varför principen även kallas för \emph{principen om stationär verkan} \cite[s.222]{book:classical_mechanics:Morin2007}.}. Detta är så fysikaliskt grundläggande, att nästan all fysik kan härledas ur detta grundläggande antagande \cite{Manton2013PrincipleLeastAction}. \footnote{Men varför vill naturen alltid förminska $S$? Problemet med att besvara denna fråga är att svaret innefattar kvantmekanik, vilket ligger utanför denna rapports syfte/omfattning. För en enklare förklaring om varför principen om minsta verkan, se \cite[s. 225]{book:classical_mechanics:Morin2007}. } 
 
-För att bestämma ett objekts väg som minimerar verkan $S$ används \emph{Euler-Lagrange ekvationen} \cite[s. 222]{book:classical_mechanics:Morin2007} se ekvation (\ref{eq:euler_lagrange_equation}). I ekvation (\ref{eq:euler_lagrange_equation}) är $i = 1,2,3,\ldots$, och normalt sätt betecknar de olika koordinataxlarna i systemet. Härledning av (\ref{eq:euler_lagrange_equation}) ges i appendix A. %% TODO, härledning av euler-lagrange ekvationen
+För att bestämma ett objekts väg som minimerar verkan $S$ används \emph{Euler-Lagrange ekvationen} \cite[s. 222]{book:classical_mechanics:Morin2007}, se ekvation (\ref{eq:euler_lagrange_equation}). I ekvation (\ref{eq:euler_lagrange_equation}) är $i = 1,2,3,\ldots$, och normalt sätt betecknar de olika koordinataxlar, eller i detta fall olika vinklar. Härledning av (\ref{eq:euler_lagrange_equation}) ges i appendix A. %% TODO, härledning av euler-lagrange ekvationen
 \begin{equation}
     \frac{d}{dt}\left( \frac{\partial \Lagr}{\partial \dot{q_{i}}} \right) - \frac{\partial \Lagr}{\partial q_{i}} = 0,
     \label{eq:euler_lagrange_equation}
@@ -65,9 +64,9 @@ För att bestämma ett objekts väg som minimerar verkan $S$ används \emph{Eule
 
 
 \section{Dubbelpendeln}
-Om två vanliga enkla pendlar är sammankopplade sägs de bilda en dubbelpendel, se figur \ref{fig:double_pendulum_schematic}. Den första pendeln består av en punktformig massa $m_1$ som är kopplad till en masslös pinne med längden $l_1$, vilket sitter i en friktionslös rotationspunkt $\nu$. Den andra pendeln består också av en punktformig massa $m_2$ som är kopplad till en masslös pinne med längden $l_2$. Denna andra pendeln har sin friktionslösa rotationspunkt tillkopplad i $m_1$. Den enda kraften som verkar på respektive massa är tyngdkraften.
+Om två vanliga enkla pendlar är sammankopplade sägs de bilda en dubbelpendel, se figur \ref{fig:double_pendulum_schematic}. Den första pendeln består av en punktformig massa $m_1$ som är kopplad till en masslös pinne med längden $l_1$, vilket sitter i en friktionslös rotationspunkt $\nu$. Den andra pendeln består också av en punktformig massa $m_2$ som är kopplad till en masslös pinne med längden $l_2$. Denna andra pendeln har sin friktionslösa rotationspunkt tillkopplad i $m_1$. Den enda kraften som verkar på respektive massa är tyngdkraften och alla annan friktion från t.ex luftmotstånd försummas.
 
-Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna mellan den lodräta linjen från rotationspunkten och den faktiska positionen av pendeln, se figur \ref{fig:double_pendulum_schematic}. Vinklarna $\theta_1$ och $\theta_2$ är inte begränsade mellan $-\pi \leq \theta_{1,2} \leq \pi$, dvs de kan rotera fritt hur många varv som helst runt rotationspunkterna. Detta innebär självklart att respektive pendel inte kommer påverkas av varandra, t.ex att de inte kan slå in i varandra.
+Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna mellan den lodräta linjen från rotationspunkten och den faktiska positionen av pendeln, se figur \ref{fig:double_pendulum_schematic}. Vinklarna $\theta_1$ och $\theta_2$ är inte begränsade mellan $-\pi \leq \theta_{1,2} \leq \pi$, dvs de kan rotera fritt hur många varv som helst runt rotationspunkterna. Det antas även här att varje pendel inte kan kollidera med varandra. 
 
 \begin{figure}[h!]
     \centering
@@ -166,7 +165,7 @@ Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna mellan den lodräta linjen 
 
 Härledningen utgår från figur \ref{fig:double_pendulum_schematic}, där dubbelpendeln ritats in i ett koordinatsystem där origo utgår från vridpunkten $\nu$. De punktformiga massorna $m_1$ och $m_2$ har koordinaterna $(x_1,y_1)$ respektive $(x_2,y_2)$.
 
-Vi kan beskriva punkterna $x_1$, $x_2$, $y_1$ och $y_2$ genom trigonometri enligt:
+Vi kan beskriva punkterna $x_1$, $x_2$, $y_1$ och $y_2$ genom trigonometriska samband enligt:
 \begin{align}
     x_1 & = l_1 \sin{\theta_1} \label{eq:x_1}                      \\
     y_1 & = -l_1\cos{\theta_1} \label{eq:y_1}                      \\
@@ -174,7 +173,7 @@ Vi kan beskriva punkterna $x_1$, $x_2$, $y_1$ och $y_2$ genom trigonometri enlig
     y_2 & = -l_1\cos{\theta_1} - l_2\cos{\theta_2}. \label{eq:y_2}
 \end{align}
 
-Eftersom tidsderivatan av sträcka/position är hastighet, kan vi få hastigheterna $\dot{x}_1$, $\dot{y}_1$, $\dot{x}_2$ och $\dot{y}_2$ enligt:
+Eftersom tidsderivatan av position är hastighet, kan vi få hastigheterna $\dot{x}_1$, $\dot{y}_1$, $\dot{x}_2$ och $\dot{y}_2$ enligt:
 \begin{align}
     \dot{x}_1 & = \dot{\theta}_1 l_1 \cos{\theta_1} \label{eq:x_1:dot}                   \\
     \dot{y}_1 & = \dot{\theta}_1 l_1 \sin{\theta_1} \label{eq:y_1:dot}                   \\
@@ -236,7 +235,7 @@ Deriveringsregler för att bestämma $\frac{\partial \Lagr}{\partial \theta_1}$ 
     \frac{\partial \Lagr}{\partial \theta_1} &= -m_2l_1l_2\dot{\theta}_1\dot{\theta}_2\sin(\theta_1-\theta_2) - \left(m_1 + m_2\right)gl_1\sin{\theta_1}. \label{eq:Lagr_derivative:repsect_theta_1}
 \end{align}
 
-Insättning av (\ref{eq:Lagr_time_derivative:respect_theta_1_dot}) och (\ref{eq:Lagr_derivative:repsect_theta_1}) i (\ref{eq:euler_lagrange_equation}) ger att:
+Insättning av (\ref{eq:Lagr_time_derivative:respect_theta_1_dot}) och (\ref{eq:Lagr_derivative:repsect_theta_1}) i (\ref{eq:euler_lagrange_equation}) ger:
 \begin{align}
     0 &=\left(m_1+m_2\right)l_1^2\ddot{\theta}_1 + m_2l_1l_2\ddot{\theta}_2\cos(\theta_1-\theta_2)
     - m_2l_1l_2\dot{\theta}_1\dot{\theta}_2\sin(\theta_1-\theta_2) \notag \\
@@ -246,7 +245,7 @@ Insättning av (\ref{eq:Lagr_time_derivative:respect_theta_1_dot}) och (\ref{eq:
     &\quad + \left(m_1 + m_2\right)g\sin{\theta_1}. \label{eq:theta_1_solution}
 \end{align}
 
-Därmed är (\ref{eq:theta_1_solution}) ekvationen som beskriver vinkeln $\theta_1$ i dubbelpendeln. Nu ska vi istället lösa Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) fast för $q_i = \theta_2$.
+Därmed är (\ref{eq:theta_1_solution}) ekvationen som beskriver vinkeln $\theta_1$ i dubbelpendeln. Nu ska Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) lösas fast för $q_i = \theta_2$.
 
 Deriveringsregler för att bestämma $ \frac{\partial \Lagr}{\partial \dot{\theta}_2}$ och $\frac{d}{dt}\!\left(\frac{\partial \Lagr}{\partial \dot{\theta}_2}\right)$ ger:
 \begin{align}
@@ -291,7 +290,7 @@ Däremot har (\ref{eq:equations_of_motion_with_omega}) problemet att de tredje o
 
 \section{Numerisk metod för att lösa differentialekvationer}
 
-Differentialekvationerna i (\ref{eq:equations_of_motion}) är icke-linjära och av andra ordningen, vilket gör de omöjligt att lösa rent analystiskt. Därmed måste ekvationerna lösas numeriskt, vilket kan göras med \emph{Runge-Kuttametoden}. Denna metod\footnote{Egentligen är Runge-Kuttametoden är en familj av metoder, då den innefattar ett flertal metoder, bland annat Eulers stegmetod. Däremot brukas RK4-metoden menas med ''Runge-Kuttametoden'', vilket är den vi kommer att använda här. För vidare förklaring, se \cite{Runge-Kutta_method/Butcher2008}. }, utvecklat och namngivet av de tyska matematikerna Carl Runge och Martin Willhelm Kutta, är en kraftfull metod för att lösa ordinära differentialekvationer (ODE:s) \cite[s. 93]{Runge-Kutta_method/Butcher2008}. 
+Differentialekvationerna i (\ref{eq:equations_of_motion}) är icke-linjära och av andra ordningen, vilket gör de omöjligt att lösa rent analystiskt. Därmed måste ekvationerna lösas numeriskt, vilket kan göras med \emph{Runge-Kuttametoden}. Denna metod\footnote{Egentligen är Runge-kuttametoden är en familj av metoder, då den innefattar ett flertal metoder, bland annat Eulers stegmetod. Däremot brukas RK4-metoden menas med ''Runge-Kuttametoden'', vilket är den vi kommer att använda här. För vidare förklaring, se \cite{Runge-Kutta_method/Butcher2008}. }, utvecklat och namngivet av de tyska matematikerna Carl Runge och Martin Willhelm Kutta, är en kraftfull metod för att lösa ordinära differentialekvationer (ODE:s) \cite[s. 93]{Runge-Kutta_method/Butcher2008}. 
 
 Runge-Kuttametoden ger oss en metod att lösa ekvationer på formen $x' = f(t,x)$, där $x(t)$ är den okända funktionen. Metoden bygger på att approximera lösningen stegvis med ett litet $h$, men istället för att bara beräkna nuvarande lutningen (det som sker i Eulers metod), så beräknas flera mellanliggande lutningar där ett viktad medelvärde istället dras. 
 

@@ -91,7 +91,7 @@ plt.grid()
 frames=round((t_tot/25)*10**3)
 animation_const = len(x2pos)/frames
 
-path_splice_limit=10
+path_splice_limit=200
 
 def update_data(frame):    
     animated_l_1.set_data([0,x1pos[round(frame*animation_const)]], [0, y1pos[round(frame*animation_const)]])

@@ -13,6 +13,10 @@
 \contentsline {subsection}{\numberline {2.4.1}Behandling av dubbelpendelns rörelseekvationer för att möjliggöra RK4-metoden}{9}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Allmänna definitionen av RK4-metoden}{9}{subsection.2.4.2}%
 \contentsline {chapter}{Metod/Numerisk simulering}{10}{equation.2.4.28}%
-\contentsline {section}{\numberline {3.1}Behandling av rörelseekvationerna inför simulering}{10}{section.3.1}%
-\contentsline {chapter}{Appendix}{I}{equation.3.1.7}%
+\contentsline {section}{\numberline {3.1}Teori}{10}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Runge-Kuttametoden (RK4-metoden)}{10}{subsection.3.1.1}%
+\contentsline {subsubsection}{Definitionen av RK4-metoden}{10}{subsubsection*.7}%
+\contentsline {subsection}{\numberline {3.1.2}Behandling av rörelseekvationerna för RK4-metoden}{11}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Tillämpning av Runge-kuttametoden i numerisk simulering}{12}{section.3.2}%
+\contentsline {chapter}{Appendix}{I}{section.3.2}%
 \contentsline {section}{A - Härledning av Euler-Lagrange ekvationen (\ref {eq:euler_lagrange_equation})}{I}{equation.Alph0.0.2}%
