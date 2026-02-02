@@ -22,10 +22,10 @@ g = 9.82
 
 the1_list = [the1]
 the2_list = [the2]
-x1pos = []
-y1pos = []
-x2pos = []
-y2pos = []
+# x1pos = []
+# y1pos = []
+# x2pos = []
+# y2pos = []
 
 state = np.array([the1, ome1, the2, ome2])
 
@@ -48,15 +48,15 @@ while t0 < t_tot + h:
     #calculate coordinates of pendulum
     ## calculates coordinates of mass 1
     x1 = l_1*np.sin(state[0])
-    x1pos.append(x1)
-    y1 = -1 * l_1 * np.cos(state[0])
-    y1pos.append(y1)
+    # x1pos.append(x1)
+    # y1 = -1 * l_1 * np.cos(state[0])
+    # y1pos.append(y1)
 
-    ## calculates coordinates of mass 2
-    x2 = l_1*np.sin(state[0]) + l_2*np.sin(state[2])
-    x2pos.append(x2)
-    y2 = -1 * l_1*np.cos(state[0]) - l_2*np.cos(state[2])
-    y2pos.append(y2)
+    # ## calculates coordinates of mass 2
+    # x2 = l_1*np.sin(state[0]) + l_2*np.sin(state[2])
+    # x2pos.append(x2)
+    # y2 = -1 * l_1*np.cos(state[0]) - l_2*np.cos(state[2])
+    # y2pos.append(y2)
 
     K1 = derivative(state)
     K2 = derivative(state + h/2 * K1)
@@ -70,27 +70,44 @@ while t0 < t_tot + h:
 
     t0 += h
 
-fig, axis = plt.subplots()
-animated_theta = axis.plot([], [],'o', markersize=10, color='blue')[0]
+# fig, axis = plt.subplots()
+# animated_theta = axis.plot([], [],'o', markersize=10, color='blue')[0]
+# animated_path = axis.plot([], [], color='red')[0]
 
-axis.set_xlim([-16,16])
-axis.set_ylim([-16,16])
-axis.set_title('Animering av dubbelpendel - Parametric plot')
+# axis.set_xlim([-3,3])
+# axis.set_ylim([-3,3])
+# axis.set_title('Animering av dubbelpendel - Parametric plot')
 
-plt.grid()
+# plt.grid()
 
-frames=round((t_tot/25)*10**3)
-animation_const = len(the1_list)/frames
+# frames=round((t_tot/25)*10**3)
+# animation_const = len(the1_list)/frames
+# path_splice_limit = 500
 
-def update_data(frame):
-    animated_theta.set_data([the1_list[round(frame*animation_const)]], [the2_list[round(frame*animation_const)]])
-    return (animated_theta,)
+# def update_data(frame):
+#     animated_theta.set_data([the1_list[round(frame*animation_const)]], [the2_list[round(frame*animation_const)]])
+#     #animated_path.set_data(the1_list[max(0,round(frame*animation_const)-path_splice_limit):round(frame*animation_const)], the2_list[max(0,round(frame*animation_const)-path_splice_limit):round(frame*animation_const)])
+#     animated_path.set_data(the1_list[:round(frame*animation_const)], the2_list[:round(frame*animation_const)])
+#     return (animated_theta,)
 
-animation = FuncAnimation(
-    fig=fig,
-    func=update_data,
-    frames=frames,
-    interval=25,
-)
+# animation = FuncAnimation(
+#     fig=fig,
+#     func=update_data,
+#     frames=frames,
+#     interval=25,
+# )
+
+xaxis_limit = abs(np.array(the1_list)).max() + 0.01 * abs(np.array(the1_list)).max()
+yaxis_limit = abs(np.array(the2_list)).max() + 0.01 * abs(np.array(the2_list)).max()
+
+ax = plt.gca()
+ax.set_xlim([-xaxis_limit, xaxis_limit])
+ax.set_ylim([-yaxis_limit, yaxis_limit])
+ax.set_title(f'Parametric plot - the1={the1}, the2={the2}, t={t_tot}s')
+plt.plot(the1_list,the2_list, color='red')
+
+plt.grid(True)
+
+plt.savefig(f'parametric_plot_the1={the1}_the2={the2}_t={t_tot}s.png', dpi=300)
 
 plt.show()

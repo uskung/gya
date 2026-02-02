@@ -14,7 +14,7 @@
 \usepackage{siunitx}
 \usepackage[backend=biber,sorting=none]{biblatex} %Imports biblatex package
 \usepackage{tikz}
-\usepackage[margin=1.2in]{geometry}
+\usepackage[margin=1.2in]{geometry} %% 1.2 in
 \usepackage{titlesec}
 \usetikzlibrary{math, arrows.meta}
 \addbibresource{ref.bib}
@@ -41,6 +41,7 @@
 \graphicspath{{./images/}}
 
 \begin{document}
+\renewcommand{\abstractname}{Abstract}
 \begin{titlepage}
 	\centering
 	\includegraphics[width=0.3\textwidth]{europaskolan.png}\par\vspace{1cm}
@@ -75,10 +76,16 @@
 \addcontentsline{toc}{chapter}{Metod/Numerisk simulering}
 \input{metod.tex}
 \newpage
+\addcontentsline{toc}{chapter}{Resultat}
+\input{resultat.tex}
+\newpage
+\addcontentsline{toc}{chapter}{Diskussion}
+\input{diskussion.tex}
+\newpage
 \addcontentsline{toc}{chapter}{Appendix}
 \input{appendix.tex}
 \addcontentsline{toc}{section}{A - Härledning av Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation})}
+\addcontentsline{toc}{section}{B - Kod för simulering av dubbelpendeln}
 \printbibliography[title=Litteraturförteckning]
-
 
 \end{document}

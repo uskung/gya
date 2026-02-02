@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.14)  31 JAN 2026 16:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.14)  2 FEB 2026 12:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -933,10 +933,10 @@ Package hyperref Info: Link coloring ON on input line 43.
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-<./images/europaskolan.png, id=81, 133.4586pt x 133.4586pt>
+<./images/europaskolan.png, id=96, 133.4586pt x 133.4586pt>
 File: ./images/europaskolan.png Graphic file (type png)
 <use ./images/europaskolan.png>
-Package pdftex.def Info: ./images/europaskolan.png  used on input line 46.
+Package pdftex.def Info: ./images/europaskolan.png  used on input line 47.
 (pdftex.def)             Requested size: 127.21939pt x 127.22276pt.
  [1
 
@@ -946,33 +946,37 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.3 \end{abstract}
                    [1]) (./main.toc
-Overfull \hbox (15.95825pt too wide) in paragraph at lines 13--13
+Overfull \hbox (15.95825pt too wide) in paragraph at lines 14--14
  [][] [][][]\OT1/cmr/m/n/12 (-20) Behandling av dub-bel-pen-delns r[]orelseekvationer f[]or att m[]ojligg[]ora 
  []
-
-)
-\tf@toc=\write6
-\openout6 = `main.toc'.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.68 \newpage
-              [1
+l.23 ...line {chapter}{Diskussion}{16}{chapter*.8}
+                                                  % [1
 
-] (./inledning.tex [2
+])
+\tf@toc=\write6
+\openout6 = `main.toc'.
 
-]) [3] (./teoretisk_genomgång.tex [4
+ [2] (./inledning.tex [3
 
-] [5] [6] [7] [8]) [9] (./metod.tex [10
+]) [4] (./teoretisk_genomgång.tex [5
 
-] [11])
-Overfull \hbox (16.34833pt too wide) in paragraph at lines 150--77
+] [6] [7] [8] [9]) [10] (./metod.tex [11
+
+] [12]
+Overfull \hbox (16.34833pt too wide) in paragraph at lines 150--151
 \OT1/cmr/m/n/12 (-20) F[]or att ut-nytt-ja Runge-kuttametoden de-fi-ni-e-ra-des en till-st^^Wandsvektor $\OT1/cmr/bx/n/12 (-20) X \OT1/cmr/m/n/12 (-20) = [\OML/cmm/m/it/12 ^^R[]; ![]; ^^R[]; ![]\OT1/cmr/m/n/12 (-20) ]$,
  []
 
-[12] (./appendix.tex) [1
+) [13] [14] (./resultat.tex) [15
+
+] (./diskussion.tex) [16
+
+] (./appendix.tex) [1
 
 ]
 Package microtype Info: Loading generic protrusion settings for font family
@@ -987,24 +991,24 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F1AF62B4EC12A2FD92299B20D9FF7813;4125.
+(rerunfilecheck)             Checksum: BAEA1244B475DEA07A010CD319DF0FED;4697.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39645 strings out of 474116
- 805190 string characters out of 5743681
+ 39671 strings out of 474116
+ 805555 string characters out of 5743681
  1956187 words of memory out of 5000000
- 61238 multiletter control sequences out of 15000+600000
- 573522 words of font info for 161 fonts, out of 8000000 for 9000
+ 61249 multiletter control sequences out of 15000+600000
+ 573571 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,15n,117p,1076b,1762s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,15n,117p,1076b,2143s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (16 pages, 304856 bytes).
+Output written on main.pdf (20 pages, 307512 bytes).
 PDF statistics:
- 435 PDF objects out of 1000 (max. 8388607)
- 373 compressed objects within 4 object streams
- 98 named destinations out of 1000 (max. 500000)
- 51882 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 473 PDF objects out of 1000 (max. 8388607)
+ 406 compressed objects within 5 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 51914 words of extra memory for PDF output out of 61914 (max. 10000000)
 

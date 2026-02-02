@@ -147,4 +147,6 @@ Det går därmed att avläsa från (\ref{matrix:separated_for_omega_1_omega_2}) 
 \end{equation}
 
 \section{Tillämpning av Runge-kuttametoden i numerisk simulering}
-För att utnyttja Runge-kuttametoden definierades en tillståndsvektor $\mathbf{X} = [\theta_1, \omega_1, \theta_2, \omega_2]$, och därmed ger att 
+För att utnyttja Runge-kuttametoden definierades en tillståndsvektor $\mathbf{X} = [\theta_1, \omega_1, \theta_2, \omega_2]$, vilket därmed ger att $\dot{\mathbf{X}} = [\omega_1, \dot{\omega}_1, \omega_2, \dot{\omega}_2]$. Ett program skrevs sedan i programmeringsspråket Python för att simulera en dubbelpendel genom Runge-kuttametoden. Dessutom skrevs kod som visar två pendlar samtidigt med nästan exakt samma startvillkor, men att vinklarna skiljer sig åt med en liten procentskillnad i storleksordningen $10^{-4}$. 
+
+Kod skrevs även för att plotta vinklarna $\theta_1$ och $\theta_2$ för pendlar som simulerades i 15 sekunder. Detta genomfördes för pendlar med olika startvinklar, alltså för pendlar med vinklar sådan att deras potentiella energi är olika. 

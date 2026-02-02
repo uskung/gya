@@ -12,7 +12,7 @@ ome2 = 0
 h = 0.0001
 t_tot= float(input("Hur många sekunder vill du simulera pendeln? "))
 t0 = 0
-procent_difference = float(input("Hur många procent av vinklarna vill du förändra i andra pendeln? "))
+procent_difference = float(input("Hur många procent av vinklarna vill du förändra i andra pendeln? "))/100
 
 m_1 = 1
 m_2 = 1
@@ -26,7 +26,6 @@ x1pos = []
 y1pos = []
 x2pos = []
 y2pos = []
-
 
 state = np.array([the1, ome1, the2, ome2])
 
