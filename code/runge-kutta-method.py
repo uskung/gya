@@ -2,9 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.animation import FuncAnimation
 
-## code based on euler.py
-## but reconverted to runge-kutta method as to increase accuracy
-
 the1 = float(eval(input("Ange startvinkeln för theta_1: ")))
 the2 = float(eval(input("Ange startvinkeln för theta_2: ")))
 ome1 = 0
@@ -12,7 +9,6 @@ ome2 = 0
 h = 0.00005
 t_tot= float(input("Hur många sekunder vill du simulera pendeln? "))
 t0 = 0
-t_frames = np.linspace(0,40,501)
 
 m_1 = 1
 m_2 = 1
@@ -70,11 +66,6 @@ while t0 < t_tot + h:
 
     t0 += h
 
-    ## calculates everything for ome1
-
-
-
-
 fig, axis = plt.subplots()
 animated_l_1 = axis.plot([],[], color='blue')[0]
 animated_l_2 = axis.plot([],[], color='blue')[0]
@@ -84,7 +75,7 @@ animated_path_m2 = axis.plot([],[], color='red')[0]
 
 axis.set_xlim([-2.5,2.5])
 axis.set_ylim([-2.5,2.5])
-axis.set_title('Animering av dubbelpendel - RK4 NY')
+axis.set_title('Animering av dubbelpendel - RK4 - t=0s')
 
 plt.grid()
 
@@ -101,6 +92,7 @@ def update_data(frame):
     animated_m2.set_data([x2pos[round(frame*animation_const)]],[y2pos[round(frame*animation_const)]])
 
     animated_path_m2.set_data(x2pos[:round(frame*animation_const):path_splice_limit], y2pos[:round(frame*animation_const):path_splice_limit])
+    axis.set_title(f'Animering av dubbelpendel - RK4 - t={frame*animation_const*h:.1f}s')
     return animated_l_1, animated_l_2,  animated_m1, animated_m2, animated_path_m2
 
 animation = FuncAnimation(

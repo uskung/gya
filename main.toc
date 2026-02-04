@@ -10,15 +10,15 @@
 \contentsline {section}{\numberline {2.3}Dubbelpendeln}{6}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Härledning av dubbelpendels rörelseekvationer}{7}{subsection.2.3.1}%
 \contentsline {subsubsection}{Tillämpning av Euler-Lagrange ekvationen}{8}{subsubsection*.5}%
-\contentsline {section}{\numberline {2.4}Numerisk metod för att lösa differentialekvationer}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Numerisk metod för att lösa differentialekvationer}{9}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Behandling av dubbelpendelns rörelseekvationer för att möjliggöra RK4-metoden}{10}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Allmänna definitionen av RK4-metoden}{10}{subsection.2.4.2}%
-\contentsline {chapter}{Metod/Numerisk simulering}{11}{equation.2.4.28}%
+\contentsline {chapter}{Metod/Numerisk simulering}{11}{equation.2.4.27}%
 \contentsline {section}{\numberline {3.1}Teori}{11}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Runge-Kuttametoden (RK4-metoden)}{11}{subsection.3.1.1}%
 \contentsline {subsubsection}{Definitionen av RK4-metoden}{11}{subsubsection*.7}%
 \contentsline {subsection}{\numberline {3.1.2}Behandling av rörelseekvationerna för RK4-metoden}{12}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Tillämpning av Runge-kuttametoden i numerisk simulering}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Numeriska metoder}{13}{section.3.2}%
 \contentsline {chapter}{Resultat}{15}{section.3.2}%
 \contentsline {chapter}{Diskussion}{16}{chapter*.8}%
 \contentsline {chapter}{Appendix}{I}{chapter*.9}%

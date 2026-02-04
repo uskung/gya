@@ -275,18 +275,18 @@ Detta innebär att (\ref{eq:theta_2_solution}) är den ekvation som beskriver vi
         0 &= m_2l_2\ddot{\theta}_2 + m_2l_1\ddot{\theta}_1\cos(\theta_1 - \theta_2) - m_2l_1\dot{\theta}_1^2\sin(\theta_1 - \theta_2) + m_2g\sin{\theta_2}. \label{eq:equations_of_motion}
 \end{cases} \end{equation}
 
-Ekvationssystemet i (\ref{eq:equations_of_motion}) går inte att lösa analytiskt, utan måste skrivas om för att få (\ref{eq:equations_of_motion}) till en ordinär första ordningens differentialekvation (ODE). Detta kan göras genom att införa nya beteckningar för vinkelhastigheterna $\omega_1$ och $\omega_2$, dvs $\omega_1 = \dot{\theta_1}$ och $\omega_2 = \dot{\theta_2}$. Därmed kan (\ref{eq:equations_of_motion}) skrivas om enligt ekvationssystemet (\ref{eq:equations_of_motion_with_omega}). 
+% Ekvationssystemet i (\ref{eq:equations_of_motion}) går inte att lösa analytiskt, utan måste skrivas om för att få (\ref{eq:equations_of_motion}) till en ordinär första ordningens differentialekvation (ODE). Detta kan göras genom att införa nya beteckningar för vinkelhastigheterna $\omega_1$ och $\omega_2$, dvs $\omega_1 = \dot{\theta_1}$ och $\omega_2 = \dot{\theta_2}$. Därmed kan (\ref{eq:equations_of_motion}) skrivas om enligt ekvationssystemet (\ref{eq:equations_of_motion_with_omega}). 
 
-\begin{equation}
-    \begin{cases}
-        \dot{\theta}_1 = \omega_1  \\
-        \dot{\theta}_2 = \omega_2 \\
-        \dot{\omega}_1 = - \frac{m_2l_2\dot{\omega}_2^2\cos(\theta_1 - \theta_2) + m_1l_2\omega_2^2\sin(\theta_1-\theta_2) + (m_1+m_2)g\sin{\theta_1}}{(m_1+m_2)l_1} \\
-        \dot{\omega}_2 = - \frac{m_2l_1\dot{\omega}_1\cos(\theta_1-\theta_2) - m_2l_1\omega^2_1\sin(\theta_1 - \theta_2 + m_2g\sin{\theta_2})}{m_2l_2} \label{eq:equations_of_motion_with_omega}
-    \end{cases}
-\end{equation}
+% \begin{equation}
+%     \begin{cases}
+%         \dot{\theta}_1 = \omega_1  \\
+%         \dot{\theta}_2 = \omega_2 \\
+%         \dot{\omega}_1 = - \frac{m_2l_2\dot{\omega}_2^2\cos(\theta_1 - \theta_2) + m_1l_2\omega_2^2\sin(\theta_1-\theta_2) + (m_1+m_2)g\sin{\theta_1}}{(m_1+m_2)l_1} \\
+%         \dot{\omega}_2 = - \frac{m_2l_1\dot{\omega}_1\cos(\theta_1-\theta_2) - m_2l_1\omega^2_1\sin(\theta_1 - \theta_2 + m_2g\sin{\theta_2})}{m_2l_2} \label{eq:equations_of_motion_with_omega}
+%     \end{cases}
+% \end{equation}
 
-Däremot har (\ref{eq:equations_of_motion_with_omega}) problemet att de tredje och fjärde ekvationerna är sammankopplade (på engelska, 'coupled'). Dessa två måste separeras för att kunna lösas numeriskt.  
+% Däremot har (\ref{eq:equations_of_motion_with_omega}) problemet att de tredje och fjärde ekvationerna är sammankopplade (på engelska, 'coupled'). Dessa två måste separeras för att kunna lösas numeriskt.  
 
 \section{Numerisk metod för att lösa differentialekvationer}
 

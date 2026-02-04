@@ -63,10 +63,10 @@ fig, axis = plt.subplots()
 # animated_m1 = axis.plot([],[], 'o', markersize=15, color='red')[0]
 # animated_m2 = axis.plot([],[],'o', markersize=15,color='red')[0]
 # animated_path_m2 = axis.plot([],[], color='red')[0]
-animated_the1 = axis.plot([], [],'o', markersize=5, color='blue')[0]
-animated_the1_path = axis.plot([],[], color='blue')[0]
-animated_the2 = axis.plot([], [], 'o', markersize=5, color='red')[0]
-animated_the2_path = axis.plot([],[], color='red')[0]
+# animated_the1 = axis.plot([], [],'o', markersize=5, color='blue')[0]
+# animated_the1_path = axis.plot([],[], color='blue')[0]
+# animated_the2 = axis.plot([], [], 'o', markersize=5, color='red')[0]
+# animated_the2_path = axis.plot([],[], color='red')[0]
 
 the1_max = abs(np.array(the1_list)).max() + 0.01 * abs(np.array(the1_list)).max()
 the2_max = abs(np.array(the2_list)).max() + 0.01 * abs(np.array(the2_list)).max()
@@ -77,7 +77,7 @@ else:
 
 axis.set_xlim([0,t_tot])
 
-axis.set_title('Animering av dubbelpendel - RK4 NY')
+axis.set_title(f'angles_as_functions_of_time_plot, the1={the1}_the2={the2}_t={t_tot}s')
 
 plt.grid()
 
@@ -87,32 +87,37 @@ animation_const = len(the1_list)/frames
 path_splice_limit=200
 t_list = np.linspace(0, t_tot, len(the1_list))
 
-def update_data(frame):    
-    # animated_l_1.set_data([0,x1pos[round(frame*animation_const)]], [0, y1pos[round(frame*animation_const)]])
-    # animated_l_2.set_data([x1pos[round(frame*animation_const)], x2pos[round(frame*animation_const)]], [y1pos[round(frame*animation_const)], y2pos[round(frame*animation_const)]])
+# def update_data(frame):    
+#     # animated_l_1.set_data([0,x1pos[round(frame*animation_const)]], [0, y1pos[round(frame*animation_const)]])
+#     # animated_l_2.set_data([x1pos[round(frame*animation_const)], x2pos[round(frame*animation_const)]], [y1pos[round(frame*animation_const)], y2pos[round(frame*animation_const)]])
 
-    # animated_m1.set_data([x1pos[round(frame*animation_const)]],[y1pos[round(frame*animation_const)]])
-    # animated_m2.set_data([x2pos[round(frame*animation_const)]],[y2pos[round(frame*animation_const)]])
+#     # animated_m1.set_data([x1pos[round(frame*animation_const)]],[y1pos[round(frame*animation_const)]])
+#     # animated_m2.set_data([x2pos[round(frame*animation_const)]],[y2pos[round(frame*animation_const)]])
 
-    # animated_path_m2.set_data(x2pos[:round(frame*animation_const):path_splice_limit], y2pos[:round(frame*animation_const):path_splice_limit])
-    # return animated_l_1, animated_l_2,  animated_m1, animated_m2, animated_path_m2
-    animated_the1.set_data([t_list[round(frame*animation_const)]], [the1_list[round(frame*animation_const)]])
-    animated_the1_path.set_data([t_list[:round(frame*animation_const):path_splice_limit]], [the1_list[:round(frame*animation_const):path_splice_limit]])
-    animated_the2.set_data([t_list[round(frame*animation_const)]], [the2_list[round(frame*animation_const)]])
-    animated_the2_path.set_data([t_list[:round(frame*animation_const):path_splice_limit]], [the2_list[:round(frame*animation_const):path_splice_limit]])
-    return animated_the1, animated_the2, animated_the1_path, animated_the2_path
+#     # animated_path_m2.set_data(x2pos[:round(frame*animation_const):path_splice_limit], y2pos[:round(frame*animation_const):path_splice_limit])
+#     # return animated_l_1, animated_l_2,  animated_m1, animated_m2, animated_path_m2
+#     animated_the1.set_data([t_list[round(frame*animation_const)]], [the1_list[round(frame*animation_const)]])
+#     animated_the1_path.set_data([t_list[:round(frame*animation_const):path_splice_limit]], [the1_list[:round(frame*animation_const):path_splice_limit]])
+#     animated_the2.set_data([t_list[round(frame*animation_const)]], [the2_list[round(frame*animation_const)]])
+#     animated_the2_path.set_data([t_list[:round(frame*animation_const):path_splice_limit]], [the2_list[:round(frame*animation_const):path_splice_limit]])
+#     return animated_the1, animated_the2, animated_the1_path, animated_the2_path
 
 
-animation = FuncAnimation(
-    fig=fig,
-    func=update_data,
-    frames=frames,
-    interval=25,
-) 
+# animation = FuncAnimation(
+#     fig=fig,
+#     func=update_data,
+#     frames=frames,
+#     interval=25,
+# ) 
 
 # ax = plt.gca()
 #axis.set_xlim([0, 2.5])
 # axis.set_ylim([-2.5, 2.5])
 
 # plt.plot(xpos,ypos)
+plt.plot(t_list, the1_list, label='Theta 1')
+plt.plot(t_list, the2_list, label='Theta 2')
+
+plt.savefig(f'angles_as_functions_of_time_plot, the1={the1}_the2={the2}_t={t_tot}s.png', dpi=300)
+
 plt.show()

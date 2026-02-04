@@ -146,7 +146,17 @@ Det går därmed att avläsa från (\ref{matrix:separated_for_omega_1_omega_2}) 
     \end{cases} \label{eq:equations_of_motions_final}
 \end{equation}
 
-\section{Tillämpning av Runge-kuttametoden i numerisk simulering}
-För att utnyttja Runge-kuttametoden definierades en tillståndsvektor $\mathbf{X} = [\theta_1, \omega_1, \theta_2, \omega_2]$, vilket därmed ger att $\dot{\mathbf{X}} = [\omega_1, \dot{\omega}_1, \omega_2, \dot{\omega}_2]$. Ett program skrevs sedan i programmeringsspråket Python för att simulera en dubbelpendel genom Runge-kuttametoden. Dessutom skrevs kod som visar två pendlar samtidigt med nästan exakt samma startvillkor, men att vinklarna skiljer sig åt med en liten procentskillnad i storleksordningen $10^{-4}$. 
+\section{Numeriska metoder}
+För att utnyttja Runge-kuttametoden definierades en tillståndsvektor \\$\mathbf{X} = [\theta_1, \omega_1, \theta_2, \omega_2]$, vilket därmed ger att $\dot{\mathbf{X}} = [\omega_1, \dot{\omega}_1, \omega_2, \dot{\omega}_2]$. Ett program skrevs sedan i programmeringsspråket Python för att simulera först en dubbelpendel genom Eulers-stegmetod, sedan via Runge-Kuttametoden. Dessa jämfördes för att demonstrera effektiviteten av respektive metod. 
 
-Kod skrevs även för att plotta vinklarna $\theta_1$ och $\theta_2$ för pendlar som simulerades i 15 sekunder. Detta genomfördes för pendlar med olika startvinklar, alltså för pendlar med vinklar sådan att deras potentiella energi är olika. 
+Sedan skrevs kod där två pendlar simulerades med RK4-metoden, där den andra pendelns hade 0.001\% större begynnelsevinklar relativt den första pendeln. Detta genomfördes för tre huvudsakliga energitillstånd\footnote{Det vill säga att de startades med olika vinklar, sådan att de får olika mängd potentiell energi. Ju större startvinklar, desto större blir potentiella energin i systemet} under 30 sekunder genom att starta vinklarna med vinklarna enligt tabell (TODO).
+
+Därefter plottades vinklarna $\theta_1$ och $\theta_2$ parametriskt mot varandra enligt startvinklarna i tabell (TODO). Dessutom plottades vinklarna tillsammans mot varandra som funktion av tiden enligt samma värden i tabell (TODO). 
+
+Därefter simulerades en pendel med RK4-metoden under 30 sekunder enligt startvinklarna i tabell (TODO), där vinklarna $\theta_1$ och $\theta_2$ plottades parametriskt mot varandra. Dessutom plottades även samma vinklar tillsammans som funktion av tiden, enligt samma begynnelsevinklar i tabell (TODO). 
+
+% Dessutom skrevs kod som visar två pendlar samtidigt med nästan exakt samma startvillkor, men att vinklarna skiljer sig åt med en liten procentskillnad i storleksordningen $10^{-4}$. 
+
+% Kod skrevs även för att plotta vinklarna $\theta_1$ och $\theta_2$ för pendlar som simulerades i 15 sekunder. Detta genomfördes för pendlar med olika startvinklar, alltså för pendlar med vinklar sådan att deras potentiella energi är olika. 
+
+
