@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.14)  4 FEB 2026 16:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.14)  5 FEB 2026 23:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -933,7 +933,7 @@ Package hyperref Info: Link coloring ON on input line 43.
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-<./images/europaskolan.png, id=96, 133.4586pt x 133.4586pt>
+<./images/europaskolan.png, id=100, 133.4586pt x 133.4586pt>
 File: ./images/europaskolan.png Graphic file (type png)
 <use ./images/europaskolan.png>
 Package pdftex.def Info: ./images/europaskolan.png  used on input line 47.
@@ -954,7 +954,7 @@ Overfull \hbox (15.95825pt too wide) in paragraph at lines 14--14
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.23 ...line {chapter}{Diskussion}{16}{chapter*.8}
+l.23 ...ine {chapter}{Diskussion}{16}{chapter*.10}
                                                   % [1
 
 ])
@@ -986,24 +986,24 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0BB383360C53195E10430919C836A02C;4492.
+(rerunfilecheck)             Checksum: 6C4BCB7D841E56853A8C8D51684305B1;4661.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39666 strings out of 474116
- 805482 string characters out of 5743681
+ 39682 strings out of 474116
+ 805745 string characters out of 5743681
  1956187 words of memory out of 5000000
- 61248 multiletter control sequences out of 15000+600000
- 573463 words of font info for 160 fonts, out of 8000000 for 9000
+ 61256 multiletter control sequences out of 15000+600000
+ 573613 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,117p,1076b,2143s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (20 pages, 305618 bytes).
+Output written on main.pdf (20 pages, 308644 bytes).
 PDF statistics:
- 469 PDF objects out of 1000 (max. 8388607)
- 402 compressed objects within 5 object streams
- 105 named destinations out of 1000 (max. 500000)
- 51914 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 480 PDF objects out of 1000 (max. 8388607)
+ 411 compressed objects within 5 object streams
+ 107 named destinations out of 1000 (max. 500000)
+ 51922 words of extra memory for PDF output out of 61914 (max. 10000000)
 
