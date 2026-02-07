@@ -9,6 +9,23 @@ Resultatet av simuleringarna som beskrevs i sektion \ref{section:numeriska_metod
         \centering
         \begin{subfigure}[b]{0.45\linewidth}
             \centering
+            \includegraphics[scale=0.55]{combined_euler_rk4_plot_at_t=0.0s_the1=0.5_the2=0.5.png}
+            \caption{Startposition vid $t$=0 s.}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[scale=0.55]{combined_euler_rk4_plot_at_t=60.0s_the1=0.5_the2=0.5.png}
+            \caption{Position vid $t$=60 s.}
+        \end{subfigure}
+    \end{adjustwidth}
+    \caption{Jämförelse mellan Eulers stegmetod och RK4-metoden, den den blåa pendeln representerar Eulers stegmetod och den röda pendeln representerar RK4-metoden. Båda pendlarna hade startvinklarna $\theta_1 = 0.5$ och $\theta_2 = 0.5$, enligt tabell \ref{tab:euler_rk4_comparision}. Eftersom metoderna aldrig divergerar går det inte att se den röda pendeln. Streckade linjerna motsvarar färdvägen av pendeln de senaste två sekunderna}. 
+\end{figure}
+
+\begin{figure}[ht]
+    \begin{adjustwidth}{-2.5cm}{-2.5cm}
+        \centering
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
             \includegraphics[scale=0.55]{combined_euler_rk4_plot_at_t=0.0s_the1=2.5_the2=2.5.png}
             \caption{Startposition vid $t$ = 0 s.}
         \end{subfigure}
@@ -28,6 +45,6 @@ Resultatet av simuleringarna som beskrevs i sektion \ref{section:numeriska_metod
             \includegraphics[scale=0.55]{combined_euler_rk4_plot_at_t=6.0s_the1=2.5_the2=2.5.png}
             \caption{Position vid $t$ = 6 s.}
         \end{subfigure}
-        \caption{Jämförelse mellan Eulers stegmetod och RK4-metoden, där den blåa pendeln representerar Eulers stegmetod och den röda pendeln representerar RK4-metoden. Båda pendlarna hade startvinklarna $\theta_1 = 2.5$ och $\theta_2 = 2.5$ enligt tabell \ref{tab:euler_rk4_comparision}. Vid simuleringen hade båda metoderna steglängden 0.00005 s. }
+        \caption{Jämförelse mellan Eulers stegmetod och RK4-metoden, där den blåa pendeln representerar Eulers stegmetod och den röda pendeln representerar RK4-metoden. Båda pendlarna hade startvinklarna $\theta_1 = 2.5$ och $\theta_2 = 2.5$ enligt tabell \ref{tab:euler_rk4_comparision}. Vid simuleringen hade båda metoderna steglängden 0.00005 s. De streckade linjerna representerar färdvägen för pendeln under de senaste 2 sekunderna.}
     \end{adjustwidth}
 \end{figure}

@@ -171,6 +171,40 @@
       \field{title}{Numerical Methods for Ordinary Differential Equations}
       \field{year}{2008}
     \endentry
+    \entry{Allard2015DoublePendulum/Runge-Kutta-definition}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b15cd608ab9f2f78b3d63d2e1d27b1f7}{%
+           family={Allard},
+           familyi={A\bibinitperiod},
+           given={John\bibnamedelima Jr.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {John Allard Jr.'s Blog}%
+      }
+      \strng{namehash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
+      \strng{fullhash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
+      \strng{bibnamehash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
+      \strng{authorbibnamehash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
+      \strng{authornamehash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
+      \strng{authorfullhash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{4}
+      \field{month}{3}
+      \field{note}{Hämtad: 2026-01-25}
+      \field{title}{Simulating a Double Pendulum – Part 1: Theory and Derivation}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.jhallard.com/blog/double_pendulum.html
+      \endverb
+      \verb{url}
+      \verb https://www.jhallard.com/blog/double_pendulum.html
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

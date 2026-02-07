@@ -2,6 +2,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.animation import FuncAnimation
 
+plt.rc('font', size = 11, family='serif')
+plt.rc('text', usetex=True)
+plt.rc('font', serif='Computer Modern')
+
 the1_gbl = float(eval(input("Ange startvinkeln för theta_1: ")))
 the2_gbl = float(eval(input("Ange startvinkeln för theta_2: ")))
 ome1_gbl = 0
@@ -42,17 +46,16 @@ if t_tot == 0: ### if t_tot is 0, only plot the starting position of the pendulu
     plt.plot(x2pos_euler[-1], y2pos_euler[-1], marker='o', markersize=8, label='Euler', color='blue') ## draws mass 2
 
     ### plots legend, title and labels
-    plt.legend()
+    plt.legend(loc='upper right')
     #plt.title(f'Jämförelse av RK4 och Euler - t={t_tot}s')
-    plt.xlabel(' x-axel [m]')
-    plt.ylabel('y-axel [m]')
+    plt.xlabel(' $x$-axel [m]')
+    plt.ylabel('$y$-axel [m]')
     ############################
     ## sets limits and grid
     ax = plt.gca()
     ax.set_xlim([-2.5, 2.5])
     ax.set_ylim([-2.5, 2.5])
     plt.grid()
-
 else: ## if t_tot is not 0, calculate the positions for both methods for the whole time and plot the final position and path for the last 2 seconds
     ## eulers method
     def euler_step():
@@ -177,10 +180,10 @@ else: ## if t_tot is not 0, calculate the positions for both methods for the who
     steps_last2s = int(2 / h)
 
     # Draw path for last 2 seconds for mass 2 for rk4 method
-    plt.plot(x2pos_rk4[-steps_last2s:], y2pos_rk4[-steps_last2s:], color='red', ls = ':', lw = '1',label='RK4 färdväg (senaste 2s)')
+    plt.plot(x2pos_rk4[-steps_last2s:], y2pos_rk4[-steps_last2s:], color='red', ls = ':', lw = '1')
 
     # Draw path for last 2 seconds for mass 2 for euler method
-    plt.plot(x2pos_euler[-steps_last2s:], y2pos_euler[-steps_last2s:], color='blue', ls = ':', lw = '1', label='Euler färdväg (senaste 2s)')
+    plt.plot(x2pos_euler[-steps_last2s:], y2pos_euler[-steps_last2s:], color='blue', ls = ':', lw = '1')
     ################################
 
     ########################
@@ -205,10 +208,10 @@ else: ## if t_tot is not 0, calculate the positions for both methods for the who
 
     ############################
     ### plots legend, title and labels
-    plt.legend()
+    plt.legend(loc='upper right')
     #plt.title(f'Jämförelse av RK4 och Euler - t={t_tot}s')
-    plt.xlabel(' x-axel [m]')
-    plt.ylabel('y-axel [m]')
+    plt.xlabel(' $x$-axel [m]')
+    plt.ylabel('$y$-axel [m]')
     ############################
     ## sets limits and grid
     ax = plt.gca()

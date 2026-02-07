@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1769941700.91159 "main.bcf" "main.bbl" "main" 1770471740.36733 0
-  "main.bcf" 1770471740.26508 108543 83798ca53e28aeb5bc82c88a1d6bd43d "pdflatex"
+["biber main"] 1770472285.44871 "main.bcf" "main.bbl" "main" 1770474138.16724 0
+  "main.bcf" 1770474138.06586 108543 83798ca53e28aeb5bc82c88a1d6bd43d "pdflatex"
   "ref.bib" 1769451744.38011 2660 ae1f9aa7c7a7090480708a30b8249110 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1770471737.98387 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1770471740.36773 0
-  "/Users/Oscar/Skola/Europaskolan/gya/main.tex" 1770470565.03757 2498 9a1c7353445a9ac711dbe2acc323ba14 ""
+["pdflatex"] 1770474135.68598 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1770474138.16762 0
+  "/Users/Oscar/Skola/Europaskolan/gya/main.tex" 1770474084.67288 2498 00c485982942eb2da6448cfe87807fd2 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -221,20 +221,22 @@
   "abstract.tex" 1769510687.09078 57 5f6bbda1bf96b7212455c1b15c3ce8cf ""
   "appendix.tex" 1769941567.52803 1401 bd25beba3135595c6ad7e841f9f2f9aa ""
   "diskussion.tex" 1770471487.70691 49 779be58e1bd9ae81c57222a73fea49ae ""
-  "images/combined_euler_rk4_plot_at_t=0.0s_the1=2.5_the2=2.5.png" 1770470283.8771 44064 5c0f517b4ce95e0d110f18579829b9e5 ""
-  "images/combined_euler_rk4_plot_at_t=2.0s_the1=2.5_the2=2.5.png" 1770470148.89119 95191 a0613b8e0308a1bfc04ae522e0b9ddc1 ""
-  "images/combined_euler_rk4_plot_at_t=4.0s_the1=2.5_the2=2.5.png" 1770470160.4328 102636 74d56e8cbdac0ba291944e3e3557eb8e ""
-  "images/combined_euler_rk4_plot_at_t=6.0s_the1=2.5_the2=2.5.png" 1770470169.65588 97966 e07a483c90ce091dc18a51ea623ccb8e ""
+  "images/combined_euler_rk4_plot_at_t=0.0s_the1=0.5_the2=0.5.png" 1770471808.16923 47901 ef1884b11415ed9bc4060d14b4cf5739 ""
+  "images/combined_euler_rk4_plot_at_t=0.0s_the1=2.5_the2=2.5.png" 1770473155.80529 38994 9fec65e56b76f79df593d8d13f53d4b9 ""
+  "images/combined_euler_rk4_plot_at_t=2.0s_the1=2.5_the2=2.5.png" 1770473517.71824 70165 cf858f90dede0b178ab983d73c1cfd4c ""
+  "images/combined_euler_rk4_plot_at_t=4.0s_the1=2.5_the2=2.5.png" 1770473552.26915 76611 99caa36e028494a978f6e4d9e4d500d3 ""
+  "images/combined_euler_rk4_plot_at_t=6.0s_the1=2.5_the2=2.5.png" 1770473559.09259 72478 a731392beb1722e400e07cd7e0644df7 ""
+  "images/combined_euler_rk4_plot_at_t=60.0s_the1=0.5_the2=0.5.png" 1770473860.21389 50399 f9c897bad11a83a859154265617269ae ""
   "images/europaskolan.png" 1747391382.90967 73643 b1a2ac46de6fa0a21e4d61258d074928 ""
   "inledning.tex" 1770032140.20678 5651 6f4e4ce8af57005ab107ec0bd9d922ef ""
-  "main.aux" 1770471740.25965 11581 db44ed38c956e5cc88f50ce01074e810 "pdflatex"
-  "main.bbl" 1769941703.16432 7956 0b6c7b4776180411c287480c1ef2768e "biber main"
-  "main.out" 1770471740.26238 4661 e1d14c99fce00ae97f0d579fff9f5ab6 "pdflatex"
-  "main.run.xml" 1770471740.2658 2298 3274c65e7617279dbcbf7ae1ef88d128 "pdflatex"
-  "main.tex" 1770470565.03757 2498 9a1c7353445a9ac711dbe2acc323ba14 ""
-  "main.toc" 1770471740.26588 2267 6e72aa78c7f305e9ed939321efdd4896 "pdflatex"
-  "metod.tex" 1770471426.49635 11873 0d7308f79b5a0e7b90c51b2a7996166d ""
-  "resultat.tex" 1770471737.2572 2046 3940183201788687e8e941901d1febf2 ""
+  "main.aux" 1770474138.0602 12257 32f214b859128272c7283f69caf467fe "pdflatex"
+  "main.bbl" 1770472289.20189 7956 0b6c7b4776180411c287480c1ef2768e "biber main"
+  "main.out" 1770474138.0631 4661 5618eeaee1c1f453645d7caf8a019822 "pdflatex"
+  "main.run.xml" 1770474138.06656 2298 3274c65e7617279dbcbf7ae1ef88d128 "pdflatex"
+  "main.tex" 1770474084.67288 2498 00c485982942eb2da6448cfe87807fd2 ""
+  "main.toc" 1770474138.06664 2267 7db596646c439a92c165aa0af7e27423 "pdflatex"
+  "metod.tex" 1770474056.93691 11858 30aa8d0d52c924e58f6d94f78c5a115d ""
+  "resultat.tex" 1770474133.98088 3176 f1a781c43d16bbcedccbf4cf89081150 ""
   "teoretisk_genomgång.tex" 1770218082.76859 25505 1f1dc48d240634ee4762fd9e62f5403c ""
   (generated)
   "main.aux"
