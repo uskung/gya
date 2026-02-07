@@ -43,7 +43,7 @@ if t_tot == 0: ### if t_tot is 0, only plot the starting position of the pendulu
 
     ### plots legend, title and labels
     plt.legend()
-    plt.title(f'Jämförelse av RK4 och Euler - t={t_tot}s')
+    #plt.title(f'Jämförelse av RK4 och Euler - t={t_tot}s')
     plt.xlabel(' x-axel [m]')
     plt.ylabel('y-axel [m]')
     ############################
@@ -206,7 +206,7 @@ else: ## if t_tot is not 0, calculate the positions for both methods for the who
     ############################
     ### plots legend, title and labels
     plt.legend()
-    plt.title(f'Jämförelse av RK4 och Euler - t={t_tot}s')
+    #plt.title(f'Jämförelse av RK4 och Euler - t={t_tot}s')
     plt.xlabel(' x-axel [m]')
     plt.ylabel('y-axel [m]')
     ############################
