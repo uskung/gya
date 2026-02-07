@@ -107,4 +107,7 @@ animation = FuncAnimation(
 # ax.set_ylim([-2.5, 2.5])
 
 # plt.plot(xpos,ypos)
+
 plt.show()
+
+

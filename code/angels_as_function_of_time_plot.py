@@ -118,6 +118,7 @@ t_list = np.linspace(0, t_tot, len(the1_list))
 plt.plot(t_list, the1_list, label='Theta 1')
 plt.plot(t_list, the2_list, label='Theta 2')
 
-plt.savefig(f'angles_as_functions_of_time_plot, the1={the1}_the2={the2}_t={t_tot}s.png', dpi=300)
+
+plt.savefig(f'angles_as_function_of_time_plots/angles_as_functions_of_time_plot, the1={the1}_the2={the2}_t={t_tot}s.png', dpi=300)
 
 plt.show()
