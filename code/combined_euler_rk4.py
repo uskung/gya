@@ -48,13 +48,14 @@ if t_tot == 0: ### if t_tot is 0, only plot the starting position of the pendulu
     ### plots legend, title and labels
     plt.legend(loc='upper right')
     #plt.title(f'Jämförelse av RK4 och Euler - t={t_tot}s')
-    plt.xlabel(' $x$-axel [m]')
-    plt.ylabel('$y$-axel [m]')
+    plt.xlabel(' $x$-position [m]')
+    plt.ylabel('$y$-position [m]')
     ############################
     ## sets limits and grid
     ax = plt.gca()
     ax.set_xlim([-2.5, 2.5])
     ax.set_ylim([-2.5, 2.5])
+    ax.set_aspect('equal', adjustable='box')
     plt.grid()
 else: ## if t_tot is not 0, calculate the positions for both methods for the whole time and plot the final position and path for the last 2 seconds
     ## eulers method
@@ -210,13 +211,14 @@ else: ## if t_tot is not 0, calculate the positions for both methods for the who
     ### plots legend, title and labels
     plt.legend(loc='upper right')
     #plt.title(f'Jämförelse av RK4 och Euler - t={t_tot}s')
-    plt.xlabel(' $x$-axel [m]')
-    plt.ylabel('$y$-axel [m]')
+    plt.xlabel(' $x$-position [m]')
+    plt.ylabel('$y$-position [m]')
     ############################
     ## sets limits and grid
     ax = plt.gca()
     ax.set_xlim([-2.5, 2.5])
     ax.set_ylim([-2.5, 2.5])
+    ax.set_aspect('equal', adjustable='box')
     plt.grid()
     ############################
 

@@ -2,6 +2,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.animation import FuncAnimation
 
+plt.rc('font', size = 11, family='serif')
+plt.rc('text', usetex=True)
+plt.rc('font', serif='Computer Modern')
+
 ## code based on euler.py
 ## but reconverted to runge-kutta method as to increase accuracy
 
@@ -104,10 +108,11 @@ ax = plt.gca()
 ax.set_xlim([-xaxis_limit, xaxis_limit])
 ax.set_ylim([-yaxis_limit, yaxis_limit])
 ax.set_title(f'Parametric plot - the1={the1}, the2={the2}, t={t_tot}s')
+#ax.set_aspect('equal', adjustable='box')
 plt.plot(the1_list,the2_list, color='red')
 
 plt.grid(True)
 
-plt.savefig(f'parametric_plot_the1={the1}_the2={the2}_t={t_tot}s.png', dpi=300)
+plt.savefig(f'parametric_plots/parametric_plot_the1={the1}_the2={the2}_t={t_tot}s.png', dpi=300)
 
 plt.show()

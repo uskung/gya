@@ -2,14 +2,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.animation import FuncAnimation
 
-## code based on euler.py
-## but reconverted to runge-kutta method as to increase accuracy
+plt.rc('font', size = 11, family='serif')
+plt.rc('text', usetex=True)
+plt.rc('font', serif='Computer Modern')
 
 the1 = float(eval(input("Ange startvinkeln för theta_1: ")))
 the2 = float(eval(input("Ange startvinkeln för theta_2: ")))
 ome1 = 0
 ome2 = 0
-h = 0.0001
+h = 0.00005 ## step length in seconds
 t_tot= float(input("Hur många sekunder vill du simulera pendeln? "))
 t0 = 0
 procent_difference = float(input("Hur många procent av vinklarna vill du förändra i andra pendeln? "))/100
@@ -43,6 +44,19 @@ def derivative(state):
     domega2 = (alpha*zeta - gamma*epsilon)/(alpha*delta - beta*gamma) # calculates new domega2
 
     return np.array([ome1, domega1, ome2, domega2])
+
+x1 = l_1*np.sin(state[0])
+x1 = l_1*np.sin(state[0])
+x1pos.append(x1)
+y1 = -1 * l_1 * np.cos(state[0])
+y1pos.append(y1)
+
+## calculates coordinates of mass 2
+x2 = l_1*np.sin(state[0]) + l_2*np.sin(state[2])
+x2pos.append(x2)
+y2 = -1 * l_1*np.cos(state[0]) - l_2*np.cos(state[2])
+y2pos.append(y2)
+
 
 ## first pendulum
 while t0 < t_tot + h:
@@ -106,64 +120,35 @@ while t0 < t_tot + h:
 
     t0 += h
 
-fig, axis = plt.subplots()
-animated1_l_1 = axis.plot([],[], color='blue')[0]
-animated1_l_2 = axis.plot([],[], color='blue')[0]
-animated1_m1 = axis.plot([],[], 'o', markersize=15, color='red')[0]
-animated1_m2 = axis.plot([],[],'o', markersize=15,color='red')[0]
-animated1_path_m2 = axis.plot([],[], color='red')[0]
+steps_last2s = int(2/h) ## calculates how many steps are in the last 5 seconds of the simulation, used to plot only the last 2 seconds of the pendulum movement
 
-animated2_l_1 = axis.plot([], [], color='black')[0]
-animated2_l_2 = axis.plot([],[], color='black')[0]
-animated2_m1 = axis.plot([],[], 'o', markersize=15, color='green')[0]
-animated2_m2 = axis.plot([],[],'o', markersize=15,color='green')[0]
-animated2_path_m2 = axis.plot([],[], color='black')[0]
+# Draw path for last 2 seconds for mass 5 for pendulum 1
+plt.plot(x2pos[-steps_last2s:], y2pos[-steps_last2s:], color='blue', ls = ':', lw = '1')
 
-axis.set_xlim([-2.5,2.5])
-axis.set_ylim([-2.5,2.5])
-axis.set_title('Animering av två dubbelpendlar - RK4 NY')
+# Draw path for last 2 seconds for mass 2 for pendulum 2
+plt.plot(X2pos[-steps_last2s:], Y2pos[-steps_last2s:], color='red', ls = ':', lw = '1')
 
+### pendulum 1
+plt.plot(x1pos[-1], y1pos[-1], color='blue', markersize=8, marker = 'o')
+plt.plot(x2pos[-1], y2pos[-1], color='blue', markersize=8, marker = 'o',label='Pendel 1')
+plt.plot([0,x1pos[-1]], [0,y1pos[-1]], color='blue')
+plt.plot([x1pos[-1], x2pos[-1]], [y1pos[-1], y2pos[-1]], color='blue')
+
+### pendulum 2, has deviation
+plt.plot(X1pos[-1], Y1pos[-1], color='red', markersize=8, marker = 'o')
+plt.plot(X2pos[-1], Y2pos[-1], color='red', markersize=8, marker = 'o', label=f'Pendel 2')
+plt.plot([0,X1pos[-1]], [0,Y1pos[-1]], color='red')
+plt.plot([X1pos[-1], X2pos[-1]], [Y1pos[-1], Y2pos[-1]], color='red')
+
+plt.legend()
+ax = plt.gca()
+ax.set_xlim([-2.5, 2.5])
+ax.set_ylim([-2.5, 2.5])
+ax.set_aspect('equal', adjustable='box')
 plt.grid()
+plt.xlabel('$x$-position (m)')
+plt.ylabel('$y$-position (m)') 
 
-frames=round((t_tot/25)*10**3)
-animation_const = len(x2pos)/frames
+#plt.savefig(f'multiple_pendulums_plots/multiple_pendulums_plot_at_t={t_tot}s_the1={the1}_the2={the2}_procent_diff={procent_difference}.png', dpi=300)
 
-path_splice_limit=200
-
-def update_data(frame):    
-    # first pendulum
-    animated1_l_1.set_data([0,x1pos[round(frame*animation_const)]], [0, y1pos[round(frame*animation_const)]])
-    animated1_l_2.set_data([x1pos[round(frame*animation_const)], x2pos[round(frame*animation_const)]], [y1pos[round(frame*animation_const)], y2pos[round(frame*animation_const)]])
-
-    animated1_m1.set_data([x1pos[round(frame*animation_const)]],[y1pos[round(frame*animation_const)]])
-    animated1_m2.set_data([x2pos[round(frame*animation_const)]],[y2pos[round(frame*animation_const)]])
-
-    animated1_path_m2.set_data(x2pos[:round(frame*animation_const):path_splice_limit], y2pos[:round(frame*animation_const):path_splice_limit])
-
-    
-    # second pendulum
-    animated2_l_1.set_data([0,X1pos[round(frame*animation_const)]], [0, Y1pos[round(frame*animation_const)]])
-    animated2_l_2.set_data([X1pos[round(frame*animation_const)], X2pos[round(frame*animation_const)]], [Y1pos[round(frame*animation_const)], Y2pos[round(frame*animation_const)]])
-
-    animated2_m1.set_data([X1pos[round(frame*animation_const)]],[Y1pos[round(frame*animation_const)]])
-    animated2_m2.set_data([X2pos[round(frame*animation_const)]],[Y2pos[round(frame*animation_const)]])
-
-    animated2_path_m2.set_data(X2pos[:round(frame*animation_const):path_splice_limit], Y2pos[:round(frame*animation_const):path_splice_limit])
-    
-    
-    return animated1_l_1, animated1_l_2,  animated1_m1, animated1_m2, animated1_path_m2, animated2_l_1, animated2_l_2, animated2_m1, animated2_m2, animated2_path_m2
-
-
-animation = FuncAnimation(
-    fig=fig,
-    func=update_data,
-    frames=frames,
-    interval=25,
-) 
-
-# ax = plt.gca()
-# ax.set_xlim([-2.5, 2.5])
-# ax.set_ylim([-2.5, 2.5])
-
-# plt.plot(xpos,ypos)
 plt.show()
