@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1770472285.44871 "main.bcf" "main.bbl" "main" 1770585256.22022 0
-  "main.bcf" 1770585256.11193 108543 83798ca53e28aeb5bc82c88a1d6bd43d "pdflatex"
+["biber main"] 1770472285.44871 "main.bcf" "main.bbl" "main" 1770587916.18548 0
+  "main.bcf" 1770587916.07382 108543 83798ca53e28aeb5bc82c88a1d6bd43d "pdflatex"
   "ref.bib" 1769451744.38011 2660 ae1f9aa7c7a7090480708a30b8249110 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1770585248.1136 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1770585256.22049 0
+["pdflatex"] 1770587907.42332 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1770587916.18586 0
   "/Users/Oscar/Skola/Europaskolan/gya/main.tex" 1770571955.64337 2563 7178edcb11bb218b0527f93ec4dd7ea0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -229,6 +229,7 @@
   "images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png" 1770566113.78981 119753 29dbd10a2f700fb494c32e9388b0b6fb ""
   "images/angles_as_functions_of_time_plot, the1=2.5_the2=2.5_t=30.0s.png" 1770558831.23637 115907 bf64f04b987115a71edc66a36c8f5049 ""
   "images/angles_as_functions_of_time_plot, the1=2.899_the2=1.913_t=30.0s.png" 1770565913.48444 126788 5881154fa47d777c90a112894beac877 ""
+  "images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png" 1770586190.21964 102059 3ac6c018b0ee746de0a6220755b5debc ""
   "images/combined_euler_rk4_plot_at_t=0.0s_the1=0.5_the2=0.5.png" 1770478958.968 44513 fb8487d2996460cd3cb6a741315c29b3 ""
   "images/combined_euler_rk4_plot_at_t=0.0s_the1=2.5_the2=2.5.png" 1770478915.89604 43957 d8d5cd500fad831a04282981be0267e2 ""
   "images/combined_euler_rk4_plot_at_t=2.0s_the1=2.5_the2=2.5.png" 1770478924.23709 68062 2936bc124104893e9524fd4cd7c17bfb ""
@@ -250,17 +251,18 @@
   "images/parametric_plot_the1=2.226_the2=-2.1141853071795866_t=30.0s.png" 1770565603.66255 44383 11d75ec9102909d5a78129bd56f5a94a ""
   "images/parametric_plot_the1=2.5_the2=2.5_t=30.0s.png" 1770548944.90322 88256 0e25acece8dc31c4e44d94455eb2fe8d ""
   "images/parametric_plot_the1=2.899_the2=1.913_t=30.0s.png" 1770565357.77942 44846 3e1396a07ed61de2322695f86159ca46 ""
+  "images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png" 1770586051.21383 85054 f79a4042806db6430952059a93ee6ff9 ""
   "images/runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png" 1770565115.85516 79558 b3263cc4d3a8aa645000882570dbeb01 ""
   "images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png" 1770564750.74577 81212 d67730fc30d45a9b3d3620be61198ffb ""
-  "inledning.tex" 1770032140.20678 5651 6f4e4ce8af57005ab107ec0bd9d922ef ""
-  "main.aux" 1770585256.10659 14381 a3489615429bbdfc02c733fa1e224a94 "pdflatex"
+  "inledning.tex" 1770587815.93126 5649 20b78f5d3edbf3598361a1d50da93ba9 ""
+  "main.aux" 1770587916.06827 14697 7cda1a2a12cdd79a33ad43a64ca06545 "pdflatex"
   "main.bbl" 1770472289.20189 7956 0b6c7b4776180411c287480c1ef2768e "biber main"
-  "main.out" 1770585256.109 4658 363a24352558066972bb16bda473a218 "pdflatex"
-  "main.run.xml" 1770585256.11268 2298 3274c65e7617279dbcbf7ae1ef88d128 "pdflatex"
+  "main.out" 1770587916.07107 4658 4ec71f7ff4bc338cd7987788a9ba96c1 "pdflatex"
+  "main.run.xml" 1770587916.07452 2298 3274c65e7617279dbcbf7ae1ef88d128 "pdflatex"
   "main.tex" 1770571955.64337 2563 7178edcb11bb218b0527f93ec4dd7ea0 ""
-  "main.toc" 1770585256.11274 2254 5949aae0fbde8d78ec15b128465df1ae "pdflatex"
+  "main.toc" 1770587916.07459 2254 2d25f8026c9c88dc5fc396409da29cc6 "pdflatex"
   "metod.tex" 1770543844.12859 11860 1e49c0c1e950e9ce3299bbd24921b149 ""
-  "resultat.tex" 1770585247.97648 12601 c40f493d810c7971999b2fbb17361c85 ""
+  "resultat.tex" 1770587898.66837 13695 3a0967080630bb44154e9e3896127ee8 ""
   "teoretisk_genomgång.tex" 1770218082.76859 25505 1f1dc48d240634ee4762fd9e62f5403c ""
   (generated)
   "main.aux"
