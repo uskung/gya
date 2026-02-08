@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1770472285.44871 "main.bcf" "main.bbl" "main" 1770545856.22873 0
-  "main.bcf" 1770545856.12488 108543 83798ca53e28aeb5bc82c88a1d6bd43d "pdflatex"
+["biber main"] 1770472285.44871 "main.bcf" "main.bbl" "main" 1770558144.13175 0
+  "main.bcf" 1770558144.02876 108543 83798ca53e28aeb5bc82c88a1d6bd43d "pdflatex"
   "ref.bib" 1769451744.38011 2660 ae1f9aa7c7a7090480708a30b8249110 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1770545852.89747 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1770545856.22901 0
+["pdflatex"] 1770558139.36617 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1770558144.13203 0
   "/Users/Oscar/Skola/Europaskolan/gya/main.tex" 1770479067.12645 2498 00c485982942eb2da6448cfe87807fd2 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -234,15 +234,21 @@
   "images/multiple_pendulums_plot_at_t=4.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png" 1770479581.67409 69504 28ecb1d6949938847c22fadcada2a0ca ""
   "images/multiple_pendulums_plot_at_t=6.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png" 1770479562.71956 68065 274c85329cb424f57004b4df5352a0b1 ""
   "images/multiple_pendulums_plot_at_t=8.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png" 1770479542.63299 81526 be2bc4cd26b4cd3071963602ada42070 ""
+  "images/parametric_plot_the1=-0.5_the2=0.3_t=30.0s.png" 1770549344.31996 74068 98f5c8b7d261a4c332c0a2a4a1a488b9 ""
+  "images/parametric_plot_the1=-1.5_the2=1.0_t=30.0s.png" 1770549219.29301 344500 555ae1333f24d050edcf6fa5ded5d7f2 ""
+  "images/parametric_plot_the1=0.42_the2=-1.337_t=30.0s.png" 1770549535.3409 390078 a3358e12d32ab94f5285b0689f74ee5b ""
+  "images/parametric_plot_the1=0.5_the2=0.3_t=30.0s.png" 1770549245.20001 241321 0096ed625877713420f2bb210558d446 ""
+  "images/parametric_plot_the1=0.5_the2=0.5_t=30.0s.png" 1770548921.86988 186497 c52eaf7bd4d5f8172a8a9435cad72ab8 ""
+  "images/parametric_plot_the1=2.5_the2=2.5_t=30.0s.png" 1770548944.90322 88256 0e25acece8dc31c4e44d94455eb2fe8d ""
   "inledning.tex" 1770032140.20678 5651 6f4e4ce8af57005ab107ec0bd9d922ef ""
-  "main.aux" 1770545856.11983 12783 75b2f64121b35fa187148aa1e8a2ac5c "pdflatex"
+  "main.aux" 1770558144.02363 13143 b235f8551d23e9071489eaeeba98ea16 "pdflatex"
   "main.bbl" 1770472289.20189 7956 0b6c7b4776180411c287480c1ef2768e "biber main"
-  "main.out" 1770545856.1223 4661 95be6ced835626f3948c9211a53f2038 "pdflatex"
-  "main.run.xml" 1770545856.12553 2298 3274c65e7617279dbcbf7ae1ef88d128 "pdflatex"
+  "main.out" 1770558144.02616 4661 c7107cc716c5bde48fdf24cd1fc6d028 "pdflatex"
+  "main.run.xml" 1770558144.02941 2298 3274c65e7617279dbcbf7ae1ef88d128 "pdflatex"
   "main.tex" 1770479067.12645 2498 00c485982942eb2da6448cfe87807fd2 ""
-  "main.toc" 1770545856.12559 2267 08c79fa052cd3c5fcb3f4defdc84fc00 "pdflatex"
+  "main.toc" 1770558144.02947 2267 5d6970dc7371b310209351c044ee2339 "pdflatex"
   "metod.tex" 1770543844.12859 11860 1e49c0c1e950e9ce3299bbd24921b149 ""
-  "resultat.tex" 1770545852.78786 5549 611705e5cc8d072f140afb17c0dc0c15 ""
+  "resultat.tex" 1770558134.46058 7551 fd018be6e0ee4479bed83a0e50e2c0e7 ""
   "teoretisk_genomgång.tex" 1770218082.76859 25505 1f1dc48d240634ee4762fd9e62f5403c ""
   (generated)
   "main.aux"

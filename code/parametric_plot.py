@@ -107,9 +107,12 @@ yaxis_limit = abs(np.array(the2_list)).max() + 0.01 * abs(np.array(the2_list)).m
 ax = plt.gca()
 ax.set_xlim([-xaxis_limit, xaxis_limit])
 ax.set_ylim([-yaxis_limit, yaxis_limit])
-ax.set_title(f'Parametric plot - the1={the1}, the2={the2}, t={t_tot}s')
+#ax.set_title(f'Parametric plot - the1={the1}, the2={the2}, t={t_tot}s')
 #ax.set_aspect('equal', adjustable='box')
 plt.plot(the1_list,the2_list, color='red')
+plt.xlabel(' $\\theta_1$ [rad]')
+plt.ylabel('$\\theta_2$ [rad]')
+
 
 plt.grid(True)
 

@@ -19,7 +19,7 @@ Resultatet av simuleringarna som beskrevs i sektion \ref{section:numeriska_metod
             \caption{Position vid $t$ = 60 s.}
         \end{subfigure}
     \end{adjustwidth}
-    \caption{Jämförelse mellan Eulers stegmetod och RK4-metoden, den den blåa pendeln representerar Eulers stegmetod och den röda pendeln representerar RK4-metoden. Båda pendlarna hade startvinklarna $\theta_1 = 0.5$ och $\theta_2 = 0.5$, enligt tabell \ref{tab:euler_rk4_comparision}. Eftersom metoderna aldrig divergerar märkbart går det inte att se den röda pendeln. Steglängden för båda metoderna var 0.00005 s. Streckade linjerna motsvarar färdvägen av pendeln de senaste två sekunderna}. 
+    \caption{Jämförelse mellan Eulers stegmetod och RK4-metoden, den den blåa pendeln representerar Eulers stegmetod och den röda pendeln representerar RK4-metoden. Båda pendlarna hade startvinklarna $\theta_1 = 0.5$ rad och $\theta_2 = 0.5$ rad, enligt tabell \ref{tab:euler_rk4_comparision}. Eftersom metoderna aldrig divergerar märkbart går det inte att se den röda pendeln. Steglängden för båda metoderna var 0.00005 s. Streckade linjerna motsvarar färdvägen av pendeln de senaste två sekunderna}. 
 \end{figure}
 
 \begin{figure}[ht]
@@ -48,7 +48,7 @@ Resultatet av simuleringarna som beskrevs i sektion \ref{section:numeriska_metod
             \includegraphics[scale=0.55]{combined_euler_rk4_plot_at_t=6.0s_the1=2.5_the2=2.5.png}
             \caption{Position vid $t$ = 6 s.}
         \end{subfigure}
-        \caption{Jämförelse mellan Eulers stegmetod och RK4-metoden, där den blåa pendeln representerar Eulers stegmetod och den röda pendeln representerar RK4-metoden. Båda pendlarna hade startvinklarna $\theta_1 = 2.5$ och $\theta_2 = 2.5$ enligt tabell \ref{tab:euler_rk4_comparision}. Vid simuleringen hade båda metoderna steglängden 0.00005 s. De streckade linjerna representerar färdvägen för pendeln under de senaste 2 sekunderna.}
+        \caption{Jämförelse mellan Eulers stegmetod och RK4-metoden, där den blåa pendeln representerar Eulers stegmetod och den röda pendeln representerar RK4-metoden. Båda pendlarna hade startvinklarna $\theta_1 = 2.5$ rad och $\theta_2 = 2.5$ rad enligt tabell \ref{tab:euler_rk4_comparision}. Vid simuleringen hade båda metoderna steglängden 0.00005 s. De streckade linjerna representerar färdvägen för pendeln under de senaste 2 sekunderna.}
     \end{adjustwidth}
 \end{figure}
 
@@ -92,6 +92,47 @@ Resultatet av simuleringarna som beskrevs i sektion \ref{section:numeriska_metod
             \caption{Position vid $t = 10$s.}
         \end{subfigure}
         \captionsetup{width=0.80\linewidth}
-        \caption{Simulering av två pendlar med RK4-metoden. För den första pendeln (blåa) var begynnelsevinklarna $\theta_1 = 2.5$ och $\theta_2 = 2.5$, medan för den andra pendeln (röda) var begynnelsevinklarna 0.00001\% större relativt den första pendeln. De streckade linjerna representerar färdvägen för pendlarna under de senaste 2 sekunderna.}
+        \caption{Simulering av två pendlar med RK4-metoden. För den första pendeln (blåa) var begynnelsevinklarna $\theta_1 = 2.5$ rad och $\theta_2 = 2.5$ rad, medan för den andra pendeln (röda) var begynnelsevinklarna 0.00001\% större relativt den första pendeln. De streckade linjerna representerar färdvägen för pendlarna under de senaste 2 sekunderna.}
+    \end{adjustwidth}
+\end{figure}
+
+\begin{figure}[ht]
+    \vspace{-1.5cm}
+    \begin{adjustwidth}{-2.5cm}{-2.5cm}
+        \centering
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[scale=0.55]{parametric_plot_the1=0.5_the2=0.5_t=30.0s.png}
+            \caption{Startvinklar: $\theta_1 = 0.5$ och $\theta_2 = 0.5$ [rad].}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[scale=0.55]{parametric_plot_the1=2.5_the2=2.5_t=30.0s.png}
+            \caption{Startvinklar: $\theta_1 = 2.5$ och $\theta_2 = 2.5$ [rad].}
+        \end{subfigure}
+
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[scale=0.55]{parametric_plot_the1=-1.5_the2=1.0_t=30.0s.png}
+            \caption{Startvinklar: $\theta_1 = -1.5$ och $\theta_2 = 1.0$ [rad].}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[scale=0.55]{parametric_plot_the1=0.42_the2=-1.337_t=30.0s.png}
+            \caption{Startvinklar: $\theta_1 = 0.42$ och $\theta_2 = -1.337$ [rad].}
+        \end{subfigure}
+
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[scale=0.55]{parametric_plot_the1=0.5_the2=0.3_t=30.0s.png}
+            \caption{Startvinklar: $\theta_1 = 0.5$ och $\theta_2 = 0.3$ [rad].}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[scale=0.55]{parametric_plot_the1=-0.5_the2=0.3_t=30.0s.png}
+            \caption{Startvinklar: $\theta_1 = -0.5$ och $\theta_2 = 0.3$ [rad].}
+        \end{subfigure}
+    \captionsetup{width=0.80\linewidth}
+    \caption{Parametrisk plot av vinklarna $\theta_1$ och $\theta_2$ som funktion av tiden för dubbelpendlar som simulerades 30 s med RK4-metoden. Startvinklarna för $\theta_1$ och $\theta_2$ anges i respektive bildtext.}
     \end{adjustwidth}
 \end{figure}
