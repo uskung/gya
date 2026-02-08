@@ -138,7 +138,7 @@ Resultatet av simuleringarna som beskrevs i sektion \ref{section:numeriska_metod
 \end{figure}
 
 \begin{figure}
-    \vspace{-1.5cm}
+    \vspace{-1.9cm}
     \begin{adjustwidth}{-2.5cm}{-2.5cm}
         \centering
         \begin{subfigure}[b]{0.45\linewidth}
@@ -178,6 +178,44 @@ Resultatet av simuleringarna som beskrevs i sektion \ref{section:numeriska_metod
             \caption{Startvinklar: $\theta_1 = -0.5$ och $\theta_2 = 0.3$ [rad]. Simuleringstid: 20s.}
         \end{subfigure}
         \captionsetup{width=0.80\linewidth}
-        \caption{Plot av vinklarna $\theta_1$ och $\theta_2$ som funktion av tiden. Alla plottar simulerades i 20s, förutom i figur \ref{subfig:angles_time_the1=2.5_the2=2.5}, där den simulerades i 30 s. }
+        \caption{Plot av vinklarna $\theta_1$ och $\theta_2$ som funktion av tiden. Alla dubbelpendlar simulerades i 20s, förutom i figur \ref{subfig:angles_time_the1=2.5_the2=2.5}, där den simulerades i 30 s. Simuleringen genomfördes med RK4-metoden.}
+    \end{adjustwidth}
+\end{figure}
+
+\begin{figure}[ht]
+    \begin{adjustwidth}{-2.5cm}{-2.5cm}
+        \centering
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[scale=0.55]{runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png}
+            \caption{$\theta_1 = 2.899$, $\theta_2 = 1.913$.}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[scale=0.55]{runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png}
+            \caption{$\theta_1 = 2.226$, $\theta_2 = 4.169$.}
+        \end{subfigure}
+
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[scale=0.55]{parametric_plot_the1=2.899_the2=1.913_t=30.0s.png}
+            \caption{$\theta_1 = 2.899$, $\theta_2 = 1.913$. $t = 30$s.}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[scale=0.55]{parametric_plot_the1=2.226_the2=-2.1141853071795866_t=30.0s.png}
+            \caption{$\theta_1 = 2.226$, $\theta_2 = 4.169$. $t = 30$s.}
+        \end{subfigure}
+
+          \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[scale=0.55]{angles_as_functions_of_time_plot, the1=2.899_the2=1.913_t=30.0s.png}
+            \caption{$\theta_1 = 2.899$, $\theta_2 = 1.913$.}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[scale=0.55]{angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png}
+            \caption{$\theta_1 = 2.226$, $\theta_2 = 4.169$.}
+        \end{subfigure}
     \end{adjustwidth}
 \end{figure}

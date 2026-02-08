@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1770472285.44871 "main.bcf" "main.bbl" "main" 1770561021.47016 0
-  "main.bcf" 1770561021.36316 108543 83798ca53e28aeb5bc82c88a1d6bd43d "pdflatex"
+["biber main"] 1770472285.44871 "main.bcf" "main.bbl" "main" 1770566150.64071 0
+  "main.bcf" 1770566150.53312 108543 83798ca53e28aeb5bc82c88a1d6bd43d "pdflatex"
   "ref.bib" 1769451744.38011 2660 ae1f9aa7c7a7090480708a30b8249110 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1770561014.18421 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1770561021.47045 0
+["pdflatex"] 1770566142.40004 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1770566150.64095 0
   "/Users/Oscar/Skola/Europaskolan/gya/main.tex" 1770479067.12645 2498 00c485982942eb2da6448cfe87807fd2 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -226,7 +226,9 @@
   "images/angles_as_functions_of_time_plot, the1=0.42_the2=-1.337_t=20.0s.png" 1770560126.7056 246028 db04e26021d00f2f5e2805d627440a0f ""
   "images/angles_as_functions_of_time_plot, the1=0.5_the2=0.3_t=20.0s.png" 1770560150.68808 222007 5425106d04897241656445b11697ac45 ""
   "images/angles_as_functions_of_time_plot, the1=0.5_the2=0.5_t=20.0s.png" 1770560060.48601 217087 a154173945afa52d808cdd5e7d78f20b ""
+  "images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png" 1770566113.78981 119753 29dbd10a2f700fb494c32e9388b0b6fb ""
   "images/angles_as_functions_of_time_plot, the1=2.5_the2=2.5_t=30.0s.png" 1770558831.23637 115907 bf64f04b987115a71edc66a36c8f5049 ""
+  "images/angles_as_functions_of_time_plot, the1=2.899_the2=1.913_t=30.0s.png" 1770565913.48444 126788 5881154fa47d777c90a112894beac877 ""
   "images/combined_euler_rk4_plot_at_t=0.0s_the1=0.5_the2=0.5.png" 1770478958.968 44513 fb8487d2996460cd3cb6a741315c29b3 ""
   "images/combined_euler_rk4_plot_at_t=0.0s_the1=2.5_the2=2.5.png" 1770478915.89604 43957 d8d5cd500fad831a04282981be0267e2 ""
   "images/combined_euler_rk4_plot_at_t=2.0s_the1=2.5_the2=2.5.png" 1770478924.23709 68062 2936bc124104893e9524fd4cd7c17bfb ""
@@ -245,16 +247,20 @@
   "images/parametric_plot_the1=0.42_the2=-1.337_t=30.0s.png" 1770549535.3409 390078 a3358e12d32ab94f5285b0689f74ee5b ""
   "images/parametric_plot_the1=0.5_the2=0.3_t=30.0s.png" 1770549245.20001 241321 0096ed625877713420f2bb210558d446 ""
   "images/parametric_plot_the1=0.5_the2=0.5_t=30.0s.png" 1770548921.86988 186497 c52eaf7bd4d5f8172a8a9435cad72ab8 ""
+  "images/parametric_plot_the1=2.226_the2=-2.1141853071795866_t=30.0s.png" 1770565603.66255 44383 11d75ec9102909d5a78129bd56f5a94a ""
   "images/parametric_plot_the1=2.5_the2=2.5_t=30.0s.png" 1770548944.90322 88256 0e25acece8dc31c4e44d94455eb2fe8d ""
+  "images/parametric_plot_the1=2.899_the2=1.913_t=30.0s.png" 1770565357.77942 44846 3e1396a07ed61de2322695f86159ca46 ""
+  "images/runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png" 1770565115.85516 79558 b3263cc4d3a8aa645000882570dbeb01 ""
+  "images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png" 1770564750.74577 81212 d67730fc30d45a9b3d3620be61198ffb ""
   "inledning.tex" 1770032140.20678 5651 6f4e4ce8af57005ab107ec0bd9d922ef ""
-  "main.aux" 1770561021.3572 13785 998b73d0ebf93708854afa4c5d99df7d "pdflatex"
+  "main.aux" 1770566150.52795 13833 763bea4197daf0cc1d8fd8a88fb929ea "pdflatex"
   "main.bbl" 1770472289.20189 7956 0b6c7b4776180411c287480c1ef2768e "biber main"
-  "main.out" 1770561021.36013 4661 347ddb7b7940b27c41b2e1a5232a7b73 "pdflatex"
-  "main.run.xml" 1770561021.36384 2298 3274c65e7617279dbcbf7ae1ef88d128 "pdflatex"
+  "main.out" 1770566150.53051 4661 81552db3cb94ebda7ae025eed3050302 "pdflatex"
+  "main.run.xml" 1770566150.53381 2298 3274c65e7617279dbcbf7ae1ef88d128 "pdflatex"
   "main.tex" 1770479067.12645 2498 00c485982942eb2da6448cfe87807fd2 ""
-  "main.toc" 1770561021.36391 2267 07143e46e909eaa068ea2b4a12fdb426 "pdflatex"
+  "main.toc" 1770566150.53387 2267 426035642c5c41ca68897df85c32e40c "pdflatex"
   "metod.tex" 1770543844.12859 11860 1e49c0c1e950e9ce3299bbd24921b149 ""
-  "resultat.tex" 1770561014.04692 9875 b28b348c2ca244ab751f53e78737b75e ""
+  "resultat.tex" 1770566142.26459 11607 30d2b5f8c03d3f40431a9c324fd3ff7f ""
   "teoretisk_genomgång.tex" 1770218082.76859 25505 1f1dc48d240634ee4762fd9e62f5403c ""
   (generated)
   "main.aux"
