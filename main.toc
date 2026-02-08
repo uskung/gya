@@ -1,27 +1,27 @@
 \babel@toc {swedish}{}\relax 
-\contentsline {chapter}{Inledning}{3}{chapter*.1}%
-\contentsline {section}{\numberline {1.1}Introduktion och bakgrund}{3}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Syfte och frågeställning}{4}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Avgränsning}{4}{section.1.3}%
-\contentsline {chapter}{Teoretisk genomgång}{5}{section.1.3}%
-\contentsline {section}{\numberline {2.1}Kaosteori}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Lagrange-mekanik}{5}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Principen om minsta verkan}{5}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Dubbelpendeln}{6}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Härledning av dubbelpendels rörelseekvationer}{7}{subsection.2.3.1}%
-\contentsline {subsubsection}{Tillämpning av Euler-Lagrange ekvationen}{8}{subsubsection*.5}%
-\contentsline {section}{\numberline {2.4}Numerisk metod för att lösa differentialekvationer}{9}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Behandling av dubbelpendelns rörelseekvationer för att möjliggöra RK4-metoden}{10}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Allmänna definitionen av RK4-metoden}{10}{subsection.2.4.2}%
-\contentsline {chapter}{Metod/Numerisk simulering}{11}{equation.2.4.27}%
-\contentsline {section}{\numberline {3.1}Teori}{11}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Runge-Kuttametoden (RK4-metoden)}{11}{subsection.3.1.1}%
-\contentsline {subsubsection}{Definitionen av RK4-metoden}{11}{subsubsection*.7}%
-\contentsline {subsection}{\numberline {3.1.2}Behandling av rörelseekvationerna för RK4-metoden}{12}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Numeriska metoder}{13}{section.3.2}%
-\contentsline {chapter}{Resultat}{15}{table.caption.9}%
-\contentsline {chapter}{Diskussion}{21}{figure.caption.16}%
-\contentsline {chapter}{Appendix}{I}{chapter.5}%
+\contentsline {chapter}{Inledning}{1}{chapter*.1}%
+\contentsline {section}{\numberline {1.1}Introduktion och bakgrund}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Syfte och frågeställning}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Avgränsning}{2}{section.1.3}%
+\contentsline {chapter}{Teoretisk genomgång}{3}{section.1.3}%
+\contentsline {section}{\numberline {2.1}Kaosteori}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Lagrange-mekanik}{3}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Principen om minsta verkan}{3}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Dubbelpendeln}{4}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Härledning av dubbelpendels rörelseekvationer}{5}{subsection.2.3.1}%
+\contentsline {subsubsection}{Tillämpning av Euler-Lagrange ekvationen}{6}{subsubsection*.5}%
+\contentsline {section}{\numberline {2.4}Numerisk metod för att lösa differentialekvationer}{7}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Behandling av dubbelpendelns rörelseekvationer för att möjliggöra RK4-metoden}{8}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Allmänna definitionen av RK4-metoden}{8}{subsection.2.4.2}%
+\contentsline {chapter}{Metod/Numerisk simulering}{9}{equation.2.4.27}%
+\contentsline {section}{\numberline {3.1}Teori}{9}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Runge-Kuttametoden (RK4-metoden)}{9}{subsection.3.1.1}%
+\contentsline {subsubsection}{Definitionen av RK4-metoden}{9}{subsubsection*.7}%
+\contentsline {subsection}{\numberline {3.1.2}Behandling av rörelseekvationerna för RK4-metoden}{10}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Numeriska metoder}{11}{section.3.2}%
+\contentsline {chapter}{Resultat}{13}{table.caption.9}%
+\contentsline {chapter}{Diskussion}{19}{figure.caption.16}%
+\contentsline {chapter}{Litteraturförteckning}{20}{chapter.5}%
+\contentsline {chapter}{Appendix}{I}{chapter*.18}%
 \contentsline {section}{A - Härledning av Euler-Lagrange ekvationen (\ref {eq:euler_lagrange_equation})}{I}{equation.Alph0.0.2}%
 \contentsline {section}{B - Kod för simulering av dubbelpendeln}{I}{equation.Alph0.0.2}%
-\contentsline {chapter}{Litteraturförteckning}{II}{equation.Alph0.0.2}%

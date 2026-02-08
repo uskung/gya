@@ -68,8 +68,11 @@
 \end{titlepage}
 
 \input{abstract.tex}
+\thispagestyle{empty}
 \tableofcontents
+\thispagestyle{empty}
 \newpage
+\setcounter{page}{1}
 \addcontentsline{toc}{chapter}{Inledning} % optional, to include in ToC
 \input{inledning.tex}
 \newpage
@@ -85,12 +88,12 @@
 \addcontentsline{toc}{chapter}{Diskussion}
 \input{diskussion.tex}
 \newpage
+\addcontentsline{toc}{chapter}{Litteraturförteckning}
+\printbibliography[title=Litteraturförteckning]
+\newpage
 \addcontentsline{toc}{chapter}{Appendix}
 \input{appendix.tex}
 \addcontentsline{toc}{section}{A - Härledning av Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation})}
 \addcontentsline{toc}{section}{B - Kod för simulering av dubbelpendeln}
-\newpage
-\addcontentsline{toc}{chapter}{Litteraturförteckning}
-\printbibliography[title=Litteraturförteckning]
 
 \end{document}

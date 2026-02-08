@@ -528,11 +528,11 @@ INPUT ./images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.114185307179
 INPUT ./diskussion.tex
 INPUT ./diskussion.tex
 INPUT diskussion.tex
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT ./appendix.tex
 INPUT ./appendix.tex
 INPUT appendix.tex
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out

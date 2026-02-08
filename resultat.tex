@@ -184,38 +184,45 @@ Resultatet av simuleringarna som beskrevs i sektion \ref{section:numeriska_metod
 
 \begin{figure}[ht]
     \begin{adjustwidth}{-2.5cm}{-2.5cm}
+        \vspace{-2.2cm}
         \centering
         \begin{subfigure}[b]{0.45\linewidth}
             \centering
             \includegraphics[scale=0.55]{runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png}
-            \caption{$\theta_1 = 2.899$, $\theta_2 = 1.913$.}
+            \caption{Färdväg för dubbelpendeln. Startvillkor: $\theta_1 = 2.899$, $\theta_2 = 1.913$.}
         \end{subfigure}
+        \hspace{0.5cm}
         \begin{subfigure}[b]{0.45\linewidth}
             \centering
             \includegraphics[scale=0.55]{runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png}
-            \caption{$\theta_1 = 2.226$, $\theta_2 = 4.169$.}
+            \caption{Färdväg för dubbelpendel. Startvillkor: $\theta_1 = 2.226$, $\theta_2 = 4.169$.}
         \end{subfigure}
 
         \begin{subfigure}[b]{0.45\linewidth}
             \centering
             \includegraphics[scale=0.55]{parametric_plot_the1=2.899_the2=1.913_t=30.0s.png}
-            \caption{$\theta_1 = 2.899$, $\theta_2 = 1.913$. $t = 30$s.}
+            \caption{Parametrisk plot under 30 s av $\theta_1$ och $\theta_2$. Startvillkor: $\theta_1 = 2.899$, $\theta_2 = 1.913$. }
         \end{subfigure}
+        \hspace{0.5cm}
         \begin{subfigure}[b]{0.45\linewidth}
             \centering
             \includegraphics[scale=0.55]{parametric_plot_the1=2.226_the2=-2.1141853071795866_t=30.0s.png}
-            \caption{$\theta_1 = 2.226$, $\theta_2 = 4.169$. $t = 30$s.}
+            \caption{Parametrisk plot under 30 s av $\theta_1$ och $\theta_2$. Startvillkor: $\theta_1 = 2.226$, $\theta_2 = 4.169$.}
         \end{subfigure}
 
           \begin{subfigure}[b]{0.45\linewidth}
             \centering
             \includegraphics[scale=0.55]{angles_as_functions_of_time_plot, the1=2.899_the2=1.913_t=30.0s.png}
-            \caption{$\theta_1 = 2.899$, $\theta_2 = 1.913$.}
+            \caption{Plot av vinklarna $\theta_1$ (blå) och $\theta_2$ (orange) som funktion av tiden. Startvillkor: $\theta_1 = 2.899$, $\theta_2 = 1.913$.}
         \end{subfigure}
+        \hspace{0.5cm}
         \begin{subfigure}[b]{0.45\linewidth}
             \centering
             \includegraphics[scale=0.55]{angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png}
-            \caption{$\theta_1 = 2.226$, $\theta_2 = 4.169$.}
+            \caption{Plot av vinklarna $\theta_1$ (blå) och $\theta_2$ (orange) som funktion av tiden. Startvillkor: $\theta_1 = 2.226$, $\theta_2 = 4.169$.}
         \end{subfigure}
+        \captionsetup{width=0.80\linewidth}
+        \caption{Simulering av pendlar med begynnelsevillkoren $\theta_1 = 2.899$ och $\theta_2 = 1.913$ (figur a, c och e), samt $\theta_1 = 2.226$ och $\theta_2 = -2.114$ (figur b, d och f). Figur a och b visar den streckade linjen den färdväg som pendeln tagit. Figur c och d visar en parametrisk plot för pendlarna. Figur e och f visar vinklarna $\theta_1$ och $\theta_2$ som funktion av tiden. Alla simuleringar genomfördes med RK4-metoden.}
     \end{adjustwidth}
 \end{figure}
+
