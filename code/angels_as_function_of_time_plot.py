@@ -2,6 +2,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.animation import FuncAnimation
 
+plt.rc('font', size = 11, family='serif')
+plt.rc('text', usetex=True)
+plt.rc('font', serif='Computer Modern')
+
 ## code based on euler.py
 ## but reconverted to runge-kutta method as to increase accuracy
 
@@ -12,7 +16,6 @@ ome2 = 0
 h = 0.00005
 t_tot= float(input("Hur många sekunder vill du simulera pendeln? "))
 t0 = 0
-t_frames = np.linspace(0,40,501)
 
 m_1 = 1
 m_2 = 1
@@ -77,7 +80,7 @@ else:
 
 axis.set_xlim([0,t_tot])
 
-axis.set_title(f'angles_as_functions_of_time_plot, the1={the1}_the2={the2}_t={t_tot}s')
+#axis.set_title(f'angles_as_functions_of_time_plot, the1={the1}_the2={the2}_t={t_tot}s')
 
 plt.grid()
 
@@ -115,9 +118,12 @@ t_list = np.linspace(0, t_tot, len(the1_list))
 # axis.set_ylim([-2.5, 2.5])
 
 # plt.plot(xpos,ypos)
-plt.plot(t_list, the1_list, label='Theta 1')
-plt.plot(t_list, the2_list, label='Theta 2')
+plt.plot(t_list, the1_list, label='$\\theta_1$')
+plt.plot(t_list, the2_list, label='$\\theta_2$')
 
+plt.xlabel(' $t$ [s]')
+plt.ylabel('$\\theta$ [rad]')
+plt.legend(loc="upper right")
 
 plt.savefig(f'angles_as_function_of_time_plots/angles_as_functions_of_time_plot, the1={the1}_the2={the2}_t={t_tot}s.png', dpi=300)
 
