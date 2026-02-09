@@ -533,6 +533,14 @@ INPUT ./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png
 INPUT ./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png
 INPUT ./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png
 INPUT ./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png
+INPUT ./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png
+INPUT ./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png
+INPUT ./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png
+INPUT ./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png
+INPUT ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png
+INPUT ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png
+INPUT ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png
+INPUT ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png
 INPUT ./diskussion.tex
 INPUT ./diskussion.tex
 INPUT diskussion.tex

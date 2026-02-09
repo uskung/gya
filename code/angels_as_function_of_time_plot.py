@@ -118,6 +118,10 @@ t_list = np.linspace(0, t_tot, len(the1_list))
 # axis.set_ylim([-2.5, 2.5])
 
 # plt.plot(xpos,ypos)
+fig = plt.figure(figsize=(15,4))
+ax = fig.add_subplot(111)
+plt.grid()
+
 plt.plot(t_list, the1_list, label='$\\theta_1$')
 plt.plot(t_list, the2_list, label='$\\theta_2$')
 
