@@ -505,6 +505,22 @@ INPUT ./images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png
 INPUT ./images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png
 INPUT ./images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png
 INPUT ./images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png
+INPUT ./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png
+INPUT ./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png
+INPUT ./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png
+INPUT ./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png
+INPUT ./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png
+INPUT ./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png
+INPUT ./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png
+INPUT ./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png
+INPUT ./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png
+INPUT ./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png
+INPUT ./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png
+INPUT ./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png
+INPUT ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png
+INPUT ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png
+INPUT ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png
+INPUT ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png
 INPUT ./images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png
 INPUT ./images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png
 INPUT ./images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png
@@ -529,25 +545,13 @@ INPUT ./images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.114185307179
 INPUT ./images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png
 INPUT ./images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png
 INPUT ./images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png
-INPUT ./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png
-INPUT ./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png
-INPUT ./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png
-INPUT ./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png
-INPUT ./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png
-INPUT ./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png
-INPUT ./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png
-INPUT ./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png
-INPUT ./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png
-INPUT ./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png
-INPUT ./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png
-INPUT ./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png
-INPUT ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png
-INPUT ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png
-INPUT ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png
-INPUT ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png
 INPUT ./diskussion.tex
 INPUT ./diskussion.tex
 INPUT diskussion.tex
+INPUT ./images/fractal.png
+INPUT ./images/fractal.png
+INPUT ./images/fractal.png
+INPUT ./images/fractal.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT ./appendix.tex

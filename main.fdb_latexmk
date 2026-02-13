@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1771004814.22374 "main.bcf" "main.bbl" "main" 1771005282.68771 0
-  "main.bcf" 1771005282.57405 108327 144ce238819611c8555e5dfb81be1a34 "pdflatex"
+["biber main"] 1771009075.28411 "main.bcf" "main.bbl" "main" 1771014969.40075 0
+  "main.bcf" 1771014969.28684 108405 c2a7c4f1b89eb679b6a0827d3d7b949b "pdflatex"
   "ref.bib" 1771004631.77339 3205 2fe49402ce82ff8357384305ff84b2ac ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1771005272.79871 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1771005282.68809 0
+["pdflatex"] 1771014958.99089 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1771014969.40107 0
   "/Users/Oscar/Skola/Europaskolan/gya/main.tex" 1770987640.14739 2560 efdf978bb0607153fac900574c60e24e ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -220,7 +220,7 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "abstract.tex" 1769510687.09078 57 5f6bbda1bf96b7212455c1b15c3ce8cf ""
   "appendix.tex" 1769941567.52803 1401 bd25beba3135595c6ad7e841f9f2f9aa ""
-  "diskussion.tex" 1771005272.67385 2613 b6fcfec4de358e2e5aac13a4157409c5 ""
+  "diskussion.tex" 1771014958.85031 6659 d86b18fc5add1fe9a0597a00c30f7378 ""
   "images/Lorenz_attractor_yb.pdf" 1770940012.83832 362322 39383f69d58afe4d97387c2cd9c29940 ""
   "images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png" 1770560182.84623 239520 df38fb6f78a398cb395f2c31ff531114 ""
   "images/angles_as_functions_of_time_plot, the1=-1.5_the2=1.0_t=20.0s.png" 1770560107.47473 232261 68e934ec03378531f4aadd99af6dfa82 ""
@@ -239,6 +239,7 @@
   "images/combined_euler_rk4_plot_at_t=6.0s_the1=2.5_the2=2.5.png" 1770478945.07324 70688 c4fdb0b63f15ff96ca89184dd13c3cd5 ""
   "images/combined_euler_rk4_plot_at_t=60.0s_the1=0.5_the2=0.5.png" 1770478990.86814 49445 a012a3e3114febd82deb5077ffc134b5 ""
   "images/europaskolan.png" 1747391382.90967 73643 b1a2ac46de6fa0a21e4d61258d074928 ""
+  "images/fractal.png" 1771014816.63558 2695500 285c79a55a1b734a7c000f77367c45ed ""
   "images/multiple_pendulums_plot_at_t=0.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png" 1770479483.81873 46933 1bc24dc30c8ae7fce9c39e815d59823a ""
   "images/multiple_pendulums_plot_at_t=10.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png" 1770479512.60978 95351 abc711a5cc722d53af0e921b5f7ed288 ""
   "images/multiple_pendulums_plot_at_t=2.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png" 1770479657.39561 69801 c8f94d9117acf63f05f37114a3fdcbdf ""
@@ -258,14 +259,14 @@
   "images/runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png" 1770565115.85516 79558 b3263cc4d3a8aa645000882570dbeb01 ""
   "images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png" 1770564750.74577 81212 d67730fc30d45a9b3d3620be61198ffb ""
   "inledning.tex" 1770987373.51365 10231 91359c58fe829b87b47eb0cdc80bde38 ""
-  "main.aux" 1771005282.56783 28869 9bed4647a12abdaa71d8176d3e6db8fe "pdflatex"
-  "main.bbl" 1771004816.42064 8913 06d52ee62f9ca400c941d9d0ab651e21 "biber main"
-  "main.out" 1771005282.57142 3660 c19f8bd8a83f4413c90d2a36dcacf140 "pdflatex"
-  "main.run.xml" 1771005282.57466 2298 3274c65e7617279dbcbf7ae1ef88d128 "pdflatex"
+  "main.aux" 1771014969.28054 29162 ed77483c62138dd487abbfaef2a2f289 "pdflatex"
+  "main.bbl" 1771009077.63773 8913 06d52ee62f9ca400c941d9d0ab651e21 "biber main"
+  "main.out" 1771014969.28417 3668 ec23b79dce6ae17805357bf5d0107bbf "pdflatex"
+  "main.run.xml" 1771014969.28748 2298 3274c65e7617279dbcbf7ae1ef88d128 "pdflatex"
   "main.tex" 1770987640.14739 2560 efdf978bb0607153fac900574c60e24e ""
-  "main.toc" 1771005282.57471 1931 c27883f149e4cca0107fb71fcb8f43d2 "pdflatex"
+  "main.toc" 1771014969.28754 1939 0f6782fb352a78b895a420e04d974dad "pdflatex"
   "metod.tex" 1771004311.59619 11838 a9434e5efb580f18ff0b9669f598be2f ""
-  "resultat.tex" 1770986872.0958 17555 6f7fb22fafdd9df6ea1f2e70137edc31 ""
+  "resultat.tex" 1771014426.32153 17544 395ab29f089cf632c142294f19e75e95 ""
   "teoretisk_genomgång.tex" 1771004803.9743 30225 46a9d7baf7edd4b4b096493b1f226e0f ""
   (generated)
   "main.aux"
