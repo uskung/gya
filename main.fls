@@ -393,14 +393,14 @@ INPUT ./teoretisk_genomgång.tex
 INPUT teoretisk_genomgång.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT ./metod.tex
-INPUT ./metod.tex
-INPUT metod.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
+INPUT ./metod.tex
+INPUT ./metod.tex
+INPUT metod.tex
 INPUT ./resultat.tex
 INPUT ./resultat.tex
 INPUT resultat.tex

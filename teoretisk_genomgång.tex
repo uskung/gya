@@ -275,6 +275,59 @@ Detta innebär att (\ref{eq:theta_2_solution}) är den ekvation som beskriver vi
         0 &= m_2l_2\ddot{\theta}_2 + m_2l_1\ddot{\theta}_1\cos(\theta_1 - \theta_2) - m_2l_1\dot{\theta}_1^2\sin(\theta_1 - \theta_2) + m_2g\sin{\theta_2}. \label{eq:equations_of_motion}
 \end{cases} \end{equation}
 
+\section{Teori inför numerisk simulering}
+
+Differentialekvationerna i (\ref{eq:equations_of_motion}) är icke-linjära och av andra ordningen, vilket gör de omöjligt att lösa rent analystiskt. Därmed måste ekvationerna lösas numeriskt. Detta arbete berör två typer av numeriska lösningsmetoder för differentialekvationer: \emph{Eulers stegmetod} och \emph{Runge-Kuttametoden} av fjärde ordningen. 
+
+\subsection{Eulers stegmetod}
+
+Eulers stegmetod är den enklaste explicita metoden för att bestämma lösningar till differentialekvationer med begynnelsevillkor. Metoden grundar sig i att dela in en differentialekvationen i flera tidsintervall $h$. Eftersom Eulers stegmetod är en metod av första ordningen, innebär det att felet vid varje tidsteg är proportionell mot kvadraten av tidssteget $h$. 
+
+\subsubsection{Definition av Eulers stegmetod}
+
+Givet en differentialekvation på formen $y' = f(t,y)$ med det kända begynnelsevillkoret $y(t_0)$ och det tidsteget $h > 0$, definieras nästa värde $y_{n+1}$ enligt:
+\begin{align}
+    y_{n+1} &= y_n + f(t_n, y_n)\cdot h \\
+    t_{n+1} &= t_n + h
+\end{align}
+Alternativt, om vi har ett system av ordinära differentialekvationer av grad $n$, kan vi definiera en tillståndsvektor $\mathbf{Y} = [y_1, y_2, y_3, \ldots, y_n]$ som beskriver ett systems rörelse, där begynnelsevillkoret $\mathbf{Y_0}$ även är känt. Låt även $\mathbf{f} = [f_1, f_2, \ldots, f_n]$ vara en vektor med funktioner som beskriver systemets rörelseförändring, det vill säga $\mathbf{Y}' = \mathbf{f}(t,\mathbf{Y})$. Då kan Eulers stegmetod definieras enligt:
+\begin{align}
+    \mathbf{Y}_{n+1} &= \mathbf{Y}_n + \mathbf{f}(t_n, \mathbf{Y}_n) \cdot h \\
+    t_{n+1} &= t_n + h
+\end{align}
+
+
+\subsection{Runge-Kuttametoden (RK4-metoden)}
+Runge-Kuttametoden av fjärde ordningen\footnote{Egentligen är Runge-Kuttametoderna en familj av metoder, då den innefattar ett flertal olika metoder, bland annat Eulers stegmetod. Däremot brukas RK4-metoden menas med benämningen ''Runge-Kuttametoden'', vilket är den som användes här. För vidare förklaring, se \cite{Runge-Kutta_method/Butcher2008}. } är annan vanlig metod för att lösa differentialekvationer, dock till bättre precision än exempelvis Eulers stegmetod. Metoden bygger på att approximera lösningen stegvis med ett litet tidssteg $h$, men istället för att bara beräkna nuvarande lutningen (det som sker i Eulers stegmetod), så beräknas flera mellanliggande lutningar, där ett viktad medelvärde istället dras. konsekvensen blir att felmarginalen blir betydligt mindre hos RK4-metoden än hos Eulers stegmetod. 
+
+\subsubsection{Definitionen av RK4-metoden}
+
+Givet en differentialekvation på formen $y' = f(t,y)$ med det kända begynnelsevillkoret $y_0(t_0)$ och tidssteget $h > 0$, definieras nästa $y_{n+1}$ enligt:
+\begin{align}
+    y_{n+1} &= y_n + \frac{h}{6} \left(k_{1n} + 2k_{2n} + 2k_{3n} + k_{4n}\right) \\
+    t_{n+1} &= t_n + h,
+\end{align}
+där $k_{1n}$, $k_{2n}$, $k_{3n}$ och $k_{4n}$ definieras som:
+\begin{align}
+    k_{1n} &= f(t, y_n) \\
+    k_{2n} &= f\left(t + \frac{h}{2}, y_n + \frac{h}{2}k_{1n}\right) \\
+    k_{3n} &= f\left(t + \frac{h}{2}, y_n + \frac{h}{2}k_{2n}\right) \\
+    k_{4n} &= f\left(t + h, y_n + hk_{3n}\right).
+\end{align}
+
+Alternativt, om vi har ett system av ordniära differentialekvationer av grad $n$, kan vi definiera en tillstånds vektor $\mathbf{Y} = [y_1, y_2, y_3, \ldots, y_n]$ som beskriver ett systems rörelse, där begynnelsevillkoret $\mathbf{Y_0}$ även är känt. Låt även $\mathbf{f} = [f_1, f_2, \ldots, f_n]$ vara en vektor med funktioner som beskriver systemets rörelseförändring, det vill säga $\mathbf{Y}' = \mathbf{f}(t,\mathbf{Y})$. Då kan RK4-metoden definieras enligt:
+\begin{align}
+    \mathbf{Y}_{n+1} &= \mathbf{Y}_n + \frac{h}{6}\left(\mathbf{K}_{1n} + 2\mathbf{K}_{2n} + 2\mathbf{K}_{3n} + \mathbf{K}_{4n}\right) \\
+    t_{n+1} &= t_n + h,
+\end{align}
+där $\mathbf{K}_{1n}$, $\mathbf{K}_{2n}$, $\mathbf{K}_{3n}$ och $\mathbf{K}_{4n}$ definieras som:
+\begin{align}
+    \mathbf{K}_{1n} &= \mathbf{f}(t,\mathbf{Y}_n) \\
+    \mathbf{K}_{2n} &= \mathbf{f}\left(t + \frac{h}{2}, \mathbf{Y}_n + \frac{h}{2}\mathbf{K}_{1n}\right) \\
+    \mathbf{K}_{3n} &= \mathbf{f}\left(t + \frac{h}{2}, \mathbf{Y}_n + \frac{h}{2}\mathbf{K}_{2n}\right) \\
+    \mathbf{K}_{4n} &= \mathbf{f}\left(t + h, \mathbf{Y}_n + h\mathbf{K}_{3n}\right).
+\end{align}
+
 % Ekvationssystemet i (\ref{eq:equations_of_motion}) går inte att lösa analytiskt, utan måste skrivas om för att få (\ref{eq:equations_of_motion}) till en ordinär första ordningens differentialekvation (ODE). Detta kan göras genom att införa nya beteckningar för vinkelhastigheterna $\omega_1$ och $\omega_2$, dvs $\omega_1 = \dot{\theta_1}$ och $\omega_2 = \dot{\theta_2}$. Därmed kan (\ref{eq:equations_of_motion}) skrivas om enligt ekvationssystemet (\ref{eq:equations_of_motion_with_omega}). 
 
 % \begin{equation}
