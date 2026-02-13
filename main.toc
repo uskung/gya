@@ -3,16 +3,15 @@
 \contentsline {section}{\numberline {1.1}Introduktion och bakgrund}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Syfte och frågeställning}{2}{section.1.2}%
 \contentsline {chapter}{Teoretisk genomgång}{3}{section.1.2}%
-\contentsline {section}{\numberline {2.1}Kaosteori}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Lagrange-mekanik}{3}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Principen om minsta verkan}{3}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Dubbelpendeln}{4}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Härledning av dubbelpendels rörelseekvationer}{5}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.1}Lagrange-mekanik}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Principen om minsta verkan}{3}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}Dubbelpendeln}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Härledning av dubbelpendels rörelseekvationer}{4}{subsection.2.2.1}%
 \contentsline {subsubsection}{Tillämpning av Euler-Lagrange ekvationen}{6}{subsubsection*.6}%
-\contentsline {section}{\numberline {2.4}Numerisk metod för att lösa differentialekvationer}{7}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Behandling av dubbelpendelns rörelseekvationer för att möjliggöra RK4-metoden}{8}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Allmänna definitionen av RK4-metoden}{8}{subsection.2.4.2}%
-\contentsline {chapter}{Metod/Numerisk simulering}{9}{equation.2.4.27}%
+\contentsline {section}{\numberline {2.3}Numerisk metod för att lösa differentialekvationer}{7}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Behandling av dubbelpendelns rörelseekvationer för att möjliggöra RK4-metoden}{8}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Allmänna definitionen av RK4-metoden}{8}{subsection.2.3.2}%
+\contentsline {chapter}{Metod/Numerisk simulering}{9}{equation.2.3.27}%
 \contentsline {section}{\numberline {3.1}Teori}{9}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Runge-Kuttametoden (RK4-metoden)}{9}{subsection.3.1.1}%
 \contentsline {subsubsection}{Definitionen av RK4-metoden}{9}{subsubsection*.8}%
