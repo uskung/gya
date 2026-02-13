@@ -1,13 +1,13 @@
-\chapter*{Teoretisk genomgång}
+\chapter*{Teoretisk bakgrund}
 \refstepcounter{chapter}
 
-\section{Kaosteori}
+% \section{Kaosteori}
 
-Kaosteori är ett tvärvetenskapligt forskningsområde område som fokuserar på att studera mönster hos deterministiska system som är extremt känsliga till begynnelsevillkor \cite{britannica_chaos_theory_2025}. Med detta menas att, om inte exakt samma 
+% Kaosteori är ett tvärvetenskapligt forskningsområde område som fokuserar på att studera mönster hos deterministiska system som är extremt känsliga till begynnelsevillkor \cite{britannica_chaos_theory_2025}. Med detta menas att, om inte exakt samma 
 
 \section{Lagrange-mekanik}
 
-För att lösa mer komplexa problem, som exempelvis dubbelpendeln, är det oftare lättare att använda Lagrange-mekanik för att beskriva dess rörelse. Även om det är teoretiskt sätt möjligt att beskriva en dubbelpendels rörelse med klassisk newtonsk mekanik, kan det fort bli mödosamt och onödigt krångligt. Lagrange-mekanik är egentligen bara en annan matematisk metod för att beskriva omvärlden, vilket i en viss typ av problem, blir betydligt lättare att lösa.
+För att lösa mer komplexa problem, som exempelvis en beskrivning dubbelpendeln, är det oftare lättare att använda Lagrange-mekanik för att beskriva dess rörelse. Även om det är teoretiskt sätt möjligt att beskriva en dubbelpendels rörelse med klassisk newtonsk mekanik, kan det fort bli mödosamt och onödigt krångligt. Lagrange-mekanik är egentligen bara en annan matematisk metod för att beskriva omvärlden, vilket i en viss typ av problem, blir betydligt lättare att lösa.
 
 %För att lösa mer komplexa problem, som exempelvis dubbelpendeln, är det ofta lättare att använda Lagranges ekvationer för att beskriva dess rörelse. Även om det är teoretiskt möjligt att beskriva en dubbelpendels rörelse med klassisk newtonsk mekanik, kan det fort bli mödosamt och därmed används Lagranges ekvationer istället.
 
@@ -275,6 +275,59 @@ Detta innebär att (\ref{eq:theta_2_solution}) är den ekvation som beskriver vi
         0 &= m_2l_2\ddot{\theta}_2 + m_2l_1\ddot{\theta}_1\cos(\theta_1 - \theta_2) - m_2l_1\dot{\theta}_1^2\sin(\theta_1 - \theta_2) + m_2g\sin{\theta_2}. \label{eq:equations_of_motion}
 \end{cases} \end{equation}
 
+\section{Teori inför numerisk simulering}
+
+Differentialekvationerna i (\ref{eq:equations_of_motion}) är icke-linjära och av andra ordningen, vilket gör de omöjligt att lösa rent analystiskt. Därmed måste ekvationerna lösas numeriskt. Detta arbete berör två typer av numeriska lösningsmetoder för differentialekvationer: \emph{Eulers stegmetod} och \emph{Runge-Kuttametoden} av fjärde ordningen. 
+
+\subsection{Eulers stegmetod}
+
+Eulers stegmetod är den enklaste explicita metoden för att bestämma lösningar till differentialekvationer med begynnelsevillkor. Metoden grundar sig i att dela in en differentialekvationen i flera tidsintervall $h$. Eftersom Eulers stegmetod är en metod av första ordningen, innebär det att felet vid varje tidsteg är proportionell mot kvadraten av tidssteget $h$. 
+
+\subsubsection{Definition av Eulers stegmetod}
+
+Givet en differentialekvation på formen $y' = f(t,y)$ med det kända begynnelsevillkoret $y(t_0)$ och det tidsteget $h > 0$, definieras nästa värde $y_{n+1}$ enligt:
+\begin{align}
+    y_{n+1} &= y_n + f(t_n, y_n)\cdot h \\
+    t_{n+1} &= t_n + h
+\end{align}
+Alternativt, om vi har ett system av ordinära differentialekvationer av grad $n$, kan vi definiera en tillståndsvektor $\mathbf{Y} = [y_1, y_2, y_3, \ldots, y_n]$ som beskriver ett systems rörelse, där begynnelsevillkoret $\mathbf{Y_0}$ även är känt. Låt även $\mathbf{f} = [f_1, f_2, \ldots, f_n]$ vara en vektor med funktioner som beskriver systemets rörelseförändring, det vill säga $\mathbf{Y}' = \mathbf{f}(t,\mathbf{Y})$. Då kan Eulers stegmetod definieras enligt:
+\begin{align}
+    \mathbf{Y}_{n+1} &= \mathbf{Y}_n + \mathbf{f}(t_n, \mathbf{Y}_n) \cdot h \\
+    t_{n+1} &= t_n + h
+\end{align}
+
+
+\subsection{Runge-Kuttametoden (RK4-metoden)}
+Runge-Kuttametoden av fjärde ordningen\footnote{Egentligen är Runge-Kuttametoderna en familj av metoder, då den innefattar ett flertal olika metoder, bland annat Eulers stegmetod. Däremot brukas RK4-metoden menas med benämningen ''Runge-Kuttametoden'', vilket är den som användes här. För vidare förklaring, se \cite{Runge-Kutta_method/Butcher2008}. } är annan vanlig metod för att lösa differentialekvationer, dock till bättre precision än exempelvis Eulers stegmetod. Metoden bygger på att approximera lösningen stegvis med ett litet tidssteg $h$, men istället för att bara beräkna nuvarande lutningen (det som sker i Eulers stegmetod), så beräknas flera mellanliggande lutningar, där ett viktad medelvärde istället dras. konsekvensen blir att felmarginalen blir betydligt mindre hos RK4-metoden än hos Eulers stegmetod. 
+
+\subsubsection{Definitionen av RK4-metoden}
+
+Givet en differentialekvation på formen $y' = f(t,y)$ med det kända begynnelsevillkoret $y_0(t_0)$ och tidssteget $h > 0$, definieras nästa $y_{n+1}$ enligt:
+\begin{align}
+    y_{n+1} &= y_n + \frac{h}{6} \left(k_{1n} + 2k_{2n} + 2k_{3n} + k_{4n}\right) \\
+    t_{n+1} &= t_n + h,
+\end{align}
+där $k_{1n}$, $k_{2n}$, $k_{3n}$ och $k_{4n}$ definieras som:
+\begin{align}
+    k_{1n} &= f(t, y_n) \\
+    k_{2n} &= f\left(t + \frac{h}{2}, y_n + \frac{h}{2}k_{1n}\right) \\
+    k_{3n} &= f\left(t + \frac{h}{2}, y_n + \frac{h}{2}k_{2n}\right) \\
+    k_{4n} &= f\left(t + h, y_n + hk_{3n}\right).
+\end{align}
+
+Alternativt, om vi har ett system av ordniära differentialekvationer av grad $n$, kan vi definiera en tillstånds vektor $\mathbf{Y} = [y_1, y_2, y_3, \ldots, y_n]$ som beskriver ett systems rörelse, där begynnelsevillkoret $\mathbf{Y_0}$ även är känt. Låt även $\mathbf{f} = [f_1, f_2, \ldots, f_n]$ vara en vektor med funktioner som beskriver systemets rörelseförändring, det vill säga $\mathbf{Y}' = \mathbf{f}(t,\mathbf{Y})$. Då kan RK4-metoden definieras enligt:
+\begin{align}
+    \mathbf{Y}_{n+1} &= \mathbf{Y}_n + \frac{h}{6}\left(\mathbf{K}_{1n} + 2\mathbf{K}_{2n} + 2\mathbf{K}_{3n} + \mathbf{K}_{4n}\right) \\
+    t_{n+1} &= t_n + h,
+\end{align}
+där $\mathbf{K}_{1n}$, $\mathbf{K}_{2n}$, $\mathbf{K}_{3n}$ och $\mathbf{K}_{4n}$ definieras som:
+\begin{align}
+    \mathbf{K}_{1n} &= \mathbf{f}(t,\mathbf{Y}_n) \\
+    \mathbf{K}_{2n} &= \mathbf{f}\left(t + \frac{h}{2}, \mathbf{Y}_n + \frac{h}{2}\mathbf{K}_{1n}\right) \\
+    \mathbf{K}_{3n} &= \mathbf{f}\left(t + \frac{h}{2}, \mathbf{Y}_n + \frac{h}{2}\mathbf{K}_{2n}\right) \\
+    \mathbf{K}_{4n} &= \mathbf{f}\left(t + h, \mathbf{Y}_n + h\mathbf{K}_{3n}\right).
+\end{align}
+
 % Ekvationssystemet i (\ref{eq:equations_of_motion}) går inte att lösa analytiskt, utan måste skrivas om för att få (\ref{eq:equations_of_motion}) till en ordinär första ordningens differentialekvation (ODE). Detta kan göras genom att införa nya beteckningar för vinkelhastigheterna $\omega_1$ och $\omega_2$, dvs $\omega_1 = \dot{\theta_1}$ och $\omega_2 = \dot{\theta_2}$. Därmed kan (\ref{eq:equations_of_motion}) skrivas om enligt ekvationssystemet (\ref{eq:equations_of_motion_with_omega}). 
 
 % \begin{equation}
@@ -288,32 +341,32 @@ Detta innebär att (\ref{eq:theta_2_solution}) är den ekvation som beskriver vi
 
 % Däremot har (\ref{eq:equations_of_motion_with_omega}) problemet att de tredje och fjärde ekvationerna är sammankopplade (på engelska, 'coupled'). Dessa två måste separeras för att kunna lösas numeriskt.  
 
-\section{Numerisk metod för att lösa differentialekvationer}
+% \section{Numerisk metod för att lösa differentialekvationer}
 
-Differentialekvationerna i (\ref{eq:equations_of_motion}) är icke-linjära och av andra ordningen, vilket gör de omöjligt att lösa rent analystiskt. Därmed måste ekvationerna lösas numeriskt, vilket kan göras med \emph{Runge-Kuttametoden}. Denna metod\footnote{Egentligen är Runge-kuttametoden är en familj av metoder, då den innefattar ett flertal metoder, bland annat Eulers stegmetod. Däremot brukas RK4-metoden menas med ''Runge-Kuttametoden'', vilket är den vi kommer att använda här. För vidare förklaring, se \cite{Runge-Kutta_method/Butcher2008}. }, utvecklat och namngivet av de tyska matematikerna Carl Runge och Martin Willhelm Kutta, är en kraftfull metod för att lösa ordinära differentialekvationer (ODE:s) \cite[s. 93]{Runge-Kutta_method/Butcher2008}. 
+% Differentialekvationerna i (\ref{eq:equations_of_motion}) är icke-linjära och av andra ordningen, vilket gör de omöjligt att lösa rent analystiskt. Därmed måste ekvationerna lösas numeriskt, vilket kan göras med \emph{Runge-Kuttametoden}. Denna metod\footnote{Egentligen är Runge-kuttametoden är en familj av metoder, då den innefattar ett flertal metoder, bland annat Eulers stegmetod. Däremot brukas RK4-metoden menas med ''Runge-Kuttametoden'', vilket är den vi kommer att använda här. För vidare förklaring, se \cite{Runge-Kutta_method/Butcher2008}. }, utvecklat och namngivet av de tyska matematikerna Carl Runge och Martin Willhelm Kutta, är en kraftfull metod för att lösa ordinära differentialekvationer (ODE:s) \cite[s. 93]{Runge-Kutta_method/Butcher2008}. 
 
-Runge-Kuttametoden ger oss en metod att lösa ekvationer på formen $x' = f(t,x)$, där $x(t)$ är den okända funktionen. Metoden bygger på att approximera lösningen stegvis med ett litet $h$, men istället för att bara beräkna nuvarande lutningen (det som sker i Eulers metod), så beräknas flera mellanliggande lutningar där ett viktad medelvärde istället dras. 
-
-
-\subsection{Behandling av dubbelpendelns rörelseekvationer för att möjliggöra RK4-metoden}
+% Runge-Kuttametoden ger oss en metod att lösa ekvationer på formen $x' = f(t,x)$, där $x(t)$ är den okända funktionen. Metoden bygger på att approximera lösningen stegvis med ett litet $h$, men istället för att bara beräkna nuvarande lutningen (det som sker i Eulers metod), så beräknas flera mellanliggande lutningar där ett viktad medelvärde istället dras. 
 
 
-\subsection{Allmänna definitionen av RK4-metoden}
-
-Låt $\mathbf{x}$ vara en tillståndsvektor sådan att $\mathbf{x} = [x_1, x_2, \ldots, x_n]^T$, $\mathbf{x}' = \frac{d\mathbf{x}}{dt}$ och låt $\mathbf{f} = [f_1, f_2, \ldots, f_n]^T$. Dessutom har vi begynnelsevärdet TODO Vi vill beräkna värdet av tillståndsvektorn $\bf{x}$ över tidsintervallet $[t_0, t]$ med steglängden $h$. Givet att $\bf{x'} = f(t,x)$, så definieras nästa tillståndsvektor $\bf{x_{n+1}}$ enligt: 
-\begin{equation}
-    \mathbf{x}_{n+1} = x_n + \frac{h}{6}\left(\mathbf{K}_{1n} + 2\mathbf{K}_{2n} + 2\mathbf{K}_{3n} + \mathbf{K}_{4n}\right),
-\end{equation}
-\begin{equation}
-    t_{n+1} = t_n + h,
-\end{equation}
-där värdena av $\mathbf{K}_{1n}, \mathbf{K}_{2n}, \mathbf{K}_{3n}$ och $\mathbf{K}_{4n}$ är definierade sådan att:
-\begin{align}
-    \mathbf{K}_{1n} &= \mathbf{f}(t,\mathbf{x}_n) \\
-    \mathbf{K}_{2n} &= \mathbf{f}\left(t + \frac{h}{2}, \mathbf{x}_n + \frac{h}{2}\mathbf{K}_{1n}\right) \\
-    \mathbf{K}_{3n} &= \mathbf{f}\left(t + \frac{h}{2}, \mathbf{x}_n + \frac{h}{2}\mathbf{K}_{2n}\right) \\
-    \mathbf{K}_{4n} &= \mathbf{f}\left(t + h, \mathbf{x}_n + h\mathbf{K}_{3n}\right)
-\end{align}
+% \subsection{Behandling av dubbelpendelns rörelseekvationer för att möjliggöra RK4-metoden}
 
 
-\footnote{Definitionen av RK4-metoden är hämtat från \cite{Allard2015DoublePendulum/Runge-Kutta-definition}}
+% \subsection{Allmänna definitionen av RK4-metoden}
+
+% Låt $\mathbf{x}$ vara en tillståndsvektor sådan att $\mathbf{x} = [x_1, x_2, \ldots, x_n]^T$, $\mathbf{x}' = \frac{d\mathbf{x}}{dt}$ och låt $\mathbf{f} = [f_1, f_2, \ldots, f_n]^T$. Dessutom har vi begynnelsevärdet TODO Vi vill beräkna värdet av tillståndsvektorn $\bf{x}$ över tidsintervallet $[t_0, t]$ med steglängden $h$. Givet att $\bf{x'} = f(t,x)$, så definieras nästa tillståndsvektor $\bf{x_{n+1}}$ enligt: 
+% \begin{equation}
+%     \mathbf{x}_{n+1} = x_n + \frac{h}{6}\left(\mathbf{K}_{1n} + 2\mathbf{K}_{2n} + 2\mathbf{K}_{3n} + \mathbf{K}_{4n}\right),
+% \end{equation}
+% \begin{equation}
+%     t_{n+1} = t_n + h,
+% \end{equation}
+% där värdena av $\mathbf{K}_{1n}, \mathbf{K}_{2n}, \mathbf{K}_{3n}$ och $\mathbf{K}_{4n}$ är definierade sådan att:
+% \begin{align}
+%     \mathbf{K}_{1n} &= \mathbf{f}(t,\mathbf{x}_n) \\
+%     \mathbf{K}_{2n} &= \mathbf{f}\left(t + \frac{h}{2}, \mathbf{x}_n + \frac{h}{2}\mathbf{K}_{1n}\right) \\
+%     \mathbf{K}_{3n} &= \mathbf{f}\left(t + \frac{h}{2}, \mathbf{x}_n + \frac{h}{2}\mathbf{K}_{2n}\right) \\
+%     \mathbf{K}_{4n} &= \mathbf{f}\left(t + h, \mathbf{x}_n + h\mathbf{K}_{3n}\right)
+% \end{align}
+
+
+% \footnote{Definitionen av RK4-metoden är hämtat från \cite{Allard2015DoublePendulum/Runge-Kutta-definition}}

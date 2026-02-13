@@ -85,29 +85,33 @@
       \verb https://www.britannica.com/science/chaos-theory
       \endverb
     \endentry
-    \entry{book:classical_mechanics:Morin2007}{book}{}
+    \entry{lorenz1963deterministic}{article}{}
       \name{author}{1}{}{%
-        {{hash=aef5bd6e3dec245764935a24ef74aa14}{%
-           family={Morin},
-           familyi={M\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
+        {{hash=b3eeab11b971bbf5ed269c4f19465b91}{%
+           family={Lorenz},
+           familyi={L\bibinitperiod},
+           given={Edward\bibnamedelima N.},
+           giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{aef5bd6e3dec245764935a24ef74aa14}
-      \strng{fullhash}{aef5bd6e3dec245764935a24ef74aa14}
-      \strng{bibnamehash}{aef5bd6e3dec245764935a24ef74aa14}
-      \strng{authorbibnamehash}{aef5bd6e3dec245764935a24ef74aa14}
-      \strng{authornamehash}{aef5bd6e3dec245764935a24ef74aa14}
-      \strng{authorfullhash}{aef5bd6e3dec245764935a24ef74aa14}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \strng{namehash}{b3eeab11b971bbf5ed269c4f19465b91}
+      \strng{fullhash}{b3eeab11b971bbf5ed269c4f19465b91}
+      \strng{bibnamehash}{b3eeab11b971bbf5ed269c4f19465b91}
+      \strng{authorbibnamehash}{b3eeab11b971bbf5ed269c4f19465b91}
+      \strng{authornamehash}{b3eeab11b971bbf5ed269c4f19465b91}
+      \strng{authorfullhash}{b3eeab11b971bbf5ed269c4f19465b91}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Introduction to Classical Mechanics: With Problems and Solutions}
-      \field{year}{2007}
+      \field{journaltitle}{Journal of the Atmospheric Sciences}
+      \field{title}{Deterministic Nonperiodic Flow}
+      \field{year}{1963}
+      \verb{urlraw}
+      \verb https://cdanfort.w3.uvm.edu/research/lorenz-1963.pdf
+      \endverb
+      \verb{url}
+      \verb https://cdanfort.w3.uvm.edu/research/lorenz-1963.pdf
+      \endverb
     \endentry
     \entry{Manton2013PrincipleLeastAction}{misc}{}
       \name{author}{1}{}{%
@@ -142,6 +146,30 @@
       \field{year}{2013}
       \field{dateera}{ce}
     \endentry
+    \entry{book:classical_mechanics:Morin2007}{book}{}
+      \name{author}{1}{}{%
+        {{hash=aef5bd6e3dec245764935a24ef74aa14}{%
+           family={Morin},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{fullhash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{bibnamehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{authorbibnamehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{authornamehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{authorfullhash}{aef5bd6e3dec245764935a24ef74aa14}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to Classical Mechanics: With Problems and Solutions}
+      \field{year}{2007}
+    \endentry
     \entry{Runge-Kutta_method/Butcher2008}{book}{}
       \name{author}{1}{}{%
         {{hash=8243f76db475c19fb4e78a700c85a343}{%
@@ -170,40 +198,6 @@
       \field{isbn}{978-0-470-72335-7}
       \field{title}{Numerical Methods for Ordinary Differential Equations}
       \field{year}{2008}
-    \endentry
-    \entry{Allard2015DoublePendulum/Runge-Kutta-definition}{online}{}
-      \name{author}{1}{}{%
-        {{hash=b15cd608ab9f2f78b3d63d2e1d27b1f7}{%
-           family={Allard},
-           familyi={A\bibinitperiod},
-           given={John\bibnamedelima Jr.},
-           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {John Allard Jr.'s Blog}%
-      }
-      \strng{namehash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
-      \strng{fullhash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
-      \strng{bibnamehash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
-      \strng{authorbibnamehash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
-      \strng{authornamehash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
-      \strng{authorfullhash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{4}
-      \field{month}{3}
-      \field{note}{Hämtad: 2026-01-25}
-      \field{title}{Simulating a Double Pendulum – Part 1: Theory and Derivation}
-      \field{year}{2015}
-      \field{dateera}{ce}
-      \verb{urlraw}
-      \verb https://www.jhallard.com/blog/double_pendulum.html
-      \endverb
-      \verb{url}
-      \verb https://www.jhallard.com/blog/double_pendulum.html
-      \endverb
     \endentry
   \enddatalist
 \endrefsection

@@ -384,6 +384,10 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+INPUT ./images/Lorenz_attractor_yb.pdf
+INPUT ./images/Lorenz_attractor_yb.pdf
+INPUT ./images/Lorenz_attractor_yb.pdf
+INPUT ./images/Lorenz_attractor_yb.pdf
 INPUT ./teoretisk_genomgång.tex
 INPUT ./teoretisk_genomgång.tex
 INPUT teoretisk_genomgång.tex

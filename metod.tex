@@ -1,30 +1,28 @@
 \chapter*{Numerisk simulering och metod}
 \refstepcounter{chapter}
 
-\section{Teori}
-\subsection{Runge-Kuttametoden (RK4-metoden)}
-Differentialekvationerna i (\ref{eq:equations_of_motion}) är icke-linjära och av andra ordningen, vilket gör de omöjligt att lösa rent analystiskt. Därmed måste ekvationerna lösas numeriskt. Vid enklare differentialekvationer används \emph{Eulers stegmetod} vid numeriska lösningar av differentialekvationer. Nackdelen med denna metod är att lösningen fort divergerar från sin faktiska lösning. Därmed har \emph{Runge-Kuttametoden}\footnote{Egentligen är Runge-Kuttametoden är en familj av metoder, då den innefattar ett flertal metoder, bland annat Eulers stegmetod. Däremot brukas RK4-metoden menas med ''Runge-Kuttametoden'', vilket är den som användes här. För vidare förklaring, se \cite{Runge-Kutta_method/Butcher2008}. } (RK4-metoden) använts för att numeriskt lösa ekvationssystemet (\ref{eq:equations_of_motion})  \cite[s. 93]{Runge-Kutta_method/Butcher2008}. 
+% Differentialekvationerna i (\ref{eq:equations_of_motion}) är icke-linjära och av andra ordningen, vilket gör de omöjligt att lösa rent analystiskt. Därmed måste ekvationerna lösas numeriskt. Vid enklare differentialekvationer används \emph{Eulers stegmetod} vid numeriska lösningar av differentialekvationer. Nackdelen med denna metod är att lösningen fort divergerar från sin faktiska lösning. Därmed har \emph{Runge-Kuttametoden}\footnote{Egentligen är Runge-Kuttametoden är en familj av metoder, då den innefattar ett flertal metoder, bland annat Eulers stegmetod. Däremot brukas RK4-metoden menas med ''Runge-Kuttametoden'', vilket är den som användes här. För vidare förklaring, se \cite{Runge-Kutta_method/Butcher2008}. } (RK4-metoden) använts för att numeriskt lösa ekvationssystemet (\ref{eq:equations_of_motion})  \cite[s. 93]{Runge-Kutta_method/Butcher2008}. 
 
-Runge-Kuttametoden är en metod som kan lösa ekvationer på formen $y' = f'(t, y)$, där $y(t)$ är den okända funktionen. Metoden bygger på att approximera lösningen stegvis med ett litet $h$, men istället för att bara beräkna nuvarande lutningen (det som sker i Eulers stegmetod), så beräknas flera mellanliggande lutningar, där ett viktad medelvärde istället dras.
+% Runge-Kuttametoden är en metod som kan lösa ekvationer på formen $y' = f'(t, y)$, där $y(t)$ är den okända funktionen. Metoden bygger på att approximera lösningen stegvis med ett litet $h$, men istället för att bara beräkna nuvarande lutningen (det som sker i Eulers stegmetod), så beräknas flera mellanliggande lutningar, där ett viktad medelvärde istället dras.
 
-\subsubsection{Definitionen av RK4-metoden}
+% \subsubsection{Definitionen av RK4-metoden}
 
-Låt $\mathbf{X} = [x_1, x_2, \ldots, x_n]$ vara en tillståndsvektor som beskriver ett systems rörelse, där begynnelsevillkoret $\mathbf{X_0}$ är känt. Låt även $\mathbf{f} = [f_1, f_2, \ldots, f_n]$ vara en vektor med funktioner som beskriver systemets rörelseförändring, det vill säga $\dot{\mathbf{X}} = f(t,\mathbf{X})$. Därmed ger Runge-kuttametoden att nästa tillståndsvektor $\mathbf{X}_{n+1}$ definieras enligt:
-\begin{equation}
-    \mathbf{X}_{n+1} = \mathbf{X}_n + \frac{h}{6}\left(\mathbf{K}_{1n} + 2\mathbf{K}_{2n} + 2\mathbf{K}_{3n} + \mathbf{K}_{4n}\right)
-\end{equation}
-\begin{equation}
-    t_{n+1} = t_n + h,
-\end{equation}
-där $\mathbf{K}_{1n}, \mathbf{K}_{2n}, \mathbf{K}_{3n}$ och $\mathbf{K}_{4n}$ är definierade sådan att:
-\begin{align}
-    \mathbf{K}_{1n} &= \mathbf{f}(t,\mathbf{x}_n) \\
-    \mathbf{K}_{2n} &= \mathbf{f}\left(t + \frac{h}{2}, \mathbf{x}_n + \frac{h}{2}\mathbf{K}_{1n}\right) \\
-    \mathbf{K}_{3n} &= \mathbf{f}\left(t + \frac{h}{2}, \mathbf{x}_n + \frac{h}{2}\mathbf{K}_{2n}\right) \\
-    \mathbf{K}_{4n} &= \mathbf{f}\left(t + h, \mathbf{x}_n + h\mathbf{K}_{3n}\right).
-\end{align}
+% Låt $\mathbf{X} = [x_1, x_2, \ldots, x_n]$ vara en tillståndsvektor som beskriver ett systems rörelse, där begynnelsevillkoret $\mathbf{X_0}$ är känt. Låt även $\mathbf{f} = [f_1, f_2, \ldots, f_n]$ vara en vektor med funktioner som beskriver systemets rörelseförändring, det vill säga $\dot{\mathbf{X}} = f(t,\mathbf{X})$. Därmed ger Runge-kuttametoden att nästa tillståndsvektor $\mathbf{X}_{n+1}$ definieras enligt:
+% \begin{equation}
+%     \mathbf{X}_{n+1} = \mathbf{X}_n + \frac{h}{6}\left(\mathbf{K}_{1n} + 2\mathbf{K}_{2n} + 2\mathbf{K}_{3n} + \mathbf{K}_{4n}\right)
+% \end{equation}
+% \begin{equation}
+%     t_{n+1} = t_n + h,
+% \end{equation}
+% där $\mathbf{K}_{1n}, \mathbf{K}_{2n}, \mathbf{K}_{3n}$ och $\mathbf{K}_{4n}$ är definierade sådan att:
+% \begin{align}
+%     \mathbf{K}_{1n} &= \mathbf{f}(t,\mathbf{x}_n) \\
+%     \mathbf{K}_{2n} &= \mathbf{f}\left(t + \frac{h}{2}, \mathbf{x}_n + \frac{h}{2}\mathbf{K}_{1n}\right) \\
+%     \mathbf{K}_{3n} &= \mathbf{f}\left(t + \frac{h}{2}, \mathbf{x}_n + \frac{h}{2}\mathbf{K}_{2n}\right) \\
+%     \mathbf{K}_{4n} &= \mathbf{f}\left(t + h, \mathbf{x}_n + h\mathbf{K}_{3n}\right).
+% \end{align}
 
-\subsection{Behandling av rörelseekvationerna för RK4-metoden}
+\section{Behandling av rörelseekvationerna för simulering}
 Som visades i sektion \ref{sec:härledning_av_dubbelpendeln}, ekvation (\ref{eq:equations_of_motion}), har rörelseekvationerna för dubbelpendeln härletts med hjälp av Lagrange-mekanik. Dessa är:
 \begin{equation} \begin{cases}
         0 &= \left(m_1+m_2\right)l_1\ddot{\theta}_1 + m_2l_2\ddot{\theta}_2\cos(\theta_1-\theta_2)
@@ -32,7 +30,7 @@ Som visades i sektion \ref{sec:härledning_av_dubbelpendeln}, ekvation (\ref{eq:
         &\quad + \left(m_1 + m_2\right)g\sin{\theta_1}. \\
         0 &= m_2l_2\ddot{\theta}_2 + m_2l_1\ddot{\theta}_1\cos(\theta_1 - \theta_2) - m_2l_1\dot{\theta}_1^2\sin(\theta_1 - \theta_2) + m_2g\sin{\theta_2}. \label{eq:equations_of_motion_numerical_section}
 \end{cases} \end{equation}
-För att däremot kunna använda (\ref{eq:equations_of_motion_numerical_section}) med Runge-Kuttametoden, måste de skrivas om till ordinära differentialekvationer på formen $y' = f(t,y)$. Därför genomfördes  substitutionen $\dot{\theta}_1 = \omega_1$ och $\dot{\theta}_2 = \omega_2$, vilket ger:
+För att däremot kunna använda (\ref{eq:equations_of_motion_numerical_section}) med Runge-Kuttametoden, måste de skrivas om till ordinära differentialekvationer på formen $y' = f(t,y)$. Därför genomfördes  substitutionen $\dot{\theta}_1 = \omega_1$ och $\dot{\theta}_2 = \omega_2$, vilket gav:
 \begin{equation}
     \begin{cases}
         \dot{\theta}_1 &= \omega_1  \\
@@ -146,7 +144,7 @@ Det går därmed att avläsa från (\ref{matrix:separated_for_omega_1_omega_2}) 
     \end{cases} \label{eq:equations_of_motions_final}
 \end{equation}
 
-\section{Numeriska metoder} \label{section:numeriska_metoder}
+\section{Numerisk simulering} \label{section:numeriska_metoder}
 För att utnyttja Runge-kuttametoden definierades en tillståndsvektor \\$\mathbf{X} = [\theta_1, \omega_1, \theta_2, \omega_2]$, vilket därmed ger att $\dot{\mathbf{X}} = [\omega_1, \dot{\omega}_1, \omega_2, \dot{\omega}_2]$. Ett program skrevs sedan i Python med hjälp av dessa tillståndsvektorer, först med Eulers-stegmetod, sedan med Runge-Kuttametoden, för att simulera en dubbelpendel. Dessa jämfördes för att demonstrera effektiviteten av respektive metod. 
 
 Sedan skrevs kod där två pendlar simulerades med RK4-metoden, där den andra pendelns hade 0.00001\% större begynnelsevinklar relativt den första pendeln. Detta genomfördes för tre huvudsakliga energitillstånd\footnote{Det vill säga att de startades med olika vinklar, sådan att de får olika mängd potentiell energi. Ju större startvinklar, desto större blir potentiella energin i systemet} under 30 sekunder genom att starta vinklarna med vinklarna enligt tabell (TODO).
