@@ -134,8 +134,8 @@
       \strng{authorbibnamehash}{afcb7a66b438d8546d5cb605365fae32}
       \strng{authornamehash}{afcb7a66b438d8546d5cb605365fae32}
       \strng{authorfullhash}{afcb7a66b438d8546d5cb605365fae32}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{25}
@@ -163,8 +163,8 @@
       \strng{authorbibnamehash}{aef5bd6e3dec245764935a24ef74aa14}
       \strng{authornamehash}{aef5bd6e3dec245764935a24ef74aa14}
       \strng{authorfullhash}{aef5bd6e3dec245764935a24ef74aa14}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Introduction to Classical Mechanics: With Problems and Solutions}
@@ -198,40 +198,6 @@
       \field{isbn}{978-0-470-72335-7}
       \field{title}{Numerical Methods for Ordinary Differential Equations}
       \field{year}{2008}
-    \endentry
-    \entry{Allard2015DoublePendulum/Runge-Kutta-definition}{online}{}
-      \name{author}{1}{}{%
-        {{hash=b15cd608ab9f2f78b3d63d2e1d27b1f7}{%
-           family={Allard},
-           familyi={A\bibinitperiod},
-           given={John\bibnamedelima Jr.},
-           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {John Allard Jr.'s Blog}%
-      }
-      \strng{namehash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
-      \strng{fullhash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
-      \strng{bibnamehash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
-      \strng{authorbibnamehash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
-      \strng{authornamehash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
-      \strng{authorfullhash}{b15cd608ab9f2f78b3d63d2e1d27b1f7}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{4}
-      \field{month}{3}
-      \field{note}{Hämtad: 2026-01-25}
-      \field{title}{Simulating a Double Pendulum – Part 1: Theory and Derivation}
-      \field{year}{2015}
-      \field{dateera}{ce}
-      \verb{urlraw}
-      \verb https://www.jhallard.com/blog/double_pendulum.html
-      \endverb
-      \verb{url}
-      \verb https://www.jhallard.com/blog/double_pendulum.html
-      \endverb
     \endentry
   \enddatalist
 \endrefsection

@@ -2,6 +2,27 @@
 \refstepcounter{chapter}
 
 \section{Teori}
+
+Differentialekvationerna i (\ref{eq:equations_of_motion}) är icke-linjära och av andra ordningen, vilket gör de omöjligt att lösa rent analystiskt. Därmed måste ekvationerna lösas numeriskt. Detta arbete berör två typer av numeriska lösningsmetoder för differentialekvationer: \emph{Eulers stegmetod} och \emph{Runge-Kuttametoden} av fjärde ordningen. 
+
+\subsection{Eulers stegmetod}
+
+Eulers stegmetod är den enklaste explicita metoden för att bestämma lösningar till differentialekvationer med begynnelsevillkor. Metoden grundar sig i att dela in en differentialekvationen i flera diskreta tidsintervall $h$. Eftersom Eulers stegmetod är en metod av första ordningen, innebär det att felet vid varje tidsteg är proportionell mot kvadraten av tidssteget $h$. 
+
+\subsubsection{Definition av Eulers stegmetod}
+
+Givet en differentialekvation på formen $y' = f(t,y)$ med det kända begynnelsevillkoret $y(t_0)$o och det diskreta tidsteget $h$, definieras nästa värde $y_{n+1}$ enligt:
+\begin{align}
+    y_{n+1} &= y_n + f(t_n, y_n)\cdot h \\
+    t_{n+1} &= t_n + h
+\end{align}
+Alternativt, om vi har ett system av ordinära differentialekvationer av grad $n$, kan vi definiera en tillståndsvektor $\mathbf{Y} = [y_1, y_2, y_3, \ldots, y_n]$ som beskriver ett systems rörelse, där begynnelsevillkoret $\mathbf{Y_0}$ även är känt. Låt även $\mathbf{f} = [f_1, f_2, \ldots, f_n]$ vara en vektor med funktioner som beskriver systemets rörelseförändring, det vill säga $\mathbf{Y}' = \mathbf{f}(t,\mathbf{Y})$. Då kan Eulers stegmetod definieras enligt:
+\begin{align}
+    \mathbf{Y}_{n+1} &= \mathbf{Y}_n + \mathbf{f}(t_n, \mathbf{Y}_n) \cdot h \\
+    t_{n+1} &= t_n + h
+\end{align}
+
+
 \subsection{Runge-Kuttametoden (RK4-metoden)}
 Differentialekvationerna i (\ref{eq:equations_of_motion}) är icke-linjära och av andra ordningen, vilket gör de omöjligt att lösa rent analystiskt. Därmed måste ekvationerna lösas numeriskt. Vid enklare differentialekvationer används \emph{Eulers stegmetod} vid numeriska lösningar av differentialekvationer. Nackdelen med denna metod är att lösningen fort divergerar från sin faktiska lösning. Därmed har \emph{Runge-Kuttametoden}\footnote{Egentligen är Runge-Kuttametoden är en familj av metoder, då den innefattar ett flertal metoder, bland annat Eulers stegmetod. Däremot brukas RK4-metoden menas med ''Runge-Kuttametoden'', vilket är den som användes här. För vidare förklaring, se \cite{Runge-Kutta_method/Butcher2008}. } (RK4-metoden) använts för att numeriskt lösa ekvationssystemet (\ref{eq:equations_of_motion})  \cite[s. 93]{Runge-Kutta_method/Butcher2008}. 
 
@@ -24,7 +45,7 @@ där $\mathbf{K}_{1n}, \mathbf{K}_{2n}, \mathbf{K}_{3n}$ och $\mathbf{K}_{4n}$ �
     \mathbf{K}_{4n} &= \mathbf{f}\left(t + h, \mathbf{x}_n + h\mathbf{K}_{3n}\right).
 \end{align}
 
-\subsection{Behandling av rörelseekvationerna för RK4-metoden}
+\subsection{Behandling av rörelseekvationerna för simulering}
 Som visades i sektion \ref{sec:härledning_av_dubbelpendeln}, ekvation (\ref{eq:equations_of_motion}), har rörelseekvationerna för dubbelpendeln härletts med hjälp av Lagrange-mekanik. Dessa är:
 \begin{equation} \begin{cases}
         0 &= \left(m_1+m_2\right)l_1\ddot{\theta}_1 + m_2l_2\ddot{\theta}_2\cos(\theta_1-\theta_2)
@@ -32,7 +53,7 @@ Som visades i sektion \ref{sec:härledning_av_dubbelpendeln}, ekvation (\ref{eq:
         &\quad + \left(m_1 + m_2\right)g\sin{\theta_1}. \\
         0 &= m_2l_2\ddot{\theta}_2 + m_2l_1\ddot{\theta}_1\cos(\theta_1 - \theta_2) - m_2l_1\dot{\theta}_1^2\sin(\theta_1 - \theta_2) + m_2g\sin{\theta_2}. \label{eq:equations_of_motion_numerical_section}
 \end{cases} \end{equation}
-För att däremot kunna använda (\ref{eq:equations_of_motion_numerical_section}) med Runge-Kuttametoden, måste de skrivas om till ordinära differentialekvationer på formen $y' = f(t,y)$. Därför genomfördes  substitutionen $\dot{\theta}_1 = \omega_1$ och $\dot{\theta}_2 = \omega_2$, vilket ger:
+För att däremot kunna använda (\ref{eq:equations_of_motion_numerical_section}) med Runge-Kuttametoden, måste de skrivas om till ordinära differentialekvationer på formen $y' = f(t,y)$. Därför genomfördes  substitutionen $\dot{\theta}_1 = \omega_1$ och $\dot{\theta}_2 = \omega_2$, vilket gav:
 \begin{equation}
     \begin{cases}
         \dot{\theta}_1 &= \omega_1  \\
