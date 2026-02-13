@@ -85,29 +85,33 @@
       \verb https://www.britannica.com/science/chaos-theory
       \endverb
     \endentry
-    \entry{book:classical_mechanics:Morin2007}{book}{}
+    \entry{lorenz1963deterministic}{article}{}
       \name{author}{1}{}{%
-        {{hash=aef5bd6e3dec245764935a24ef74aa14}{%
-           family={Morin},
-           familyi={M\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
+        {{hash=b3eeab11b971bbf5ed269c4f19465b91}{%
+           family={Lorenz},
+           familyi={L\bibinitperiod},
+           given={Edward\bibnamedelima N.},
+           giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{aef5bd6e3dec245764935a24ef74aa14}
-      \strng{fullhash}{aef5bd6e3dec245764935a24ef74aa14}
-      \strng{bibnamehash}{aef5bd6e3dec245764935a24ef74aa14}
-      \strng{authorbibnamehash}{aef5bd6e3dec245764935a24ef74aa14}
-      \strng{authornamehash}{aef5bd6e3dec245764935a24ef74aa14}
-      \strng{authorfullhash}{aef5bd6e3dec245764935a24ef74aa14}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \strng{namehash}{b3eeab11b971bbf5ed269c4f19465b91}
+      \strng{fullhash}{b3eeab11b971bbf5ed269c4f19465b91}
+      \strng{bibnamehash}{b3eeab11b971bbf5ed269c4f19465b91}
+      \strng{authorbibnamehash}{b3eeab11b971bbf5ed269c4f19465b91}
+      \strng{authornamehash}{b3eeab11b971bbf5ed269c4f19465b91}
+      \strng{authorfullhash}{b3eeab11b971bbf5ed269c4f19465b91}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Introduction to Classical Mechanics: With Problems and Solutions}
-      \field{year}{2007}
+      \field{journaltitle}{Journal of the Atmospheric Sciences}
+      \field{title}{Deterministic Nonperiodic Flow}
+      \field{year}{1963}
+      \verb{urlraw}
+      \verb https://cdanfort.w3.uvm.edu/research/lorenz-1963.pdf
+      \endverb
+      \verb{url}
+      \verb https://cdanfort.w3.uvm.edu/research/lorenz-1963.pdf
+      \endverb
     \endentry
     \entry{Manton2013PrincipleLeastAction}{misc}{}
       \name{author}{1}{}{%
@@ -130,8 +134,8 @@
       \strng{authorbibnamehash}{afcb7a66b438d8546d5cb605365fae32}
       \strng{authornamehash}{afcb7a66b438d8546d5cb605365fae32}
       \strng{authorfullhash}{afcb7a66b438d8546d5cb605365fae32}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{25}
@@ -141,6 +145,30 @@
       \field{title}{The Principle of Least Action in Dynamics}
       \field{year}{2013}
       \field{dateera}{ce}
+    \endentry
+    \entry{book:classical_mechanics:Morin2007}{book}{}
+      \name{author}{1}{}{%
+        {{hash=aef5bd6e3dec245764935a24ef74aa14}{%
+           family={Morin},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{fullhash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{bibnamehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{authorbibnamehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{authornamehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{authorfullhash}{aef5bd6e3dec245764935a24ef74aa14}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to Classical Mechanics: With Problems and Solutions}
+      \field{year}{2007}
     \endentry
     \entry{Runge-Kutta_method/Butcher2008}{book}{}
       \name{author}{1}{}{%
