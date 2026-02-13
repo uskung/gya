@@ -228,6 +228,42 @@
       \field{title}{Numerical Methods for Ordinary Differential Equations}
       \field{year}{2008}
     \endentry
+    \entry{heyl2008double}{report}{}
+      \name{author}{1}{}{%
+        {{hash=e7554d5a78a0057cdd938f3c31b61081}{%
+           family={Heyl},
+           familyi={H\bibinitperiod},
+           given={Jeremy\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {Department of Physics}%
+        {Astronomy, University of British Columbia}%
+      }
+      \strng{namehash}{e7554d5a78a0057cdd938f3c31b61081}
+      \strng{fullhash}{e7554d5a78a0057cdd938f3c31b61081}
+      \strng{bibnamehash}{e7554d5a78a0057cdd938f3c31b61081}
+      \strng{authorbibnamehash}{e7554d5a78a0057cdd938f3c31b61081}
+      \strng{authornamehash}{e7554d5a78a0057cdd938f3c31b61081}
+      \strng{authorfullhash}{e7554d5a78a0057cdd938f3c31b61081}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{11}
+      \field{month}{8}
+      \field{note}{Accessed: 2026-02-13}
+      \field{title}{The Double Pendulum Fractal}
+      \field{type}{Technical Report}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.famaf.unc.edu.ar/~vmarconi/fiscomp/Double.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.famaf.unc.edu.ar/~vmarconi/fiscomp/Double.pdf
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

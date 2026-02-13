@@ -17,11 +17,22 @@ Simuleringar genomfördes även för pendlar med medelstora energinivåer/begynn
 
 Vid höga energinivåer/begynnelsevinklar visar simuleringarna att vinklarna $\theta_1$ och $\theta_2$ inte har något mönster alls. I figur \ref{subfig:parametric_plots_B} visas en pendel som hade startvinklarna $\theta_1 = 2.5$ och $\theta_2 = 2.5$ [rad]. Vinklarna börjar direkt bli till synes slumpartade, och kurvan i figur \ref{subfig:plots_as_function_of_time_B} visar en liknande divergering. Samma händer vid ännu längre simuleringar, som i figur \ref{subfig:plots_of_chaotic_pendulum_over_long_time_A} och \ref{subfig:plots_of_chaotic_pendulum_over_long_time_B} där pendlarna simulerades under 180 sekunder. 
 
-Generellt sätt har simuleringarna visat att pendlarna tenderar att likna periodiska, sinusliknande mönster vid låga energinivåer/begynnelsevinklar, och kaotiska mönster vid höga energinivåer/begynnelsevinklar. Rimligtvis går det att ställa sig frågan: 'vart går gränsen till när en dubbelpendel blir kaotisk?'. 
+Generellt sätt har simuleringarna visat att pendlarna tenderar att likna periodiska, sinusliknande mönster vid låga energinivåer/begynnelsevinklar, och kaotiska mönster vid höga energinivåer/begynnelsevinklar. Rimligtvis går det att ställa sig frågan: 'Var går gränsen till när en dubbelpendel blir kaotisk?'. 
 
-\begin{figure}
+Ett sätt att besvara detta är att plotta för vilka startvinklar dubbelpendeln gör så att dubbelpendeln vrider ett helt varv. Detta har bland annat Jeremy S. Heyl gjort \cite{heyl2008double}, se figur \ref{fig:fractal}. Där visas det vita som startpositioner där dubbelpendeln aldrig vänder ett helt fullt varv. Det som Heyl har beräknat ger även samma bild som tidigare: att vid högre energitillstånd/startvinklar tenderar pendlarna att bli mer kaotiska. Däremot visar hans graf att det även finns några energirika begynnelsepositioner som ger stabila pendlar. 
+
+Därför demonstrerades även pendlarna i figur \ref{fig:plots_of_stable_pendulums} med startvinklarna $\theta_1 = 2.899$, $\theta_2 = 1.913$ samt $\theta_1 = 2.226$, $\theta_2 = -2.114$ [rad]. Figurerna visar att även fast pendlarna var relativt energirika, lyckas pendlarna ändå behålla stabila mönster. Detta bekräftas även i figurerna \ref{subfig:plots_of_stable_pendulums_C}, \ref{subfig:plots_of_stable_pendulums_D}, \ref{subfig:plots_of_stable_pendulums_E} och \ref{subfig:plots_of_stable_pendulums_F}, där de parametriska mönsterna som bildas både återupprepar sig, men även är periodiska. 
+
+\begin{figure}[ht!]
     \centering
     \includegraphics[scale=0.35]{fractal.png}
-    \caption{test}
+    \caption{Fraktal över vilka begynnelsevinklar som ger att en dubbelpendel välter över, och därmed blir kaotisk. Färgkodningen i grafen visar hur fort pendeln välter över, där grön är relativt snabbt, och rött är relativt långsamt. För mer info och bildkälla, se \cite{heyl2008double}. }
     \label{fig:fractal}    
 \end{figure}
+
+\section{Slutsats}
+
+Som svar till frågeställningarna visar resultaten att RK4-metoden är en betydligt effektivare metod för att simulera en dubbelpendeln. Dessutom visar resultaten att dubbelpendeln tenderar att visa mer kaotiska utslag vid större begynnelsevinklar, och mer periodiska mönster vid lägre begynnelsevinklar.  Detta bekräftas även av andra källor, bland annat av Jeremy S. Heyls artikel \cite{heyl2008double} och fraktal över vilka dubbelpendlar som är stabila respektive kaotiska. Dessutom påvisades mönster (främst vid låga energinivåer/begynnelsevinklar), både när vinklarna $\theta_1$ och $\theta_2$ plottades parametriskt mot varandra, men även när de plottades som funktion av tiden. 
+
+\section{Framtidsutblick/vidare utveckling av dubbelpendeln}
+

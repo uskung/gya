@@ -18,7 +18,9 @@
 \contentsline {section}{\numberline {3.2}Numerisk simulering}{11}{section.3.2}%
 \contentsline {chapter}{Resultat}{13}{table.caption.11}%
 \contentsline {chapter}{Diskussion}{20}{figure.caption.20}%
-\contentsline {chapter}{Litteraturförteckning}{23}{figure.caption.22}%
+\contentsline {section}{\numberline {5.1}Slutsats}{22}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Framtidsutblick/vidare utveckling av dubbelpendeln}{23}{section.5.2}%
+\contentsline {chapter}{Litteraturförteckning}{24}{section.5.2}%
 \contentsline {chapter}{Appendix}{I}{chapter*.23}%
 \contentsline {section}{A - Härledning av Euler-Lagrange ekvationen (\ref {eq:euler_lagrange_equation})}{I}{equation.Alph0.0.2}%
 \contentsline {section}{B - Kod för simulering av dubbelpendeln}{I}{equation.Alph0.0.2}%

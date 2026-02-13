@@ -2378,7 +2378,11 @@
     <bcf:citekey order="14" intorder="1">Runge-Kutta_method/Butcher2008</bcf:citekey>
     <bcf:citekey order="15" intorder="1">mat290-runge-kutta-6.2</bcf:citekey>
     <bcf:citekey order="16" intorder="1">mat290-runge-kutta-6.2</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">book:classical_mechanics:Morin2007</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">heyl2008double</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">heyl2008double</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">heyl2008double</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">heyl2008double</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">book:classical_mechanics:Morin2007</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
