@@ -30,7 +30,7 @@ Som visades i sektion \ref{sec:härledning_av_dubbelpendeln}, ekvation (\ref{eq:
         &\quad + \left(m_1 + m_2\right)g\sin{\theta_1}. \\
         0 &= m_2l_2\ddot{\theta}_2 + m_2l_1\ddot{\theta}_1\cos(\theta_1 - \theta_2) - m_2l_1\dot{\theta}_1^2\sin(\theta_1 - \theta_2) + m_2g\sin{\theta_2}. \label{eq:equations_of_motion_numerical_section}
 \end{cases} \end{equation}
-För att däremot kunna använda (\ref{eq:equations_of_motion_numerical_section}) med Runge-Kuttametoden, måste de skrivas om till ordinära differentialekvationer på formen $y' = f(t,y)$. Därför genomfördes  substitutionen $\dot{\theta}_1 = \omega_1$ och $\dot{\theta}_2 = \omega_2$, vilket gav:
+För att däremot kunna använda (\ref{eq:equations_of_motion_numerical_section}) för numerisk simulering, måste de skrivas om till ordinära differentialekvationer på formen $y' = f(t,y)$. Därför genomfördes  substitutionen $\dot{\theta}_1 = \omega_1$ och $\dot{\theta}_2 = \omega_2$, vilket gav:
 \begin{equation}
     \begin{cases}
         \dot{\theta}_1 &= \omega_1  \\
@@ -40,7 +40,7 @@ För att däremot kunna använda (\ref{eq:equations_of_motion_numerical_section}
         0 &= m_2l_2\dot{\omega}_2 + m_2l_1\dot{\omega}_1\cos(\theta_1 - \theta_2) - m_2l_1\omega_1^2\sin(\theta_1-\theta_2) + m_2g\sin{\theta_2}. \label{eq:equations_of_motion_with_omega_numerical_section}
     \end{cases}
 \end{equation}
-Däremot är fortfarande tredje och fjärde ekvationerna i (\ref{eq:equations_of_motion_with_omega_numerical_section}) sammankopplade (på engelska, 'coupled'). För att kunna använda (\ref{eq:equations_of_motion_with_omega_numerical_section}) i Runge-kuttametoden gjordes följande substitution enligt (\ref{eq:greek_substitutions}). 
+Däremot är fortfarande tredje och fjärde ekvationerna i (\ref{eq:equations_of_motion_with_omega_numerical_section}) sammankopplade (på engelska, 'coupled'). För att kunna använda (\ref{eq:equations_of_motion_with_omega_numerical_section}) med numeriska simuleringar gjordes följande substitution enligt (\ref{eq:greek_substitutions}). 
 \begin{equation}
     \begin{cases}
         \Delta\theta &= \theta_1 - \theta_2 \\

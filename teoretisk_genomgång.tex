@@ -281,7 +281,7 @@ Differentialekvationerna i (\ref{eq:equations_of_motion}) är icke-linjära och 
 
 \subsection{Eulers stegmetod}
 
-Eulers stegmetod är den enklaste explicita metoden för att bestämma lösningar till differentialekvationer med begynnelsevillkor. Metoden grundar sig i att dela in en differentialekvationen i flera tidsintervall $h$. Eftersom Eulers stegmetod är en metod av första ordningen, innebär det att felet vid varje tidsteg är proportionell mot kvadraten av tidssteget $h$. 
+Eulers stegmetod är den enklaste explicita metoden för att bestämma lösningar till differentialekvationer med begynnelsevillkor. Metoden grundar sig i att dela in en differentialekvationen i flera tidsintervall $h$. Eftersom Eulers stegmetod är en metod av första ordningen, innebär det att felet relativt den faktiska lösningen vid varje tidsteg är proportionell tidssteget $h$ \cite{mat290-runge-kutta-6.2}. 
 
 \subsubsection{Definition av Eulers stegmetod}
 
@@ -298,7 +298,7 @@ Alternativt, om vi har ett system av ordinära differentialekvationer av grad $n
 
 
 \subsection{Runge-Kuttametoden (RK4-metoden)}
-Runge-Kuttametoden av fjärde ordningen\footnote{Egentligen är Runge-Kuttametoderna en familj av metoder, då den innefattar ett flertal olika metoder, bland annat Eulers stegmetod. Däremot brukas RK4-metoden menas med benämningen ''Runge-Kuttametoden'', vilket är den som användes här. För vidare förklaring, se \cite{Runge-Kutta_method/Butcher2008}. } är annan vanlig metod för att lösa differentialekvationer, dock till bättre precision än exempelvis Eulers stegmetod. Metoden bygger på att approximera lösningen stegvis med ett litet tidssteg $h$, men istället för att bara beräkna nuvarande lutningen (det som sker i Eulers stegmetod), så beräknas flera mellanliggande lutningar, där ett viktad medelvärde istället dras. konsekvensen blir att felmarginalen blir betydligt mindre hos RK4-metoden än hos Eulers stegmetod. 
+Runge-Kuttametoden av fjärde ordningen\footnote{Egentligen är Runge-Kuttametoderna en familj av metoder, då den innefattar ett flertal olika metoder, bland annat Eulers stegmetod. Däremot brukas RK4-metoden menas med benämningen ''Runge-Kuttametoden'', vilket är den som användes här. För vidare förklaring, se \cite{Runge-Kutta_method/Butcher2008}. } är annan vanlig metod för att lösa differentialekvationer, dock till bättre precision än exempelvis Eulers stegmetod. Metoden bygger på att approximera lösningen stegvis med ett litet tidssteg $h$, men istället för att bara beräkna nuvarande lutningen (det som sker i Eulers stegmetod), så beräknas flera mellanliggande lutningar, där ett viktad medelvärde istället dras. konsekvensen blir att felmarginalen blir betydligt mindre hos RK4-metoden än hos Eulers stegmetod. Till skillnad från Eulers stegmetod, där felet minskar proportionellt mot steglängden $h$, så minskar felet mot steglängden upphöjt till 4 \cite{mat290-runge-kutta-6.2}. 
 
 \subsubsection{Definitionen av RK4-metoden}
 

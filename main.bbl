@@ -170,6 +170,35 @@
       \field{title}{Introduction to Classical Mechanics: With Problems and Solutions}
       \field{year}{2007}
     \endentry
+    \entry{mat290-runge-kutta-6.2}{online}{}
+      \name{author}{1}{}{%
+        {{hash=4ae7bbe03ed6db4bd45479335681dd8e}{%
+           family={{Okänd författare}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {MAT290 Pages}%
+      }
+      \strng{namehash}{4ae7bbe03ed6db4bd45479335681dd8e}
+      \strng{fullhash}{4ae7bbe03ed6db4bd45479335681dd8e}
+      \strng{bibnamehash}{4ae7bbe03ed6db4bd45479335681dd8e}
+      \strng{authorbibnamehash}{4ae7bbe03ed6db4bd45479335681dd8e}
+      \strng{authornamehash}{4ae7bbe03ed6db4bd45479335681dd8e}
+      \strng{authorfullhash}{4ae7bbe03ed6db4bd45479335681dd8e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Hämtad: 2026-02-13}
+      \field{title}{6.2 Runge–Kutta Methods}
+      \field{year}{n.d.}
+      \verb{urlraw}
+      \verb https://mat290.pages.dev/6.2?utm_source=chatgpt.com
+      \endverb
+      \verb{url}
+      \verb https://mat290.pages.dev/6.2?utm_source=chatgpt.com
+      \endverb
+    \endentry
     \entry{Runge-Kutta_method/Butcher2008}{book}{}
       \name{author}{1}{}{%
         {{hash=8243f76db475c19fb4e78a700c85a343}{%
