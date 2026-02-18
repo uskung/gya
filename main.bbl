@@ -230,6 +230,30 @@
       \verb https://web.archive.org/web/20190523190103/http://eaps4.mit.edu/research/Lorenz/The_Statistical_Prediction_of_Solutions_1962.pdf
       \endverb
     \endentry
+    \entry{book:classical_mechanics:Morin2007}{book}{}
+      \name{author}{1}{}{%
+        {{hash=aef5bd6e3dec245764935a24ef74aa14}{%
+           family={Morin},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{fullhash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{bibnamehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{authorbibnamehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{authornamehash}{aef5bd6e3dec245764935a24ef74aa14}
+      \strng{authorfullhash}{aef5bd6e3dec245764935a24ef74aa14}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to Classical Mechanics: With Problems and Solutions}
+      \field{year}{2007}
+    \endentry
     \entry{Manton2013PrincipleLeastAction}{misc}{}
       \name{author}{1}{}{%
         {{hash=afcb7a66b438d8546d5cb605365fae32}{%
@@ -251,8 +275,8 @@
       \strng{authorbibnamehash}{afcb7a66b438d8546d5cb605365fae32}
       \strng{authornamehash}{afcb7a66b438d8546d5cb605365fae32}
       \strng{authorfullhash}{afcb7a66b438d8546d5cb605365fae32}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{25}
@@ -262,30 +286,6 @@
       \field{title}{The Principle of Least Action in Dynamics}
       \field{year}{2013}
       \field{dateera}{ce}
-    \endentry
-    \entry{book:classical_mechanics:Morin2007}{book}{}
-      \name{author}{1}{}{%
-        {{hash=aef5bd6e3dec245764935a24ef74aa14}{%
-           family={Morin},
-           familyi={M\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{aef5bd6e3dec245764935a24ef74aa14}
-      \strng{fullhash}{aef5bd6e3dec245764935a24ef74aa14}
-      \strng{bibnamehash}{aef5bd6e3dec245764935a24ef74aa14}
-      \strng{authorbibnamehash}{aef5bd6e3dec245764935a24ef74aa14}
-      \strng{authornamehash}{aef5bd6e3dec245764935a24ef74aa14}
-      \strng{authorfullhash}{aef5bd6e3dec245764935a24ef74aa14}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Introduction to Classical Mechanics: With Problems and Solutions}
-      \field{year}{2007}
     \endentry
     \entry{Runge-Kutta_method/Butcher2008}{book}{}
       \name{author}{1}{}{%
@@ -384,7 +384,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{mat290-runge-kutta-6.2}
 \endrefsection
 \endinput
 

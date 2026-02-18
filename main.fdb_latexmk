@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1771429735.69882 "main.bcf" "main.bbl" "main" 1771430368.60733 0
-  "main.bcf" 1771430368.48122 109191 4a3df0db1a6ae7640e8d6727bdfeb9f9 "pdflatex"
-  "references/references.bib" 1771429735.57823 4717 609daf48330f19a6ec55a6e3569661c3 ""
+["biber main"] 1771432810.99598 "main.bcf" "main.bbl" "main" 1771432907.45866 0
+  "main.bcf" 1771432907.33888 109789 a80469750e93c6d49cf2b03203d2b8f2 "pdflatex"
+  "references/references.bib" 1771432212.87173 4718 b657b07ed6212d0e069bf65dbaf8378a ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1771430358.28886 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1771430368.6076 0
+["pdflatex"] 1771432897.03422 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1771432907.45894 0
   "/Users/Oscar/Skola/Europaskolan/gya/main.tex" 1771428686.01607 2882 01a07a59938c367e864d557e188151a3 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -272,15 +272,15 @@
   "images/runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png" 1770565115.85516 79558 b3263cc4d3a8aa645000882570dbeb01 ""
   "images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png" 1770564750.74577 81212 d67730fc30d45a9b3d3620be61198ffb ""
   "inledning.tex" 1771430358.13658 10891 ef9b63408f598a544cbceaaa3cd355e1 ""
-  "main.aux" 1771430368.47437 32094 b8ae03988c46a657f7c48c30470b7ef5 "pdflatex"
-  "main.bbl" 1771429738.33183 15013 2bd940bb78df468ce0a86569b44d1a29 "biber main"
-  "main.out" 1771430368.47849 3681 843abd01e6dfefdac602f887e9d9ab7c "pdflatex"
-  "main.run.xml" 1771430368.48188 2316 b4bcdada68146e9ebdd459e846a92292 "pdflatex"
+  "main.aux" 1771432907.33197 32793 d7504767b9821d08db17e63491516d42 "pdflatex"
+  "main.bbl" 1771432813.20253 14978 1a20aeabb32ff6c7abc8b1602de30f81 "biber main"
+  "main.out" 1771432907.33625 3681 843abd01e6dfefdac602f887e9d9ab7c "pdflatex"
+  "main.run.xml" 1771432907.33958 2316 b4bcdada68146e9ebdd459e846a92292 "pdflatex"
   "main.tex" 1771428686.01607 2882 01a07a59938c367e864d557e188151a3 ""
-  "main.toc" 1771430368.48194 1941 c5452e5cdd95756df09f5931ec026e93 "pdflatex"
-  "metod.tex" 1771427381.1226 12956 883c54aba6c82f326d52550636ac1f90 ""
+  "main.toc" 1771432907.33964 1941 c5452e5cdd95756df09f5931ec026e93 "pdflatex"
+  "metod.tex" 1771432896.89911 13001 7ae14ba9432bbaba25d97228c59a422b ""
   "resultat.tex" 1771427455.82978 18210 494309deaef2b1b7bbd610eb4801145b ""
-  "teoretisk_genomgång.tex" 1771427336.06424 30276 3657acedc6ed85550e081a939f5f75d2 ""
+  "teoretisk_genomgång.tex" 1771432800.39091 30774 9cedb8d2af55ce4a9703e2f2438feaae ""
   (generated)
   "main.aux"
   "main.bcf"

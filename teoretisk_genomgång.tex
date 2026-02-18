@@ -8,7 +8,7 @@
 
 \section{Lagrange-mekanik}
 
-För att lösa mer komplexa problem, som exempelvis en beskrivning dubbelpendeln, är det oftare lättare att använda Lagrange-mekanik för att beskriva dess rörelse. Även om det är teoretiskt sätt möjligt att beskriva en dubbelpendels rörelse med klassisk newtonsk mekanik, kan det fort bli mödosamt och onödigt krångligt. Lagrange-mekanik är egentligen bara en annan matematisk metod för att beskriva omvärlden, vilket i en viss typ av problem, blir betydligt lättare att lösa.
+För att lösa mer komplexa problem, som exempelvis att bestämma rörelseekvation-erna för dubbelpendeln, är det oftare lättare att använda Lagrange-mekanik för att beskriva dess rörelse. Även om det är teoretiskt sätt möjligt att beskriva en dubbelpendels rörelse med klassisk newtonsk mekanik, kan det fort bli mödosamt och onödigt krångligt. Lagrange-mekanik är egentligen bara en annan matematisk metod för att beskriva omvärlden, vilket i en viss typ av problem, blir betydligt lättare att lösa \cite{book:classical_mechanics:Morin2007}.
 
 %För att lösa mer komplexa problem, som exempelvis dubbelpendeln, är det ofta lättare att använda Lagranges ekvationer för att beskriva dess rörelse. Även om det är teoretiskt möjligt att beskriva en dubbelpendels rörelse med klassisk newtonsk mekanik, kan det fort bli mödosamt och därmed används Lagranges ekvationer istället.
 
@@ -26,16 +26,16 @@ För att lösa mer komplexa problem, som exempelvis en beskrivning dubbelpendeln
 
 \subsection{Principen om minsta verkan}
 
-Lagrange-mekanik bygger sin grund på \emph{principen om minsta verkan}, eller ibland även kallad \emph{principen om stationär verkan} \cite{Manton2013PrincipleLeastAction}. Denna princip säger att ett objekt kommer alltid att sträva efter att färdas den väg som minimerar den fysikaliska \emph{verkan} \cite[s.2]{Manton2013PrincipleLeastAction}. Givet att vi har ett objekt $Q$ som rör sig längs $x(t)$, där $Q$ har startpunkten $x(t_1)$ och slutpunkten $x(t_2)$, samt att $T(t)$ och $V(t)$ är objektets rörelse respektive kinetiska energi, definieras verkan $S$ inom tidsintervallet $t_1\leq t \leq t_2$ som \cite[s.10]{Manton2013PrincipleLeastAction}:
+Lagrange-mekanik bygger sin grund på \emph{principen om minsta verkan}, eller ibland även kallad \emph{principen om stationär verkan} \cite{Manton2013PrincipleLeastAction}. Denna princip säger att ett objekt kommer alltid att sträva efter att färdas den väg som minimerar dess fysikaliska \emph{verkan} \cite[s.2]{Manton2013PrincipleLeastAction}. Givet att vi har ett objekt $Q$ som rör sig längs en sträcka $x(t)$, där $Q$ har startpunkten $x(t_1)$ och slutpunkten $x(t_2)$, samt att $T(t)$ och $V(t)$ är objektets rörelse respektive kinetiska energi, definieras verkan $S$ inom tidsintervallet $t_1\leq t \leq t_2$ som \cite[s.10]{Manton2013PrincipleLeastAction}:
 \begin{equation} 
     S = \int_{t_1}^{t_2}\left(T(t)-V(t)\right)dt. \label{eq:action_definition}
 \end{equation} 
-Denna storhet har enheten [Js] och har dimensionerna (Energi $\times$ Tid) \cite[s.221]{book:classical_mechanics:Morin2007}. Själva differensen $T(t) - V(t)$ visar sig vara så relevant inom fysiken, att den har fått namnet 'the Lagrangian' och brukar betecknas $\Lagr$ \cite[s.218]{book:classical_mechanics:Morin2007}, det vill säga:
+Denna storhet har enheten [Js] och har dimensionerna (Energi $\times$ Tid) \cite[s.221]{book:classical_mechanics:Morin2007}. Själva differensen $T(t) - V(t)$ visar sig vara så förekommande inom fysiken, att den har fått namnet 'the Lagrangian' och brukar betecknas $\Lagr$ \cite[s.218]{book:classical_mechanics:Morin2007}, det vill säga:
 \begin{equation} %% todo: varför är det [2] på referensen?
     \Lagr = T - V
     \label{eq:Lagr}
 \end{equation}
-Principen om minsta verkan säger att fysikens lagar alltid kommer att sträva efter att förminska ekvation (\ref{eq:action_definition})\footnote{Egentligen, rent matematiskt, strävar verkan $S$ att hitta ett stationärt värde av $S$, det vill säga en lokal extrem- eller terrasspunkt till grafen av $S$. Detta är anledningen varför principen även kallas för \emph{principen om stationär verkan} \cite[s.222]{book:classical_mechanics:Morin2007}.}. Detta är så fysikaliskt grundläggande, att nästan all fysik kan härledas ur detta grundläggande antagande \cite{Manton2013PrincipleLeastAction}. \footnote{Men varför vill naturen alltid förminska $S$? Problemet med att besvara denna fråga är att svaret innefattar kvantmekanik, vilket ligger utanför denna rapports syfte/omfattning. För en enklare förklaring om varför principen om minsta verkan, se \cite[s. 225]{book:classical_mechanics:Morin2007}. } 
+Principen om minsta verkan säger att fysikens lagar alltid kommer att sträva efter att förminska uttrycket i (\ref{eq:action_definition})\footnote{Egentligen, rent matematiskt, strävar verkan $S$ att hitta ett stationärt värde av $S$, det vill säga en lokal extrem- eller terrasspunkt till grafen av $S$. Detta är anledningen varför principen även kallas för \emph{principen om stationär verkan} \cite[s.222]{book:classical_mechanics:Morin2007}.}. Detta är så fysikaliskt grundläggande, att nästan all fysik kan härledas ur detta grundläggande antagande \cite{Manton2013PrincipleLeastAction}. \footnote{Men varför vill naturen alltid förminska $S$? Problemet med att besvara denna fråga är att svaret innefattar kvantmekanik, vilket ligger utanför denna rapports syfte/omfattning. För en enklare förklaring om varför principen om minsta verkan, se \cite[s. 225]{book:classical_mechanics:Morin2007}. } 
 
 För att bestämma ett objekts väg som minimerar verkan $S$ används \emph{Euler-Lagrange ekvationen} \cite[s. 222]{book:classical_mechanics:Morin2007}, se ekvation (\ref{eq:euler_lagrange_equation}). I ekvation (\ref{eq:euler_lagrange_equation}) är $i = 1,2,3,\ldots$, och normalt sätt betecknar de olika koordinataxlar, eller i detta fall olika vinklar. Härledning av (\ref{eq:euler_lagrange_equation}) ges i appendix A. %% TODO, härledning av euler-lagrange ekvationen
 \begin{equation}
@@ -65,9 +65,9 @@ För att bestämma ett objekts väg som minimerar verkan $S$ används \emph{Eule
 
 
 \section{Dubbelpendeln}
-Om två vanliga enkla pendlar är sammankopplade sägs de bilda en dubbelpendel, se figur \ref{fig:double_pendulum_schematic}. Den första pendeln består av en punktformig massa $m_1$ som är kopplad till en masslös pinne med längden $l_1$, vilket sitter i en friktionslös rotationspunkt $\nu$. Den andra pendeln består också av en punktformig massa $m_2$ som är kopplad till en masslös pinne med längden $l_2$. Denna andra pendeln har sin friktionslösa rotationspunkt tillkopplad i $m_1$. Den enda kraften som verkar på respektive massa är tyngdkraften och alla annan friktion från t.ex luftmotstånd försummas.
+Om två vanliga enkla pendlar är sammankopplade sägs de bilda en dubbelpendel, se figur \ref{fig:double_pendulum_schematic}. Den första pendeln består av en punktformig massa $m_1$ som är kopplad till en masslös pinne med längden $l_1$, vilket sitter i en friktionslös rotationspunkt $\nu$. Den andra pendeln består också av en punktformig massa $m_2$ som är kopplad till en masslös pinne med längden $l_2$. Denna andra pendeln har sin friktionslösa rotationspunkt tillkopplad i $m_1$. Den enda yttre kraften som verkar på respektive massa är tyngdkraften och all annan friktion, som t.ex luftmotstånd, försummas.
 
-Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna mellan den lodräta linjen från rotationspunkten och den faktiska positionen av pendeln, se figur \ref{fig:double_pendulum_schematic}. Vinklarna $\theta_1$ och $\theta_2$ är inte begränsade mellan $-\pi \leq \theta_{1,2} \leq \pi$, dvs de kan rotera fritt hur många varv som helst runt rotationspunkterna. Det antas även här att varje pendel inte kan kollidera med varandra. 
+Låt vinklarna $\theta_1$, $\theta_2$ vara vinklarna mellan den lodräta linjen från rotationspunkten och den faktiska positionen av pendeln, se figur \ref{fig:double_pendulum_schematic}. Vinklarna $\theta_1$ och $\theta_2$ är inte begränsade mellan $-\pi \leq \theta_{1,2} \leq \pi$, det vill säga att de kan rotera fritt hur många varv som helst runt rotationspunkterna. Det antas även här att varje pendel inte kan kollidera med varandra. 
 
 \begin{figure}[h!]
     \centering
@@ -220,7 +220,7 @@ Nu när vi har uttryckt $V$ och $T$ som funktioner av $\theta_1$ och $\theta_2$,
 
 \subsubsection{Tillämpning av Euler-Lagrange ekvationen}
 
-Vi ska nu använda ekvation (\ref{eq:Lagr_simplified}) i Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) för att lösa ut ekvationen som beskriver vinklarna $\theta_1$ och $\theta_2$ i dubbelpendeln. Vi beräknar för fallet för $q_i=\theta_1$.
+Vi ska nu använda ekvation (\ref{eq:Lagr_simplified}) i Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) för att lösa ut ekvationen som beskriver vinklarna $\theta_1$ och $\theta_2$ i dubbelpendeln. Vi beräknar först fallet där $q_i=\theta_1$.
 
 Deriveringsregler för att bestämma $ \frac{\partial \Lagr}{\partial \dot{\theta}_1}$ och $\frac{d}{dt}\!\left(\frac{\partial \Lagr}{\partial \dot{\theta}_1}\right)$ ger:
 \begin{align}
@@ -245,8 +245,7 @@ Insättning av (\ref{eq:Lagr_time_derivative:respect_theta_1_dot}) och (\ref{eq:
     + m_2l_2\dot{\theta}_2^2\sin(\theta_1-\theta_2) \notag \\
     &\quad + \left(m_1 + m_2\right)g\sin{\theta_1}. \label{eq:theta_1_solution}
 \end{align}
-
-Därmed är (\ref{eq:theta_1_solution}) ekvationen som beskriver vinkeln $\theta_1$ i dubbelpendeln. Nu ska Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) lösas fast för $q_i = \theta_2$.
+Därmed är (\ref{eq:theta_1_solution}) ekvationen som beskriver dubbelpendelns rörelse i dimensionen $\theta_1$. . Nu ska Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) lösas fast för $q_i = \theta_2$.
 
 Deriveringsregler för att bestämma $ \frac{\partial \Lagr}{\partial \dot{\theta}_2}$ och $\frac{d}{dt}\!\left(\frac{\partial \Lagr}{\partial \dot{\theta}_2}\right)$ ger:
 \begin{align}
@@ -268,7 +267,7 @@ Insättning av (\ref{eq:Lagr_time_derivative:respect_theta_2_dot}) och (\ref{eq:
     \Leftrightarrow 0 &= m_2l_2\ddot{\theta}_2 + m_2l_1\ddot{\theta}_1\cos(\theta_1 - \theta_2) - m_2l_1\dot{\theta}_1^2\sin(\theta_1 - \theta_2) + m_2g\sin{\theta_2}. \label{eq:theta_2_solution}
 \end{align}
 
-Detta innebär att (\ref{eq:theta_2_solution}) är den ekvation som beskriver vinkeln $\theta_2$ i dubbelpendeln. Därmed har vi nu funnit våra två ekvationer som enligt Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) beskriver dubbelpendelns rörelse, se ekvationssystemet (\ref{eq:equations_of_motion}):
+Detta innebär att (\ref{eq:theta_2_solution}) är den ekvation som beskriver dubbelpendelns rörelse i dimensionen $\theta_2$. Därmed har vi nu funnit de två ekvationer som enligt Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) och principen om minsta verkan beskriver dubbelpendelns rörelse, se ekvationssystemet (\ref{eq:equations_of_motion}):
 \begin{equation} \begin{cases}
         0 &= \left(m_1+m_2\right)l_1\ddot{\theta}_1 + m_2l_2\ddot{\theta}_2\cos(\theta_1-\theta_2)
         + m_2l_2\dot{\theta}_2^2\sin(\theta_1-\theta_2) \\
@@ -282,16 +281,16 @@ Differentialekvationerna i (\ref{eq:equations_of_motion}) är icke-linjära och 
 
 \subsection{Eulers stegmetod}
 
-Eulers stegmetod är den enklaste explicita metoden för att bestämma lösningar till differentialekvationer med begynnelsevillkor. Metoden grundar sig i att dela in en differentialekvationen i flera tidsintervall $h$. Eftersom Eulers stegmetod är en metod av första ordningen, innebär det att felet relativt den faktiska lösningen vid varje tidsteg är proportionell tidssteget $h$ \cite{mat290-runge-kutta-6.2}. 
+Eulers stegmetod är den enklaste explicita metoden för att bestämma lösningar till differentialekvationer med begynnelsevillkor. Metoden grundar sig i att dela in differentialekvationen i flera tidsintervall $h$ och sedan stega sig fram, där lutningen för varje punkt beräknas och används för att approximera lösningen \cite{Runge-Kutta_method/Butcher2008}. Eftersom Eulers stegmetod är en metod av första ordningen, innebär det att felet relativt den faktiska lösningen vid varje tidsteg är proportionell mot tidssteget $h$ \cite{Runge-Kutta_method/Butcher2008}. 
 
 \subsubsection{Definition av Eulers stegmetod}
 
-Givet en differentialekvation på formen $y' = f(t,y)$ med det kända begynnelsevillkoret $y(t_0)$ och det tidsteget $h > 0$, definieras nästa värde $y_{n+1}$ enligt:
+Givet en differentialekvation på formen $y' = f(t,y)$ med det kända begynnelsevillkoret $y(t_0)$ och tidsteget $h > 0$, definieras nästa värde $y_{n+1}$ enligt \cite{Runge-Kutta_method/Butcher2008}:
 \begin{align}
     y_{n+1} &= y_n + f(t_n, y_n)\cdot h \\
     t_{n+1} &= t_n + h
 \end{align}
-Alternativt, om vi har ett system av ordinära differentialekvationer av grad $n$, kan vi definiera en tillståndsvektor $\mathbf{Y} = [y_1, y_2, y_3, \ldots, y_n]$ som beskriver ett systems rörelse, där begynnelsevillkoret $\mathbf{Y_0}$ även är känt. Låt även $\mathbf{f} = [f_1, f_2, \ldots, f_n]$ vara en vektor med funktioner som beskriver systemets rörelseförändring, det vill säga $\mathbf{Y}' = \mathbf{f}(t,\mathbf{Y})$. Då kan Eulers stegmetod definieras enligt:
+Alternativt, om vi har ett system av ordinära differentialekvationer av grad $n$, kan vi definiera en tillståndsvektor $\mathbf{Y} = [y_1, y_2, y_3, \ldots, y_n]$ som beskriver ett systems rörelse, där begynnelsevillkoret $\mathbf{Y_0}$ även är känt. Låt även $\mathbf{f} = [f_1, f_2, \ldots, f_n]$ vara en vektor med funktioner som beskriver systemets rörelseförändring, det vill säga $\mathbf{Y}' = \mathbf{f}(t,\mathbf{Y})$. Då kan Eulers stegmetod definieras enligt \cite{Runge-Kutta_method/Butcher2008}:
 \begin{align}
     \mathbf{Y}_{n+1} &= \mathbf{Y}_n + \mathbf{f}(t_n, \mathbf{Y}_n) \cdot h \\
     t_{n+1} &= t_n + h
@@ -299,11 +298,11 @@ Alternativt, om vi har ett system av ordinära differentialekvationer av grad $n
 
 
 \subsection{Runge-Kuttametoden (RK4-metoden)}
-Runge-Kuttametoden av fjärde ordningen\footnote{Egentligen är Runge-Kuttametoderna en familj av metoder, då den innefattar ett flertal olika metoder, bland annat Eulers stegmetod. Däremot brukas RK4-metoden menas med benämningen ''Runge-Kuttametoden'', vilket är den som användes här. För vidare förklaring, se \cite{Runge-Kutta_method/Butcher2008}. } är annan vanlig metod för att lösa differentialekvationer, dock till bättre precision än exempelvis Eulers stegmetod. Metoden bygger på att approximera lösningen stegvis med ett litet tidssteg $h$, men istället för att bara beräkna nuvarande lutningen (det som sker i Eulers stegmetod), så beräknas flera mellanliggande lutningar, där ett viktad medelvärde istället dras. konsekvensen blir att felmarginalen blir betydligt mindre hos RK4-metoden än hos Eulers stegmetod. Till skillnad från Eulers stegmetod, där felet minskar proportionellt mot steglängden $h$, så minskar felet mot steglängden upphöjt till 4 \cite{mat290-runge-kutta-6.2}. 
+Runge-Kuttametoden av fjärde ordningen\footnote{Egentligen är Runge-Kuttametoderna en familj av metoder, då den innefattar ett flertal olika metoder, bland annat Eulers stegmetod. Däremot brukas RK4-metoden menas med benämningen ''Runge-Kuttametoden'', vilket är den som användes här. För vidare förklaring, se \cite{Runge-Kutta_method/Butcher2008}. } är annan vanlig metod för att lösa differentialekvationer, dock till bättre precision än exempelvis Eulers stegmetod. Metoden bygger på att approximera lösningen stegvis med ett litet tidssteg $h$, men istället för att bara beräkna nuvarande lutningen (det som sker i Eulers stegmetod), så beräknas flera mellanliggande lutningar, där ett viktad medelvärde istället dras \cite{runge_kutta_methods_2026}. Konsekvensen blir att felmarginalen blir betydligt mindre hos RK4-metoden än hos Eulers stegmetod. Till skillnad från Eulers stegmetod, där felet minskar proportionellt mot steglängden $h$, så minskar felet mot steglängden upphöjt till 4 \cite{runge_kutta_methods_2026}. 
 
 \subsubsection{Definitionen av RK4-metoden}
 
-Givet en differentialekvation på formen $y' = f(t,y)$ med det kända begynnelsevillkoret $y_0(t_0)$ och tidssteget $h > 0$, definieras nästa $y_{n+1}$ enligt:
+Givet en differentialekvation på formen $y' = f(t,y)$ med det kända begynnelsevillkoret $y_0(t_0)$ och tidssteget $h > 0$, definieras nästa $y_{n+1}$ enligt \cite{runge_kutta_methods_2026}:
 \begin{align}
     y_{n+1} &= y_n + \frac{h}{6} \left(k_{1n} + 2k_{2n} + 2k_{3n} + k_{4n}\right) \\
     t_{n+1} &= t_n + h,
@@ -316,7 +315,7 @@ där $k_{1n}$, $k_{2n}$, $k_{3n}$ och $k_{4n}$ definieras som:
     k_{4n} &= f\left(t + h, y_n + hk_{3n}\right).
 \end{align}
 
-Alternativt, om vi har ett system av ordniära differentialekvationer av grad $n$, kan vi definiera en tillstånds vektor $\mathbf{Y} = [y_1, y_2, y_3, \ldots, y_n]$ som beskriver ett systems rörelse, där begynnelsevillkoret $\mathbf{Y_0}$ även är känt. Låt även $\mathbf{f} = [f_1, f_2, \ldots, f_n]$ vara en vektor med funktioner som beskriver systemets rörelseförändring, det vill säga $\mathbf{Y}' = \mathbf{f}(t,\mathbf{Y})$. Då kan RK4-metoden definieras enligt:
+Alternativt, om vi har ett system av ordinära differentialekvationer av grad $n$, kan vi definiera en tillstånds vektor $\mathbf{Y} = [y_1, y_2, y_3, \ldots, y_n]$ som beskriver ett systems rörelse, där begynnelsevillkoret $\mathbf{Y_0}$ även är känt. Låt även $\mathbf{f} = [f_1, f_2, \ldots, f_n]$ vara en vektor med funktioner som beskriver systemets rörelseförändring, det vill säga $\mathbf{Y}' = \mathbf{f}(t,\mathbf{Y})$. Då kan RK4-metoden definieras enligt \cite{runge_kutta_methods_2026}:
 \begin{align}
     \mathbf{Y}_{n+1} &= \mathbf{Y}_n + \frac{h}{6}\left(\mathbf{K}_{1n} + 2\mathbf{K}_{2n} + 2\mathbf{K}_{3n} + \mathbf{K}_{4n}\right) \\
     t_{n+1} &= t_n + h,
