@@ -2,7 +2,7 @@
 \addcontentsline{toc}{chapter}{Resultat}
 \refstepcounter{chapter}
 
-Resultatet av simuleringarna som beskrevs i sektion \ref{section:numeriska_metoder} redovisades i figurerna nedan. Första simuleringen, där Eulers-stegmetod och Runge-Kuttametoden jämfördes, redovisades i figur \ref{fig:comparision_euler_rk4_small_angle} och \ref{fig:comparision_euler_rk4_large_angle}. Simuleringen där två pendlar simulerades med RK4-metoden, där den andra pendeln hade 0.00001\% större begynnelsevinklar, redovisades i figur \ref{fig:comparision_between_small_angle_perbutation}. Resultatet från de parametriska plottarna av $\theta_1$ och $\theta_2$ , samt plottarna av vinklarna $\theta_1$ och $\theta_2$ som funktion av tiden enligt tabell \ref{tab:angles_for_parametric}, redovisades i figur \ref{fig:parametric_plots} respektive figur \ref{fig:plots_as_function_of_time}. Simuleringen av pendlarna som simulerades i 180 s sammanställdes i figur \ref{fig:plots_of_chaotic_pendulum_over_long_time} och \ref{fig:plots_of_stable_pendulum_over_long_time}. Till sist sammanställdes resultatet från simuleringen med begynnelsevinklarna $\theta_1 = 2.899$, $\theta_2 = 1.913$ och $\theta_1 = 2.226$, $\theta_2 = -2.114$ [rad] i figur \ref{fig:plots_of_stable_pendulums}. 
+Resultatet av simuleringarna som beskrevs i sektion \ref{section:numeriska_metoder} redovisades i figurerna nedan. Första simuleringen, där Eulers-stegmetod och Runge-Kuttametoden jämfördes, redovisades i figur \ref{fig:comparision_euler_rk4_small_angle} och \ref{fig:comparision_euler_rk4_large_angle}. Simuleringen där två pendlar simulerades med RK4-metoden, där den andra pendeln hade 0.00001\% större begynnelsevinklar, redovisades i figur \ref{fig:comparision_between_small_angle_perbutation}. Resultatet från de parametriska plottarna av $\theta_1$ och $\theta_2$, samt plottarna av vinklarna $\theta_1$ och $\theta_2$ som funktion av tiden enligt tabell \ref{tab:angles_for_parametric}, redovisades i figur \ref{fig:parametric_plots} respektive figur \ref{fig:plots_as_function_of_time}. Simuleringen av pendlarna som simulerades i 180 s sammanställdes i figur \ref{fig:plots_of_chaotic_pendulum_over_long_time} och \ref{fig:plots_of_stable_pendulum_over_long_time}. Till sist sammanställdes resultatet från simuleringen med begynnelsevinklarna $\theta_1 = 2.899$, $\theta_2 = 1.913$ och $\theta_1 = 2.226$, $\theta_2 = -2.114$ [rad] i figur \ref{fig:plots_of_stable_pendulums}. 
 
 \begin{figure}[ht]
     \begin{adjustwidth}{-2.5cm}{-2.5cm}
@@ -21,7 +21,7 @@ Resultatet av simuleringarna som beskrevs i sektion \ref{section:numeriska_metod
             \label{subfig:comparision_euler_rk4_small_angle_B}
         \end{subfigure}
     \end{adjustwidth}
-    \caption{Jämförelse mellan Eulers stegmetod och RK4-metoden, den den blåa pendeln representerar Eulers stegmetod och den röda pendeln representerar RK4-metoden. Båda pendlarna hade startvinklarna $\theta_1 = 0.5$ rad och $\theta_2 = 0.5$ rad, enligt tabell \ref{tab:euler_rk4_comparision}. Eftersom metoderna aldrig divergerar märkbart går det inte att se den röda pendeln. Steglängden för båda metoderna var 0.00005 s. Streckade linjerna motsvarar färdvägen av pendeln de senaste två sekunderna}. 
+    \caption{Jämförelse mellan Eulers stegmetod och RK4-metoden, där den blåa pendeln representerar Eulers stegmetod och den röda pendeln representerar RK4-metoden. Båda pendlarna hade startvinklarna $\theta_1 = 0.5$ rad och $\theta_2 = 0.5$ rad, enligt tabell \ref{tab:euler_rk4_comparision}. Eftersom metoderna aldrig divergerar märkbart går det inte att se den röda pendeln. Steglängden för båda metoderna var 0.00005 s. Streckade linjerna motsvarar färdvägen av pendeln de senaste två sekunderna.} 
     \label{fig:comparision_euler_rk4_small_angle}
 \end{figure}
 
@@ -107,7 +107,7 @@ Resultatet av simuleringarna som beskrevs i sektion \ref{section:numeriska_metod
             
         \end{subfigure}
         \captionsetup{width=0.80\linewidth}
-        \caption{Simulering av två pendlar med RK4-metoden. För den första pendeln (blåa) var begynnelsevinklarna $\theta_1 = 2.5$ rad och $\theta_2 = 2.5$ rad, medan för den andra pendeln (röda) var begynnelsevinklarna 0.00001\% större relativt den första pendeln. De streckade linjerna representerar färdvägen för pendlarna under de senaste 2 sekunderna.}
+        \caption{Simulering av två pendlar med RK4-metoden. För den första pendeln (blåa) var begynnelsevinklarna $\theta_1 = 2.5$ rad och $\theta_2 = 2.5$ rad, medan för den andra pendeln (röda) var begynnelsevinklarna 0.00001\% större relativt den första pendeln. De streckade linjerna representerar färdvägen för pendlarna under de senaste 2 sekunderna. Simuleringen pågick i 10 s.}
         \label{fig:comparision_between_small_angle_perbutation}
     \end{adjustwidth}
 \end{figure}
@@ -155,7 +155,7 @@ Resultatet av simuleringarna som beskrevs i sektion \ref{section:numeriska_metod
             \label{subfig:parametric_plots_F}
         \end{subfigure}
     \captionsetup{width=0.80\linewidth}
-    \caption{Parametrisk plot av vinklarna $\theta_1$ och $\theta_2$ som funktion av tiden för dubbelpendlar som simulerades 30 s med RK4-metoden. Startvinklarna för $\theta_1$ och $\theta_2$ anges i respektive bildtext.}
+    \caption{Parametrisk plot av vinklarna $\theta_1$ och $\theta_2$ som funktion av tiden för dubbelpendlar som simulerades 30 s med RK4-metoden med steglängden $h = 0.00005$ s. Startvinklarna för $\theta_1$ och $\theta_2$ anges i respektive bildtext.}
     \label{fig:parametric_plots}
     \end{adjustwidth}
 \end{figure}
@@ -206,7 +206,7 @@ Resultatet av simuleringarna som beskrevs i sektion \ref{section:numeriska_metod
             \label{subfig:plots_as_function_of_time_F}
         \end{subfigure}
         \captionsetup{width=0.80\linewidth}
-        \caption{Plot av vinklarna $\theta_1$ och $\theta_2$ som funktion av tiden. Alla dubbelpendlar simulerades i 20s, förutom i figur \ref{subfig:plots_as_function_of_time_B}, där den simulerades i 30 s. Simuleringen genomfördes med RK4-metoden.}
+        \caption{Plot av vinklarna $\theta_1$ och $\theta_2$ som funktion av tiden. Alla dubbelpendlar simulerades i 20s, förutom i figur \ref{subfig:plots_as_function_of_time_B}, där den simulerades i 30 s. Simuleringen genomfördes med RK4-metoden med steglängden $h = 0.00005$ s.}
         \label{fig:plots_as_function_of_time}
     \end{adjustwidth}
 \end{figure}
@@ -250,7 +250,7 @@ Resultatet av simuleringarna som beskrevs i sektion \ref{section:numeriska_metod
             \label{subfig:plots_of_stable_pendulum_over_long_time_B}
         \end{subfigure}
         \captionsetup{width=0.9\linewidth}
-        \caption{Plot av dubbelpendel med startvillkoren $\theta_1 = 0.7$ och $\theta_2 = 0.2$ [rad]. Simuleringen genomfördes i 180 s, men för figur a plottades bara 90 s för att göra kurvan mer läsbar. }
+        \caption{Plot av dubbelpendel med startvillkoren $\theta_1 = 0.7$ och $\theta_2 = 0.2$ [rad]. Simuleringen genomfördes i 180 s, men för figur \ref{subfig:plots_of_stable_pendulum_over_long_time_A} plottades 90 s för att göra kurvan mer läsbar. }
         \label{fig:plots_of_stable_pendulum_over_long_time}
     \end{adjustwidth}
 \end{figure}
@@ -301,7 +301,7 @@ Resultatet av simuleringarna som beskrevs i sektion \ref{section:numeriska_metod
             \label{subfig:plots_of_stable_pendulums_F}
         \end{subfigure}
         \captionsetup{width=0.80\linewidth}
-        \caption{Simulering av pendlar med begynnelsevillkoren $\theta_1 = 2.899$ och $\theta_2 = 1.913$ [rad] (figur \ref{subfig:plots_of_stable_pendulums_A}, \ref{subfig:plots_of_stable_pendulums_C} och \ref{subfig:plots_of_stable_pendulums_E}), samt $\theta_1 = 2.226$ och $\theta_2 = -2.114$ [rad] (figur \ref{subfig:plots_of_stable_pendulums_B}, \ref{subfig:plots_of_stable_pendulums_D} och \ref{subfig:plots_of_stable_pendulums_F}). Figur \ref{subfig:plots_of_stable_pendulums_A} och \ref{subfig:plots_of_stable_pendulums_B} visar den streckade linjen den färdväg som pendeln tagit. Figur \ref{subfig:plots_of_stable_pendulums_C} och \ref{subfig:plots_of_stable_pendulums_D} visar en parametrisk plot för pendlarna. Figur \ref{subfig:plots_of_stable_pendulums_E} och \ref{subfig:plots_of_stable_pendulums_F} visar vinklarna $\theta_1$ och $\theta_2$ som funktion av tiden. Alla simuleringar genomfördes med RK4-metoden.}
+        \caption{Simulering av pendlar med begynnelsevillkoren $\theta_1 = 2.899$ och $\theta_2 = 1.913$ [rad] (figur \ref{subfig:plots_of_stable_pendulums_A}, \ref{subfig:plots_of_stable_pendulums_C} och \ref{subfig:plots_of_stable_pendulums_E}), samt $\theta_1 = 2.226$ och $\theta_2 = -2.114$ [rad] (figur \ref{subfig:plots_of_stable_pendulums_B}, \ref{subfig:plots_of_stable_pendulums_D} och \ref{subfig:plots_of_stable_pendulums_F}). Figur \ref{subfig:plots_of_stable_pendulums_A} och \ref{subfig:plots_of_stable_pendulums_B} visar den streckade linjen den färdväg som pendeln tagit. Figur \ref{subfig:plots_of_stable_pendulums_C} och \ref{subfig:plots_of_stable_pendulums_D} visas en parametrisk plot för pendlarna. Figur \ref{subfig:plots_of_stable_pendulums_E} och \ref{subfig:plots_of_stable_pendulums_F} visar vinklarna $\theta_1$ och $\theta_2$ som funktion av tiden. Alla simuleringar genomfördes med RK4-metoden under 30 s, där steglängden $h = 0.00005$ s.}
         \label{fig:plots_of_stable_pendulums}
     \end{adjustwidth}
 \end{figure}

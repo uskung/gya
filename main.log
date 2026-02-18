@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.14)  18 FEB 2026 17:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.14)  18 FEB 2026 18:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1014,141 +1014,144 @@ Package pdftex.def Info: ./images/Lorenz_attractor_yb.pdf  used on input line 19
 ] [5] [6] [7] [8] [9]) [10] (./metod.tex [11
 
 ] [12]) [13] (./resultat.tex
-<./images/combined_euler_rk4_plot_at_t=0.0s_the1=0.5_the2=0.5.png, id=375, 462.528pt x 346.896pt>
+<./images/combined_euler_rk4_plot_at_t=0.0s_the1=0.5_the2=0.5.png, id=376, 462.528pt x 346.896pt>
 File: ./images/combined_euler_rk4_plot_at_t=0.0s_the1=0.5_the2=0.5.png Graphic file (type png)
 <use ./images/combined_euler_rk4_plot_at_t=0.0s_the1=0.5_the2=0.5.png>
 Package pdftex.def Info: ./images/combined_euler_rk4_plot_at_t=0.0s_the1=0.5_the2=0.5.png  used on input line 12.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/combined_euler_rk4_plot_at_t=60.0s_the1=0.5_the2=0.5.png, id=376, 462.528pt x 346.896pt>
+<./images/combined_euler_rk4_plot_at_t=60.0s_the1=0.5_the2=0.5.png, id=377, 462.528pt x 346.896pt>
 File: ./images/combined_euler_rk4_plot_at_t=60.0s_the1=0.5_the2=0.5.png Graphic file (type png)
 <use ./images/combined_euler_rk4_plot_at_t=60.0s_the1=0.5_the2=0.5.png>
 Package pdftex.def Info: ./images/combined_euler_rk4_plot_at_t=60.0s_the1=0.5_the2=0.5.png  used on input line 19.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/combined_euler_rk4_plot_at_t=0.0s_the1=2.5_the2=2.5.png, id=379, 462.528pt x 346.896pt>
+<./images/combined_euler_rk4_plot_at_t=0.0s_the1=2.5_the2=2.5.png, id=380, 462.528pt x 346.896pt>
 File: ./images/combined_euler_rk4_plot_at_t=0.0s_the1=2.5_the2=2.5.png Graphic file (type png)
 <use ./images/combined_euler_rk4_plot_at_t=0.0s_the1=2.5_the2=2.5.png>
 Package pdftex.def Info: ./images/combined_euler_rk4_plot_at_t=0.0s_the1=2.5_the2=2.5.png  used on input line 33.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/combined_euler_rk4_plot_at_t=2.0s_the1=2.5_the2=2.5.png, id=380, 462.528pt x 346.896pt>
+<./images/combined_euler_rk4_plot_at_t=2.0s_the1=2.5_the2=2.5.png, id=381, 462.528pt x 346.896pt>
 File: ./images/combined_euler_rk4_plot_at_t=2.0s_the1=2.5_the2=2.5.png Graphic file (type png)
 <use ./images/combined_euler_rk4_plot_at_t=2.0s_the1=2.5_the2=2.5.png>
 Package pdftex.def Info: ./images/combined_euler_rk4_plot_at_t=2.0s_the1=2.5_the2=2.5.png  used on input line 40.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/combined_euler_rk4_plot_at_t=4.0s_the1=2.5_the2=2.5.png, id=381, 462.528pt x 346.896pt>
+<./images/combined_euler_rk4_plot_at_t=4.0s_the1=2.5_the2=2.5.png, id=382, 462.528pt x 346.896pt>
 File: ./images/combined_euler_rk4_plot_at_t=4.0s_the1=2.5_the2=2.5.png Graphic file (type png)
 <use ./images/combined_euler_rk4_plot_at_t=4.0s_the1=2.5_the2=2.5.png>
 Package pdftex.def Info: ./images/combined_euler_rk4_plot_at_t=4.0s_the1=2.5_the2=2.5.png  used on input line 47.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/combined_euler_rk4_plot_at_t=6.0s_the1=2.5_the2=2.5.png, id=382, 462.528pt x 346.896pt>
+<./images/combined_euler_rk4_plot_at_t=6.0s_the1=2.5_the2=2.5.png, id=383, 462.528pt x 346.896pt>
 File: ./images/combined_euler_rk4_plot_at_t=6.0s_the1=2.5_the2=2.5.png Graphic file (type png)
 <use ./images/combined_euler_rk4_plot_at_t=6.0s_the1=2.5_the2=2.5.png>
 Package pdftex.def Info: ./images/combined_euler_rk4_plot_at_t=6.0s_the1=2.5_the2=2.5.png  used on input line 54.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/multiple_pendulums_plot_at_t=0.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=385, 462.528pt x 346.896pt>
+<./images/multiple_pendulums_plot_at_t=0.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=386, 462.528pt x 346.896pt>
 File: ./images/multiple_pendulums_plot_at_t=0.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png Graphic file (type png)
 <use ./images/multiple_pendulums_plot_at_t=0.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png>
 Package pdftex.def Info: ./images/multiple_pendulums_plot_at_t=0.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png  used on input line 69.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/multiple_pendulums_plot_at_t=2.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=386, 462.528pt x 346.896pt>
+<./images/multiple_pendulums_plot_at_t=2.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=387, 462.528pt x 346.896pt>
 File: ./images/multiple_pendulums_plot_at_t=2.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png Graphic file (type png)
 <use ./images/multiple_pendulums_plot_at_t=2.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png>
 Package pdftex.def Info: ./images/multiple_pendulums_plot_at_t=2.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png  used on input line 76.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/multiple_pendulums_plot_at_t=4.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=387, 462.528pt x 346.896pt>
+<./images/multiple_pendulums_plot_at_t=4.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=388, 462.528pt x 346.896pt>
 File: ./images/multiple_pendulums_plot_at_t=4.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png Graphic file (type png)
 <use ./images/multiple_pendulums_plot_at_t=4.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png>
 Package pdftex.def Info: ./images/multiple_pendulums_plot_at_t=4.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png  used on input line 83.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/multiple_pendulums_plot_at_t=6.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=388, 462.528pt x 346.896pt>
+<./images/multiple_pendulums_plot_at_t=6.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=389, 462.528pt x 346.896pt>
 File: ./images/multiple_pendulums_plot_at_t=6.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png Graphic file (type png)
 <use ./images/multiple_pendulums_plot_at_t=6.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png>
 Package pdftex.def Info: ./images/multiple_pendulums_plot_at_t=6.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png  used on input line 90.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/multiple_pendulums_plot_at_t=8.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=389, 462.528pt x 346.896pt>
+<./images/multiple_pendulums_plot_at_t=8.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=390, 462.528pt x 346.896pt>
 File: ./images/multiple_pendulums_plot_at_t=8.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png Graphic file (type png)
 <use ./images/multiple_pendulums_plot_at_t=8.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png>
 Package pdftex.def Info: ./images/multiple_pendulums_plot_at_t=8.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png  used on input line 97.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/multiple_pendulums_plot_at_t=10.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=390, 462.528pt x 346.896pt>
+<./images/multiple_pendulums_plot_at_t=10.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=391, 462.528pt x 346.896pt>
 File: ./images/multiple_pendulums_plot_at_t=10.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png Graphic file (type png)
 <use ./images/multiple_pendulums_plot_at_t=10.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png>
 Package pdftex.def Info: ./images/multiple_pendulums_plot_at_t=10.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png  used on input line 104.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/parametric_plot_the1=0.5_the2=0.5_t=30.0s.png, id=391, 462.528pt x 346.896pt>
+
+
+LaTeX Warning: Float too large for page by 4.40167pt on input line 113.
+
+<./images/parametric_plot_the1=0.5_the2=0.5_t=30.0s.png, id=392, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=0.5_the2=0.5_t=30.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=0.5_the2=0.5_t=30.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=0.5_the2=0.5_t=30.0s.png  used on input line 121.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/parametric_plot_the1=2.5_the2=2.5_t=30.0s.png, id=392, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=2.5_the2=2.5_t=30.0s.png, id=393, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=2.5_the2=2.5_t=30.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=2.5_the2=2.5_t=30.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=2.5_the2=2.5_t=30.0s.png  used on input line 127.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/parametric_plot_the1=-1.5_the2=1.0_t=30.0s.png, id=393, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=-1.5_the2=1.0_t=30.0s.png, id=394, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=-1.5_the2=1.0_t=30.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=-1.5_the2=1.0_t=30.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=-1.5_the2=1.0_t=30.0s.png  used on input line 134.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/parametric_plot_the1=0.42_the2=-1.337_t=30.0s.png, id=394, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=0.42_the2=-1.337_t=30.0s.png, id=395, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=0.42_the2=-1.337_t=30.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=0.42_the2=-1.337_t=30.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=0.42_the2=-1.337_t=30.0s.png  used on input line 140.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/parametric_plot_the1=0.5_the2=0.3_t=30.0s.png, id=395, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=0.5_the2=0.3_t=30.0s.png, id=396, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=0.5_the2=0.3_t=30.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=0.5_the2=0.3_t=30.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=0.5_the2=0.3_t=30.0s.png  used on input line 147.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/parametric_plot_the1=-0.5_the2=0.3_t=30.0s.png, id=396, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=-0.5_the2=0.3_t=30.0s.png, id=397, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=-0.5_the2=0.3_t=30.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=-0.5_the2=0.3_t=30.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=-0.5_the2=0.3_t=30.0s.png  used on input line 153.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.5_t=20.0s.png, id=397, 462.528pt x 346.896pt>
+<./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.5_t=20.0s.png, id=398, 462.528pt x 346.896pt>
 File: ./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.5_t=20.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.5_t=20.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.5_t=20.0s.png  used on input line 169.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=2.5_the2=2.5_t=30.0s.png, id=398, 462.528pt x 346.896pt>
+<./images/angles_as_functions_of_time_plot, the1=2.5_the2=2.5_t=30.0s.png, id=399, 462.528pt x 346.896pt>
 File: ./images/angles_as_functions_of_time_plot, the1=2.5_the2=2.5_t=30.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=2.5_the2=2.5_t=30.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=2.5_the2=2.5_t=30.0s.png  used on input line 176.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=-1.5_the2=1.0_t=20.0s.png, id=399, 462.528pt x 346.896pt>
+<./images/angles_as_functions_of_time_plot, the1=-1.5_the2=1.0_t=20.0s.png, id=400, 462.528pt x 346.896pt>
 File: ./images/angles_as_functions_of_time_plot, the1=-1.5_the2=1.0_t=20.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=-1.5_the2=1.0_t=20.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=-1.5_the2=1.0_t=20.0s.png  used on input line 183.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=0.42_the2=-1.337_t=20.0s.png, id=400, 462.528pt x 346.896pt>
+<./images/angles_as_functions_of_time_plot, the1=0.42_the2=-1.337_t=20.0s.png, id=401, 462.528pt x 346.896pt>
 File: ./images/angles_as_functions_of_time_plot, the1=0.42_the2=-1.337_t=20.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=0.42_the2=-1.337_t=20.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=0.42_the2=-1.337_t=20.0s.png  used on input line 190.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.3_t=20.0s.png, id=401, 462.528pt x 346.896pt>
+<./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.3_t=20.0s.png, id=402, 462.528pt x 346.896pt>
 File: ./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.3_t=20.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.3_t=20.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.3_t=20.0s.png  used on input line 197.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png, id=402, 462.528pt x 346.896pt>
+<./images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png, id=403, 462.528pt x 346.896pt>
 File: ./images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png  used on input line 204.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
 
-
 LaTeX Warning: Float too large for page by 4.82076pt on input line 212.
 
-<./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png, id=405, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png, id=406, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png  used on input line 220.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png, id=406, 462.528pt x 346.896pt>
+<./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png, id=407, 462.528pt x 346.896pt>
 File: ./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png  used on input line 227.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png, id=407, 1084.05pt x 289.08pt>
+<./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png, id=408, 1084.05pt x 289.08pt>
 File: ./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png  used on input line 241.
@@ -1158,7 +1161,7 @@ Overfull \hbox (1.4525pt too wide) in paragraph at lines 241--242
  [][] 
  []
 
-<./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png, id=408, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png, id=409, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png  used on input line 248.
@@ -1166,50 +1169,50 @@ Package pdftex.def Info: ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png, id=409, 462.528pt x 346.896pt>
+<./images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png, id=412, 462.528pt x 346.896pt>
 File: ./images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png Graphic file (type png)
 <use ./images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png>
 Package pdftex.def Info: ./images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png  used on input line 264.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png, id=410, 462.528pt x 346.896pt>
+<./images/runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png, id=413, 462.528pt x 346.896pt>
 File: ./images/runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png Graphic file (type png)
 <use ./images/runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png>
 Package pdftex.def Info: ./images/runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png  used on input line 271.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/parametric_plot_the1=2.899_the2=1.913_t=30.0s.png, id=411, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=2.899_the2=1.913_t=30.0s.png, id=414, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=2.899_the2=1.913_t=30.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=2.899_the2=1.913_t=30.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=2.899_the2=1.913_t=30.0s.png  used on input line 278.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/parametric_plot_the1=2.226_the2=-2.1141853071795866_t=30.0s.png, id=412, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=2.226_the2=-2.1141853071795866_t=30.0s.png, id=415, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=2.226_the2=-2.1141853071795866_t=30.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=2.226_the2=-2.1141853071795866_t=30.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=2.226_the2=-2.1141853071795866_t=30.0s.png  used on input line 285.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=2.899_the2=1.913_t=30.0s.png, id=413, 462.528pt x 346.896pt>
+<./images/angles_as_functions_of_time_plot, the1=2.899_the2=1.913_t=30.0s.png, id=416, 462.528pt x 346.896pt>
 File: ./images/angles_as_functions_of_time_plot, the1=2.899_the2=1.913_t=30.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=2.899_the2=1.913_t=30.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=2.899_the2=1.913_t=30.0s.png  used on input line 292.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png, id=414, 462.528pt x 346.896pt>
+<./images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png, id=417, 462.528pt x 346.896pt>
 File: ./images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png  used on input line 299.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
 
-LaTeX Warning: Float too large for page by 19.59438pt on input line 307.
+LaTeX Warning: Float too large for page by 34.09438pt on input line 307.
 
 ) [14
 
  <./images/combined_euler_rk4_plot_at_t=0.0s_the1=0.5_the2=0.5.png> <./images/combined_euler_rk4_plot_at_t=60.0s_the1=0.5_the2=0.5.png>] (./diskussion.tex [15 <./images/combined_euler_rk4_plot_at_t=0.0s_the1=2.5_the2=2.5.png> <./images/combined_euler_rk4_plot_at_t=2.0s_the1=2.5_the2=2.5.png> <./images/combined_euler_rk4_plot_at_t=4.0s_the1=2.5_the2=2.5.png> <./images/combined_euler_rk4_plot_at_t=6.0s_the1=2.5_the2=2.5.png>] [16 <./images/multiple_pendulums_plot_at_t=0.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png> <./images/multiple_pendulums_plot_at_t=2.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png> <./images/multiple_pendulums_plot_at_t=4.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png> <./images/multiple_pendulums_plot_at_t=6.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png> <./images/multiple_pendulums_plot_at_t=8.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png> <./images/multiple_pendulums_plot_at_t=10.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png>] [17 <./images/parametric_plot_the1=0.5_the2=0.5_t=30.0s.png> <./images/parametric_plot_the1=2.5_the2=2.5_t=30.0s.png> <./images/parametric_plot_the1=-1.5_the2=1.0_t=30.0s.png> <./images/parametric_plot_the1=0.42_the2=-1.337_t=30.0s.png> <./images/parametric_plot_the1=0.5_the2=0.3_t=30.0s.png> <./images/parametric_plot_the1=-0.5_the2=0.3_t=30.0s.png>] [18 <./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.5_t=20.0s.png> <./images/angles_as_functions_of_time_plot, the1=2.5_the2=2.5_t=30.0s.png> <./images/angles_as_functions_of_time_plot, the1=-1.5_the2=1.0_t=20.0s.png> <./images/angles_as_functions_of_time_plot, the1=0.42_the2=-1.337_t=20.0s.png> <./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.3_t=20.0s.png> <./images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png>] [19 <./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png> <./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png> <./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png> <./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png>] [20 <./images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png> <./images/runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png> <./images/parametric_plot_the1=2.899_the2=1.913_t=30.0s.png> <./images/parametric_plot_the1=2.226_the2=-2.1141853071795866_t=30.0s.png> <./images/angles_as_functions_of_time_plot, the1=2.899_the2=1.913_t=30.0s.png> <./images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png>] [21
 
-]
-<./images/fractal.png, id=553, 935.495pt x 935.495pt>
+] [22]
+<./images/fractal.png, id=562, 935.495pt x 935.495pt>
 File: ./images/fractal.png Graphic file (type png)
 <use ./images/fractal.png>
-Package pdftex.def Info: ./images/fractal.png  used on input line 29.
+Package pdftex.def Info: ./images/fractal.png  used on input line 32.
 (pdftex.def)             Requested size: 327.42815pt x 327.42815pt.
- [22]) [23 <./images/fractal.png>]
+) [23 <./images/fractal.png>]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1243,18 +1246,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42479 strings out of 474116
- 868149 string characters out of 5743681
+ 42483 strings out of 474116
+ 868183 string characters out of 5743681
  2349187 words of memory out of 5000000
  63706 multiletter control sequences out of 15000+600000
- 576600 words of font info for 189 fonts, out of 8000000 for 9000
+ 576818 words of font info for 191 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,117p,1981b,2869s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (35 pages, 7997300 bytes).
+Output written on main.pdf (35 pages, 7998098 bytes).
 PDF statistics:
- 1036 PDF objects out of 1200 (max. 8388607)
- 857 compressed objects within 9 object streams
+ 1039 PDF objects out of 1200 (max. 8388607)
+ 859 compressed objects within 9 object streams
  382 named destinations out of 1000 (max. 500000)
  57198 words of extra memory for PDF output out of 61914 (max. 10000000)
 

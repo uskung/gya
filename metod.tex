@@ -41,7 +41,7 @@ För att däremot kunna använda (\ref{eq:equations_of_motion_numerical_section}
         0 &= m_2l_2\dot{\omega}_2 + m_2l_1\dot{\omega}_1\cos(\theta_1 - \theta_2) - m_2l_1\omega_1^2\sin(\theta_1-\theta_2) + m_2g\sin{\theta_2}. \label{eq:equations_of_motion_with_omega_numerical_section}
     \end{cases}
 \end{equation}
-Däremot är fortfarande tredje och fjärde ekvationerna i (\ref{eq:equations_of_motion_with_omega_numerical_section}) sammankopplade\footnote{I engelsk litteratur benämns denna typ av ekvationer som 'coupled'.}. För att kunna använda (\ref{eq:equations_of_motion_with_omega_numerical_section}) med numeriska simuleringar gjordes substitutionen enligt (\ref{eq:greek_substitutions}). 
+Däremot är fortfarande tredje och fjärde ekvationerna i (\ref{eq:equations_of_motion_with_omega_numerical_section}) sammankopplade\footnote{I engelsk litteratur benämns denna typ av ekvationer som 'coupled'.}. För att kunna använda ekvationerna (\ref{eq:equations_of_motion_with_omega_numerical_section}) i numeriska simuleringar, gjordes följande substitution enligt (\ref{eq:greek_substitutions}). 
 \begin{equation}
     \begin{cases}
         \Delta\theta &= \theta_1 - \theta_2 \\
@@ -53,16 +53,18 @@ Däremot är fortfarande tredje och fjärde ekvationerna i (\ref{eq:equations_of
         \zeta &= m_2l_2\omega_1^2\sin(\Delta\theta) - m_2g\sin{\theta_2}
     \end{cases} \label{eq:greek_substitutions}
 \end{equation}
-Det går nu skriva om ekvationssystemet (\ref{eq:equations_of_motion_with_omega_numerical_section}) med hjälp av substitutionerna i (\ref{eq:greek_substitutions}) enligt:
+Därmed skrevs ekvationssystemet (\ref{eq:equations_of_motion_with_omega_numerical_section}) om med hjälp av substitutionerna i (\ref{eq:greek_substitutions}), vilket gav ett ekvationssystem (\ref{eq:equations_of_motion_greek}).
+%Det går nu skriva om ekvationssystemet (\ref{eq:equations_of_motion_with_omega_numerical_section}) med hjälp av substitutionerna i (\ref{eq:greek_substitutions}) enligt:
 \begin{equation}
     \begin{cases}
         \dot{\theta}_1 &= \omega_1  \\
         \dot{\theta}_2 &= \omega_2 \\
         0 &= \alpha\dot{\omega}_1 + \beta \dot{\omega}_2 - \epsilon \\
-        0 &= \delta\dot{\omega}_2 + \gamma\dot{\omega}_1 - \zeta.
+        0 &= \delta\dot{\omega}_2 + \gamma\dot{\omega}_1 - \zeta
     \end{cases} \label{eq:equations_of_motion_greek}
 \end{equation}
-Därmed kan nu tredje och fjärde ekvationerna i (\ref{eq:equations_of_motion_greek}) skrivas om som ett system av ekvationer i matrisform enligt:
+De tredje och fjärde ekvationerna i (\ref{eq:equations_of_motion_greek}) skrevs sedan om som ett system av ekvationer i matrisform enligt:
+%Därmed kan nu tredje och fjärde ekvationerna i (\ref{eq:equations_of_motion_greek}) skrivas om som ett system av ekvationer i matrisform enligt:
 \begin{equation}
     \begin{pmatrix}
         \alpha & \beta \\
@@ -79,7 +81,7 @@ Därmed kan nu tredje och fjärde ekvationerna i (\ref{eq:equations_of_motion_gr
     \end{pmatrix}\footnote{Detta eftersom matrismultiplikation ger att $\alpha\dot{\omega}_1 + \beta\dot{\omega}_2 = \epsilon$ och $\gamma\dot{\omega}_1 + \delta\dot{\omega}_2 = \zeta$, vilket är de ursprungliga ekvationerna.}
     \label{matrix:equations_of_motions_greek}
 \end{equation}
-Multiplikation med inversen av $\left(\begin{smallmatrix} \alpha & \beta \\ \gamma & \delta \end{smallmatrix}\right)$ i (\ref{matrix:equations_of_motions_greek}) ger:
+Multiplikation med inversen av $\left(\begin{smallmatrix} \alpha & \beta \\ \gamma & \delta \end{smallmatrix}\right)$ i (\ref{matrix:equations_of_motions_greek}) gav:
 \begin{align}
     \begin{pmatrix}
         \alpha & \beta \\
@@ -135,7 +137,8 @@ Multiplikation med inversen av $\left(\begin{smallmatrix} \alpha & \beta \\ \gam
         \frac{\alpha\zeta - \gamma\epsilon}{\alpha\delta - \beta\gamma}
     \end{pmatrix} \label{matrix:separated_for_omega_1_omega_2}
 \end{align}
-Det går därmed att avläsa från (\ref{matrix:separated_for_omega_1_omega_2}) nya, icke-sammankopplade uttryck för $\dot{\omega}_1$ och $\dot{\omega}_2$, vilket ger ett ekvationssystemet (\ref{eq:equations_of_motions_final}) som beskriver dubbelpendelns rörelse i ordinära, icke-sammankopplade differentialekvationer.
+Från (\ref{matrix:separated_for_omega_1_omega_2}) avlästes därmed nya, icke-sammankopplade utryck för $\dot{\omega}_1$ och $\dot{\omega}_2$, vilket gav ett ekvationssystemet (\ref{eq:equations_of_motions_final}) som beskriver dubbelpendelns rörelse i ordinära, icke-sammankopplade differentialekvationer.
+% Det går därmed att avläsa från (\ref{matrix:separated_for_omega_1_omega_2}) nya, icke-sammankopplade uttryck för $\dot{\omega}_1$ och $\dot{\omega}_2$, vilket ger ett ekvationssystemet (\ref{eq:equations_of_motions_final}) som beskriver dubbelpendelns rörelse i ordinära, icke-sammankopplade differentialekvationer.
 \begin{equation}
     \begin{cases}
         \dot{\theta}_1 &= \omega_1 \\
@@ -146,7 +149,7 @@ Det går därmed att avläsa från (\ref{matrix:separated_for_omega_1_omega_2}) 
 \end{equation}
 
 \section{Numerisk simulering} \label{section:numeriska_metoder}
-För att kunna simulera dubbelpendeln definierades en tillståndsvektor \\$\mathbf{X} = [\theta_1, \omega_1, \theta_2, \omega_2]$, vilket därmed ger att $\dot{\mathbf{X}} = [\omega_1, \dot{\omega}_1, \omega_2, \dot{\omega}_2]$. Ett program skrevs sedan i Python med hjälp av dessa tillståndsvektorer, först med Eulers-stegmetod, sedan med Runge-Kuttametoden, för att simulera en dubbelpendel. Dessa jämfördes enligt begynnelsevinklarna i tabell \ref{tab:euler_rk4_comparision} att demonstrera effektiviteten av respektive metod. 
+För att kunna simulera dubbelpendeln definierades en tillståndsvektor \\$\mathbf{X} = [\theta_1, \omega_1, \theta_2, \omega_2]$, vilket därmed gav att $\dot{\mathbf{X}} = [\omega_1, \dot{\omega}_1, \omega_2, \dot{\omega}_2]$. Ett program skrevs sedan i Python med hjälp av dessa tillståndsvektorer, först med Eulers-stegmetod, sedan med Runge-Kuttametoden, för att simulera en dubbelpendel. Dessa jämfördes enligt begynnelsevinklarna i tabell \ref{tab:euler_rk4_comparision} att demonstrera effektiviteten av respektive metod. För begynnelsevinklarna $\theta_1 = 0.5$, $\theta_2 = 0.5$ [rad] kördes simuleringen i 60 s, medan för begynnelsevinklarna $\theta_1 = 2.5$, $\theta_2 = 2.5$ kördes simuleringen i 6 s. 
 
 Sedan skrevs kod där två pendlar simulerades med RK4-metoden, där den andra pendelns hade 0.00001\% större begynnelsevinklar relativt den första pendeln. Detta genomfördes för begynnelsevinklarna $\theta_1 = 2.5$ och $\theta_2 = 2.5$ [rad] under 10 sekunder.
 
@@ -154,7 +157,7 @@ Sedan skrevs kod där två pendlar simulerades med RK4-metoden, där den andra p
 
 Därefter plottades vinklarna $\theta_1$ och $\theta_2$ parametriskt mot varandra enligt startvinklarna i tabell \ref{tab:angles_for_parametric}. Dessutom plottades vinklarna tillsammans mot varandra som funktion av tiden enligt samma värden i tabell \ref{tab:angles_for_parametric}. 
 
-Sedan simulerades en pendel med startvillkoren $\theta_1 = 2.9$ och $\theta_2 = -3.1$ [rad] under 180 s. Vinklarna $\theta_1$ och $\theta_2$ plottades parametriskt mot varandra, samt plottades de som funktion av tiden. Därefter simulerades en annan pendel på exakt liknande sätt, men med begynnelsevinklarna $\theta_1 = 0.7$ och $\theta = 0.2$ [rad].
+Sedan simulerades en pendel med startvillkoren $\theta_1 = 2.9$ och $\theta_2 = -3.1$ [rad] under 180 s. Vinklarna $\theta_1$ och $\theta_2$ plottades parametriskt mot varandra, samt plottades de som funktion av tiden. Därefter simulerades en annan pendel under samma tidsintervall, men med begynnelsevinklarna $\theta_1 = 0.7$ och $\theta = 0.2$ [rad].
 
 Till sist simulerades två pendlar med begynnelsevinklarna $\theta_1 = 2.899$, $\theta_2 = 1.913$ och $\theta_1 = 2.226$, $\theta_2 = -2.114$ [rad] under 30 sekunder. Vinklarna för respektive pendel plottades även parametriskt och som funktion av tiden. 
 
