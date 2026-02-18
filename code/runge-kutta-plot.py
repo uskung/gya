@@ -86,7 +86,7 @@ while t0 < t_tot + h:
     the1_list.append(state[0])
     the2_list.append(state[2])
 
-    ## for each iteration, add time step to current time
+    ## for each iteration, the time is increased by h
     t0 += h 
 
 ###############
@@ -103,7 +103,7 @@ ax.set_xlim([-2.5,2.5])
 ax.set_ylim([-2.5,2.5])
 ax.set_aspect('equal', adjustable='box')
 
-plt.xlabel(' $x$-position [m]')
+plt.xlabel('$x$-position [m]')
 plt.ylabel('$y$-position [m]')
 
 
@@ -112,14 +112,14 @@ plt.grid()
 
 ################
 # Plots the pendulum
-plt.plot(x1pos[-1], y1pos[-1], 'o', markersize=15, color='red') ## plots mass 1
-plt.plot(x2pos[-1], y2pos[-1], 'o', markersize=15, color='red') ## plots mass 2
 plt.plot([0,x1pos[-1]], [0,y1pos[-1]], color='blue') # plots rod 1
 plt.plot([x1pos[-1], x2pos[-1]], [y1pos[-1], y2pos[-1]], color='blue') # plots rod 2
 plt.plot(x2pos, y2pos, color='red', ls=':', label='Fardvag av massa 2') # plots path of mass 2
+plt.plot(x1pos[-1], y1pos[-1], 'o', markersize=15, color='red') ## plots mass 1
+plt.plot(x2pos[-1], y2pos[-1], 'o', markersize=15, color='red') ## plots mass 2
 ################
 
-# Saves png to directory, commented away currently as to make it easer to run independently
+# Saves png to directory. Currently commented away to make it easer to run independently
 #plt.savefig(f'runge-kutta_plots/runge-kutta_plot_the1={the1}_the2={the2}_at_{t_tot}s.png', dpi=300)
 
 # Plots figure

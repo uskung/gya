@@ -1,31 +1,47 @@
+### This code generates a still image of a double pendulum and its corresponding path of the second mass.
+# The double pendulum is simulated with Euler's method.
+
 import matplotlib.pyplot as plt 
 import numpy as np
-from matplotlib.animation import FuncAnimation
 
-the1 = float(eval(input("Ange startvinkeln för theta_1: ")))
-the2 = float(eval(input("Ange startvinkeln för theta_2: ")))
-ome1 = 0
-ome2 = 0
-h = 0.00005
-t_tot= float(input("Hur många sekunder vill du simulera pendeln? "))
-t0 = 0
-t_frames = np.linspace(0,40,501)
+#################
+# Initial conditions
+m_1 = 1 # mass 1[kg]
+m_2 = 1 # mass 2[kg]
+l_1 = 1 # length of rod 1 [m]
+l_2 = 1 # length of rod 2 [m]
+g = 9.82 # gravitational acceleration [m/s^2]
 
-m_1 = 1
-m_2 = 1
-l_1 = 1
-l_2 = 1
-g = 9.82
+ome1 = 0 # angular velocity of the1 [rad/s]
+ome2 = 0 # angular velocity of the2 [rad/s]
+################ 
 
-the1_list = [the1]
-the2_list = [the2]
-x1pos = []
-y1pos = []
-x2pos = []
-y2pos = []
+##############
+# User input for starting angles
+the1 = float(eval(input("Ange startvinkeln for theta_1: "))) # angle 1 [rad]
+the2 = float(eval(input("Ange startvinkeln for theta_2: "))) # angle 2 [rad]
+
+# User input for simulation time
+t_tot= float(input("Hur manga sekunder vill du simulera pendeln? "))
+##############
+
+##############
+# Conditions for simulation
+h = 0.00005 # time step [s]
+t0 = 0 # initial time [s]
+###############
+
+################
+# Define lists that will be used in simulation to store data
+the1_list = [the1] # list with the1 angles
+the2_list = [the2] # list with the2 angles
+x1pos = [] # list with x1 positions
+y1pos = [] # list with y1 positions
+x2pos = [] # list with x2 positions
+y2pos = [] # list with y2 positions
+################
 
 while t0 < t_tot + h:
-  #calculate coordinates of pendulum
   ## calculates coordinates of mass 1
   x1 = l_1*np.sin(the1)
   x1pos.append(x1)
@@ -38,7 +54,7 @@ while t0 < t_tot + h:
   y2 = -1 * l_1*np.cos(the1) - l_2*np.cos(the2)
   y2pos.append(y2)
 
-  #calculate coefficients
+  #calculate coefficients for Euler's method
   dtheta = the1 - the2
   alpha = (m_1 + m_2)*l_1
   beta = m_2*l_2*np.cos(dtheta)
@@ -58,18 +74,41 @@ while t0 < t_tot + h:
   the2 = the2 + h*ome2 # calculates new theta2
   the2_list.append(the2)
 
+  ## for each iteration, the time is increased by h
   t0 += h
 
-plt.grid()
+###############
+# Makes font to Metafont (same as in LaTeX)
+plt.rc('font', size = 11, family='serif')
+plt.rc('text', usetex=True)
+plt.rc('font', serif='Computer Modern')
+################
 
-frames=round((t_tot/25)*10**3)
-animation_const = len(x2pos)/frames
-
-path_limit = 10
-
+################
+# Plots axis, axis-labels and grid
 ax = plt.gca()
-ax.set_xlim([-2.5, 2.5])
-ax.set_ylim([-2.5, 2.5])
+ax.set_xlim([-2.5,2.5])
+ax.set_ylim([-2.5,2.5])
+ax.set_aspect('equal', adjustable='box')
 
-plt.plot(x2pos,y2pos)
+plt.xlabel('$x$-position [m]')
+plt.ylabel('$y$-position [m]')
+
+
+plt.grid()
+################
+
+################
+# Plots the pendulum
+plt.plot([0,x1pos[-1]], [0,y1pos[-1]], color='blue') # plots rod 1
+plt.plot([x1pos[-1], x2pos[-1]], [y1pos[-1], y2pos[-1]], color='blue') # plots rod 2
+plt.plot(x2pos, y2pos, color='red', ls=':', label='Fardvag av massa 2') # plots path of mass 2
+plt.plot(x1pos[-1], y1pos[-1], 'o', markersize=15, color='red') ## plots mass 1
+plt.plot(x2pos[-1], y2pos[-1], 'o', markersize=15, color='red') ## plots mass 2
+################
+
+# Saves png to directory. Currently commented away to make it easer to run independently
+#plt.savefig(f'euler_plots/euler_plot_the1={the1}_the2={the2}_at_{t_tot}s.png', dpi=300)
+
+# Plots figure
 plt.show()
