@@ -1,0 +1,14 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[39] biber-darwin:340> INFO - === Wed Feb 18, 2026, 18:31:39
+[49] Biber.pm:419> INFO - Reading 'main.bcf'
+[97] Biber.pm:979> INFO - Found 11 citekeys in bib section 0
+[105] Biber.pm:4419> INFO - Processing section 0
+[112] Biber.pm:4610> INFO - Looking for bibtex file 'references/references.bib' for section 0
+[113] bibtex.pm:1713> INFO - LaTeX decoding ...
+[119] bibtex.pm:1519> INFO - Found BibTeX data source 'references/references.bib'
+[171] UCollate.pm:68> INFO - Overriding locale 'sv-SE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[171] UCollate.pm:68> INFO - Overriding locale 'sv-SE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[171] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'sv-SE'
+[178] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[180] bbl.pm:763> INFO - Output to main.bbl
