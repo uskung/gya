@@ -146,16 +146,21 @@ Det går därmed att avläsa från (\ref{matrix:separated_for_omega_1_omega_2}) 
 \end{equation}
 
 \section{Numerisk simulering} \label{section:numeriska_metoder}
-För att utnyttja Runge-kuttametoden definierades en tillståndsvektor \\$\mathbf{X} = [\theta_1, \omega_1, \theta_2, \omega_2]$, vilket därmed ger att $\dot{\mathbf{X}} = [\omega_1, \dot{\omega}_1, \omega_2, \dot{\omega}_2]$. Ett program skrevs sedan i Python med hjälp av dessa tillståndsvektorer, först med Eulers-stegmetod, sedan med Runge-Kuttametoden, för att simulera en dubbelpendel. Dessa jämfördes för att demonstrera effektiviteten av respektive metod. 
+För att kunna simulera dubbelpendeln definierades en tillståndsvektor \\$\mathbf{X} = [\theta_1, \omega_1, \theta_2, \omega_2]$, vilket därmed ger att $\dot{\mathbf{X}} = [\omega_1, \dot{\omega}_1, \omega_2, \dot{\omega}_2]$. Ett program skrevs sedan i Python med hjälp av dessa tillståndsvektorer, först med Eulers-stegmetod, sedan med Runge-Kuttametoden, för att simulera en dubbelpendel. Dessa jämfördes enligt begynnelsevinklarna i tabell \ref{tab:euler_rk4_comparision} att demonstrera effektiviteten av respektive metod. 
 
-Sedan skrevs kod där två pendlar simulerades med RK4-metoden, där den andra pendelns hade 0.00001\% större begynnelsevinklar relativt den första pendeln. Detta genomfördes för tre huvudsakliga energitillstånd\footnote{Det vill säga att de startades med olika vinklar, sådan att de får olika mängd potentiell energi. Ju större startvinklar, desto större blir potentiella energin i systemet} under 30 sekunder genom att starta vinklarna med vinklarna enligt tabell (TODO).
+Sedan skrevs kod där två pendlar simulerades med RK4-metoden, där den andra pendelns hade 0.00001\% större begynnelsevinklar relativt den första pendeln. Detta genomfördes för begynnelsevinklarna $\theta_1 = 2.5$ och $\theta_2 = 2.5$ [rad] under 10 sekunder.
 
-Därefter plottades vinklarna $\theta_1$ och $\theta_2$ parametriskt mot varandra enligt startvinklarna i tabell (TODO). Dessutom plottades vinklarna tillsammans mot varandra som funktion av tiden enligt samma värden i tabell (TODO). 
+%tre huvudsakliga energitillstånd\footnote{Det vill säga att de startades med olika vinklar, sådan att de får olika mängd potentiell energi. Ju större startvinklar, desto större blir potentiella energin i systemet} under 30 sekunder genom att starta vinklarna med vinklarna enligt tabell (TODO).
 
-Sedan simulerades en dubbelpendel med RK4-metoden under 30 sekunder enligt startvinklarna i tabell (TODO), där vinklarna $\theta_1$ och $\theta_2$ plottades parametriskt mot varandra. Dessutom plottades även samma vinklar tillsammans som funktion av tiden, enligt samma begynnelsevinklar i tabell (TODO). 
+Därefter plottades vinklarna $\theta_1$ och $\theta_2$ parametriskt mot varandra enligt startvinklarna i tabell \ref{tab:angles_for_parametric}. Dessutom plottades vinklarna tillsammans mot varandra som funktion av tiden enligt samma värden i tabell \ref{tab:angles_for_parametric}. 
 
+Sedan simulerades en pendel med startvillkoren $\theta_1 = 2.9$ och $\theta_2 = -3.1$ [rad] under 180 s. Vinklarna $\theta_1$ och $\theta_2$ plottades parametriskt mot varandra, samt plottades de som funktion av tiden. Därefter simulerades en annan pendel på exakt liknande sätt, men med begynnelsevinklarna $\theta_1 = 0.7$ och $\theta = 0.2$ [rad].
 
-För alla pendlar antogs att pendlarna släpptes från vila, det vill säga att $\omega_1$ och $\omega_2$ = 0 vid $t=0$ s. Dessutom antogs att båda massorna $m_1$, $m_2$ = 1 kg, längderna $l_1$, $l_2$ = 1 m, samt att $g = 9.82$ m/s$^2$. All simuleringskod som skrevs sammanställdes i appendix B.
+Till sist simulerades två pendlar med begynnelsevinklarna $\theta_1 = 2.899$, $\theta_2 = 1.913$ och $\theta_1 = 2.226$, $\theta_2 = -2.114$ [rad] under 30 sekunder. Vinklarna för respektive pendel plottades även parametriskt och som funktion av tiden. 
+
+% Sedan simulerades en dubbelpendel med RK4-metoden under 30 sekunder enligt startvinklarna i tabell (TODO), där vinklarna $\theta_1$ och $\theta_2$ plottades parametriskt mot varandra. Dessutom plottades även samma vinklar tillsammans som funktion av tiden, enligt samma begynnelsevinklar i tabell (TODO). 
+
+För alla pendlar antogs att pendlarna släpptes från vila, det vill säga att $\omega_1$ och $\omega_2$ = 0 vid $t=0$ s. Dessutom antogs att båda massorna $m_1$, $m_2$ = 1 kg, längderna $l_1$, $l_2$ = 1 m, samt att $g = 9.82$ m/s$^2$. Steglängden $h$ för alla simuleringar var $h = 0.00005$ s. All simuleringskod som skrevs sammanställdes i appendix B.
 
 % Dessutom skrevs kod som visar två pendlar samtidigt med nästan exakt samma startvillkor, men att vinklarna skiljer sig åt med en liten procentskillnad i storleksordningen $10^{-4}$. 
 
@@ -182,14 +187,21 @@ För alla pendlar antogs att pendlarna släpptes från vila, det vill säga att 
         $\theta_1$ & $\theta_2$ \\
         \hline
         0.5 & 0.5 \\
-        1.6 & 1.6 \\
         2.5 & 2.5 \\
-        -0.5 & 0.3 \\
-        2.119 & 1.623 \\
-        2.899 & 1.913 \\
-        2.9 & 3.1 \\
         -1.5 & 1.0 \\
+        0.42 & -1.337 \\
+        0.5 & 0.3 \\
+        -0.5 & 0.3 \\
+        % 0.5 & 0.5 \\
+        % 1.6 & 1.6 \\
+        % 2.5 & 2.5 \\
+        % -0.5 & 0.3 \\
+        % 2.119 & 1.623 \\
+        % 2.899 & 1.913 \\
+        % 2.9 & 3.1 \\
+        % -1.5 & 1.0 \\
         \hline
     \end{tabular}
     \caption{Flera olika begynnelsevinklar för $\theta_1$ och $\theta_2$, där $\theta_1$ och $\theta_2$ motsvarar vinklarna i figur \ref{fig:double_pendulum_schematic}. }
+    \label{tab:angles_for_parametric}
 \end{table}
