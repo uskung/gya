@@ -60,41 +60,12 @@ while t0 < t_tot + h:
 
   t0 += h
 
-# fig, axis = plt.subplots()
-# animated_l_1 = axis.plot([],[], color='blue')[0]
-# animated_l_2 = axis.plot([],[], color='blue')[0]
-# animated_m1 = axis.plot([],[], 'o', markersize=15, color='red')[0]
-# animated_m2 = axis.plot([],[],'o', markersize=15,color='red')[0]
-# animated_path_m2 = axis.plot([],[], color='red')[0]
-
-# axis.set_xlim([-2.5,2.5])
-# axis.set_ylim([-2.5,2.5])
-# axis.set_title('Animering av dubbelpendel')
-
 plt.grid()
 
 frames=round((t_tot/25)*10**3)
 animation_const = len(x2pos)/frames
 
 path_limit = 10
-
-# def update_data(frame):    
-#     animated_l_1.set_data([0,x1pos[round(frame*animation_const)]], [0, y1pos[round(frame*animation_const)]])
-#     animated_l_2.set_data([x1pos[round(frame*animation_const)], x2pos[round(frame*animation_const)]], [y1pos[round(frame*animation_const)], y2pos[round(frame*animation_const)]])
-
-#     animated_m1.set_data([x1pos[round(frame*animation_const)]],[y1pos[round(frame*animation_const)]])
-#     animated_m2.set_data([x2pos[round(frame*animation_const)]],[y2pos[round(frame*animation_const)]])
-
-#     animated_path_m2.set_data(x2pos[:round(frame*animation_const):path_limit], y2pos[:round(frame*animation_const):path_limit]) ## :10 as to limit amount of points in path
-#     return animated_l_1, animated_l_2,  animated_m1, animated_m2, animated_path_m2
-
-
-# animation = FuncAnimation(
-#     fig=fig,
-#     func=update_data,
-#     frames=frames,
-#     interval=25,
-# ) 
 
 ax = plt.gca()
 ax.set_xlim([-2.5, 2.5])

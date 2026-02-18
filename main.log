@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.14)  13 FEB 2026 22:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.14)  18 FEB 2026 13:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -731,7 +731,31 @@ Package caption Info: New subtype `subtable' on input line 238.
 Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count455
 \cp@tempcnt=\count456
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count457
+\lst@gtempboxa=\box80
+\lst@token=\toks47
+\lst@length=\count458
+\lst@currlwidth=\dimen294
+\lst@column=\count459
+\lst@pos=\count460
+\lst@lostspace=\dimen295
+\lst@width=\dimen296
+\lst@newlines=\count461
+\lst@lineno=\count462
+\lst@maxwidth=\dimen297
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
+\c@lstnumber=\count463
+\lst@skipnumbers=\count464
+\lst@framebox=\box81
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/02/21 1.10 listings configuration
+))
+Package: listings 2024/02/21 1.10 (Carsten Heinz)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
  (/usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
@@ -748,11 +772,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count457
+\c@section@level=\count465
 )
-\@linkdim=\dimen294
-\Hy@linkcounter=\count458
-\Hy@pagecounter=\count459
+\@linkdim=\dimen298
+\Hy@linkcounter=\count466
+\Hy@pagecounter=\count467
  (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -760,7 +784,7 @@ Now handling font encoding PD1 ...
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count460
+\Hy@SavedSpaceFactor=\count468
  (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -773,17 +797,17 @@ Package hyperref Info: Plain pages OFF on input line 4194.
 Package hyperref Info: Backreferencing OFF on input line 4199.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4446.
-\c@Hy@tempcnt=\count461
+\c@Hy@tempcnt=\count469
 LaTeX Info: Redefining \url on input line 4784.
-\XeTeXLinkMargin=\dimen295
+\XeTeXLinkMargin=\dimen299
  (/usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count462
-\Field@Width=\dimen296
-\Fld@charsize=\dimen297
+\Fld@menulength=\count470
+\Field@Width=\dimen300
+\Fld@charsize=\dimen301
 Package hyperref Info: Hyper figures OFF on input line 6063.
 Package hyperref Info: Link nesting OFF on input line 6068.
 Package hyperref Info: Hyper index ON on input line 6071.
@@ -795,19 +819,20 @@ Package hyperref Info: PDF/A mode OFF on input line 6093.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count463
-\c@Item=\count464
-\c@Hfootnote=\count465
+\Hy@abspage=\count471
+\c@Item=\count472
+\c@Hfootnote=\count473
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
- (/usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count466
-\c@bookmark@seq@number=\count467
+\Fld@listcount=\count474
+\c@bookmark@seq@number=\count475
  (/usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
  (/usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -817,48 +842,48 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip80
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 42.
+Package hyperref Info: Option `colorlinks' set `true' on input line 43.
 
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count468
-\@quotereset=\count469
+\@quotelevel=\count476
+\@quotereset=\count477
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count470
-\scratchdimen=\dimen298
-\scratchbox=\box80
-\nofMPsegments=\count471
-\nofMParguments=\count472
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count473
-\MPscratchDim=\dimen299
-\MPnumerator=\count474
-\makeMPintoPDFobject=\count475
-\everyMPtoPDFconversion=\toks48
+\scratchcounter=\count478
+\scratchdimen=\dimen302
+\scratchbox=\box82
+\nofMPsegments=\count479
+\nofMParguments=\count480
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count481
+\MPscratchDim=\dimen303
+\MPnumerator=\count482
+\makeMPintoPDFobject=\count483
+\everyMPtoPDFconversion=\toks49
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -867,30 +892,31 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen300
-\caption@adjustwidth@linewidth=\dimen301
+\caption@adjustwidth@hsize=\dimen304
+\caption@adjustwidth@linewidth=\dimen305
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 46.
-Package microtype Info: Applying patch `item' on input line 46.
-Package microtype Info: Applying patch `toc' on input line 46.
-Package microtype Info: Applying patch `eqnum' on input line 46.
-Package microtype Info: Applying patch `footnote' on input line 46.
-Package microtype Info: Applying patch `verbatim' on input line 46.
+LaTeX Info: Redefining \microtypecontext on input line 74.
+Package microtype Info: Applying patch `item' on input line 74.
+Package microtype Info: Applying patch `toc' on input line 74.
+Package microtype Info: Applying patch `eqnum' on input line 74.
+Package microtype Info: Applying patch `footnote' on input line 74.
+Package microtype Info: Applying patch `verbatim' on input line 74.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 46.
+LaTeX Info: Redefining \showhyphens on input line 74.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-Package translations Info: no dictionary file `translations-basic-dictionary-swedish.trsl' found. on input line 46.
+Package translations Info: no dictionary file `translations-basic-dictionary-swedish.trsl' found. on input line 74.
 Package biblatex Info: Trying to load language 'swedish'...
 Package biblatex Info: ... file 'swedish.lbx' found.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/swedish.lbx
@@ -904,8 +930,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 46.
-Package biblatex Info: Reference segment=0 on input line 46.
+Package biblatex Info: Reference section=0 on input line 74.
+Package biblatex Info: Reference segment=0 on input line 74.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -941,15 +967,16 @@ Package biblatex Info: Reference segment=0 on input line 46.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 46.
+\c@lstlisting=\count484
+Package hyperref Info: Link coloring ON on input line 74.
 (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-<./images/europaskolan.png, id=92, 133.4586pt x 133.4586pt>
+<./images/europaskolan.png, id=88, 133.4586pt x 133.4586pt>
 File: ./images/europaskolan.png Graphic file (type png)
 <use ./images/europaskolan.png>
-Package pdftex.def Info: ./images/europaskolan.png  used on input line 50.
+Package pdftex.def Info: ./images/europaskolan.png  used on input line 78.
 (pdftex.def)             Requested size: 127.21939pt x 127.22276pt.
  [1
 
@@ -957,12 +984,12 @@ Package pdftex.def Info: ./images/europaskolan.png  used on input line 50.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3 \end{abstract}
+l.7 \end{abstract}
                    [1]) (./main.toc
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.23 ...}{Litteraturförteckning}{24}{section.5.2}
+l.23 ...tsline {chapter}{Appendix}{I}{chapter*.23}
                                                   % [1
 
 ])
@@ -977,7 +1004,7 @@ l.13
       [1
 
 ]
-<./images/Lorenz_attractor_yb.pdf, id=158, 564.60938pt x 564.60938pt>
+<./images/Lorenz_attractor_yb.pdf, id=153, 564.60938pt x 564.60938pt>
 File: ./images/Lorenz_attractor_yb.pdf Graphic file (type pdf)
 <use ./images/Lorenz_attractor_yb.pdf>
 Package pdftex.def Info: ./images/Lorenz_attractor_yb.pdf  used on input line 16.
@@ -986,128 +1013,128 @@ Package pdftex.def Info: ./images/Lorenz_attractor_yb.pdf  used on input line 16
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.78 \newpage
-              [2 <./images/Lorenz_attractor_yb.pdf>] (./teoretisk_genomgång.tex [3
+l.106 \newpage
+               [2 <./images/Lorenz_attractor_yb.pdf>] (./teoretisk_genomgång.tex [3
 
 ] [4] [5] [6] [7] [8]) [9] (./metod.tex [10
 
 ] [11]) [12] (./resultat.tex
-<./images/combined_euler_rk4_plot_at_t=0.0s_the1=0.5_the2=0.5.png, id=345, 462.528pt x 346.896pt>
+<./images/combined_euler_rk4_plot_at_t=0.0s_the1=0.5_the2=0.5.png, id=340, 462.528pt x 346.896pt>
 File: ./images/combined_euler_rk4_plot_at_t=0.0s_the1=0.5_the2=0.5.png Graphic file (type png)
 <use ./images/combined_euler_rk4_plot_at_t=0.0s_the1=0.5_the2=0.5.png>
 Package pdftex.def Info: ./images/combined_euler_rk4_plot_at_t=0.0s_the1=0.5_the2=0.5.png  used on input line 12.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/combined_euler_rk4_plot_at_t=60.0s_the1=0.5_the2=0.5.png, id=346, 462.528pt x 346.896pt>
+<./images/combined_euler_rk4_plot_at_t=60.0s_the1=0.5_the2=0.5.png, id=341, 462.528pt x 346.896pt>
 File: ./images/combined_euler_rk4_plot_at_t=60.0s_the1=0.5_the2=0.5.png Graphic file (type png)
 <use ./images/combined_euler_rk4_plot_at_t=60.0s_the1=0.5_the2=0.5.png>
 Package pdftex.def Info: ./images/combined_euler_rk4_plot_at_t=60.0s_the1=0.5_the2=0.5.png  used on input line 19.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/combined_euler_rk4_plot_at_t=0.0s_the1=2.5_the2=2.5.png, id=349, 462.528pt x 346.896pt>
+<./images/combined_euler_rk4_plot_at_t=0.0s_the1=2.5_the2=2.5.png, id=344, 462.528pt x 346.896pt>
 File: ./images/combined_euler_rk4_plot_at_t=0.0s_the1=2.5_the2=2.5.png Graphic file (type png)
 <use ./images/combined_euler_rk4_plot_at_t=0.0s_the1=2.5_the2=2.5.png>
 Package pdftex.def Info: ./images/combined_euler_rk4_plot_at_t=0.0s_the1=2.5_the2=2.5.png  used on input line 33.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/combined_euler_rk4_plot_at_t=2.0s_the1=2.5_the2=2.5.png, id=350, 462.528pt x 346.896pt>
+<./images/combined_euler_rk4_plot_at_t=2.0s_the1=2.5_the2=2.5.png, id=345, 462.528pt x 346.896pt>
 File: ./images/combined_euler_rk4_plot_at_t=2.0s_the1=2.5_the2=2.5.png Graphic file (type png)
 <use ./images/combined_euler_rk4_plot_at_t=2.0s_the1=2.5_the2=2.5.png>
 Package pdftex.def Info: ./images/combined_euler_rk4_plot_at_t=2.0s_the1=2.5_the2=2.5.png  used on input line 40.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/combined_euler_rk4_plot_at_t=4.0s_the1=2.5_the2=2.5.png, id=351, 462.528pt x 346.896pt>
+<./images/combined_euler_rk4_plot_at_t=4.0s_the1=2.5_the2=2.5.png, id=346, 462.528pt x 346.896pt>
 File: ./images/combined_euler_rk4_plot_at_t=4.0s_the1=2.5_the2=2.5.png Graphic file (type png)
 <use ./images/combined_euler_rk4_plot_at_t=4.0s_the1=2.5_the2=2.5.png>
 Package pdftex.def Info: ./images/combined_euler_rk4_plot_at_t=4.0s_the1=2.5_the2=2.5.png  used on input line 47.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/combined_euler_rk4_plot_at_t=6.0s_the1=2.5_the2=2.5.png, id=352, 462.528pt x 346.896pt>
+<./images/combined_euler_rk4_plot_at_t=6.0s_the1=2.5_the2=2.5.png, id=347, 462.528pt x 346.896pt>
 File: ./images/combined_euler_rk4_plot_at_t=6.0s_the1=2.5_the2=2.5.png Graphic file (type png)
 <use ./images/combined_euler_rk4_plot_at_t=6.0s_the1=2.5_the2=2.5.png>
 Package pdftex.def Info: ./images/combined_euler_rk4_plot_at_t=6.0s_the1=2.5_the2=2.5.png  used on input line 54.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/multiple_pendulums_plot_at_t=0.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=355, 462.528pt x 346.896pt>
+<./images/multiple_pendulums_plot_at_t=0.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=350, 462.528pt x 346.896pt>
 File: ./images/multiple_pendulums_plot_at_t=0.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png Graphic file (type png)
 <use ./images/multiple_pendulums_plot_at_t=0.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png>
 Package pdftex.def Info: ./images/multiple_pendulums_plot_at_t=0.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png  used on input line 69.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/multiple_pendulums_plot_at_t=2.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=356, 462.528pt x 346.896pt>
+<./images/multiple_pendulums_plot_at_t=2.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=351, 462.528pt x 346.896pt>
 File: ./images/multiple_pendulums_plot_at_t=2.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png Graphic file (type png)
 <use ./images/multiple_pendulums_plot_at_t=2.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png>
 Package pdftex.def Info: ./images/multiple_pendulums_plot_at_t=2.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png  used on input line 76.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/multiple_pendulums_plot_at_t=4.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=357, 462.528pt x 346.896pt>
+<./images/multiple_pendulums_plot_at_t=4.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=352, 462.528pt x 346.896pt>
 File: ./images/multiple_pendulums_plot_at_t=4.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png Graphic file (type png)
 <use ./images/multiple_pendulums_plot_at_t=4.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png>
 Package pdftex.def Info: ./images/multiple_pendulums_plot_at_t=4.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png  used on input line 83.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/multiple_pendulums_plot_at_t=6.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=358, 462.528pt x 346.896pt>
+<./images/multiple_pendulums_plot_at_t=6.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=353, 462.528pt x 346.896pt>
 File: ./images/multiple_pendulums_plot_at_t=6.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png Graphic file (type png)
 <use ./images/multiple_pendulums_plot_at_t=6.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png>
 Package pdftex.def Info: ./images/multiple_pendulums_plot_at_t=6.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png  used on input line 90.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/multiple_pendulums_plot_at_t=8.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=359, 462.528pt x 346.896pt>
+<./images/multiple_pendulums_plot_at_t=8.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=354, 462.528pt x 346.896pt>
 File: ./images/multiple_pendulums_plot_at_t=8.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png Graphic file (type png)
 <use ./images/multiple_pendulums_plot_at_t=8.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png>
 Package pdftex.def Info: ./images/multiple_pendulums_plot_at_t=8.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png  used on input line 97.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/multiple_pendulums_plot_at_t=10.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=360, 462.528pt x 346.896pt>
+<./images/multiple_pendulums_plot_at_t=10.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png, id=355, 462.528pt x 346.896pt>
 File: ./images/multiple_pendulums_plot_at_t=10.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png Graphic file (type png)
 <use ./images/multiple_pendulums_plot_at_t=10.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png>
 Package pdftex.def Info: ./images/multiple_pendulums_plot_at_t=10.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png  used on input line 104.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/parametric_plot_the1=0.5_the2=0.5_t=30.0s.png, id=361, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=0.5_the2=0.5_t=30.0s.png, id=356, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=0.5_the2=0.5_t=30.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=0.5_the2=0.5_t=30.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=0.5_the2=0.5_t=30.0s.png  used on input line 121.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/parametric_plot_the1=2.5_the2=2.5_t=30.0s.png, id=362, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=2.5_the2=2.5_t=30.0s.png, id=357, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=2.5_the2=2.5_t=30.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=2.5_the2=2.5_t=30.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=2.5_the2=2.5_t=30.0s.png  used on input line 127.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/parametric_plot_the1=-1.5_the2=1.0_t=30.0s.png, id=363, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=-1.5_the2=1.0_t=30.0s.png, id=358, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=-1.5_the2=1.0_t=30.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=-1.5_the2=1.0_t=30.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=-1.5_the2=1.0_t=30.0s.png  used on input line 134.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/parametric_plot_the1=0.42_the2=-1.337_t=30.0s.png, id=364, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=0.42_the2=-1.337_t=30.0s.png, id=359, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=0.42_the2=-1.337_t=30.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=0.42_the2=-1.337_t=30.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=0.42_the2=-1.337_t=30.0s.png  used on input line 140.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/parametric_plot_the1=0.5_the2=0.3_t=30.0s.png, id=365, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=0.5_the2=0.3_t=30.0s.png, id=360, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=0.5_the2=0.3_t=30.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=0.5_the2=0.3_t=30.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=0.5_the2=0.3_t=30.0s.png  used on input line 147.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/parametric_plot_the1=-0.5_the2=0.3_t=30.0s.png, id=366, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=-0.5_the2=0.3_t=30.0s.png, id=361, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=-0.5_the2=0.3_t=30.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=-0.5_the2=0.3_t=30.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=-0.5_the2=0.3_t=30.0s.png  used on input line 153.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.5_t=20.0s.png, id=367, 462.528pt x 346.896pt>
+<./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.5_t=20.0s.png, id=362, 462.528pt x 346.896pt>
 File: ./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.5_t=20.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.5_t=20.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.5_t=20.0s.png  used on input line 169.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=2.5_the2=2.5_t=30.0s.png, id=368, 462.528pt x 346.896pt>
+<./images/angles_as_functions_of_time_plot, the1=2.5_the2=2.5_t=30.0s.png, id=363, 462.528pt x 346.896pt>
 File: ./images/angles_as_functions_of_time_plot, the1=2.5_the2=2.5_t=30.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=2.5_the2=2.5_t=30.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=2.5_the2=2.5_t=30.0s.png  used on input line 176.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=-1.5_the2=1.0_t=20.0s.png, id=369, 462.528pt x 346.896pt>
+<./images/angles_as_functions_of_time_plot, the1=-1.5_the2=1.0_t=20.0s.png, id=364, 462.528pt x 346.896pt>
 File: ./images/angles_as_functions_of_time_plot, the1=-1.5_the2=1.0_t=20.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=-1.5_the2=1.0_t=20.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=-1.5_the2=1.0_t=20.0s.png  used on input line 183.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=0.42_the2=-1.337_t=20.0s.png, id=370, 462.528pt x 346.896pt>
+<./images/angles_as_functions_of_time_plot, the1=0.42_the2=-1.337_t=20.0s.png, id=365, 462.528pt x 346.896pt>
 File: ./images/angles_as_functions_of_time_plot, the1=0.42_the2=-1.337_t=20.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=0.42_the2=-1.337_t=20.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=0.42_the2=-1.337_t=20.0s.png  used on input line 190.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.3_t=20.0s.png, id=371, 462.528pt x 346.896pt>
+<./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.3_t=20.0s.png, id=366, 462.528pt x 346.896pt>
 File: ./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.3_t=20.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.3_t=20.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.3_t=20.0s.png  used on input line 197.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png, id=372, 462.528pt x 346.896pt>
+<./images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png, id=367, 462.528pt x 346.896pt>
 File: ./images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png  used on input line 204.
@@ -1116,17 +1143,17 @@ Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=-0.5_th
 
 LaTeX Warning: Float too large for page by 4.82076pt on input line 212.
 
-<./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png, id=375, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png, id=370, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png  used on input line 220.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png, id=376, 462.528pt x 346.896pt>
+<./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png, id=371, 462.528pt x 346.896pt>
 File: ./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png  used on input line 227.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png, id=377, 1084.05pt x 289.08pt>
+<./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png, id=372, 1084.05pt x 289.08pt>
 File: ./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png  used on input line 241.
@@ -1136,7 +1163,7 @@ Overfull \hbox (1.4525pt too wide) in paragraph at lines 241--242
  [][] 
  []
 
-<./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png, id=378, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png, id=373, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png  used on input line 248.
@@ -1144,32 +1171,32 @@ Package pdftex.def Info: ./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png, id=379, 462.528pt x 346.896pt>
+<./images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png, id=374, 462.528pt x 346.896pt>
 File: ./images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png Graphic file (type png)
 <use ./images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png>
 Package pdftex.def Info: ./images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png  used on input line 264.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png, id=380, 462.528pt x 346.896pt>
+<./images/runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png, id=375, 462.528pt x 346.896pt>
 File: ./images/runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png Graphic file (type png)
 <use ./images/runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png>
 Package pdftex.def Info: ./images/runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png  used on input line 271.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/parametric_plot_the1=2.899_the2=1.913_t=30.0s.png, id=381, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=2.899_the2=1.913_t=30.0s.png, id=376, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=2.899_the2=1.913_t=30.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=2.899_the2=1.913_t=30.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=2.899_the2=1.913_t=30.0s.png  used on input line 278.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/parametric_plot_the1=2.226_the2=-2.1141853071795866_t=30.0s.png, id=382, 462.528pt x 346.896pt>
+<./images/parametric_plot_the1=2.226_the2=-2.1141853071795866_t=30.0s.png, id=377, 462.528pt x 346.896pt>
 File: ./images/parametric_plot_the1=2.226_the2=-2.1141853071795866_t=30.0s.png Graphic file (type png)
 <use ./images/parametric_plot_the1=2.226_the2=-2.1141853071795866_t=30.0s.png>
 Package pdftex.def Info: ./images/parametric_plot_the1=2.226_the2=-2.1141853071795866_t=30.0s.png  used on input line 285.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=2.899_the2=1.913_t=30.0s.png, id=383, 462.528pt x 346.896pt>
+<./images/angles_as_functions_of_time_plot, the1=2.899_the2=1.913_t=30.0s.png, id=378, 462.528pt x 346.896pt>
 File: ./images/angles_as_functions_of_time_plot, the1=2.899_the2=1.913_t=30.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=2.899_the2=1.913_t=30.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=2.899_the2=1.913_t=30.0s.png  used on input line 292.
 (pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
-<./images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png, id=384, 462.528pt x 346.896pt>
+<./images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png, id=379, 462.528pt x 346.896pt>
 File: ./images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png Graphic file (type png)
 <use ./images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png>
 Package pdftex.def Info: ./images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png  used on input line 299.
@@ -1182,44 +1209,57 @@ LaTeX Warning: Float too large for page by 19.59438pt on input line 307.
  <./images/combined_euler_rk4_plot_at_t=0.0s_the1=0.5_the2=0.5.png> <./images/combined_euler_rk4_plot_at_t=60.0s_the1=0.5_the2=0.5.png>] (./diskussion.tex [14 <./images/combined_euler_rk4_plot_at_t=0.0s_the1=2.5_the2=2.5.png> <./images/combined_euler_rk4_plot_at_t=2.0s_the1=2.5_the2=2.5.png> <./images/combined_euler_rk4_plot_at_t=4.0s_the1=2.5_the2=2.5.png> <./images/combined_euler_rk4_plot_at_t=6.0s_the1=2.5_the2=2.5.png>] [15 <./images/multiple_pendulums_plot_at_t=0.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png> <./images/multiple_pendulums_plot_at_t=2.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png> <./images/multiple_pendulums_plot_at_t=4.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png> <./images/multiple_pendulums_plot_at_t=6.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png> <./images/multiple_pendulums_plot_at_t=8.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png> <./images/multiple_pendulums_plot_at_t=10.0s_the1=2.5_the2=2.5_procent_diff=1.0000000000000001e-07.png>] [16 <./images/parametric_plot_the1=0.5_the2=0.5_t=30.0s.png> <./images/parametric_plot_the1=2.5_the2=2.5_t=30.0s.png> <./images/parametric_plot_the1=-1.5_the2=1.0_t=30.0s.png> <./images/parametric_plot_the1=0.42_the2=-1.337_t=30.0s.png> <./images/parametric_plot_the1=0.5_the2=0.3_t=30.0s.png> <./images/parametric_plot_the1=-0.5_the2=0.3_t=30.0s.png>] [17 <./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.5_t=20.0s.png> <./images/angles_as_functions_of_time_plot, the1=2.5_the2=2.5_t=30.0s.png> <./images/angles_as_functions_of_time_plot, the1=-1.5_the2=1.0_t=20.0s.png> <./images/angles_as_functions_of_time_plot, the1=0.42_the2=-1.337_t=20.0s.png> <./images/angles_as_functions_of_time_plot, the1=0.5_the2=0.3_t=20.0s.png> <./images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png>] [18 <./images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png> <./images/angles_as_functions_of_time_plot, the1=2.9_the2=-3.1_t=180.0s.png> <./images/angles_as_functions_of_time_plot, the1=0.7_the2=0.2_t=90.0s.png> <./images/parametric_plot_the1=0.7_the2=0.2_t=180.0s.png>] [19 <./images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png> <./images/runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png> <./images/parametric_plot_the1=2.899_the2=1.913_t=30.0s.png> <./images/parametric_plot_the1=2.226_the2=-2.1141853071795866_t=30.0s.png> <./images/angles_as_functions_of_time_plot, the1=2.899_the2=1.913_t=30.0s.png> <./images/angles_as_functions_of_time_plot, the1=2.226_the2=-2.1141853071795866_t=30.0s.png>] [20
 
 ]
-<./images/fractal.png, id=523, 935.495pt x 935.495pt>
+<./images/fractal.png, id=518, 935.495pt x 935.495pt>
 File: ./images/fractal.png Graphic file (type png)
 <use ./images/fractal.png>
 Package pdftex.def Info: ./images/fractal.png  used on input line 28.
 (pdftex.def)             Requested size: 327.42815pt x 327.42815pt.
- [21]) [22 <./images/fractal.png>] [23]
+ [21]) [22 <./images/fractal.png>]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [24
+ [23
 
-] (./appendix.tex) [1
+] (./appendix.tex [1
 
-] (./main.aux)
+] (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/02/21 1.10 listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 22.
+ [2]
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 107.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+) [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3E98B4DEC48716AA420572347E492BBD;4087.
+(rerunfilecheck)             Checksum: 3AB70A42A990C9B332B6176CBF83C900;3769.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40321 strings out of 474116
- 837164 string characters out of 5743681
- 1955187 words of memory out of 5000000
- 61834 multiletter control sequences out of 15000+600000
- 575951 words of font info for 184 fonts, out of 8000000 for 9000
+ 42296 strings out of 474116
+ 864111 string characters out of 5743681
+ 2222187 words of memory out of 5000000
+ 63692 multiletter control sequences out of 15000+600000
+ 576406 words of font info for 186 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,15n,117p,1820b,2143s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (29 pages, 7941812 bytes).
+ 84i,15n,117p,1820b,2685s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on main.pdf (30 pages, 7973383 bytes).
 PDF statistics:
- 671 PDF objects out of 1000 (max. 8388607)
- 505 compressed objects within 6 object streams
- 131 named destinations out of 1000 (max. 500000)
- 56182 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 799 PDF objects out of 1000 (max. 8388607)
+ 627 compressed objects within 7 object streams
+ 227 named destinations out of 1000 (max. 500000)
+ 57198 words of extra memory for PDF output out of 61914 (max. 10000000)
 

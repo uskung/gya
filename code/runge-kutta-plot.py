@@ -6,12 +6,12 @@ plt.rc('font', size = 11, family='serif')
 plt.rc('text', usetex=True)
 plt.rc('font', serif='Computer Modern')
 
-the1 = float(eval(input("Ange startvinkeln för theta_1: ")))
-the2 = float(eval(input("Ange startvinkeln för theta_2: ")))
+the1 = float(eval(input("Ange startvinkeln for theta_1: ")))
+the2 = float(eval(input("Ange startvinkeln for theta_2: ")))
 ome1 = 0
 ome2 = 0
 h = 0.00005
-t_tot= float(input("Hur många sekunder vill du simulera pendeln? "))
+t_tot= float(input("Hur manga sekunder vill du simulera pendeln? "))
 t0 = 0
 
 m_1 = 1
