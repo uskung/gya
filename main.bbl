@@ -53,6 +53,47 @@
       \field{pages}{70}
       \range{pages}{1}
     \endentry
+    \entry{halliday1997fundamentals}{book}{}
+      \name{author}{3}{}{%
+        {{hash=9d9a6552821ea504ab1a5c767dddff92}{%
+           family={Halliday},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8967f5a0664f741b0ef2530a47e698fa}{%
+           family={Resnick},
+           familyi={R\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=aa8304879d8f7d99c7c4570759b948e2}{%
+           family={Walker},
+           familyi={W\bibinitperiod},
+           given={Jearl},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{3978689396696961b0bd612b55ccf075}
+      \strng{fullhash}{3978689396696961b0bd612b55ccf075}
+      \strng{bibnamehash}{3978689396696961b0bd612b55ccf075}
+      \strng{authorbibnamehash}{3978689396696961b0bd612b55ccf075}
+      \strng{authornamehash}{3978689396696961b0bd612b55ccf075}
+      \strng{authorfullhash}{3978689396696961b0bd612b55ccf075}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{5}
+      \field{isbn}{978-0-471-14854-8}
+      \field{title}{Fundamentals of Physics}
+      \field{year}{1997}
+      \field{pages}{381}
+      \range{pages}{1}
+    \endentry
     \entry{britannica_chaos_theory_2025}{online}{}
       \name{author}{1}{}{%
         {{hash=e32d4b56f672cd6736099a214e4fd3aa}{%
@@ -68,8 +109,8 @@
       \strng{authorbibnamehash}{e32d4b56f672cd6736099a214e4fd3aa}
       \strng{authornamehash}{e32d4b56f672cd6736099a214e4fd3aa}
       \strng{authorfullhash}{e32d4b56f672cd6736099a214e4fd3aa}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{19}
@@ -83,6 +124,45 @@
       \endverb
       \verb{url}
       \verb https://www.britannica.com/science/chaos-theory
+      \endverb
+    \endentry
+    \entry{strogatz2018nonlinear}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b0115f77df78376c68429033349375fc}{%
+           family={Strogatz},
+           familyi={S\bibinitperiod},
+           given={Steven\bibnamedelima H.},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boca Raton, FL}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis Group}%
+      }
+      \strng{namehash}{b0115f77df78376c68429033349375fc}
+      \strng{fullhash}{b0115f77df78376c68429033349375fc}
+      \strng{bibnamehash}{b0115f77df78376c68429033349375fc}
+      \strng{authorbibnamehash}{b0115f77df78376c68429033349375fc}
+      \strng{authornamehash}{b0115f77df78376c68429033349375fc}
+      \strng{authorfullhash}{b0115f77df78376c68429033349375fc}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{isbn}{978-0429961113}
+      \field{title}{Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering}
+      \field{urlday}{18}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.biodyn.ro/course/literatura/Nonlinear_Dynamics_and_Chaos_2018_Steven_H._Strogatz.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.biodyn.ro/course/literatura/Nonlinear_Dynamics_and_Chaos_2018_Steven_H._Strogatz.pdf
       \endverb
     \endentry
     \entry{lorenz1963deterministic}{article}{}
@@ -99,8 +179,9 @@
       \strng{authorbibnamehash}{b3eeab11b971bbf5ed269c4f19465b91}
       \strng{authornamehash}{b3eeab11b971bbf5ed269c4f19465b91}
       \strng{authorfullhash}{b3eeab11b971bbf5ed269c4f19465b91}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of the Atmospheric Sciences}
@@ -111,6 +192,42 @@
       \endverb
       \verb{url}
       \verb https://cdanfort.w3.uvm.edu/research/lorenz-1963.pdf
+      \endverb
+    \endentry
+    \entry{Lorenz1960StatisticalPrediction}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=b3eeab11b971bbf5ed269c4f19465b91}{%
+           family={Lorenz},
+           familyi={L\bibinitperiod},
+           given={Edward\bibnamedelima N.},
+           giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Tokyo}%
+      }
+      \strng{namehash}{b3eeab11b971bbf5ed269c4f19465b91}
+      \strng{fullhash}{b3eeab11b971bbf5ed269c4f19465b91}
+      \strng{bibnamehash}{b3eeab11b971bbf5ed269c4f19465b91}
+      \strng{authorbibnamehash}{b3eeab11b971bbf5ed269c4f19465b91}
+      \strng{authornamehash}{b3eeab11b971bbf5ed269c4f19465b91}
+      \strng{authorfullhash}{b3eeab11b971bbf5ed269c4f19465b91}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Symposium on Numerical Weather Prediction}
+      \field{title}{The Statistical Prediction of Solutions of Dynamic Equations}
+      \field{urlday}{18}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{year}{1960}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://web.archive.org/web/20190523190103/http://eaps4.mit.edu/research/Lorenz/The_Statistical_Prediction_of_Solutions_1962.pdf
+      \endverb
+      \verb{url}
+      \verb https://web.archive.org/web/20190523190103/http://eaps4.mit.edu/research/Lorenz/The_Statistical_Prediction_of_Solutions_1962.pdf
       \endverb
     \endentry
     \entry{Manton2013PrincipleLeastAction}{misc}{}
@@ -134,8 +251,8 @@
       \strng{authorbibnamehash}{afcb7a66b438d8546d5cb605365fae32}
       \strng{authornamehash}{afcb7a66b438d8546d5cb605365fae32}
       \strng{authorfullhash}{afcb7a66b438d8546d5cb605365fae32}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{25}
@@ -163,8 +280,8 @@
       \strng{authorbibnamehash}{aef5bd6e3dec245764935a24ef74aa14}
       \strng{authornamehash}{aef5bd6e3dec245764935a24ef74aa14}
       \strng{authorfullhash}{aef5bd6e3dec245764935a24ef74aa14}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Introduction to Classical Mechanics: With Problems and Solutions}
@@ -213,8 +330,8 @@
       \strng{authorbibnamehash}{c4141ad87d07f41e44c31cc3b342bb04}
       \strng{authornamehash}{c4141ad87d07f41e44c31cc3b342bb04}
       \strng{authorfullhash}{c4141ad87d07f41e44c31cc3b342bb04}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{6.2 Runge--Kutta Methods}
@@ -248,8 +365,8 @@
       \strng{authorbibnamehash}{e7554d5a78a0057cdd938f3c31b61081}
       \strng{authornamehash}{e7554d5a78a0057cdd938f3c31b61081}
       \strng{authorfullhash}{e7554d5a78a0057cdd938f3c31b61081}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{11}
