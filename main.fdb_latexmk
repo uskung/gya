@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1771422180.5082 "main.bcf" "main.bbl" "main" 1771423186.9163 0
-  "main.bcf" 1771423186.79303 108685 69c3ae5b5bfcc1d9a141fe9bb375dca0 "pdflatex"
+["biber main"] 1771422180.5082 "main.bcf" "main.bbl" "main" 1771424561.75264 0
+  "main.bcf" 1771424561.63015 108685 69c3ae5b5bfcc1d9a141fe9bb375dca0 "pdflatex"
   "ref.bib" 1771015314.01286 3611 c7c750ed0fce68875fa59f073e91d96b ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1771423176.57217 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1771423186.9166 0
-  "/Users/Oscar/Skola/Europaskolan/gya/main.tex" 1771418055.26638 3396 cd445882fff103cbcc6ce1360a3ecdd8 ""
+["pdflatex"] 1771424551.62409 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1771424561.7529 0
+  "/Users/Oscar/Skola/Europaskolan/gya/main.tex" 1771424545.37374 2864 26228a05134133ff31194fc4cd1381bf ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tctt1000.tfm" 1136768653 1536 c5729d01ab121276cf99b309129349a0 ""
@@ -230,10 +230,10 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1734173600 8221431 468ff963c93a7b261a96ad4a49e3a62c ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "abstract.tex" 1771018994.04058 1234 d6fcd7f9160639f770c9f67be933e021 ""
-  "appendix.tex" 1771423179.99619 2495 f5f6e3d8d30eb13a93e51a5c44402a36 ""
+  "appendix.tex" 1771424335.33209 2691 c48e9d0cf47a902bc1825ce13fb9e6fa ""
   "code/euler_plot.py" 1771422714.37006 3517 a4e04f6fc987123caccc19b249be1cb6 ""
   "code/runge-kutta-plot.py" 1771422715.13521 4098 d407d39df90f15dcf0ce3abb7ddf00bc ""
-  "diskussion.tex" 1771417882.78221 8933 3d539f298e55d029d1b0b1765b6d707e ""
+  "diskussion.tex" 1771424082.2343 8976 f8f6d0d212ed34ad0ed5b5ad55118400 ""
   "images/Lorenz_attractor_yb.pdf" 1770940012.83832 362322 39383f69d58afe4d97387c2cd9c29940 ""
   "images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png" 1770560182.84623 239520 df38fb6f78a398cb395f2c31ff531114 ""
   "images/angles_as_functions_of_time_plot, the1=-1.5_the2=1.0_t=20.0s.png" 1770560107.47473 232261 68e934ec03378531f4aadd99af6dfa82 ""
@@ -271,16 +271,16 @@
   "images/parametric_plot_the1=2.9_the2=-3.1_t=180.0s.png" 1770586051.21383 85054 f79a4042806db6430952059a93ee6ff9 ""
   "images/runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png" 1770565115.85516 79558 b3263cc4d3a8aa645000882570dbeb01 ""
   "images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png" 1770564750.74577 81212 d67730fc30d45a9b3d3620be61198ffb ""
-  "inledning.tex" 1770987373.51365 10231 91359c58fe829b87b47eb0cdc80bde38 ""
-  "main.aux" 1771423186.78654 30537 dcc1680ba03941c9c2f77d1a75d1b158 "pdflatex"
+  "inledning.tex" 1771423896.5355 10347 f114abf19549ca2cd90df193c9c88983 ""
+  "main.aux" 1771424561.62404 30464 ea405248e2c105f971deee271e0ef318 "pdflatex"
   "main.bbl" 1771422184.74594 10309 adcfa8bc6d4995d181c0c32eac0f04ad "biber main"
-  "main.out" 1771423186.79046 3771 a7e670d3284313ebf85e8880cda5387c "pdflatex"
-  "main.run.xml" 1771423186.79369 2298 3274c65e7617279dbcbf7ae1ef88d128 "pdflatex"
-  "main.tex" 1771418055.26638 3396 cd445882fff103cbcc6ce1360a3ecdd8 ""
-  "main.toc" 1771423186.79375 2012 fb43fb0cb1f2250db02305b304c52e47 "pdflatex"
-  "metod.tex" 1771004311.59619 11838 a9434e5efb580f18ff0b9669f598be2f ""
-  "resultat.tex" 1771015915.74439 17547 4b6f4fdda4d2daa94c506bdf5c33b3dc ""
-  "teoretisk_genomgång.tex" 1771004803.9743 30225 46a9d7baf7edd4b4b096493b1f226e0f ""
+  "main.out" 1771424561.62759 3681 843abd01e6dfefdac602f887e9d9ab7c "pdflatex"
+  "main.run.xml" 1771424561.63075 2298 3274c65e7617279dbcbf7ae1ef88d128 "pdflatex"
+  "main.tex" 1771424545.37374 2864 26228a05134133ff31194fc4cd1381bf ""
+  "main.toc" 1771424561.63082 1941 a9b86c7e3201aaee58f755b4eade3b98 "pdflatex"
+  "metod.tex" 1771424035.67452 11896 7ceed96fbd337762772a07c40af705a3 ""
+  "resultat.tex" 1771424064.89652 17588 16fc2b7950cd0f34024302c8927d3be8 ""
+  "teoretisk_genomgång.tex" 1771423962.26048 30276 3657acedc6ed85550e081a939f5f75d2 ""
   (generated)
   "main.aux"
   "main.bcf"

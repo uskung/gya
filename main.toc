@@ -1,8 +1,8 @@
 \babel@toc {swedish}{}\relax 
-\contentsline {chapter}{Inledning}{1}{chapter*.1}%
+\contentsline {chapter}{Inledning}{1}{chapter*.2}%
 \contentsline {section}{\numberline {1.1}Introduktion och bakgrund}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Syfte och frågeställning}{2}{section.1.2}%
-\contentsline {chapter}{Teoretisk bakgrund}{3}{section.1.2}%
+\contentsline {chapter}{Teoretisk bakgrund}{3}{chapter*.4}%
 \contentsline {section}{\numberline {2.1}Lagrange-mekanik}{3}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Principen om minsta verkan}{3}{subsection.2.1.1}%
 \contentsline {section}{\numberline {2.2}Dubbelpendeln}{4}{section.2.2}%
@@ -13,13 +13,13 @@
 \contentsline {subsubsection}{Definition av Eulers stegmetod}{8}{subsubsection*.7}%
 \contentsline {subsection}{\numberline {2.3.2}Runge-Kuttametoden (RK4-metoden)}{8}{subsection.2.3.2}%
 \contentsline {subsubsection}{Definitionen av RK4-metoden}{8}{subsubsection*.8}%
-\contentsline {chapter}{Metod/Numerisk simulering}{10}{equation.2.3.37}%
+\contentsline {chapter}{Metod/Numerisk simulering}{10}{chapter*.9}%
 \contentsline {section}{\numberline {3.1}Behandling av rörelseekvationerna för simulering}{10}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Numerisk simulering}{11}{section.3.2}%
-\contentsline {chapter}{Resultat}{13}{table.caption.11}%
-\contentsline {chapter}{Diskussion}{20}{figure.caption.20}%
+\contentsline {chapter}{Resultat}{13}{chapter*.12}%
+\contentsline {chapter}{Diskussion}{20}{chapter*.21}%
 \contentsline {section}{\numberline {5.1}Slutsats}{22}{section.5.1}%
-\contentsline {chapter}{Litteraturförteckning}{23}{section.5.1}%
-\contentsline {chapter}{Appendix}{I}{chapter*.23}%
-\contentsline {section}{A - Härledning av Euler-Lagrange ekvationen (\ref {eq:euler_lagrange_equation})}{VII}{lstnumber.Alph0.2.114}%
-\contentsline {section}{B - Kod för simulering av dubbelpendeln}{VII}{lstnumber.Alph0.2.114}%
+\contentsline {chapter}{Litteraturförteckning}{23}{chapter*.23}%
+\contentsline {chapter}{Appendix}{I}{chapter*.24}%
+\contentsline {section}{A - Härledning av Euler-Lagrange ekvationen}{I}{chapter.6}%
+\contentsline {section}{B - Kod för simulering av dubbelpendeln}{II}{equation.Alph0.0.2}%

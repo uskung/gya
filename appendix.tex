@@ -1,8 +1,11 @@
+\chapter*{Appendix}
+\addcontentsline{toc}{chapter}{Appendix}
 \pagenumbering{Roman}
 \refstepcounter{chapter}
-\chapter*{Appendix}
 \appendix
+
 \section*{A - Härledning av Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation})} \label{appendix:euler_lagrange_equation}
+\addcontentsline{toc}{section}{A - Härledning av Euler-Lagrange ekvationen}
 
 Denna härledningen är huvudsakligen baserat på \cite[s. 222-223]{book:classical_mechanics:Morin2007}. Givet att funktionen $x_0(t)$ beskriver den väg av ett objekt, med startpunkterna $x(t_1) = x_1$ och $x(t_2) = x_2$, som ger ett stationärt\footnote{Kan alltså vara ett lokalt minimum, maximum eller terrasspunkt av $S$. Däremot är detta oftast ett minimum, därför det oftast benämns som \emph{principen om \emph{minsta} verkan.}} värde av objektets verkan $S$, då gäller att:
 \begin{equation}
@@ -16,8 +19,13 @@ Denna härledningen är huvudsakligen baserat på \cite[s. 222-223]{book:classic
 \end{equation}
 där $a$ är ett tal och $\beta(t)$ uppfyller $\beta(t_1) = \beta(t_2) = 0$ så att ändpunkterna för $x_a(t)$ och $x_0(t)$ är detsamma. 
 
+
+
+
+
 \newpage
 \section*{B - Kod för simulering av dubbelpendeln} \label{appendix:code}
+\addcontentsline{toc}{section}{B - Kod för simulering av dubbelpendeln}
 Bifogat i Appendix B finns grundkoderna för RK4-metoden och Eulers stegmetod. Alla simuleringar som genomfördes använde någon form av dessa koder. För övrig kod som generera de resterande graferna/simuleringarna, se  \url{https://github.com/uskung/gya/tree/main/code}.
 
 \subsection*{Kod för RK4-metoden}
