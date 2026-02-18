@@ -571,7 +571,10 @@ INPUT appendix.tex
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT ./code/runge-kutta-plot.py
+INPUT ./code/runge-kutta-plot.py
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT code/runge-kutta-plot.py
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmtt.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmtt.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmtt.fd

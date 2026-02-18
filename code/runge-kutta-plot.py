@@ -1,4 +1,4 @@
-### This code generates a still image of a double pendulum and its corresponding path of the second mass, which the second mass has traversed until a specific time $t$ (which is specified by the user). 
+### This code generates a still image of a double pendulum and its corresponding path of the second mass.
 # The double pendulum is simulated with the RK4 method. 
 
 import matplotlib.pyplot as plt 
@@ -116,7 +116,7 @@ plt.plot(x1pos[-1], y1pos[-1], 'o', markersize=15, color='red') ## plots mass 1
 plt.plot(x2pos[-1], y2pos[-1], 'o', markersize=15, color='red') ## plots mass 2
 plt.plot([0,x1pos[-1]], [0,y1pos[-1]], color='blue') # plots rod 1
 plt.plot([x1pos[-1], x2pos[-1]], [y1pos[-1], y2pos[-1]], color='blue') # plots rod 2
-plt.plot(x2pos, y2pos, color='red', ls=':', label='Färdväg av massa 2') # plots path of mass 2
+plt.plot(x2pos, y2pos, color='red', ls=':', label='Fardvag av massa 2') # plots path of mass 2
 ################
 
 # Saves png to directory, commented away currently as to make it easer to run independently
