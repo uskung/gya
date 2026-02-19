@@ -4,20 +4,49 @@
 \refstepcounter{chapter}
 \appendix
 
-\section*{A - Härledning av Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation})} \label{appendix:euler_lagrange_equation}
+\section*{A - Härledning av Euler-Lagrange ekvationen} \label{appendix:euler_lagrange_equation}
 \addcontentsline{toc}{section}{A - Härledning av Euler-Lagrange ekvationen}
+    Denna härledningen är huvudsakligen baserat på \cite[s. 222-223]{book:classical_mechanics:Morin2007}. Givet att funktionen $x_0(t)$ beskriver den väg av ett objekt, med startpunkterna $x(t_1) = x_1$ och $x(t_2) = x_2$, som ger ett stationärt\footnote{Kan alltså vara ett lokalt minimum, maximum eller terrasspunkt av $S$. Däremot är detta oftast ett minimum, därför det oftast benämns som \emph{principen om \emph{minsta} verkan.}} värde av objektets verkan $S$, då gäller att:
+    \begin{equation}
+        \frac{d}{dt}\left( \frac{\partial \Lagr}{\partial \dot{q_{i}}} \right) - \frac{\partial \Lagr}{\partial q_{i}} = 0. 
+        \label{appendix:euler_lagrange_equation_math}
+    \end{equation}
 
-Denna härledningen är huvudsakligen baserat på \cite[s. 222-223]{book:classical_mechanics:Morin2007}. Givet att funktionen $x_0(t)$ beskriver den väg av ett objekt, med startpunkterna $x(t_1) = x_1$ och $x(t_2) = x_2$, som ger ett stationärt\footnote{Kan alltså vara ett lokalt minimum, maximum eller terrasspunkt av $S$. Däremot är detta oftast ett minimum, därför det oftast benämns som \emph{principen om \emph{minsta} verkan.}} värde av objektets verkan $S$, då gäller att:
-\begin{equation}
-    \frac{d}{dt}\left( \frac{\partial \Lagr}{\partial \dot{q_{i}}} \right) - \frac{\partial \Lagr}{\partial q_{i}} = 0. 
-    \label{eq:euler_lagrange_equation_appendix}
-\end{equation}
+    \textit{Bevis:} Eftersom $x_0(t)$ är den funktion som ger ett stationärt värde av $S$, så kommer en funktion som är väldigt nära $x_0(t)$ ge i princip samma $S$, upp till första ordningens avvikelser\footnote{Detta gäller tack vare Taylorserien. För ordinära funktioner kan en liknelse dras där om $f(b)$ är ett stationärt värde av $f$, då kommer $f(b + \epsilon)$ avvika från $f(b)$ bara vid andra ordningens avvikelse för ett väldigt litet $\epsilon$. Detta gäller då $f'(b) = 0$, då första-ordningens term i Taylorutvecklingen försvinner vid utvecklingen vid punkten $b$. För vidare förklaring, se \cite[s. 222]{book:classical_mechanics:Morin2007}}. Betrakta därmed funktionen:
+    \begin{equation}
+        x_a(t) = x_0(t) + a\beta(t), \label{appendix:x_a(t)_definition}
+    \end{equation}
+    där $a$ är ett tal och $\beta(t)$ uppfyller $\beta(t_1) = \beta(t_2) = 0$ så att ändpunkterna för $x_a(t)$ och $x_0(t)$ är detsamma. 
+    
+    Betrakta återigen definitionen av verkan $S$:
+    \begin{equation}
+        S = \int_{t_1}^{t_2}\left(T(t)-V(t)\right)dt. \label{appendix:action_definition}
+    \end{equation}
+    Vi vet att när integralen beräknas i (\ref{appendix:action_definition}) för $S[x_a(t)]$ blir $S[x_a]$ ett tal. Dessutom vet vi att verkan $S$ blir då beroende på värdet av $t_1$ och $t_2$, men även talet $a$. Vårt krav är att förändringen av $S$ i första ordningens expansion av $a$ ska vara noll. Därmed undersöker vi hur $S$ är beroende av $a$. Derivering enligt kedjeregeln ger:
+    \begin{align}
+        \frac{\partial}{\partial a} S[x_a(t)] &= \int_{t_1}^{t_2} \frac{\partial \Lagr}{\partial a} dt \notag \\
+        &= \int_{t_1}^{t^2} \left( \frac{\partial \Lagr}{\partial x_a} \frac{\partial x_a}{\partial a} + \frac{\partial \Lagr}{\partial \dot{x}_a} \frac{\partial \dot{x}_a}{\partial a}\right) dt. \label{appendix:after_chainrule}
+    \end{align}
 
-\textit{Bevis:} Eftersom $x_0(t)$ är den funktion som ger ett stationärt värde av $S$, så kommer en funktion som är väldigt nära $x_0(t)$ ger i princip exakt samma verkan. Betrakta därmed funktionen:
-\begin{equation}
-    x_a(t) = x_0(t) + a\beta(t),
-\end{equation}
-där $a$ är ett tal och $\beta(t)$ uppfyller $\beta(t_1) = \beta(t_2) = 0$ så att ändpunkterna för $x_a(t)$ och $x_0(t)$ är detsamma. 
+    Eftersom vi definierade uttrycket $a\beta(t)$ i (\ref{appendix:x_a(t)_definition}) som förändringen till $x_a(t)$ relativt $x_0(t)$, kan vi skriva om $\beta(t)$ som:
+    \begin{equation}
+        \frac{\partial x_a}{\partial a} = \beta(t),\:\: \text{och}\:\: \frac{\partial \dot{x}_a}{\partial a} = \dot{\beta}(t) \label{appendix:beta_and_beta_derivative}
+    \end{equation}
+    Insättning av (\ref{appendix:beta_and_beta_derivative}) i (\ref{appendix:after_chainrule}) ger:
+    \begin{align}
+         \frac{\partial}{\partial a} S[x_a(t)] &= \int_{t_1}^{t^2} \left(\frac{\partial \Lagr}{\partial x_a} \beta + \frac{\partial \Lagr}{\partial \dot{x}_a} \dot{\beta}\right) dt \notag \\
+         &= \int_{t_1}^{t^2} \frac{\partial \Lagr}{\partial x_a}\beta\: dt + \int_{t_1}^{t_2} \frac{\partial \Lagr}{\partial \dot{x}_a} \dot{\beta}\: dt. \label{appendix:split_integral}
+    \end{align}
+    Genom att integrera partiellt den högra termen i (\ref{appendix:split_integral}) får vi:
+    \begin{align}
+        \frac{\partial}{\partial a} S[x_a(t)] &= \int_{t_1}^{t^2} \frac{\partial \Lagr}{\partial x_a}\beta\: dt + \frac{\partial \Lagr}{\partial \dot{x}_a} \beta - \int_{t_1}^{t^2} \left( \frac{d}{dt} \frac{\partial \Lagr}{\partial \dot{x}_a} \right) dt \notag \\
+        &= \int_{t_1}^{t^2} \left( \frac{\partial \Lagr}{\partial x_a} - \frac{d}{dt} \frac{\partial \Lagr}{\partial \dot{x}_a} \right)\beta\: dt + \frac{\partial \Lagr}{\partial \dot{x}_a} \beta\:\biggr|_{t_1}^{t^2} \label{appendix:after_partial_integration}
+    \end{align}
+    Eftersom $\beta(t_1)$ och $\beta(t_2)$ = 0 så försvinner termen $\frac{\partial \Lagr}{\partial \dot{x}_a} \beta$. Givet att $x_0(t)$ ger ett stationärt värde på $S$, vet vi att för alla funktioner $\beta(t)$ måste $\frac{\partial}{\partial a}S[x_a(t)] = 0$. Enda sättet detta kan uppfyllas i (\ref{appendix:after_partial_integration}) är om:  
+    \begin{align}
+        \frac{\partial \Lagr}{\partial x_a} -  \frac{d}{dt} \left( \frac{\partial \Lagr}{\partial \dot{x}_a} \right) = 0, \label{appendix:finished_with_proof}
+    \end{align}
+    vilket är den kända Euler-Lagrange ekvationen. Därmed har vi visat att om $x_0(t)$ är den väg som ger ett stationärt värde på verkan, så gäller Euler-Lagrange ekvationen (\ref{appendix:finished_with_proof}). \QED
 
 
 
@@ -25,19 +54,19 @@ där $a$ är ett tal och $\beta(t)$ uppfyller $\beta(t_1) = \beta(t_2) = 0$ så 
 
 \newpage
 \section*{B - Kod för simulering av dubbelpendeln} \label{appendix:code}
-\addcontentsline{toc}{section}{B - Kod för simulering av dubbelpendeln}
-Bifogat i Appendix B finns grundkoderna för RK4-metoden och Eulers stegmetod. Alla simuleringar som genomfördes använde någon form av dessa koder. För övrig kod som generera de resterande graferna/simuleringarna, se  \url{https://github.com/uskung/gya/tree/main/code}.
+    \addcontentsline{toc}{section}{B - Kod för simulering av dubbelpendeln}
+    Bifogat i Appendix B finns grundkoderna för RK4-metoden och Eulers stegmetod. Alla simuleringar som genomfördes använde någon form av dessa koder. För övrig kod som generera de resterande graferna/simuleringarna, se  \url{https://github.com/uskung/gya/tree/main/code}.
 
-\subsection*{Kod för RK4-metoden}
-Grundkod för Runge-Kuttametoden. Koden genererar en figur över pendenln och dess färdväg under hela simuleringens gång. Exakta denna kod användes för att simulera pendlarna i figur \ref{subfig:plots_of_stable_pendulums_A} och \ref{subfig:plots_of_stable_pendulums_B}.
-\vspace{0.5cm}
-\begin{adjustwidth}{-0.5cm}{-0.5cm}
-    \lstinputlisting[language=Python, caption=Grundkod för RK4-metoden]{code/runge-kutta-plot.py}. 
-\end{adjustwidth}
-\newpage
-\subsection*{Kod för Eulers stegmetod}
-Grundkod för Eulers stegmetod. Koden genererar en figur över pendeln och dess färdväg under hela simuleringens gång.
-\vspace{0.5cm}
-\begin{adjustwidth}{-0.5cm}{-0.5cm}
-    \lstinputlisting[language=Python, caption=Grundkod för Eulers stegemetod]{code/euler_plot.py}
-\end{adjustwidth}
+    \subsection*{Kod för RK4-metoden}
+    Grundkod för Runge-Kuttametoden. Koden genererar en figur över pendenln och dess färdväg under hela simuleringens gång. Exakta denna kod användes för att simulera pendlarna i figur \ref{subfig:plots_of_stable_pendulums_A} och \ref{subfig:plots_of_stable_pendulums_B}.
+    \vspace{0.5cm}
+    \begin{adjustwidth}{-0.5cm}{-0.5cm}
+        \lstinputlisting[language=Python, caption=Grundkod för RK4-metoden]{code/runge-kutta-plot.py}. 
+    \end{adjustwidth}
+    \newpage
+    \subsection*{Kod för Eulers stegmetod}
+    Grundkod för Eulers stegmetod. Koden genererar en figur över pendeln och dess färdväg under hela simuleringens gång.
+    \vspace{0.5cm}
+    \begin{adjustwidth}{-0.5cm}{-0.5cm}
+        \lstinputlisting[language=Python, caption=Grundkod för Eulers stegemetod]{code/euler_plot.py}
+    \end{adjustwidth}

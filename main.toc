@@ -24,4 +24,4 @@
 \contentsline {chapter}{Litteraturförteckning}{25}{chapter*.23}%
 \contentsline {chapter}{Appendix}{I}{chapter*.24}%
 \contentsline {section}{A - Härledning av Euler-Lagrange ekvationen}{I}{chapter.6}%
-\contentsline {section}{B - Kod för simulering av dubbelpendeln}{II}{equation.Alph0.0.2}%
+\contentsline {section}{B - Kod för simulering av dubbelpendeln}{III}{equation.Alph0.0.8}%
