@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt 
 import numpy as np
-from matplotlib.animation import FuncAnimation
 
 plt.rc('font', size = 11, family='serif')
 plt.rc('text', usetex=True)
@@ -222,9 +221,8 @@ else: ## if t_tot is not 0, calculate the positions for both methods for the who
     plt.grid()
     ############################
 
-### saves plot to directory
-plt.savefig(f'combined_euler_rk4_plots/combined_euler_rk4_plot_at_t={t_tot}s_the1={the1_gbl}_the2={the2_gbl}.png', dpi=300)
+### saves plot to directory (optional to include, therefore is commented away in this code)
+#plt.savefig(f'combined_euler_rk4_plots/combined_euler_rk4_plot_at_t={t_tot}s_the1={the1_gbl}_the2={the2_gbl}.png', dpi=300)
 
 ## shows plot
 plt.show()
-

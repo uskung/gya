@@ -9,6 +9,7 @@
 \usepackage{verbatim}
 % \usepackage{changepage}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{microtype}
 \usepackage{rotate}
 \usepackage{siunitx}
@@ -17,12 +18,15 @@
 \usepackage[margin=1.2in]{geometry} %% 1.2 in
 \usepackage{titlesec}
 \usetikzlibrary{math, arrows.meta}
-\addbibresource{ref.bib}
+\addbibresource{references/references.bib}
 \newcommand{\Lagr}{\mathcal{L}}
 \usepackage[toc,page]{appendix}
 \usepackage{subcaption}
 \usepackage{changepage}
+\usepackage{listings}
+\usepackage{xcolor}
 
+\newcommand*{\QED}{\hfill\ensuremath{\blacksquare}}
 
 \setlength{\parindent}{0pt}
 % men däremot lite mellanrum
@@ -40,6 +44,33 @@
 			pdftitle={Overleaf Example},
 			pdfpagemode=FullScreen,
 			}
+
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
 
 \graphicspath{{./images/}}
 
@@ -64,35 +95,24 @@
 	\vfill
 
 	%% nedre delen av framsidan
-	{\large Första utkast inlämnad: 2026-02-08}
+	{\large Första utkast inlämnat: \today}
 \end{titlepage}
 
 \input{abstract.tex}
-\thispagestyle{empty}
+\pagenumbering{gobble}
 \tableofcontents
-\thispagestyle{empty}
-\newpage
-\setcounter{page}{1}
-\addcontentsline{toc}{chapter}{Inledning} % optional, to include in ToC
 \input{inledning.tex}
 \newpage
-\addcontentsline{toc}{chapter}{Teoretisk bakgrund}
 \input{teoretisk_genomgång.tex}
 \newpage
-\addcontentsline{toc}{chapter}{Metod/Numerisk simulering}
 \input{metod.tex}
 \newpage
-\addcontentsline{toc}{chapter}{Resultat}
 \input{resultat.tex}
 \newpage
-\addcontentsline{toc}{chapter}{Diskussion}
 \input{diskussion.tex}
 \newpage
-\addcontentsline{toc}{chapter}{Litteraturförteckning}
 \printbibliography[title=Litteraturförteckning]
+\addcontentsline{toc}{chapter}{Litteraturförteckning}
 \newpage
-\addcontentsline{toc}{chapter}{Appendix}
 \input{appendix.tex}
-\addcontentsline{toc}{section}{A - Härledning av Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation})}
-\addcontentsline{toc}{section}{B - Kod för simulering av dubbelpendeln}
 \end{document}
