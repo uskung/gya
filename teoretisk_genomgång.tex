@@ -32,12 +32,12 @@ Lagrange-mekanik bygger sin grund på \emph{principen om minsta verkan}, eller i
 \end{equation} 
 Denna storhet har enheten [Js] och har dimensionerna (Energi $\times$ Tid) \cite[s.221]{book:classical_mechanics:Morin2007}. Själva differensen $T(t) - V(t)$ visar sig vara så förekommande inom fysiken, att den har fått namnet 'the Lagrangian' och brukar betecknas $\Lagr$ \cite[s.218]{book:classical_mechanics:Morin2007}, det vill säga:
 \begin{equation} %% todo: varför är det [2] på referensen?
-    \Lagr = T - V
+    \Lagr = T - V.
     \label{eq:Lagr}
 \end{equation}
 Principen om minsta verkan säger att fysikens lagar alltid kommer att sträva efter att förminska uttrycket i (\ref{eq:action_definition})\footnote{Egentligen, rent matematiskt, strävar verkan $S$ att hitta ett stationärt värde av $S$, det vill säga en lokal extrem- eller terrasspunkt till grafen av $S$. Detta är anledningen varför principen även kallas för \emph{principen om stationär verkan} \cite[s.222]{book:classical_mechanics:Morin2007}.}. Detta är så fysikaliskt grundläggande, att nästan all fysik kan härledas ur detta grundläggande antagande \cite{Manton2013PrincipleLeastAction}. \footnote{Men varför vill naturen alltid förminska $S$? Problemet med att besvara denna fråga är att svaret innefattar kvantmekanik, vilket ligger utanför denna rapports syfte/omfattning. För en enklare förklaring om varför principen om minsta verkan, se \cite[s. 225]{book:classical_mechanics:Morin2007}. } 
 
-För att bestämma ett objekts väg som minimerar verkan $S$ används \emph{Euler-Lagrange ekvationen} \cite[s. 222]{book:classical_mechanics:Morin2007}, se ekvation (\ref{eq:euler_lagrange_equation}). I ekvation (\ref{eq:euler_lagrange_equation}) är $i = 1,2,3,\ldots$, och normalt sätt betecknar de olika koordinataxlar, eller i detta fall olika vinklar. Härledning av (\ref{eq:euler_lagrange_equation}) ges i appendix A. %% TODO, härledning av euler-lagrange ekvationen
+För att bestämma ett objekts väg som minimerar verkan $S$ används \emph{Euler-Lagrange ekvationen} \cite[s. 222]{book:classical_mechanics:Morin2007}, se ekvation (\ref{eq:euler_lagrange_equation}). I ekvation (\ref{eq:euler_lagrange_equation}) är $i = 1,2,3,\ldots$, och normalt sätt betecknar de olika koordinataxlar/dimensioner. Härledning av (\ref{eq:euler_lagrange_equation}) ges i appendix A. %% TODO, härledning av euler-lagrange ekvationen
 \begin{equation}
     \frac{d}{dt}\left( \frac{\partial \Lagr}{\partial \dot{q_{i}}} \right) - \frac{\partial \Lagr}{\partial q_{i}} = 0,
     \label{eq:euler_lagrange_equation}
@@ -192,7 +192,7 @@ Vi kan också bestämma dubbelpendelns kinetiska energi $T$ enligt:
 \begin{align}
     T   &= \frac{1}{2} m_1 v_{1}^{2} + \frac{1}{2}m_2v_2^2 \notag \\
         &= \frac{1}{2}m_1\left(\dot{x}_1^2 + \dot{y}_1^2\right) + \frac{1}{2}m_2\left(\dot{x}_2^2 + \dot{y}_2^2\right) \notag \\ %% TODO; motivera kanske varför v^2 = v_x^2 + v_y^2
-    (\ref{eq:x_1:dot}) - (\ref{eq:y_2:dot}) \Rightarrow &= \frac{1}{2}m_1\left(\dot{\theta}_1^2 l_1^2 \cos^2{\theta_1} + \dot{\theta}_1^2 l_1^2 \sin^2{\theta_1}\right) + \frac{1}{2}m_2
+    (\ref{eq:x_1:dot}) \leftrightarrow (\ref{eq:y_2:dot}) \Rightarrow &= \frac{1}{2}m_1\left(\dot{\theta}_1^2 l_1^2 \cos^2{\theta_1} + \dot{\theta}_1^2 l_1^2 \sin^2{\theta_1}\right) + \frac{1}{2}m_2
     \left(
         \dot{\theta}_1^2 l_1^2 \cos^2{\theta_1}\right. \notag \\
         &\quad + 2\dot{\theta}_1\dot{\theta}_2l_1l_2\cos{\theta_1}\cos{\theta_2}
@@ -220,7 +220,7 @@ Nu när vi har uttryckt $V$ och $T$ som funktioner av $\theta_1$ och $\theta_2$,
 
 \subsubsection{Tillämpning av Euler-Lagrange ekvationen}
 
-Vi ska nu använda ekvation (\ref{eq:Lagr_simplified}) i Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) för att lösa ut ekvationen som beskriver vinklarna $\theta_1$ och $\theta_2$ i dubbelpendeln. Vi beräknar först fallet där $q_i=\theta_1$.
+Vi ska nu använda ekvation (\ref{eq:Lagr_simplified}) i Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) för att lösa ut ekvationen som beskriver dubbelpendelns rörelse i termer av vinklarna $\theta_1$ och $\theta_2$. Vi beräknar först fallet där $q_i=\theta_1$.
 
 Deriveringsregler för att bestämma $ \frac{\partial \Lagr}{\partial \dot{\theta}_1}$ och $\frac{d}{dt}\!\left(\frac{\partial \Lagr}{\partial \dot{\theta}_1}\right)$ ger:
 \begin{align}
@@ -245,7 +245,7 @@ Insättning av (\ref{eq:Lagr_time_derivative:respect_theta_1_dot}) och (\ref{eq:
     + m_2l_2\dot{\theta}_2^2\sin(\theta_1-\theta_2) \notag \\
     &\quad + \left(m_1 + m_2\right)g\sin{\theta_1}. \label{eq:theta_1_solution}
 \end{align}
-Därmed är (\ref{eq:theta_1_solution}) ekvationen som beskriver dubbelpendelns rörelse i dimensionen $\theta_1$. . Nu ska Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) lösas fast för $q_i = \theta_2$.
+Därmed är (\ref{eq:theta_1_solution}) ekvationen som beskriver dubbelpendelns rörelse i dimensionen $\theta_1$. Nu ska Euler-Lagrange ekvationen (\ref{eq:euler_lagrange_equation}) lösas fast för $q_i = \theta_2$.
 
 Deriveringsregler för att bestämma $ \frac{\partial \Lagr}{\partial \dot{\theta}_2}$ och $\frac{d}{dt}\!\left(\frac{\partial \Lagr}{\partial \dot{\theta}_2}\right)$ ger:
 \begin{align}

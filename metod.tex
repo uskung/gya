@@ -78,7 +78,7 @@ De tredje och fjärde ekvationerna i (\ref{eq:equations_of_motion_greek}) skrevs
     \begin{pmatrix}
         \epsilon \\
         \zeta
-    \end{pmatrix}\footnote{Detta eftersom matrismultiplikation ger att $\alpha\dot{\omega}_1 + \beta\dot{\omega}_2 = \epsilon$ och $\gamma\dot{\omega}_1 + \delta\dot{\omega}_2 = \zeta$, vilket är de ursprungliga ekvationerna.}
+    \end{pmatrix}\footnote{Detta eftersom matrismultiplikation ger att $\alpha\dot{\omega}_1 + \beta\dot{\omega}_2 = \epsilon$ och $\gamma\dot{\omega}_1 + \delta\dot{\omega}_2 = \zeta$, vilket är de ursprungliga ekvationerna.}.
     \label{matrix:equations_of_motions_greek}
 \end{equation}
 Multiplikation med inversen av $\left(\begin{smallmatrix} \alpha & \beta \\ \gamma & \delta \end{smallmatrix}\right)$ i (\ref{matrix:equations_of_motions_greek}) gav:
@@ -135,7 +135,7 @@ Multiplikation med inversen av $\left(\begin{smallmatrix} \alpha & \beta \\ \gam
     \begin{pmatrix}
         \frac{\delta\epsilon - \beta\zeta}{\alpha\delta - \beta\gamma} \vspace{1mm}\\
         \frac{\alpha\zeta - \gamma\epsilon}{\alpha\delta - \beta\gamma}
-    \end{pmatrix} \label{matrix:separated_for_omega_1_omega_2}
+    \end{pmatrix}. \label{matrix:separated_for_omega_1_omega_2}
 \end{align}
 Från (\ref{matrix:separated_for_omega_1_omega_2}) avlästes därmed nya, icke-sammankopplade utryck för $\dot{\omega}_1$ och $\dot{\omega}_2$, vilket gav ett ekvationssystemet (\ref{eq:equations_of_motions_final}) som beskriver dubbelpendelns rörelse i ordinära, icke-sammankopplade differentialekvationer.
 % Det går därmed att avläsa från (\ref{matrix:separated_for_omega_1_omega_2}) nya, icke-sammankopplade uttryck för $\dot{\omega}_1$ och $\dot{\omega}_2$, vilket ger ett ekvationssystemet (\ref{eq:equations_of_motions_final}) som beskriver dubbelpendelns rörelse i ordinära, icke-sammankopplade differentialekvationer.
@@ -149,7 +149,7 @@ Från (\ref{matrix:separated_for_omega_1_omega_2}) avlästes därmed nya, icke-s
 \end{equation}
 
 \section{Numerisk simulering} \label{section:numeriska_metoder}
-För att kunna simulera dubbelpendeln definierades en tillståndsvektor \\$\mathbf{X} = [\theta_1, \omega_1, \theta_2, \omega_2]$, vilket därmed gav att $\dot{\mathbf{X}} = [\omega_1, \dot{\omega}_1, \omega_2, \dot{\omega}_2]$. Ett program skrevs sedan i Python med hjälp av dessa tillståndsvektorer, först med Eulers-stegmetod, sedan med Runge-Kuttametoden, för att simulera en dubbelpendel. Dessa jämfördes enligt begynnelsevinklarna i tabell \ref{tab:euler_rk4_comparision} att demonstrera effektiviteten av respektive metod. För begynnelsevinklarna $\theta_1 = 0.5$, $\theta_2 = 0.5$ [rad] kördes simuleringen i 60 s, medan för begynnelsevinklarna $\theta_1 = 2.5$, $\theta_2 = 2.5$ kördes simuleringen i 6 s. 
+För att kunna simulera dubbelpendeln definierades en tillståndsvektor \\$\mathbf{X} = [\theta_1, \omega_1, \theta_2, \omega_2]$, vilket därmed gav att $\dot{\mathbf{X}} = [\omega_1, \dot{\omega}_1, \omega_2, \dot{\omega}_2]$. Ett program skrevs sedan i Python med hjälp av dessa tillståndsvektorer, först med Eulers-stegmetod, sedan med Runge-Kuttametoden, för att simulera en dubbelpendel. Dessa jämfördes enligt begynnelsevinklarna i tabell \ref{tab:euler_rk4_comparision} att demonstrera effektiviteten av respektive metod. För begynnelsevinklarna $\theta_1 = 0.5$, $\theta_2 = 0.5$ [rad] kördes simuleringen i 60 s, medan för begynnelsevinklarna $\theta_1 = 2.5$, $\theta_2 = 2.5$ [rad] kördes simuleringen i 6 s. 
 
 Sedan skrevs kod där två pendlar simulerades med RK4-metoden, där den andra pendelns hade 0.00001\% större begynnelsevinklar relativt den första pendeln. Detta genomfördes för begynnelsevinklarna $\theta_1 = 2.5$ och $\theta_2 = 2.5$ [rad] under 10 sekunder.
 
@@ -173,7 +173,7 @@ För alla pendlar antogs att pendlarna släpptes från vila, det vill säga att 
     \centering
     \begin{tabular}{||c|c|c||}
         \hline
-        $\theta_1$ & $\theta_2$ & 'Energinivå' \\
+        $\theta_1$ [rad] & $\theta_2$ [rad] & 'Energinivå' \\
         \hline
         0.5 & 0.5 & Låg\\
         2.5 & 2.5 & Hög\\
@@ -187,7 +187,7 @@ För alla pendlar antogs att pendlarna släpptes från vila, det vill säga att 
     \centering
     \begin{tabular}{||c|c||}
         \hline
-        $\theta_1$ & $\theta_2$ \\
+        $\theta_1$ [rad] & $\theta_2$ [rad] \\
         \hline
         0.5 & 0.5 \\
         2.5 & 2.5 \\
