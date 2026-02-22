@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1771512497.31052 "main.bcf" "main.bbl" "main" 1771514936.88027 0
-  "main.bcf" 1771514936.75132 110032 332f69aa36da46b4cf0a32aea5e9ebc3 "pdflatex"
+["biber main"] 1771512497.31052 "main.bcf" "main.bbl" "main" 1771785042.78297 0
+  "main.bcf" 1771785042.65576 110032 332f69aa36da46b4cf0a32aea5e9ebc3 "pdflatex"
   "references/references.bib" 1771512497.19512 5237 d48e12e0213b3373707b6f2bfa883f8d ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1771514926.40356 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1771514936.88057 0
-  "/Users/Oscar/Skola/Europaskolan/gya/main.tex" 1771511140.60826 2942 50b5c8fdcdda5a55745d569c20836937 ""
+["pdflatex"] 1771785032.3786 "/Users/Oscar/Skola/Europaskolan/gya/main.tex" "main.pdf" "main" 1771785042.78323 0
+  "/Users/Oscar/Skola/Europaskolan/gya/main.tex" 1771785023.33725 2961 af93f001f1b9dd1276da9ccb96ae2aa5 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tctt1000.tfm" 1136768653 1536 c5729d01ab121276cf99b309129349a0 ""
@@ -248,7 +248,7 @@
   "appendix.tex" 1771514816.62935 6649 7c07cac07e94f198e557e4b689f19750 ""
   "code/euler_plot.py" 1771422714.37006 3517 a4e04f6fc987123caccc19b249be1cb6 ""
   "code/runge-kutta-plot.py" 1771422715.13521 4098 d407d39df90f15dcf0ce3abb7ddf00bc ""
-  "diskussion.tex" 1771514926.25041 11181 782dad09b858ad341f43831a14928525 ""
+  "diskussion.tex" 1771514948.94217 11181 782dad09b858ad341f43831a14928525 ""
   "images/Lorenz_attractor_yb.pdf" 1770940012.83832 362322 39383f69d58afe4d97387c2cd9c29940 ""
   "images/angles_as_functions_of_time_plot, the1=-0.5_the2=0.3_t=20.0s.png" 1770560182.84623 239520 df38fb6f78a398cb395f2c31ff531114 ""
   "images/angles_as_functions_of_time_plot, the1=-1.5_the2=1.0_t=20.0s.png" 1770560107.47473 232261 68e934ec03378531f4aadd99af6dfa82 ""
@@ -287,12 +287,12 @@
   "images/runge-kutta_plot_the1=2.226_the2=4.169_at_30.0s.png" 1770565115.85516 79558 b3263cc4d3a8aa645000882570dbeb01 ""
   "images/runge-kutta_plot_the1=2.899_the2=1.913_at_30.0s.png" 1770564750.74577 81212 d67730fc30d45a9b3d3620be61198ffb ""
   "inledning.tex" 1771512386.87808 11347 eebfd745529c89bf9be22b0b6900a188 ""
-  "main.aux" 1771514936.74374 34584 b2120f64d026c62ad5fe298a0d52e934 "pdflatex"
+  "main.aux" 1771785042.64884 34584 5cab094b216fd071805769bb116aa1ed "pdflatex"
   "main.bbl" 1771512499.55955 16506 928622db060bb1b8116fa7696044a9d4 "biber main"
-  "main.out" 1771514936.74846 3927 36f2fa12839d4c4fc9d873c88843edf4 "pdflatex"
-  "main.run.xml" 1771514936.75208 2316 b4bcdada68146e9ebdd459e846a92292 "pdflatex"
-  "main.tex" 1771511140.60826 2942 50b5c8fdcdda5a55745d569c20836937 ""
-  "main.toc" 1771514936.75216 2090 14c1e6f634f1651195f5452225141542 "pdflatex"
+  "main.out" 1771785042.65311 3927 36f2fa12839d4c4fc9d873c88843edf4 "pdflatex"
+  "main.run.xml" 1771785042.6564 2316 b4bcdada68146e9ebdd459e846a92292 "pdflatex"
+  "main.tex" 1771785023.33725 2961 af93f001f1b9dd1276da9ccb96ae2aa5 ""
+  "main.toc" 1771785042.65646 2090 edfdd3ae8ada6b61c379acee5e10a054 "pdflatex"
   "metod.tex" 1771513487.30213 13927 9bbecf46ca9da919d80e93ce1bc21bff ""
   "resultat.tex" 1771513658.98105 18399 a6b8b7b563207391f4af31c16272a27d ""
   "teoretisk_genomgång.tex" 1771513124.79143 30785 cd319d034027d76bdf63adcbdff40266 ""
