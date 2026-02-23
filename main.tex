@@ -74,6 +74,23 @@
 
 \graphicspath{{./images/}}
 
+% Så att "Kapitel x" försvinner
+% \titleformat{\chapter}
+%   {\Large\bfseries} % format
+%   {}                % label
+%   {0pt}             % sep
+%   {\huge}           % before-code
+
+\usepackage{titlesec}
+
+\titleformat{\chapter}[hang] % 'hang' makes the title appear on the same line
+  {\normalfont\huge\bfseries} % Format of the whole title
+  {\thechapter.} % Label (number + dot)
+  {20pt} % Separation between number and title
+  {\huge} % Code before the title
+
+\titlespacing{\chapter}{0pt}{50pt}{40pt}
+
 \begin{document}
 \renewcommand{\abstractname}{Abstract}
 \begin{titlepage}
@@ -102,17 +119,11 @@
 \pagenumbering{gobble}
 \tableofcontents
 \input{inledning.tex}
-\newpage
 \input{teoretisk_genomgång.tex}
-\newpage
 \input{metod.tex}
-\newpage
 \input{resultat.tex}
-\newpage
 \input{diskussion.tex}
-\newpage
 %\addcontentsline{toc}{chapter}{Litteraturförteckning}
 \printbibliography[title=Litteraturförteckning, heading=bibintoc]
-\newpage
 \input{appendix.tex}
 \end{document}

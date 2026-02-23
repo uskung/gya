@@ -1,11 +1,13 @@
 \chapter*{Appendix}
 \addcontentsline{toc}{chapter}{Appendix}
 \pagenumbering{Roman}
-\refstepcounter{chapter}
+%\refstepcounter{chapter}
 \appendix
 
-\section*{A - Härledning av Euler-Lagrange ekvationen} \label{appendix:euler_lagrange_equation}
-\addcontentsline{toc}{section}{A - Härledning av Euler-Lagrange ekvationen}
+\renewcommand{\thesection}{\Alph{section}}
+
+\section{Härledning av Euler-Lagrange ekvationen} \label{appendix:euler_lagrange_equation}
+%\addcontentsline{toc}{section}{A - Härledning av Euler-Lagrange ekvationen}
     Denna härledningen är huvudsakligen baserat på \cite[s. 222-223]{book:classical_mechanics:Morin2007}. Givet att funktionen $x_0(t)$ beskriver den väg av ett objekt, med startpunkterna $x(t_1) = x_1$ och $x(t_2) = x_2$, som ger ett stationärt\footnote{Kan alltså vara ett lokalt minimum, maximum eller terrasspunkt av $S$. Däremot är detta oftast ett minimum, därför det oftast benämns som \emph{principen om \emph{minsta} verkan.}} värde av objektets verkan $S$, då gäller att:
     \begin{equation}
         \frac{d}{dt}\left( \frac{\partial \Lagr}{\partial \dot{q_{i}}} \right) - \frac{\partial \Lagr}{\partial q_{i}} = 0. 
@@ -55,9 +57,9 @@
 
 \newpage
 
-\section*{B - Kod för simulering av dubbelpendeln} \label{appendix:code}
-\addcontentsline{toc}{section}{B - Kod för simulering av dubbelpendeln}
-    Bifogat i Appendix B finns grundkoderna för RK4-metoden och Eulers stegmetod. Alla simuleringar som genomfördes använde någon form av dessa koder. För övrig kod som genererade de resterande graferna/simuleringarna, se  \url{https://github.com/uskung/gya/tree/main/code}.
+\section{Kod för simulering av dubbelpendeln} \label{appendix:code}
+%\addcontentsline{toc}{section}{B - Kod för simulering av dubbelpendeln}
+Bifogat i Appendix B finns grundkoderna för RK4-metoden och Eulers stegmetod. Alla simuleringar som genomfördes använde någon form av dessa koder. För övrig kod som genererade de resterande graferna/simuleringarna, se  \url{https://github.com/uskung/gya/tree/main/code}.
 
     \subsection*{Kod för RK4-metoden}
     Grundkod för Runge-Kuttametoden. Koden genererar en figur över pendeln och dess färdväg under hela simuleringens gång. Exakt denna kod användes för att simulera pendlarna i figur \ref{subfig:plots_of_stable_pendulums_A} och \ref{subfig:plots_of_stable_pendulums_B}.
