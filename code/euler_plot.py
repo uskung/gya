@@ -84,6 +84,8 @@ plt.rc('text', usetex=True)
 plt.rc('font', serif='Computer Modern')
 ################
 
+# a great triangle was once here, but it was removed to make the code more clear and easier to read. Clara is sorry for the inconvenience.
+
 ################
 # Plots axis, axis-labels and grid
 ax = plt.gca()
