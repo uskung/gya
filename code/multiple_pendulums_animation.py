@@ -120,8 +120,11 @@ animated2_m1 = axis.plot([],[], 'o', markersize=15, color='green')[0]
 animated2_m2 = axis.plot([],[],'o', markersize=15,color='green')[0]
 animated2_path_m2 = axis.plot([],[], color='black')[0]
 
+# axis.set_xlim([-2.5,2.5])
+# axis.set_ylim([-2.5,2.5])
 axis.set_xlim([-2.5,2.5])
 axis.set_ylim([-2.5,2.5])
+axis.set_aspect('equal', adjustable='box')
 axis.set_title('Animering av två dubbelpendlar - RK4 NY')
 
 plt.grid()
@@ -150,7 +153,7 @@ def update_data(frame):
     animated2_m2.set_data([X2pos[round(frame*animation_const)]],[Y2pos[round(frame*animation_const)]])
 
     animated2_path_m2.set_data(X2pos[:round(frame*animation_const):path_splice_limit], Y2pos[:round(frame*animation_const):path_splice_limit])
-    
+    axis.set_title(f'Animering av två dubbelpendlar - RK4 - t={frame*animation_const*h:.1f}s')
     
     return animated1_l_1, animated1_l_2,  animated1_m1, animated1_m2, animated1_path_m2, animated2_l_1, animated2_l_2, animated2_m1, animated2_m2, animated2_path_m2
 
@@ -167,4 +170,5 @@ animation = FuncAnimation(
 # ax.set_ylim([-2.5, 2.5])
 
 # plt.plot(xpos,ypos)
+animation.save('multiple_pendulums_animations/multiple_pendulums.gif', writer='pillow', fps=40)
 plt.show()

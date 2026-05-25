@@ -4,8 +4,8 @@ from matplotlib.animation import FuncAnimation
 
 the1 = float(eval(input("Ange startvinkeln för theta_1: ")))
 the2 = float(eval(input("Ange startvinkeln för theta_2: ")))
-ome1 = -98
-ome2 = 100
+ome1 = 0
+ome2 = 0
 h = 0.00005
 t_tot= float(input("Hur många sekunder vill du simulera pendeln? "))
 t0 = 0
@@ -76,7 +76,8 @@ animated_path_m2 = axis.plot([],[], color='red')[0]
 axis.set_xlim([-2.5,2.5])
 axis.set_ylim([-2.5,2.5])
 axis.set_title('Animering av dubbelpendel - RK4 - t=0s')
-
+axis.set_aspect('equal', adjustable='box')
+    
 plt.grid()
 
 frames=round((t_tot/25)*10**3)
