@@ -77,7 +77,7 @@ axis.set_xlim([-2.5,2.5])
 axis.set_ylim([-2.5,2.5])
 axis.set_title('Animering av dubbelpendel - RK4 - t=0s')
 axis.set_aspect('equal', adjustable='box')
-    
+
 plt.grid()
 
 frames=round((t_tot/25)*10**3)

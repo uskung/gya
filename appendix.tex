@@ -22,12 +22,17 @@
     
     Betrakta återigen definitionen av verkan $S$:
     \begin{equation}
-        S = \int_{t_1}^{t_2}\left(T(t)-V(t)\right)dt. \label{appendix:action_definition}
+        S = \int_{t_1}^{t_2}\left(T(t)-V(t)\right)dt = \int_{t_1}^{t_2}\Lagr dt.
     \end{equation}
+    Eftersom $\Lagr$ är beroende av positionen $x$, hastigheten $\dot{x}$ och tiden $t$, kan vi uttrycka lagrangianen $\Lagr$ som funktion av dessa variabler:
+    \begin{equation}
+        S = \int_{t_1}^{t_2} \Lagr(x,\dot{x},t) dt.\label{appendix:action_definition}
+    \end{equation}
+
     Vi vet att när integralen beräknas i (\ref{appendix:action_definition}) för $S[x_a(t)]$ blir verkan $S$ ett tal. Dessutom vet vi att $S$ är beroende på värdet av $t_1$ och $t_2$, men även talet $a$. Vårt krav är att förändringen av $S$ i första ordningens expansion av $a$ ska vara noll. Därmed undersöker vi hur $S$ är beroende av $a$. Derivering enligt kedjeregeln ger:
     \begin{align}
         \frac{\partial}{\partial a} S[x_a(t)] &= \int_{t_1}^{t_2} \frac{\partial \Lagr}{\partial a} dt \notag \\
-        &= \int_{t_1}^{t^2} \left( \frac{\partial \Lagr}{\partial x_a} \frac{\partial x_a}{\partial a} + \frac{\partial \Lagr}{\partial \dot{x}_a} \frac{\partial \dot{x}_a}{\partial a}\right) dt. \label{appendix:after_chainrule}
+        &= \int_{t_1}^{t_2} \left( \frac{\partial \Lagr}{\partial x_a} \frac{\partial x_a}{\partial a} + \frac{\partial \Lagr}{\partial \dot{x}_a} \frac{\partial \dot{x}_a}{\partial a}\right) dt. \label{appendix:after_chainrule}
     \end{align}
 
     Genom att derivera uttrycket i (\ref{appendix:x_a(t)_definition}) får vi att:
@@ -37,13 +42,13 @@
     \end{equation}
     Insättning av (\ref{appendix:beta_and_beta_derivative}) i (\ref{appendix:after_chainrule}) ger:
     \begin{align}
-         \frac{\partial}{\partial a} S[x_a(t)] &= \int_{t_1}^{t^2} \left(\frac{\partial \Lagr}{\partial x_a} \beta + \frac{\partial \Lagr}{\partial \dot{x}_a} \dot{\beta}\right) dt \notag \\
-         &= \int_{t_1}^{t^2} \frac{\partial \Lagr}{\partial x_a}\beta\: dt + \int_{t_1}^{t_2} \frac{\partial \Lagr}{\partial \dot{x}_a} \dot{\beta}\: dt. \label{appendix:split_integral}
+         \frac{\partial}{\partial a} S[x_a(t)] &= \int_{t_1}^{t_2} \left(\frac{\partial \Lagr}{\partial x_a} \beta + \frac{\partial \Lagr}{\partial \dot{x}_a} \dot{\beta}\right) dt \notag \\
+         &= \int_{t_1}^{t_2} \frac{\partial \Lagr}{\partial x_a}\beta\: dt + \int_{t_1}^{t_2} \frac{\partial \Lagr}{\partial \dot{x}_a} \dot{\beta}\: dt. \label{appendix:split_integral}
     \end{align}
-    Genom att integrera partiellt den högra termen i (\ref{appendix:split_integral}) får vi:
+    Genom att partiellt integrera den högra termen i (\ref{appendix:split_integral}) får vi:
     \begin{align}
-        \frac{\partial}{\partial a} S[x_a(t)] &= \int_{t_1}^{t^2} \frac{\partial \Lagr}{\partial x_a}\beta\: dt + \frac{\partial \Lagr}{\partial \dot{x}_a} \beta - \int_{t_1}^{t^2} \left( \frac{d}{dt} \frac{\partial \Lagr}{\partial \dot{x}_a} \right) dt \notag \\
-        &= \int_{t_1}^{t^2} \left( \frac{\partial \Lagr}{\partial x_a} - \frac{d}{dt} \frac{\partial \Lagr}{\partial \dot{x}_a} \right)\beta\: dt + \frac{\partial \Lagr}{\partial \dot{x}_a} \beta\:\biggr|_{t_1}^{t^2} \label{appendix:after_partial_integration}
+        \frac{\partial}{\partial a} S[x_a(t)] &= \int_{t_1}^{t_2} \frac{\partial \Lagr}{\partial x_a}\beta\: dt + \frac{\partial \Lagr}{\partial \dot{x}_a} \beta - \int_{t_1}^{t_2} \left( \frac{d}{dt} \frac{\partial \Lagr}{\partial \dot{x}_a} \right) dt \notag \\
+        &= \int_{t_1}^{t_2} \left( \frac{\partial \Lagr}{\partial x_a} - \frac{d}{dt} \frac{\partial \Lagr}{\partial \dot{x}_a} \right)\beta\: dt + \frac{\partial \Lagr}{\partial \dot{x}_a} \beta\:\biggr|_{t_1}^{t_2} \label{appendix:after_partial_integration}
     \end{align}
     Eftersom $\beta(t_1)$ och $\beta(t_2)$ = 0 så försvinner termen $\frac{\partial \Lagr}{\partial \dot{x}_a} \beta$. Givet att $x_0(t)$ ger ett stationärt värde på $S$, vet vi att för alla funktioner $\beta(t)$ måste $\frac{\partial}{\partial a}S[x_a(t)] = 0$. Enda sättet detta kan uppfyllas i (\ref{appendix:after_partial_integration}) är om:  
     \begin{align}

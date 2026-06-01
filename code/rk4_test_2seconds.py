@@ -1,0 +1,103 @@
+import matplotlib.pyplot as plt 
+import numpy as np
+from matplotlib.animation import FuncAnimation
+
+the1 = float(eval(input("Ange startvinkeln för theta_1: ")))
+the2 = float(eval(input("Ange startvinkeln för theta_2: ")))
+ome1 = 15
+ome2 = -20
+h = 0.00005
+t_tot = float(input("Hur många sekunder vill du simulera pendeln? "))
+t0 = 0
+m_1 = 1
+m_2 = 1
+l_1 = 1
+l_2 = 1
+g = 9.82
+
+the1_list = [the1]
+the2_list = [the2]
+x1pos = []
+y1pos = []
+x2pos = []
+y2pos = []
+
+state = np.array([the1, ome1, the2, ome2])
+
+def derivative(state):
+    the1, ome1, the2, ome2 = state
+    dtheta = the1 - the2
+    alpha = (m_1 + m_2)*l_1
+    beta = m_2*l_2*np.cos(dtheta)
+    gamma = m_2*l_1*np.cos(dtheta)
+    delta = m_2*l_2
+    epsilon = -1*m_2*l_2 * ome2**2 * np.sin(dtheta) - (m_1 + m_2)*g*np.sin(the1)
+    zeta = m_2*l_2 * ome1**2 * np.sin(dtheta) - m_2*g*np.sin(the2)
+    domega1 = (delta*epsilon - beta*zeta)/(alpha*delta - beta*gamma)
+    domega2 = (alpha*zeta - gamma*epsilon)/(alpha*delta - beta*gamma)
+    return np.array([ome1, domega1, ome2, domega2])
+
+while t0 < t_tot + h:
+    x1 = l_1*np.sin(state[0])
+    x1pos.append(x1)
+    y1 = -1 * l_1 * np.cos(state[0])
+    y1pos.append(y1)
+
+    x2 = l_1*np.sin(state[0]) + l_2*np.sin(state[2])
+    x2pos.append(x2)
+    y2 = -1 * l_1*np.cos(state[0]) - l_2*np.cos(state[2])
+    y2pos.append(y2)
+
+    K1 = derivative(state)
+    K2 = derivative(state + h/2 * K1)
+    K3 = derivative(state + h/2 * K2)
+    K4 = derivative(state + h * K3)
+    state = state + h/6 * (K1 + 2*K2 + 2*K3 + K4)
+
+    the1_list.append(state[0])
+    the2_list.append(state[2])
+    t0 += h
+
+fig, axis = plt.subplots()
+animated_l_1 = axis.plot([], [], color='blue')[0]
+animated_l_2 = axis.plot([], [], color='blue')[0]
+animated_m1 = axis.plot([], [], 'o', markersize=15, color='red')[0]
+animated_m2 = axis.plot([], [], 'o', markersize=15, color='red')[0]
+animated_path_m2 = axis.plot([], [], color='red')[0]
+axis.set_xlim([-2.5, 2.5])
+axis.set_ylim([-2.5, 2.5])
+axis.set_title('Animering av dubbelpendel - RK4 - t=0s')
+axis.set_aspect('equal', adjustable='box')
+
+plt.xlabel('$x$-position [m]')
+plt.ylabel('$y$-position [m]')
+
+
+plt.grid()
+
+frames = round((t_tot/25)*10**3)
+animation_const = len(x2pos)/frames
+path_splice_limit = 200
+window = round(5 / h)  # number of data points corresponding to 5 seconds
+
+def update_data(frame):
+    current_idx = round(frame * animation_const)
+    start_idx = max(0, current_idx - window)  # clamp to 0 before 5s have elapsed
+
+    animated_l_1.set_data([0, x1pos[current_idx]], [0, y1pos[current_idx]])
+    animated_l_2.set_data([x1pos[current_idx], x2pos[current_idx]], [y1pos[current_idx], y2pos[current_idx]])
+    animated_m1.set_data([x1pos[current_idx]], [y1pos[current_idx]])
+    animated_m2.set_data([x2pos[current_idx]], [y2pos[current_idx]])
+    animated_path_m2.set_data(x2pos[start_idx:current_idx:path_splice_limit],
+                               y2pos[start_idx:current_idx:path_splice_limit])
+    axis.set_title(f'Animering av dubbelpendel - RK4 - t={current_idx * h:.1f}s')
+    return animated_l_1, animated_l_2, animated_m1, animated_m2, animated_path_m2
+
+animation = FuncAnimation(
+    fig=fig,
+    func=update_data,
+    frames=frames,
+    interval=25,
+)
+animation.save(f'rk4_animations/rk4_animation_{the1}_{the2}.gif', writer='pillow', fps=40)
+plt.show()

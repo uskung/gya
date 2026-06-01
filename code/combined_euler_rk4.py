@@ -200,8 +200,8 @@ else: ## if t_tot is not 0, calculate the positions for both methods for the who
     ## Euler pendulum
 
     #plots pendulum at final position for euler method
-    plt.plot([0,x1pos_euler[-1]], [0, y1pos_euler[-1]], color='blue') ## draws line for l_1
-    plt.plot([x1pos_euler[-1], x2pos_euler[-1]], [y1pos_euler[-1], y2pos_euler[-1]], color='blue') ## draws line for l_2
+    plt.plot([0,x1pos_euler[-1]], [0, y1pos_euler[-1]], color='blue',ls="--") ## draws line for l_1
+    plt.plot([x1pos_euler[-1], x2pos_euler[-1]], [y1pos_euler[-1], y2pos_euler[-1]], color='blue',ls="--") ## draws line for l_2
     plt.plot(x1pos_euler[-1], y1pos_euler[-1], marker='o', markersize=8, color='blue') ## draws mass 1
     plt.plot(x2pos_euler[-1], y2pos_euler[-1], marker='o', markersize=8, label='Euler', color='blue') ## draws mass 2
     ###########################
@@ -222,7 +222,7 @@ else: ## if t_tot is not 0, calculate the positions for both methods for the who
     ############################
 
 ### saves plot to directory (optional to include, therefore is commented away in this code)
-#plt.savefig(f'combined_euler_rk4_plots/combined_euler_rk4_plot_at_t={t_tot}s_the1={the1_gbl}_the2={the2_gbl}.png', dpi=300)
+#plt.savefig(f'combined_euler_rk4_plots/combined_euler_rk4_plot_at_t={t_tot}s_the1={the1_gbl}_the2={the2_gbl}_.png', dpi=300)
 
 ## shows plot
 plt.show()
